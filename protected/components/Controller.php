@@ -11,8 +11,6 @@ class Controller extends CController {
      * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
      */
     public $layout = '//layouts/column2';
-    public $description = 'Darussalam Publishers is an International Digital Islamic publishing house, offers multilingual Islamic books, iBooks, kids learning, mobile applications iOS/Android and much more.';
-    public $keywords = 'darussalam, darussalam publishers, islamic books, amazon kindle islamic books, islamic books online, islamic learning, islamic apps, kids learning apps';
 
     /**
      * Register script/css files

@@ -13,11 +13,6 @@ $import = array(
     'application.components.classes.db.*',
     'application.components.widgets.*',
     'application.components.dataProviders.*',
-    'application.extensions.ProDropDown.*',
-    'application.extensions.colorbox.*',
-    'ext.giix-components.*',
-    'application.modules.rights.*',
-    'application.modules.rights.components.*',
-    'application.modules.rights.models.*',
+
 );
 ?>
