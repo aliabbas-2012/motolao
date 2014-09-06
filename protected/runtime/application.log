@@ -1,0 +1,16 @@
+2014/09/07 01:14:51 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sfakhar1_motolao_db.tbl_migration' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `tbl_migration`.
+2014/09/07 01:14:53 [error] [php] include(DTDbMigration.php): failed to open stream: No such file or directory (/var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/html/motolao/protected/migrations/m120708_142711_tbl_user.php(3): spl_autoload_call()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/cli/commands/MigrateCommand.php(428): require_once()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/cli/commands/MigrateCommand.php(384): MigrateCommand->instantiateMigration()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/cli/commands/MigrateCommand.php(109): MigrateCommand->migrateUp()
+#4 unknown(0): MigrateCommand->actionUp()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/console/CConsoleCommand.php(172): ReflectionMethod->invokeArgs()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/console/CConsoleCommandRunner.php(71): MigrateCommand->run()
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/console/CConsoleApplication.php(92): CConsoleCommandRunner->run()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CConsoleApplication->processRequest()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/yiic.php(33): CConsoleApplication->run()
+#10 /var/www/html/motolao/protected/yiic.php(7): require_once()
+#11 /var/www/html/motolao/protected/yiic(4): require_once()
+
