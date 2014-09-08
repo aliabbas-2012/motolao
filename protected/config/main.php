@@ -16,7 +16,7 @@ include '_config/_conf_params.php';
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'Motolao',
-//    'theme' => 'adminb',
+    'theme' => 'backend',
     //'homeUrl' => array('/web/default/index'),
     // preloading 'log' component
     'preload' => array('log'),
@@ -34,7 +34,7 @@ return array(
             'errorAction' => 'web/default/error', //error controoler/error actions
         ),
         'log' => $logs,
-        //'email' => $conf_email_user,
+    //'email' => $conf_email_user,
 //        'messages' => array(
 //            'class' => 'CPhpMessageSource',
 //        // additional parameters for CDbMessageSource here

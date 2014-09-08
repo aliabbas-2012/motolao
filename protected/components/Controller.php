@@ -71,9 +71,8 @@ class Controller extends CController {
 
         if (get_class($this->getModule()) == "WebModule") {
 
-            Yii::app()->theme = "design_third";
+            Yii::app()->theme = "frontend";
             $this->layout = "//layouts/frontend";
-            $this->pageTitle = "Islamic Publishing House & Online BookStore - Darussalam Publishers";
         } else {
             /**
              * install configurations
@@ -212,7 +211,8 @@ class Controller extends CController {
                 $operation = ($level == 0) ? $menu->min_permission : $menu->min_permission;
 
 
-                $childCount = Menu::model()->count("pid = $menu->id"); {
+                $childCount = Menu::model()->count("pid = $menu->id");
+                {
                     $foundAny = true;
 
                     $this->menuHtml .='<li ' . ($pid == 0 ? "class='top'" : "") . '>';
@@ -422,4 +422,3 @@ class Controller extends CController {
     }
 
 }
-
