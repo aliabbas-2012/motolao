@@ -10,6 +10,7 @@ class m140908_195621_TourLangs extends DTDbMigration {
             'short_title' => 'varchar(150) NOT NULL',
             'tour_type' => 'varchar(150) NOT NULL',
             'lang_id' => 'int(11) DEFAULT 0',
+            'parent_id' => 'int(11) DEFAULT 0',
             'url' => 'varchar(150) DEFAULT NULL',
             'meta_title' => 'varchar(150) DEFAULT NULL',
             'meta_description' => 'text DEFAULT NULL',

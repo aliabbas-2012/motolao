@@ -1,15 +1,12 @@
 <?php
 
-class m140908_195612_categoryLangs extends DTDbMigration {
+class m140908_200446_conf_item extends DTDbMigration {
 
     public function up() {
-        $table = "languages";
+        $table = "conf_tour_types";
         $columns = array(
             'id' => 'int(11) unsigned NOT NULL AUTO_INCREMENT',
             'name' => 'varchar(150) NOT NULL',
-            'meta_title' => 'varchar(150) DEFAULT NULL',
-            'meta_description' => 'text DEFAULT NULL',
-            'description' => 'text DEFAULT NULL',
             'create_time' => 'datetime NOT NULL',
             'create_user_id' => 'int(11) unsigned NOT NULL',
             'update_time' => 'datetime NOT NULL',
@@ -17,18 +14,15 @@ class m140908_195612_categoryLangs extends DTDbMigration {
             'activity_log' => 'text',
             'PRIMARY KEY (`id`)',
         );
-        $this->createTable($table, $columns);
+        $options = "ENGINE=InnoDB";
+        $this->createTable($table, $columns, $options);
 
-        $table = "category_langs";
+        $table = "conf_tour_types_langs";
         $columns = array(
             'id' => 'int(11) unsigned NOT NULL AUTO_INCREMENT',
             'name' => 'varchar(150) NOT NULL',
-            'lang_id' => 'int(11) DEFAULT 0',
-            'parent_id' => 'int(11) DEFAULT 0',
-            'url' => 'varchar(150) DEFAULT NULL',
-            'meta_title' => 'varchar(150) DEFAULT NULL',
-            'meta_description' => 'text DEFAULT NULL',
-            'description' => 'text DEFAULT NULL',
+            'lang_id' => 'int(4) NOT NULL',
+            'parent_id' => 'int(4) NOT NULL',
             'create_time' => 'datetime NOT NULL',
             'create_user_id' => 'int(11) unsigned NOT NULL',
             'update_time' => 'datetime NOT NULL',
@@ -36,13 +30,16 @@ class m140908_195612_categoryLangs extends DTDbMigration {
             'activity_log' => 'text',
             'PRIMARY KEY (`id`)',
         );
-        $this->createTable($table, $columns);
+        $options = "ENGINE=InnoDB";
+        $this->createTable($table, $columns, $options);
     }
 
     public function down() {
-        $table = "category_langs";
+        
+        $table = "conf_tour_types_langs";
         $this->dropTable($table);
-        $table = "languages";
+        
+        $table = "conf_tour_types";
         $this->dropTable($table);
     }
 
