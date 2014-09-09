@@ -415,3 +415,9 @@
         <!--End Chat Panel Example-->
     </div>
 </div>
+<?php
+//Page-Level Plugin Scripts
+Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/plugins/morris/raphael-2.1.0.min.js', CClientScript::POS_END);
+Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/plugins/morris/morris.js', CClientScript::POS_END);
+Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/scripts/dashboard-demo.js', CClientScript::POS_END);
+?>
