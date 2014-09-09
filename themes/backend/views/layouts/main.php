@@ -398,14 +398,14 @@
     <!-- end wrapper -->
 
     <!-- Core Scripts - Include with every page -->
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/jquery-1.10.2.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/pace/pace.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/scripts/siminta.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/jquery-1.10.2.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/pace/pace.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/scripts/siminta.js"></script>
     <!-- Page-Level Plugin Scripts-->
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/morris/raphael-2.1.0.min.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/morris/morris.js"></script>
-    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/<?php echo Yii::app()->theme->baseUrl ?>/assets/scripts/dashboard-demo.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/morris/raphael-2.1.0.min.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/morris/morris.js"></script>
+    <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/scripts/dashboard-demo.js"></script>
 
 </html>
