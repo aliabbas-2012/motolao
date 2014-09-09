@@ -925,3 +925,58 @@ Stack trace:
 REQUEST_URI=/motolao/index.php/site/3100
 HTTP_REFERER=http://localhost/motolao/index.php/site/page?view=typography
 ---
+2014/09/10 00:56:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forms.html".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(270): CController->missingAction('forms.html')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('forms.html')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('site/forms.html')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/motolao/index.php/site/forms.html
+HTTP_REFERER=http://localhost/motolao/index.php/site/page?view=typography
+---
+2014/09/10 00:56:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('site/view')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/motolao/index.php/site/3100
+HTTP_REFERER=http://localhost/motolao/index.php/site/page?view=typography
+---
+2014/09/10 00:57:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tables.html".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(270): CController->missingAction('tables.html')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('tables.html')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('site/tables.htm...')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/motolao/index.php/site/tables.html
+HTTP_REFERER=http://localhost/motolao/index.php/site/page?view=typography
+---
+2014/09/10 00:57:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "forms.html".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(270): CController->missingAction('forms.html')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('forms.html')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('site/forms.html')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/motolao/index.php/site/forms.html
+HTTP_REFERER=http://localhost/motolao/index.php/site/page?view=typography
+---
+2014/09/10 00:57:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(270): CController->missingAction('view')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('view')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('site/view')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/motolao/index.php/site/3100
+HTTP_REFERER=http://localhost/motolao/index.php/site/page?view=typography
+---
