@@ -48,7 +48,8 @@ class Language extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-             
+            'categoryLangs' => array(self::HAS_MANY, 'CategoryLang', 'lang_id'),
+            'tour_langs' => array(self::HAS_MANY, 'TourLang', 'lang_id'),
         );
     }
 
