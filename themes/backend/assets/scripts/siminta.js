@@ -28,14 +28,14 @@ $(function () {
         x.send();
     };
 
-    load(20);
-    load(100);
-    load(500);
-    load(2000);
-    load(3000);
+//    load(20);
+//    load(100);
+//    load(500);
+//    load(2000);
+//    load(3000);
     setTimeout(function () {
         Pace.ignore(function () {
-            load(3100);
+            //load(3100);
         });
     }, 4000);
 

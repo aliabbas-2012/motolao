@@ -22,5 +22,7 @@ $url_manager = array(
     'showScriptName' => true,
     'rules' => $rules
 );
+CVarDumper::dump($url_manager,10,true);
+die;
 //$url_manager = array();
 ?>

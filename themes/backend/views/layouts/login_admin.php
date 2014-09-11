@@ -1,31 +1,45 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
+
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/login_style.css" />
-        <script type="text/javascript" src="<?php echo Yii::app()->baseUrl ?>/packages/jui/js/jquery.js"></script>
-        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Login</title>
+        <!-- Core CSS - Include with every page -->
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/style.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/main-style.css" rel="stylesheet" />
+
     </head>
 
-    <body>
-        <div class="login-container">
+    <body class="body-Login-back">
 
-            <!-- =========================== Header Wrapper Start Here =========================== -->
-            <div class="login-header-container"><div class="container">
-                    <h1><span style="font-weight: bold">Welcome To : <?php echo Yii::app()->name; ?></span></h1>
-                    <h2>Admin Panel</h2>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center logo-margin ">
+                    <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/logo.png" alt=""/>
+                </div>
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="login-panel panel panel-default">                  
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Please Sign In</h3>
+                        </div>
+                        <div class="panel-body">
+                            <?php echo $content; ?>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <?php echo $content; ?>
-
-            <!-- =========================== Footer Wrapper Start Here ============================ -->
-            <div class="login-footer container">
-                <p>Copyright © <?php echo date('Y'); ?></p>
-
-            </div>
-            <!-- =========================== Footer Wrapper Close Here ============================ -->
-
         </div>
+
+        <!-- Core Scripts - Include with every page -->
+        <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/jquery-1.10.2.js"></script>
+        <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/bootstrap/bootstrap.min.js"></script>
+        <script src="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+
     </body>
+
 </html>
