@@ -64,6 +64,7 @@ class SiteController extends Controller {
                 $this->refresh();
             }
         }
+
         $this->render('contact', array('model' => $model));
     }
 
@@ -72,7 +73,7 @@ class SiteController extends Controller {
      */
     public function actionLogin() {
         $model = new LoginForm;
-
+     
         // if it is ajax validation request
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
             echo CActiveForm::validate($model);
@@ -86,8 +87,9 @@ class SiteController extends Controller {
             if ($model->validate() && $model->login())
                 $this->redirect(Yii::app()->user->returnUrl);
         }
+ 
         // display the login form
-        $this->render('login', array('model' => $model));
+        $this->renderParital('//site/login', array('model' => $model));
     }
 
     /**
