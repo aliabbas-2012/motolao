@@ -15,12 +15,14 @@ class UserIdentity extends CUserIdentity {
         $criteria->addCondition($condition);
 
         $user = Users::model()->find($criteria);
-
+      
         if ($user === null)
             $this->errorCode = self::ERROR_USERNAME_INVALID;
 
-        else if (!$user->validatePassword($this->password, $user->password))
+        else if (!$user->validatePassword($this->password, $user->password)){
             $this->errorCode = self::ERROR_PASSWORD_INVALID;
+            
+        }
         else if ($user->is_active != '1')
             $this->errorCode = self::ERROR_PASSWORD_INVALID;
         else {
