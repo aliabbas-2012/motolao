@@ -38,7 +38,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="<?php echo $this->createUrl("/site/index"); ?>">
                     <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/logo.png" alt="" />
                 </a>
             </div>
@@ -250,7 +250,7 @@
                         <li><a href="javascript:void(0)"><i class="fa fa-gear fa-fw"></i>Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
+                        <li><a href="<?php echo $this->createUrl("/site/logout"); ?>"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
                         </li>
                     </ul>
                     <!-- end dropdown-user -->

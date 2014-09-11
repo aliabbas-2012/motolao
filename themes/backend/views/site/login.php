@@ -26,8 +26,10 @@ $form = $this->beginWidget('CActiveForm', array(
     <!-- Change this to a button or input when using this as a form -->
     <?php echo CHtml::submitButton('Login', array("class" => "btn btn-lg btn-success btn-block")); ?>
     <div class="clear"></div>
+    <?php if ($model->hasErrors()): ?>
     <div class="form-group alert alert-danger" style="margin-top: 15px;">
        <?php echo $form->errorSummary($model); ?> 
     </div>
+    <?php endif; ?>
 </fieldset>
 <?php $this->endWidget(); ?>

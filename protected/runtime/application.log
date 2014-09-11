@@ -1191,3 +1191,28 @@ in /var/www/html/motolao/protected/components/UserIdentity.php (17)
 in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
 in /var/www/html/motolao/protected/models/Users.php (166)
 in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/12 01:52:44 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/12 01:55:13 [error] [exception.CException] exception 'CException' with message 'LoginForm and its behaviors do not have a method or closure named "hasError".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/motolao/themes/backend/views/site/login.php(29): CComponent->__call('hasError', Array)
+#1 /var/www/html/motolao/themes/backend/views/site/login.php(29): LoginForm->hasError()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//site/login', Array, true)
+#6 /var/www/html/motolao/protected/controllers/SiteController.php(97): CController->render('//site/login', Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('login')
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/html/motolao/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/motolao/index.php/admin
+HTTP_REFERER=http://localhost/motolao/index.php
+---
