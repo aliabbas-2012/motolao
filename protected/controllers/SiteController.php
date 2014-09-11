@@ -90,7 +90,7 @@ class SiteController extends Controller {
         }
 
         // display the login form
-        $this->render('//site/loginsdds', array('model' => $model));
+        $this->render('//site/login', array('model' => $model));
     }
 
     /**
