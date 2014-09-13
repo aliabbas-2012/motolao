@@ -12,6 +12,9 @@ $this->menu = array(
     array('label' => 'Create Tour', 'url' => array('create')),
 );
 ?>
+<!-- Page-Level CSS -->
+<link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
+
 <div class="row">
     <!-- page header -->
     <div class="col-lg-12">
@@ -32,6 +35,7 @@ $this->menu = array(
                     <?php
                     $this->widget('zii.widgets.CDetailView', array(
                         'data' => $model,
+                        'htmlOptions' => array("class" => "table table-striped table-bordered table-hover"),
                         'attributes' => array(
                             'name',
                             'short_title',

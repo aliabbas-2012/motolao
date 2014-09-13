@@ -37,6 +37,25 @@
                             </div>
 
                         </div><!-- group -->
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'code'); ?>
+                            </div>
+                            <div class="col-lg-6">
+                                <?php echo $form->textField($model, 'code', array('class' => 'form-control', 'size' => 60, 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'code'); ?>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'flag_img'); ?>
+                            </div>
+                            <div class="col-lg-6">
+                                <?php echo $form->fileField($model, 'flag_img', array('class' => 'form-control', 'size' => 60, 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'flag_img'); ?>
+                            </div>
+                        </div>
+
 
 
                         <div class="form-group">
@@ -73,20 +92,8 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'activity_log', array('class' => 'control-label col-lg-2')); ?>
-                            <div class="col-lg-4">
-                                <?php echo $form->textArea($model, 'activity_log', array('class' => 'form-control')); ?>
-                                <?php echo $form->error($model, 'activity_log'); ?>
-
-                            </div>
-
-                        </div><!-- group -->
-
-                        <div class="form-group">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6 input-group-btn">
-
-
 
                                 <?php echo CHtml::submitButton('Save', array('class' => 'btn btn-primary')); ?>
 
