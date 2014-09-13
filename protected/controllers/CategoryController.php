@@ -17,6 +17,11 @@ class CategoryController extends Controller {
             'postOnly + delete', // we only allow deletion via POST request
         );
     }
+    
+    public function beforeAction($action) {
+       
+        return parent::beforeAction($action);
+    }
 
     /**
      * Specifies the access control rules.
@@ -97,8 +102,9 @@ class CategoryController extends Controller {
      * @param integer $id the ID of the model to be deleted
      */
     public function actionDelete($id, $related = "", $related_id = "") {
+
         if(!empty($related)){
-            $this->deleteRelations($model, $related, $related_id);
+            $this->deleteRelations($related, $related_id);
         }
         else {
             $this->loadModel($id)->delete();
@@ -179,7 +185,8 @@ class CategoryController extends Controller {
      * @param type $related
      * @param type $related_id
      */
-    public function deleteRelations($model, $related = "", $related_id = "") {
+    public function deleteRelations($related = "", $related_id = "") {
+       
         switch ($related) {
             case "categoryLangs":
                 CategoryLang::model()->deleteByPk($related_id);

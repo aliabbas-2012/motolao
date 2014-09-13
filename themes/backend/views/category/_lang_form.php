@@ -15,10 +15,14 @@
                 <div class="row">
                     <div class="col-lg-9">
                         <?php
+                        $option = array("id" => $id,"related"=>"categoryLangs");
+                        if(!empty($model->id)){
+                            $option['related_id'] = $model->id;
+                        }
                         $form = $this->beginWidget('CActiveForm', array(
                             'id' => 'category-form',
                             'enableAjaxValidation' => false,
-                            'action' => $this->createUrl("/category/view", array("id" => $id,"related"=>"categoryLangs")),
+                            'action' => $this->createUrl("/category/view",$option ),
                         ));
                         $form->hiddenField($model, "parent_id")
                         ?>
