@@ -34,6 +34,42 @@
             <li class="<?php echo $this->id == "site" && $this->action->id == "index" ? "selected" : "" ?>">
                 <a href="<?php echo $this->createUrl("/site/index"); ?>"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
             </li>
+            <li class="<?php echo $this->id == "category" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/category/index"); ?>"><i class="fa fa-edit fa-fw"></i> Category<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/category/index/", array("view" => "flot")); ?>">List</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/category/create/", array("view" => "morris")); ?>">Create</a>
+                    </li>
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "tour" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/tour/index"); ?>"><i class="fa fa-edit fa-fw"></i> Tour<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/tour/index/", array("view" => "flot")); ?>">List</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/tour/create/", array("view" => "morris")); ?>">Create</a>
+                    </li>
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "language" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/language/index"); ?>"><i class="fa fa-edit fa-fw"></i> Language<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/language/index/", array("view" => "flot")); ?>">List</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/language/create/", array("view" => "morris")); ?>">Create</a>
+                    </li>
+                </ul>
+                <!-- second-level-items -->
+            </li>
             <?php
             if (strstr(Yii::app()->request->hostInfo, "localhost")) {
                 $this->renderPartial("//layouts/_menus_local_host");
@@ -46,7 +82,7 @@
 <!-- end sidebar-collapse -->
 <!--  page-wrapper -->
 <div id="page-wrapper">
-<?php echo $content; ?>
+    <?php echo $content; ?>
 </div>
 <!-- end page-wrapper -->
 <?php $this->endContent(); ?>
