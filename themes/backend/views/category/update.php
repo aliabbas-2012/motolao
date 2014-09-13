@@ -16,6 +16,13 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Category <?php echo $model->id; ?></h1>
+<div class="row">
+    <!-- page header -->
+    <div class="col-lg-12">
+        <h1 class="page-header">Update Category <?php echo $model->id; ?></h1>
+    </div>
+    <!--end page header -->
+</div>
+
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
