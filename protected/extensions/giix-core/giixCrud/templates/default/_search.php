@@ -47,7 +47,9 @@
                         <div class="form-group">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6 input-group-btn">
-                                <?php echo "<?php echo CHtml::submitButton('Search',array('class' => 'btn btn-primary'<?php echo CHtml::submitButton('Search',array('class' => 'btn btn-primary'/div>
+                                <?php echo "<?php echo CHtml::submitButton('Search',array('class' => 'btn btn-primary')); ?>\n"; ?>
+                            </div>
+                        </div>
 
 
                         <?php echo "<?php \$this->endWidget(); ?>\n"; ?>
