@@ -9,7 +9,7 @@
         <!-- Form Elements -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Category Languages
+               Create or Edit Category Languages
             </div>
             <div class="panel-body">
                 <div class="row">

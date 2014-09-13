@@ -96,9 +96,14 @@ class CategoryController extends Controller {
      * If deletion is successful, the browser will be redirected to the 'admin' page.
      * @param integer $id the ID of the model to be deleted
      */
-    public function actionDelete($id) {
-        $this->loadModel($id)->delete();
-
+    public function actionDelete($id, $related = "", $related_id = "") {
+        if(!empty($related)){
+            $this->deleteRelations($model, $related, $related_id);
+        }
+        else {
+            $this->loadModel($id)->delete();
+        }
+       
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
@@ -165,6 +170,21 @@ class CategoryController extends Controller {
             default:
                 $model->categoryLangs = new CategoryLang;
                 $model->categoryLangs->parent_id = $model->id;
+                break;
+        }
+    }
+    /**
+     * 
+     * @param type $model
+     * @param type $related
+     * @param type $related_id
+     */
+    public function deleteRelations($model, $related = "", $related_id = "") {
+        switch ($related) {
+            case "categoryLangs":
+                CategoryLang::model()->deleteByPk($related_id);
+                break;
+            default:
                 break;
         }
     }

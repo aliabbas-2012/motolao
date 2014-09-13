@@ -41,7 +41,7 @@ $this->menu = array(
                             array(
                                 'name' => 'parent',
                                 'value' => isset($model->parent_cat) ? $model->parent_cat->name : "",
-                                'visible'=>isset($model->parent_cat)?true:false,
+                                'visible' => isset($model->parent_cat) ? true : false,
                             ),
                             'url',
                             'meta_title',
@@ -56,4 +56,15 @@ $this->menu = array(
     </div>
 </div>    
 <div class="clear"></div>
-<?php $this->renderPartial("//category/_lang_form",array("model"=>$model->categoryLangs,"id"=>$model->id)); ?>
+<?php
+$criteria = new CDbCriteria();
+$criteria->addCondition("parent_id =".$model->id);
+$lang = new CActiveDataProvider('CategoryLang', array(
+    'criteria' => $criteria,
+));
+
+if (count($lang->getTotalItemCount()) > 0) {
+    $this->renderPartial("//category/_languages", array("languages" => $lang));
+}
+?>
+<?php $this->renderPartial("//category/_lang_form", array("model" => $model->categoryLangs, "id" => $model->id)); ?>

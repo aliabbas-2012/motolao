@@ -96,32 +96,19 @@ class CategoryLang extends DTActiveRecord {
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id, true);
-
         $criteria->compare('name', $this->name, true);
-
         $criteria->compare('lang_id', $this->lang_id);
-
         $criteria->compare('parent_id', $this->parent_id);
-
         $criteria->compare('url', $this->url, true);
-
         $criteria->compare('meta_title', $this->meta_title, true);
-
         $criteria->compare('meta_description', $this->meta_description, true);
-
         $criteria->compare('description', $this->description, true);
-
         $criteria->compare('create_time', $this->create_time, true);
-
         $criteria->compare('create_user_id', $this->create_user_id, true);
-
         $criteria->compare('update_time', $this->update_time, true);
-
         $criteria->compare('update_user_id', $this->update_user_id, true);
-
         $criteria->compare('activity_log', $this->activity_log, true);
-
-        return new CActiveDataProvider('category_langs', array(
+        return new CActiveDataProvider('CategoryLang', array(
             'criteria' => $criteria,
         ));
     }

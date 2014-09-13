@@ -51,7 +51,8 @@ class Category extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'categoryLangs'=>array(self::HAS_MANY, 'CategoryLang', 'category_id'),
+            'categoryLangs'=>array(self::HAS_MANY, 'CategoryLang', 'parent_id'),
+            'exist_categoryLangs'=>array(self::HAS_MANY, 'CategoryLang', 'parent_id'),
             'tours'=>array(self::HAS_MANY, 'Tour', 'category_id'),
             'parent_cat'=>array(self::BELONGS_TO, 'Category', 'parent'),
         );
