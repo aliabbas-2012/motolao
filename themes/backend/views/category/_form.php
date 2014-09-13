@@ -51,9 +51,6 @@
                                 ?>
                                 <?php echo $form->error($model, 'parent'); ?>
                             </div>
-
-
-
                         </div>
 
                         <div class="form-group">

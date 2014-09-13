@@ -38,6 +38,8 @@ $this->menu = array(
                         'htmlOptions' => array("class" => "table table-striped table-bordered table-hover"),
                         'attributes' => array(
                             'name',
+                            'code',
+                            'flag_img',
                             'meta_title',
                             'meta_description',
                             'description',

@@ -9,7 +9,7 @@
         <!-- Form Elements -->
         <div class="panel panel-default">
             <div class="panel-heading">
-
+                Category Languages
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -18,7 +18,9 @@
                         $form = $this->beginWidget('CActiveForm', array(
                             'id' => 'category-form',
                             'enableAjaxValidation' => false,
+                            'action' => $this->createUrl("/category/view", array("id" => $id,"related"=>"categoryLangs")),
                         ));
+                        $form->hiddenField($model, "parent_id")
                         ?>
 
                         <p class="form-group alert alert-info">Fields with <span class="required">*</span> are required.</p>
@@ -37,23 +39,17 @@
 
                         <div class="form-group">
                             <div class="col-lg-2">
-                                <?php echo $form->labelEx($model, 'parent'); ?> 
+                                <?php echo $form->labelEx($model, 'lang_id'); ?> 
                             </div>
                             <div class="col-lg-6">
                                 <?php
                                 $criteria = new CDbCriteria();
-                                $criteria->addCondition("parent = 0");
-                                if (!$model->isNewRecord) {
-                                    $criteria->addCondition("id <>" . $model->id);
-                                }
-                                $categories = array("" => "Select") + CHtml::listData(Category::model()->findAll($criteria), "id", "name");
-                                echo $form->dropDownList($model, 'parent', $categories, array('class' => 'form-control'));
+                                $criteria->addCondition("Lower(name)<>'english'");
+                                $languages = array("" => "Select") + CHtml::listData(Language::model()->findAll($criteria), "id", "name");
+                                echo $form->dropDownList($model, 'lang_id', $languages, array('class' => 'form-control'));
                                 ?>
-                                <?php echo $form->error($model, 'parent'); ?>
+                                <?php echo $form->error($model, 'lang_id'); ?>
                             </div>
-
-
-
                         </div>
 
                         <div class="form-group">

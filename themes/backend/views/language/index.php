@@ -51,7 +51,7 @@ return false;
         <!-- Advanced Tables -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                <a class="search-button" href="#">Advanced Search</a>            
+                <a class="search-button" href="javascript:void(0)">Advanced Search</a>            
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
@@ -66,8 +66,9 @@ return false;
                         'filter' => $model,
                         'columns' => array(
                             'name',
+                            'code',
                             'meta_title',
-                            'meta_description',
+       
                             array(
                                 'class' => 'CButtonColumn',
                             ),

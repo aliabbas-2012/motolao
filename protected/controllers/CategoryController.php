@@ -26,7 +26,7 @@ class CategoryController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('delete', 'create', 'update','index', 'view'),
+                'actions' => array('delete', 'create', 'update', 'index', 'view'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -39,8 +39,9 @@ class CategoryController extends Controller {
      * Displays a particular model.
      * @param integer $id the ID of the model to be displayed
      */
-    public function actionView($id) {
+    public function actionView($id, $related = "", $related_id = "") {
         $model = $this->loadModel($id);
+        $this->manageRelations($model, $related, $related_id);
         $this->render('view', array(
             'model' => $model,
         ));
@@ -80,8 +81,9 @@ class CategoryController extends Controller {
 
         if (isset($_POST['Category'])) {
             $model->attributes = $_POST['Category'];
-            if ($model->save())
+            if ($model->save()) {
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('update', array(
@@ -106,7 +108,7 @@ class CategoryController extends Controller {
      * Manages all models.
      */
     public function actionIndex() {
-        
+
         $model = new Category('search');
         $model->unsetAttributes();  // clear any default values
         if (isset($_GET['Category']))
@@ -139,6 +141,31 @@ class CategoryController extends Controller {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'category-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
+        }
+    }
+
+    //manage relationships here
+
+    public function manageRelations($model, $related = "", $related_id = "") {
+        switch ($related) {
+            case "categoryLangs":
+                if (!empty($related_id)) {
+                    $model->$related = CategoryLang::model()->findByPk($related_id);
+                } else {
+                    $model->$related = new CategoryLang;
+                }
+                $model->$related->parent_id = $model->id;
+                if (isset($_POST['CategoryLang'])) {
+                    $model->$related->attributes = $_POST['CategoryLang'];
+                    if ($model->$related->save()) {
+                        $this->redirect(array('view', 'id' => $model->id, "related" => $related, "related_id" => $related_id));
+                    }
+                }
+                break;
+            default:
+                $model->categoryLangs = new CategoryLang;
+                $model->categoryLangs->parent_id = $model->id;
+                break;
         }
     }
 

@@ -10,6 +10,14 @@ $rules_admin = array(
     'admin' => '/site/login',
     'login' => '/site/login',
     'admin/config/<m:[\w-\.]+>' => '/configurations/load',
+    //admin create 
+    'admin/category/index' => '/category/index',
+    'admin/category/<id:[\w-\.]+>/view-<related:[\w-\.]+>-<related_id:[\w-\.]+>' => '/category/view',
+    'admin/category/<id:[\w-\.]+>/view-<related:[\w-\.]+>' => '/category/view',
+    'admin/category/<id:[\w-\.]+>/view' => '/category/view',
+    'admin/category/<id:[\w-\.]+>/update' => '/category/update',
+    'admin/category/<id:[\w-\.]+>/delete' => '/category/delete',
+    'admin/category/create' => 'category/create',
 );
 /* * ----------- advertinsg -----------* */
 ?>

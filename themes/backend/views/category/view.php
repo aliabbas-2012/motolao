@@ -55,4 +55,5 @@ $this->menu = array(
         </div>
     </div>
 </div>    
-
+<div class="clear"></div>
+<?php $this->renderPartial("//category/_lang_form",array("model"=>$model->categoryLangs,"id"=>$model->id)); ?>

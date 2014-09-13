@@ -34,7 +34,7 @@ class CategoryLang extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('name,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, parent_id', 'numerical', 'integerOnly' => true),
             array('name, url, meta_title', 'length', 'max' => 150),
             array('create_user_id, update_user_id', 'length', 'max' => 11),
@@ -52,8 +52,8 @@ class CategoryLang extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-             'lang'=>array(self::BELONGS_TO, 'Language', 'lang_id'),
-             'category'=>array(self::BELONGS_TO, 'Category', 'parent_id'),
+            'lang' => array(self::BELONGS_TO, 'Language', 'lang_id'),
+            'category' => array(self::BELONGS_TO, 'Category', 'parent_id'),
         );
     }
 
@@ -64,7 +64,7 @@ class CategoryLang extends DTActiveRecord {
         return array(
             'id' => 'Id',
             'name' => 'Name',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'parent_id' => 'Parent',
             'url' => 'Url',
             'meta_title' => 'Meta Title',
