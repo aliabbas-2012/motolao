@@ -1216,3 +1216,1695 @@ Stack trace:
 REQUEST_URI=/motolao/index.php/admin
 HTTP_REFERER=http://localhost/motolao/index.php
 ---
+2014/09/13 18:32:36 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/13 18:34:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/
+---
+2014/09/13 18:34:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:34:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:34:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ctegory".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('ctegory')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/motolao/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/motolao/index.php/ctegory
+---
+2014/09/13 18:34:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ctegory".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('ctegory')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/motolao/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/motolao/index.php/ctegory
+---
+2014/09/13 18:34:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ctegory".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('ctegory')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/motolao/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/motolao/index.php/ctegory
+---
+2014/09/13 18:35:13 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:15 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:35:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:36:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:36:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:36:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:36:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:36:47 [error] [exception.CException] exception 'CException' with message 'Property "GiiModule.0" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(513): CComponent->__set('0', 'web')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(276): CWebApplication->createController('gii')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/motolao/index.php/gii
+---
+2014/09/13 18:37:06 [error] [exception.CException] exception 'CException' with message 'Property "GiiModule.0" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(513): CComponent->__set('0', 'web')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(276): CWebApplication->createController('gii')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/motolao/index.php/gii
+---
+2014/09/13 18:37:07 [error] [exception.CException] exception 'CException' with message 'Property "GiiModule.0" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(513): CComponent->__set('0', 'web')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(276): CWebApplication->createController('gii')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/motolao/index.php/gii
+---
+2014/09/13 18:37:07 [error] [exception.CException] exception 'CException' with message 'Property "GiiModule.0" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(513): CComponent->__set('0', 'web')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(276): CWebApplication->createController('gii')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/motolao/index.php/gii
+---
+2014/09/13 18:37:20 [error] [exception.CException] exception 'CException' with message 'Property "GiiModule.0" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(513): CComponent->__set('0', 'web')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(86): CModule->configure(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php(206): CModule->__construct('gii', NULL, Array)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(282): YiiBase::createComponent('system.gii.GiiM...', 'gii', NULL, Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(337): CModule->getModule('gii')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(276): CWebApplication->createController('gii/login')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/login')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/motolao/index.php/gii/login
+---
+2014/09/13 18:37:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/login".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/login')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/motolao/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/motolao/index.php/gii/login
+---
+2014/09/13 18:37:40 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:37:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+---
+2014/09/13 18:37:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:21 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:44 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:38:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:39:11 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/index')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category/index
+---
+2014/09/13 18:39:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/motolao/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/motolao/index.php/category
+HTTP_REFERER=http://localhost/motolao/index.php/gii/crud/index
+---
+2014/09/13 18:59:47 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 18:59:48 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (128)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (43)
+2014/09/13 18:59:50 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (77)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:00:07 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:00:08 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (128)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (43)
+2014/09/13 19:00:09 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (77)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:00:09 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (77)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:00:23 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:00:23 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:00:55 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:00:55 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:08:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:08:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (117)
+2014/09/13 19:11:26 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDownField".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/motolao/themes/backend/views/category/_form.php(36): CComponent->__call('dropDownField', Array)
+#1 /var/www/html/motolao/themes/backend/views/category/_form.php(36): CActiveForm->dropDownField(Object(Category), 'parent')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#5 /var/www/html/motolao/themes/backend/views/category/create.php(24): CController->renderPartial('_form', Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#10 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CController->render('create', Array)
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/create')
+#22 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/motolao/index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/motolao/index.php/category/create
+---
+2014/09/13 19:11:58 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDropDownList".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/motolao/themes/backend/views/category/_form.php(36): CComponent->__call('dropDropDownLis...', Array)
+#1 /var/www/html/motolao/themes/backend/views/category/_form.php(36): CActiveForm->dropDropDownList(Object(Category), 'parent')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#5 /var/www/html/motolao/themes/backend/views/category/create.php(24): CController->renderPartial('_form', Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#10 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CController->render('create', Array)
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/create')
+#22 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/motolao/index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/motolao/index.php/category/create
+---
+2014/09/13 19:11:59 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "dropDropDownList".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/motolao/themes/backend/views/category/_form.php(36): CComponent->__call('dropDropDownLis...', Array)
+#1 /var/www/html/motolao/themes/backend/views/category/_form.php(36): CActiveForm->dropDropDownList(Object(Category), 'parent')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#5 /var/www/html/motolao/themes/backend/views/category/create.php(24): CController->renderPartial('_form', Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#10 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CController->render('create', Array)
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('create')
+#21 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/create')
+#22 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /var/www/html/motolao/index.php(14): CApplication->run()
+#24 {main}
+REQUEST_URI=/motolao/index.php/category/create
+---
+2014/09/13 19:12:05 [error] [php] Missing argument 3 for CActiveForm::dropDownList(), called in /var/www/html/motolao/themes/backend/views/category/_form.php on line 36 and defined (/var/www/html/frameworks/yii-1.1.15.022a51/framework/web/widgets/CActiveForm.php:845)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#2 /var/www/html/motolao/themes/backend/views/category/create.php(24): CategoryController->renderPartial()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CategoryController->renderPartial()
+#7 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CategoryController->render()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CategoryController->run()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/category/create
+in /var/www/html/motolao/themes/backend/views/category/_form.php (36)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (67)
+2014/09/13 19:12:05 [error] [php] Missing argument 3 for CActiveForm::dropDownList(), called in /var/www/html/motolao/themes/backend/views/category/_form.php on line 36 and defined (/var/www/html/frameworks/yii-1.1.15.022a51/framework/web/widgets/CActiveForm.php:845)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#2 /var/www/html/motolao/themes/backend/views/category/create.php(24): CategoryController->renderPartial()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CategoryController->renderPartial()
+#7 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CategoryController->render()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CategoryController->run()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/category/create
+in /var/www/html/motolao/themes/backend/views/category/_form.php (36)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (67)
+2014/09/13 19:12:06 [error] [php] Missing argument 3 for CActiveForm::dropDownList(), called in /var/www/html/motolao/themes/backend/views/category/_form.php on line 36 and defined (/var/www/html/frameworks/yii-1.1.15.022a51/framework/web/widgets/CActiveForm.php:845)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#2 /var/www/html/motolao/themes/backend/views/category/create.php(24): CategoryController->renderPartial()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CategoryController->renderPartial()
+#7 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CategoryController->render()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CategoryController->run()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/category/create
+in /var/www/html/motolao/themes/backend/views/category/_form.php (36)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (67)
+2014/09/13 19:14:27 [error] [exception.CException] exception 'CException' with message 'Property "CategoryController.isNewRecord" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/motolao/themes/backend/views/category/_form.php(39): CComponent->__get('isNewRecord')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#4 /var/www/html/motolao/themes/backend/views/category/create.php(24): CController->renderPartial('_form', Array)
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CController->render('create', Array)
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('create')
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/create')
+#21 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/html/motolao/index.php(14): CApplication->run()
+#23 {main}
+REQUEST_URI=/motolao/index.php/category/create
+---
+2014/09/13 19:14:29 [error] [exception.CException] exception 'CException' with message 'Property "CategoryController.isNewRecord" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/motolao/themes/backend/views/category/_form.php(39): CComponent->__get('isNewRecord')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#4 /var/www/html/motolao/themes/backend/views/category/create.php(24): CController->renderPartial('_form', Array)
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#9 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CController->render('create', Array)
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('create')
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/create')
+#21 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/html/motolao/index.php(14): CApplication->run()
+#23 {main}
+REQUEST_URI=/motolao/index.php/category/create
+---
+2014/09/13 19:14:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:14:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:15:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:15:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:14 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:14 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:29 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:29 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:30 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:30 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:57 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:57 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:58 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:16:58 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:17:16 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:17:16 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:17:16 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:17:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:17:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:17:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:18:02 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:18:02 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:18:02 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:19:08 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:19:08 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:19:08 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:19:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:19:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:19:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:19:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:19:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:19:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:21:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:21:41 [error] [php] Array to string conversion (/var/www/html/frameworks/yii-1.1.15.022a51/framework/web/helpers/CHtml.php:2019)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#3 /var/www/html/motolao/themes/backend/views/category/create.php(24): CategoryController->renderPartial()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CategoryController->renderPartial()
+#8 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CategoryController->render()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CategoryController->run()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/category/create
+in /var/www/html/motolao/themes/backend/views/category/_form.php (26)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (67)
+2014/09/13 19:22:07 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:22:07 [error] [php] Array to string conversion (/var/www/html/frameworks/yii-1.1.15.022a51/framework/web/helpers/CHtml.php:2019)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#3 /var/www/html/motolao/themes/backend/views/category/create.php(24): CategoryController->renderPartial()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CategoryController->renderFile()
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CategoryController->renderPartial()
+#8 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CategoryController->render()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CategoryController->run()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/category/create
+in /var/www/html/motolao/themes/backend/views/category/_form.php (26)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (67)
+2014/09/13 19:22:57 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:22:57 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:22:57 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:23:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:23:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:23:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:23:40 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:23:40 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:23:40 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:25:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:25:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:25:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:25:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:25:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:25:37 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:25:45 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:25:45 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:25:45 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (42)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:26:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:26:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (48)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:26:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (48)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:26:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:26:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (48)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:26:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (48)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:27:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:27:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (48)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:27:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (48)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:27:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:27:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (46)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:27:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (46)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:28:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:28:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (46)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:28:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (46)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:30:02 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:30:02 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:30:02 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:31:43 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:31:43 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:31:43 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:31:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:31:44 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:32:03 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:32:03 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:32:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:32:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:33:03 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:33:03 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:34:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:34:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:35:18 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:35:18 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:36:15 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:36:15 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:36:39 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:36:39 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:37:13 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:37:13 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:37:34 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:37:34 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:37:43 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:37:43 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:39:07 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:39:07 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:40:10 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:40:10 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:40:48 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:40:48 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:41:11 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:41:11 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:41:48 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:41:48 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:41:50 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:41:50 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:41:50 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:42:35 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:42:35 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:42:35 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:42:52 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (61)
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:42:52 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:42:52 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:49:41 [error] [php] include(/var/www/html/motolao/protected/components/DTWebUser.php): failed to open stream: Permission denied (/var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php(196): import()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CModule.php(386): createComponent()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(209): CWebApplication->getComponent()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CAccessControlFilter.php(132): CWebApplication->getUser()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CategoryController->run()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/category/create
+in /var/www/html/motolao/index.php (14)
+2014/09/13 19:50:08 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/13 19:50:08 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:50:08 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:51:42 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:51:42 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:51:42 [error] [php] include(User.php): failed to open stream: No such file or directory (/var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/html/motolao/protected/components/DTWebUser.php(19): spl_autoload_call()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php(111): DTWebUser->getUser()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/auth/CWebUser.php(146): DTWebUser->__get()
+#3 /var/www/html/motolao/themes/backend/views/layouts/column2.php(14): DTWebUser->__get()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CategoryController->renderInternal()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(784): CategoryController->renderFile()
+#7 /var/www/html/motolao/protected/controllers/CategoryController.php(67): CategoryController->render()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CategoryController->runAction()
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CategoryController->filterAccessControl()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CategoryController->runActionWithFilters()
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CategoryController->run()
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/category/create
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+in /var/www/html/motolao/themes/backend/views/layouts/column2.php (14)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (67)
+2014/09/13 19:51:59 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:51:59 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/_form.php (49)
+in /var/www/html/motolao/themes/backend/views/category/create.php (24)
+2014/09/13 19:51:59 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)

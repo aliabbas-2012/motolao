@@ -4,91 +4,119 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="form">
+<div class="row">
+    <div class="col-lg-12">
+        <!-- Form Elements -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'category-form',
-	// Please note: When you enable ajax validation, make sure the corresponding
-	// controller action is handling ajax validation correctly.
-	// There is a call to performAjaxValidation() commented in generated controller code.
-	// See class documentation of CActiveForm for details on this.
-	'enableAjaxValidation'=>false,
-)); ?>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <?php
+                        $form = $this->beginWidget('CActiveForm', array(
+                            'id' => 'category-form',
+                            'enableAjaxValidation' => false,
+                        ));
+                        ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+                        <p class="form-group alert alert-info">Fields with <span class="required">*</span> are required.</p>
 
-	<?php echo $form->errorSummary($model); ?>
+                        <?php echo $form->errorSummary($model, '', '', array('class' => 'alert alert-block alert-danger')); ?>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>150)); ?>
-		<?php echo $form->error($model,'name'); ?>
-	</div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'name'); ?>
+                            </div>
+                            <div class="col-lg-6">
+                                <?php echo $form->textField($model, 'name', array('class' => 'form-control', 'size' => 60, 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'name'); ?>
+                            </div>
+                        </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'parent'); ?>
-		<?php echo $form->textField($model,'parent'); ?>
-		<?php echo $form->error($model,'parent'); ?>
-	</div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'parent'); ?> 
+                            </div>
+                            <div class="col-lg-6">
+                                <?php
+                                $criteria = new CDbCriteria();
+                                $criteria->addCondition("parent = 0");
+                                if (!$model->isNewRecord) {
+                                    $criteria->addCondition("id <>" . $model->id);
+                                }
+                                $categories = array("" => "Select") + CHtml::listData(Category::model()->findAll($criteria), "id", "name");
+                                echo $form->dropDownList($model, 'parent', $categories, array('class' => 'form-control'));
+                                ?>
+                                <?php echo $form->error($model, 'parent'); ?>
+                            </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'url'); ?>
-		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>150)); ?>
-		<?php echo $form->error($model,'url'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'meta_title'); ?>
-		<?php echo $form->textField($model,'meta_title',array('size'=>60,'maxlength'=>150)); ?>
-		<?php echo $form->error($model,'meta_title'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'meta_description'); ?>
-		<?php echo $form->textArea($model,'meta_description',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'meta_description'); ?>
-	</div>
+                        </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'description'); ?>
-	</div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'url'); ?>
+                            </div>
+                            <div class="col-lg-6">
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'create_time'); ?>
-		<?php echo $form->textField($model,'create_time'); ?>
-		<?php echo $form->error($model,'create_time'); ?>
-	</div>
+                                <?php echo $form->textField($model, 'url', array('class' => 'form-control', 'size' => 60, 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'url'); ?>
+                            </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'create_user_id'); ?>
-		<?php echo $form->textField($model,'create_user_id',array('size'=>11,'maxlength'=>11)); ?>
-		<?php echo $form->error($model,'create_user_id'); ?>
-	</div>
+                        </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'update_time'); ?>
-		<?php echo $form->textField($model,'update_time'); ?>
-		<?php echo $form->error($model,'update_time'); ?>
-	</div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'meta_title'); ?>
+                            </div>
+                            <div class="col-lg-6">
+                                <?php echo $form->textField($model, 'meta_title', array('class' => 'form-control', 'size' => 60, 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'meta_title'); ?>
+                            </div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'update_user_id'); ?>
-		<?php echo $form->textField($model,'update_user_id',array('size'=>11,'maxlength'=>11)); ?>
-		<?php echo $form->error($model,'update_user_id'); ?>
-	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'activity_log'); ?>
-		<?php echo $form->textArea($model,'activity_log',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'activity_log'); ?>
-	</div>
+                        </div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'meta_description'); ?>
+                            </div>
+                            <div class="col-lg-6">
 
-<?php $this->endWidget(); ?>
+                                <?php echo $form->textArea($model, 'meta_description', array('class' => 'form-control', 'rows' => 6, 'cols' => 50)); ?>
+                                <?php echo $form->error($model, 'meta_description'); ?>
+                            </div>
 
-</div><!-- form -->
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'description'); ?>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <?php echo $form->textArea($model, 'description', array('class' => 'form-control', 'rows' => 6, 'cols' => 50)); ?>
+                                <?php echo $form->error($model, 'description'); ?>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-6 input-group-btn">
+                                <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array("class" => "btn btn-primary")); ?>
+                            </div>
+                        </div>
+
+
+                        <?php $this->endWidget(); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+<!-- form -->

@@ -327,3 +327,14 @@ table.dataTable thead .sorting:after {
     margin: 15px 0;
 }
 
+.form-group {
+    clear: both;
+/*    min-height: 30px;;*/
+}
+.form-group>div {
+    margin-bottom: 15px;
+}
+.form-group>div .errorMessage {
+    color:red;
+    font-family: inherit;
+}

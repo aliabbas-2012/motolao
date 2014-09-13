@@ -26,8 +26,8 @@ class CategoryController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('delete', 'create', 'update' . 'index', 'view'),
-                'users' => array('admin'),
+                'actions' => array('delete', 'create', 'update','index', 'view'),
+                'users' => array('@'),
             ),
             array('deny', // deny all users
                 'users' => array('*'),
@@ -40,8 +40,9 @@ class CategoryController extends Controller {
      * @param integer $id the ID of the model to be displayed
      */
     public function actionView($id) {
+        $model = $this->loadModel($id);
         $this->render('view', array(
-            'model' => $this->loadModel($id),
+            'model' => $model,
         ));
     }
 
@@ -105,6 +106,7 @@ class CategoryController extends Controller {
      * Manages all models.
      */
     public function actionIndex() {
+        
         $model = new Category('search');
         $model->unsetAttributes();  // clear any default values
         if (isset($_GET['Category']))

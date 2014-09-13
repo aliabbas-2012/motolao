@@ -2,14 +2,14 @@
 /* @var $this CategoryController */
 /* @var $model Category */
 
-$this->breadcrumbs=array(
-	'Categories'=>array('index'),
-	'Manage',
+$this->breadcrumbs = array(
+    'Categories' => array('index'),
+    'Manage',
 );
 
-$this->menu=array(
-	array('label'=>'List Category', 'url'=>array('index')),
-	array('label'=>'Create Category', 'url'=>array('create')),
+$this->menu = array(
+    array('label' => 'List Category', 'url' => array('index')),
+    array('label' => 'Create Category', 'url' => array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -25,42 +25,62 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
+<!-- Page-Level CSS -->
+<link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet" />
 
-<h1>Manage Categories</h1>
+<div class="row">
+    <!--  page header -->
+    <div class="col-lg-12">
+        <h1 class="page-header">Manage Categories</h1>
+    </div>
+    <!-- end  page header -->
+</div>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
+    <?php
+    $this->renderPartial('_search', array(
+        'model' => $model,
+    ));
+    ?>
 </div><!-- search-form -->
+<div class="row">
+    <div class="col-lg-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <?php echo CHtml::link('Advanced Search', '#', array('class' => 'search-button')); ?>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <?php
+                    $this->widget('zii.widgets.grid.CGridView', array(
+                        'id' => 'category-grid',
+                        'dataProvider' => $model->search(),
+                        'htmlOptions' => array(
+                            'class' => 'table-responsive'
+                        ),
+                        'itemsCssClass' => 'table table-striped table-bordered table-hover',
+                        'filter' => $model,
+                        'columns' => array(
+                            'name',
+                            array(
+                                'name' => 'parent',
+                                'value' => 'isset($data->parent_cat)?$data->parent_cat->name:""'
+                            ),
+                            'url',
+                            'meta_title',
+                            array(
+                                'class' => 'CButtonColumn',
+                            ),
+                        ),
+                    ));
+                    ?>
 
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'category-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'id',
-		'name',
-		'parent',
-		'url',
-		'meta_title',
-		'meta_description',
-		/*
-		'description',
-		'create_time',
-		'create_user_id',
-		'update_time',
-		'update_user_id',
-		'activity_log',
-		*/
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>    
+
+
+

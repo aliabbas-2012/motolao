@@ -53,6 +53,7 @@ class Category extends DTActiveRecord {
         return array(
             'categoryLangs'=>array(self::HAS_MANY, 'CategoryLang', 'category_id'),
             'tours'=>array(self::HAS_MANY, 'Tour', 'category_id'),
+            'parent_cat'=>array(self::BELONGS_TO, 'Category', 'parent'),
         );
     }
 
