@@ -54,7 +54,7 @@ class Tour extends DTActiveRecord {
         // class name for the relations automatically generated below.
         return array(
             'category' => array(self::BELONGS_TO, 'Category', 'category_id'),
-            'tour_langs'=>array(self::HAS_MANY, 'TourLang', 'category_id'),
+            'tour_langs' => array(self::HAS_MANY, 'TourLang', 'category_id'),
         );
     }
 
@@ -125,7 +125,7 @@ class Tour extends DTActiveRecord {
 
         $criteria->compare('activity_log', $this->activity_log, true);
 
-        return new CActiveDataProvider('tours', array(
+        return new CActiveDataProvider('Tour', array(
             'criteria' => $criteria,
         ));
     }
