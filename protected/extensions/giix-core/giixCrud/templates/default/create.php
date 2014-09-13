@@ -21,7 +21,13 @@ $this->menu=array(
 	array('label'=>'Manage <?php echo $this->modelClass; ?>', 'url'=>array('admin')),
 );
 ?>
+<div class="row">
+    <!-- page header -->
+    <div class="col-lg-12">
+        <h1 class="page-header">Create <?php echo $this->modelClass; ?></h1>
+    </div>
+    <!--end page header -->
+</div>
 
-<h1>Create <?php echo $this->modelClass; ?></h1>
 
 <?php echo "<?php \$this->renderPartial('_form', array('model'=>\$model)); ?>"; ?>

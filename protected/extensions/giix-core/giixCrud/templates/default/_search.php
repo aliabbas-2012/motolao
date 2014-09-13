@@ -10,32 +10,52 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="wide form">
+<div class="row">
+    <div class="col-lg-12">
+        <!-- Form Elements -->
+        <div class="panel panel-default">
 
-    <?php echo "<?php \$form=\$this->beginWidget('CActiveForm', array(
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-9">
+
+                        <?php echo "<?php \$form=\$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl(\$this->route),
 	'method'=>'get',
 )); ?>\n"; ?>
 
-    <?php foreach ($this->tableSchema->columns as $column) { ?>
-        <?php
-        if ((!$column->autoIncrement) && !in_array($column->name, $this->notavailableColumns)) {
-            $field = $this->generateInputField($this->modelClass, $column);
-            if (strpos($field, 'password') !== false) {
-                continue;
-                ?>
-                <div class="row">
-                    <?php echo "<?php  \$form->label(\$model,'{$column->name}'); ?>\n"; ?>
-                    <?php echo "<?php  " . $this->generateActiveField($this->modelClass, $column) . "; ?>\n"; ?>
+                        <?php foreach ($this->tableSchema->columns as $column) { ?>
+                            <?php
+                            if ((!$column->autoIncrement) && !in_array($column->name, $this->notavailableColumns)) {
+                                $field = $this->generateInputField($this->modelClass, $column);
+                                if (strpos($field, 'password') !== false) {
+                                    continue;
+                                    ?>
+                                    <div class="form-group">
+                                        <?php echo "<?php  \$form->label(\$model,'{$column->name}'); ?>\n"; ?>
+                                        <div class="col-lg-6">
+                                            <?php echo "<?php  " . $this->generateActiveField($this->modelClass, $column) . "; ?>\n"; ?>
+                                        </div>
+
+                                    </div>
+
+                                    <?php
+                                }
+                            }
+                        }
+                        ?>
+                        <div class="form-group">
+                            <div class="col-lg-2"></div>
+                            <div class="col-lg-6 input-group-btn">
+                                <?php echo "<?php echo CHtml::submitButton('Search',array('class' => 'btn btn-primary'<?php echo CHtml::submitButton('Search',array('class' => 'btn btn-primary'/div>
+
+
+                        <?php echo "<?php \$this->endWidget(); ?>\n"; ?>
+                    </div>
                 </div>
-
-            <?php }
-        }
-    } ?>
-    <div class="row buttons">
-    <?php echo "<?php echo CHtml::submitButton('Search'); ?>\n"; ?>
+            </div>
+        </div>
     </div>
+</div>    
 
-<?php echo "<?php \$this->endWidget(); ?>\n"; ?>
 
-</div><!-- search-form -->

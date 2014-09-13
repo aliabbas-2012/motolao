@@ -8,20 +8,32 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Language', 'url'=>array('index')),
-	array('label'=>'Create Language', 'url'=>array('create')),
-	array('label'=>'Update Language', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Language', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Language', 'url'=>array('admin')),
+array('label'=>'List Language', 'url'=>array('index')),
+array('label'=>'Create Language', 'url'=>array('create')),
+
 );
 ?>
+<div class="row">
+    <!-- page header -->
+    <div class="col-lg-12">
+        <h1 class="page-header">View Language #<?php echo $model->id; ?></h1>
+    </div>
+    <!--end page header -->
+</div>
 
-<h1>View Language #<?php echo $model->id; ?></h1>
+<div class="row">
+    <div class="col-lg-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <?php $this->widget('zii.widgets.CDetailView', array(
+                    'data'=>$model,
+                    'attributes'=>array(
+                    		'id',
 		'name',
 		'meta_title',
 		'meta_description',
@@ -31,5 +43,11 @@ $this->menu=array(
 		'update_time',
 		'update_user_id',
 		'activity_log',
-	),
-)); ?>
+                    ),
+                    )); ?>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

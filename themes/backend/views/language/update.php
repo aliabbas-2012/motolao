@@ -9,13 +9,16 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Language', 'url'=>array('index')),
-	array('label'=>'Create Language', 'url'=>array('create')),
-	array('label'=>'View Language', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Language', 'url'=>array('admin')),
+array('label'=>'List Language', 'url'=>array('index')),
+array('label'=>'Create Language', 'url'=>array('create')),
+
 );
 ?>
-
-<h1>Update Language <?php echo $model->id; ?></h1>
-
+<div class="row">
+    <!-- page header -->
+    <div class="col-lg-12">
+        <h1 class="page-header">Update Language <?php echo $model->id; ?></h1>
+    </div>
+    <!--end page header -->
+</div>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

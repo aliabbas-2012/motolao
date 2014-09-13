@@ -41,7 +41,7 @@ $this->menu = array(
                             array(
                                 'name' => 'parent',
                                 'value' => isset($model->parent_cat) ? $model->parent_cat->name : "",
-                                'visible' => isset($model->parent_cat) ? true : false,
+                                'visible'=>isset($model->parent_cat)?true:false,
                             ),
                             'url',
                             'meta_title',

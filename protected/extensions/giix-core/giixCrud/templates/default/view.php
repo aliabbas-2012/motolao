@@ -9,8 +9,8 @@
 /* @var $model <?php echo $this->getModelClass(); ?> */
 
 <?php
-$nameColumn=$this->guessNameColumn($this->tableSchema->columns);
-$label=$this->pluralize($this->class2name($this->modelClass));
+$nameColumn = $this->guessNameColumn($this->tableSchema->columns);
+$label = $this->pluralize($this->class2name($this->modelClass));
 echo "\$this->breadcrumbs=array(
 	'$label'=>array('index'),
 	\$model->{$nameColumn},
@@ -18,22 +18,40 @@ echo "\$this->breadcrumbs=array(
 ?>
 
 $this->menu=array(
-	array('label'=>'List <?php echo $this->modelClass; ?>', 'url'=>array('index')),
-	array('label'=>'Create <?php echo $this->modelClass; ?>', 'url'=>array('create')),
-	array('label'=>'Update <?php echo $this->modelClass; ?>', 'url'=>array('update', 'id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>)),
-	array('label'=>'Delete <?php echo $this->modelClass; ?>', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage <?php echo $this->modelClass; ?>', 'url'=>array('admin')),
+array('label'=>'List <?php echo $this->modelClass; ?>', 'url'=>array('index')),
+array('label'=>'Create <?php echo $this->modelClass; ?>', 'url'=>array('create')),
+
 );
 ?>
+<div class="row">
+    <!-- page header -->
+    <div class="col-lg-12">
+        <h1 class="page-header">View <?php echo $this->modelClass . " #<?php echo \$model->{$this->tableSchema->primaryKey}; ?>"; ?></h1>
+    </div>
+    <!--end page header -->
+</div>
 
-<h1>View <?php echo $this->modelClass." #<?php echo \$model->{$this->tableSchema->primaryKey}; ?>"; ?></h1>
+<div class="row">
+    <div class="col-lg-12">
+        <!-- Advanced Tables -->
+        <div class="panel panel-default">
+            <div class="panel-heading">
 
-<?php echo "<?php"; ?> $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-<?php
-foreach($this->tableSchema->columns as $column)
-	echo "\t\t'".$column->name."',\n";
-?>
-	),
-)); ?>
+            </div>
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <?php echo "<?php"; ?> $this->widget('zii.widgets.CDetailView', array(
+                    'data'=>$model,
+                    'attributes'=>array(
+                    <?php
+                    foreach ($this->tableSchema->columns as $column)
+                        echo "\t\t'" . $column->name . "',\n";
+                    ?>
+                    ),
+                    )); ?>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

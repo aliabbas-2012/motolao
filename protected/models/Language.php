@@ -108,7 +108,7 @@ class Language extends DTActiveRecord {
 
         $criteria->compare('activity_log', $this->activity_log, true);
 
-        return new CActiveDataProvider('languages', array(
+        return new CActiveDataProvider('Language', array(
             'criteria' => $criteria,
         ));
     }
