@@ -3016,3 +3016,19 @@ in /var/www/html/motolao/protected/controllers/CategoryController.php (43)
 in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
 in /var/www/html/motolao/protected/models/Users.php (166)
 in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/13 20:10:52 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (128)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (43)
+2014/09/13 20:10:52 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/13 20:11:39 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (128)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (43)
+2014/09/13 20:11:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)

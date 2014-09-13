@@ -35,10 +35,14 @@ $this->menu = array(
                     <?php
                     $this->widget('zii.widgets.CDetailView', array(
                         'data' => $model,
-                        'htmlOptions' => array("class"=>"table table-striped table-bordered table-hover"),
+                        'htmlOptions' => array("class" => "table table-striped table-bordered table-hover"),
                         'attributes' => array(
                             'name',
-                            'parent',
+                            array(
+                                'name' => 'parent',
+                                'value' => isset($model->parent_cat) ? $model->parent_cat->name : "",
+                                'visible' => isset($model->parent_cat) ? true : false,
+                            ),
                             'url',
                             'meta_title',
                             'meta_description',
