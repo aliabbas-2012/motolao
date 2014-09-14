@@ -57,8 +57,15 @@ class LanguageController extends Controller {
 
         if (isset($_POST['Language'])) {
             $model->attributes = $_POST['Language'];
-            if ($model->save())
+            $img_file = DTUploadedFile::getInstance($model, 'flag_img');
+            $model->flag_img = $img_file;
+            if ($model->save()) {
+                $upload_path = DTUploadedFile::creeatRecurSiveDirectories(array("language", $model->id));
+                if (!empty($img_file)) {
+                    $img_file->saveAs($upload_path . str_replace(" ", "_", $model->flag_img));
+                }
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('create', array(
@@ -73,6 +80,13 @@ class LanguageController extends Controller {
      */
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
+
+        $img_file = DTUploadedFile::getInstance($model, 'flag_img');
+        if (!empty($img_file)) {
+            $model->flag_img = $img_file;
+        } else {
+            $model->flag_img = $model->old_image;
+        }
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);

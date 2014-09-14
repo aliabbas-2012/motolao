@@ -15,7 +15,8 @@
                             'id' => 'language-form',
                             'enableAjaxValidation' => false,
                             'htmlOptions' => array(
-                                'class' => 'form-horizontal'
+                                'class' => 'form-horizontal',
+                                'enctype' => 'multipart/form-data'
                             )
                         ));
                         ?>
@@ -24,7 +25,7 @@
                             <?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
                         </p>
 
-                        <?php echo $form->errorSummary($model, '','', array('class' => 'alert alert-block alert-danger')); ?>
+                        <?php echo $form->errorSummary($model, '', '', array('class' => 'alert alert-block alert-danger')); ?>
 
 
 
@@ -52,6 +53,11 @@
                             </div>
                             <div class="col-lg-6">
                                 <?php echo $form->fileField($model, 'flag_img', array('class' => 'form-control', 'size' => 60, 'maxlength' => 150)); ?>
+                                <?php
+                                if (!empty($model->flag_img)) {
+                                    echo CHtml::link($model->flag_img, $model->show_image['link'], array("target" => "_blank"));
+                                }
+                                ?>
                                 <?php echo $form->error($model, 'flag_img'); ?>
                             </div>
                         </div>

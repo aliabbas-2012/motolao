@@ -39,7 +39,11 @@ $this->menu = array(
                         'attributes' => array(
                             'name',
                             'code',
-                            'flag_img',
+                            array(
+                                'name' => 'flag_img',
+                                'value' => !empty($model->flag_img) ? CHtml::link($model->show_image["image"], $model->show_image["link"], array("target" => "_blank", "class" => "detail_view_image_link")) : "",
+                                'type' => 'raw',
+                            ),
                             'meta_title',
                             'meta_description',
                             'description',

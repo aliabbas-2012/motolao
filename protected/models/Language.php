@@ -20,6 +20,12 @@
 class Language extends DTActiveRecord {
 
     /**
+     * for showing image link and image
+     * @var type 
+     */
+    public $show_image, $old_image;
+
+    /**
      * @return string the associated database table name
      */
     public function tableName() {
@@ -37,7 +43,9 @@ class Language extends DTActiveRecord {
             array("name,code", "unique"),
             array('name, meta_title', 'length', 'max' => 150),
             array('create_user_id, update_user_id', 'length', 'max' => 11),
-            array('flag_img,meta_description, description, activity_log', 'safe'),
+            array('flag_img,show_image,old_image,meta_description, description, activity_log', 'safe'),
+            array('flag_img', 'file', 'allowEmpty' => true,
+                'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
             array('id, name, meta_title, meta_description, description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -117,6 +125,32 @@ class Language extends DTActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    /**
+     * 
+     */
+    public function afterFind() {
+        if (!empty($this->flag_img)) {
+            $this->show_image['link'] = Yii::app()->baseUrl . "/uploads/language/" . $this->id . "/" . str_replace(" ", "_", $this->flag_img);
+            $this->show_image['image'] = CHtml::image($this->show_image['link']);
+            $this->old_image = $this->flag_img;
+        }
+
+        return parent::afterFind();
+    }
+
+    /**
+     * delete image
+     * @return type
+     */
+    public function beforeDelete() {
+        $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
+        $path.= "uploads" . DIRECTORY_SEPARATOR . "language" . DIRECTORY_SEPARATOR . $this->primaryKey . DIRECTORY_SEPARATOR;
+
+        DTUploadedFile::deleteExistingFile($path . str_replace(" ", "_", $this->flag_img));
+
+        return parent::beforeDelete();
     }
 
 }
