@@ -89,8 +89,17 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
                     <?php $this->renderPartial("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id)); ?>
                 </div>
                 <div class="tab-pane fade" id="images">
-                    <h4>Profile Tab</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <?php
+                    $criteria = new CDbCriteria();
+                    $criteria->addCondition("tour_id =" . $model->id);
+                    $images = new CActiveDataProvider('TourImage', array(
+                        'criteria' => $criteria,
+                    ));
+
+                    if (count($images->getTotalItemCount()) > 0) {
+                        $this->renderPartial("//tour/_imagas", array("images" => $images));
+                    }
+                    ?>
                 </div>
 
             </div>

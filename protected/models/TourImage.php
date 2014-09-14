@@ -25,7 +25,7 @@ class TourImage extends DTActiveRecord {
 
     public $upload_key = "";
     public $uploaded_img = "";
-    public $no_image,$alt_title;
+    public $no_image, $alt_title;
 
     /**
      * upload instance and index for multiple uploader
@@ -68,7 +68,7 @@ class TourImage extends DTActiveRecord {
      * @return string the associated database table name
      */
     public function tableName() {
-        return 'product_image';
+        return 'tour_image';
     }
 
     /**
@@ -90,8 +90,6 @@ class TourImage extends DTActiveRecord {
         );
     }
 
-
-
     /**
      * @return array relational rules.
      */
@@ -100,6 +98,7 @@ class TourImage extends DTActiveRecord {
         // class name for the relations automatically generated below.
         return array(
             'tour' => array(self::BELONGS_TO, 'Tour', 'tour_id'),
+            'lang' => array(self::BELONGS_TO, 'Language', 'lang_id'),
         );
     }
 
@@ -157,7 +156,7 @@ class TourImage extends DTActiveRecord {
         $this->oldSmallImg = $this->image_small;
         $this->oldDetailImg = $this->image_detail;
         //set alt and title for images
-        $this->alt_title = !empty($this->tag)?$this->tag:$this->product->name;
+        $this->alt_title = !empty($this->tag) ? $this->tag : $this->product->name;
 
 
 
@@ -239,7 +238,7 @@ class TourImage extends DTActiveRecord {
             $this->image_large = $its_t->getRanddomeNo(10) . "." . $this->upload_insance->extensionName;
             $this->image_small = str_replace(" ", "_", "small_" . $this->image_large);
             $this->image_detail = str_replace(" ", "_", "detail_" . $this->image_large);
-        }  else {
+        } else {
 
             $this->image_large = $this->oldLargeImg;
             $this->image_small = $this->oldSmallImg;
@@ -263,7 +262,7 @@ class TourImage extends DTActiveRecord {
             DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 170, str_replace(" ", "_", "small_" . $this->image_large));
             DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
             //$this->deleteldImage();
-        } 
+        }
     }
 
     /**

@@ -9,7 +9,7 @@
                 <div class="table-responsive">
                     <?php
                     $this->widget('zii.widgets.grid.CGridView', array(
-                        'id' => 'tour-grid',
+                        'id' => 'tour-grid-langs',
                         'dataProvider' => $languages,
                         'htmlOptions' => array(
                             'class' => 'table-responsive'
