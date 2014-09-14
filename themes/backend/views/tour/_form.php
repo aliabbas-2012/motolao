@@ -53,7 +53,21 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'tour_type', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
-                                <?php echo $form->textField($model, 'tour_type', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                <?php
+                                $tour_types = array(
+                                    "1 day" => "1 day",
+                                    "2 day" => "1 day",
+                                    "3 day" => "3 day",
+                                    "4 day" => "4 day",
+                                    "5 day" => "5 day",
+                                    "6 day" => "6 day",
+                                    "7 day" => "7 day",
+                                    "8 day" => "8 day",
+                                    "9 day" => "9 day",
+                                    "10 day" => "10 day",
+                                );
+                                ?>
+                                <?php echo $form->dropDownList($model, 'tour_type', $tour_types, array('class' => 'form-control', 'maxlength' => 150)); ?>
                                 <?php echo $form->error($model, 'tour_type'); ?>
 
                             </div>
@@ -64,7 +78,12 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'category_id', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
-                                <?php echo $form->textField($model, 'category_id', array('class' => 'form-control')); ?>
+                                <?php
+                                $criteria = new CDbCriteria();
+
+                                $categories = array("" => "Select") + CHtml::listData(Category::model()->findAll($criteria), "id", "name");
+                                echo $form->dropDownList($model, 'category_id', $categories, array('class' => 'form-control'));
+                                ?>
                                 <?php echo $form->error($model, 'category_id'); ?>
 
                             </div>
@@ -115,16 +134,6 @@
 
                         </div><!-- group -->
 
-
-                        <div class="form-group">
-                            <?php echo $form->labelEx($model, 'activity_log', array('class' => 'control-label col-lg-2')); ?>
-                            <div class="col-lg-4">
-                                <?php echo $form->textArea($model, 'activity_log', array('class' => 'form-control')); ?>
-                                <?php echo $form->error($model, 'activity_log'); ?>
-
-                            </div>
-
-                        </div><!-- group -->
 
                         <div class="form-group">
                             <div class="col-lg-2"></div>

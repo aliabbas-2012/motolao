@@ -35,7 +35,7 @@ class Tour extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, short_title, tour_type, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('name,category_id, short_title, tour_type, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('category_id', 'numerical', 'integerOnly' => true),
             array('name, short_title, tour_type, url, meta_title', 'length', 'max' => 150),
             array('create_user_id, update_user_id', 'length', 'max' => 11),

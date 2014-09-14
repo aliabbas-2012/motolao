@@ -42,7 +42,8 @@ $this->menu = array(
                             'tour_type',
                             array(
                                 'name' => 'category_id',
-                                'value' => 'isset($data->category)?$data->category->name:""'
+                                'value' => isset($model->category)?$model->category->name:"",
+                                'type'=>"raw",
                             ),
                             'url',
                             'meta_title',
