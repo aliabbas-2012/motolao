@@ -78,7 +78,7 @@ class TourImage extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('lang_id,create_time, create_user_id, update_time, update_user_id', 'required'),
             array('tour_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('tag, image_large, image_small, image_detail', 'length', 'max' => 150),
             array('alt_title,_copy_path,image_large,lang_id,upload_key,tour_id, is_default,activity_log', 'safe'),
@@ -198,7 +198,7 @@ class TourImage extends DTActiveRecord {
      * @return type
      */
     public function beforeValidate() {
-        $this->upload_insance = DTUploadedFile::getInstance($this, '[' . $this->upload_key . ']image_large');
+        $this->upload_insance = DTUploadedFile::getInstance($this, 'image_large');
         if (!empty($this->upload_insance)) {
             $this->image_large = $this->upload_insance;
         }
@@ -254,7 +254,7 @@ class TourImage extends DTActiveRecord {
         if (!empty($this->upload_insance)) {
 
 
-            $folder_array = array("product", $this->product->id, "product_images", $this->getPrimaryKey());
+            $folder_array = array("tour", $this->tour->id, "tour_images", $this->getPrimaryKey());
 
             $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
             $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
@@ -273,7 +273,7 @@ class TourImage extends DTActiveRecord {
 
         if (!empty($this->oldLargeImg) && $this->oldLargeImg != $this->image_large) {
             $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
-            $path.= "uploads" . DIRECTORY_SEPARATOR . "product" . DIRECTORY_SEPARATOR . $this->productProfile->primaryKey . DIRECTORY_SEPARATOR . "product_images";
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "tour" . DIRECTORY_SEPARATOR . $this->tour->primaryKey . DIRECTORY_SEPARATOR . "tour_images";
             $large_path = $path . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR . $this->oldLargeImg;
 
             DTUploadedFile::deleteExistingFile($large_path);
@@ -281,7 +281,7 @@ class TourImage extends DTActiveRecord {
 
         if (!empty($this->oldSmallImg) && $this->oldSmallImg != $this->image_small) {
             $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
-            $path.= "uploads" . DIRECTORY_SEPARATOR . "product" . DIRECTORY_SEPARATOR . $this->productProfile->primaryKey . DIRECTORY_SEPARATOR . "product_images";
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "tour" . DIRECTORY_SEPARATOR . $this->tour->primaryKey . DIRECTORY_SEPARATOR . "tour_images";
 
             $small_path = $path . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR . $this->oldSmallImg;
 
@@ -290,7 +290,7 @@ class TourImage extends DTActiveRecord {
 
         if (!empty($this->oldDetailImg) && $this->oldDetailImg != $this->image_detail) {
             $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
-            $path.= "uploads" . DIRECTORY_SEPARATOR . "product" . DIRECTORY_SEPARATOR . $this->productProfile->primaryKey . DIRECTORY_SEPARATOR . "product_images";
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "tour" . DIRECTORY_SEPARATOR . $this->tour->primaryKey . DIRECTORY_SEPARATOR . "tour_images";
 
             $detail_path = $path . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR . $this->oldDetailImg;
 

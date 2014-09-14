@@ -38,7 +38,6 @@
                                 <div class="col-lg-6">
                                     <?php
                                     $criteria = new CDbCriteria();
-                                    $criteria->addCondition("Lower(name)<>'english'");
                                     $languages = array("" => "Select") + CHtml::listData(Language::model()->findAll($criteria), "id", "name");
                                     echo $form->dropDownList($model, 'lang_id', $languages, array('class' => 'form-control'));
                                     ?>

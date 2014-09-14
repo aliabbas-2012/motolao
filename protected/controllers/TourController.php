@@ -42,6 +42,7 @@ class TourController extends Controller {
     public function actionView($id, $related = "", $related_id = "") {
         $model = $this->loadModel($id);
         $this->manageRelations($model, $related, $related_id);
+      
         $this->render('view', array(
             'model' => $model,
             'related' => $related,
@@ -164,7 +165,7 @@ class TourController extends Controller {
                 if (isset($_POST['TourLang'])) {
                     $model->$related->attributes = $_POST['TourLang'];
                     if ($model->$related->save()) {
-                        $this->redirect(array('view', 'id' => $model->id, "related" => $related, "related_id" => $related_id));
+                        $this->redirect(array('view', 'id' => $model->id, "related" => $related, "related_id" => $model->$related->id));
                     }
                 }
                 break;
@@ -177,7 +178,7 @@ class TourController extends Controller {
                 if (isset($_POST['TourImage'])) {
                     $model->$related->attributes = $_POST['TourImage'];
                     if ($model->$related->save()) {
-                        $this->redirect(array('view', 'id' => $model->id, "related" => $related, "related_id" => $related_id));
+                        $this->redirect(array('view', 'id' => $model->id, "related" => $related, "related_id" => $model->$related->id));
                     }
                 }
                 break;
