@@ -6,12 +6,15 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 Create or Edit Tour Languages
+                <?php
+                $option = array("id" => $id, "related" => "tour_langs");
+                echo CHtml::link("(Add New)", $this->createUrl("/tour/view", $option))
+                ?>
             </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-12">
                         <?php
-                        $option = array("id" => $id, "related" => "tour_langs");
                         if (!empty($model->id)) {
                             $option['related_id'] = $model->id;
                         }

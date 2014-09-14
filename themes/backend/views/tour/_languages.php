@@ -25,6 +25,15 @@
                             ),
                             array(
                                 'class' => 'CButtonColumn',
+                                'template' => '{update}{delete}',
+                                'buttons' => array(
+                                    'update' => array(
+                                        'url' => 'Yii::app()->controller->createUrl("/tour/view/",array("id"=>$data->tour->id,"related"=>"tour_langs","related_id"=>$data->id))'
+                                    ),
+                                    'delete' => array(
+                                        'url' => 'Yii::app()->controller->createUrl("/tour/delete/",array("id"=>$data->tour->id,"related"=>"tour_langs","related_id"=>$data->id))'
+                                    ),
+                                )
                             ),
                         ),
                     ));

@@ -9,20 +9,23 @@
         <!-- Form Elements -->
         <div class="panel panel-default">
             <div class="panel-heading">
-               Create or Edit Category Languages
+                Create or Edit Category Languages
+                <?php
+                $option = array("id" => $id, "related" => "categoryLangs");
+                echo CHtml::link("(Add New)", $this->createUrl("/category/view", $option))
+                ?>
             </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-9">
                         <?php
-                        $option = array("id" => $id,"related"=>"categoryLangs");
-                        if(!empty($model->id)){
+                        if (!empty($model->id)) {
                             $option['related_id'] = $model->id;
                         }
                         $form = $this->beginWidget('CActiveForm', array(
                             'id' => 'category-form',
                             'enableAjaxValidation' => false,
-                            'action' => $this->createUrl("/category/view",$option ),
+                            'action' => $this->createUrl("/category/view", $option),
                         ));
                         $form->hiddenField($model, "parent_id")
                         ?>

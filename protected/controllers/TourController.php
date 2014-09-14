@@ -158,7 +158,7 @@ class TourController extends Controller {
                     $model->$related = new TourLang;
                 }
                 $model->$related->parent_id = $model->id;
-                $model->tour_type = $model->tour_type;
+                $model->$related->tour_type = $model->tour_type;
                 if (isset($_POST['TourLang'])) {
                     $model->$related->attributes = $_POST['TourLang'];
                     if ($model->$related->save()) {
@@ -169,7 +169,7 @@ class TourController extends Controller {
             default:
                 $model->tour_langs = new TourLang;
                 $model->tour_langs->parent_id = $model->id;
-                $model->tour_type = $model->tour_type;
+                $model->tour_langs->tour_type = $model->tour_type;
                 break;
         }
     }
