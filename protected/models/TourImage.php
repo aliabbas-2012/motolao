@@ -1,9 +1,9 @@
 <?php
 
 /**
- * This is the model class for table "product_image".
+ * This is the model class for table "tour_image".
  *
- * The followings are the available columns in table 'product_image':
+ * The followings are the available columns in table 'tour_image':
  * @property string $id
  * @property string $tour_id
  * @property string $tag
@@ -19,7 +19,7 @@
  * @property string $activity_log
  *
  * The followings are the available model relations:
- * @property Product $product
+ * @property Product $tour
  */
 class TourImage extends DTActiveRecord {
 
@@ -156,7 +156,7 @@ class TourImage extends DTActiveRecord {
         $this->oldSmallImg = $this->image_small;
         $this->oldDetailImg = $this->image_detail;
         //set alt and title for images
-        $this->alt_title = !empty($this->tag) ? $this->tag : $this->product->name;
+        $this->alt_title = !empty($this->tag) ? $this->tag : $this->tour->name;
 
 
 
@@ -167,7 +167,7 @@ class TourImage extends DTActiveRecord {
 
 
             $this->image_url['image_large'] = Yii::app()->baseUrl . "/uploads/tour/" . $this->tour->primaryKey;
-            $this->image_url['image_large'].= "/product_images/" . $this->id . "/" . $this->image_large;
+            $this->image_url['image_large'].= "/tour_images/" . $this->id . "/" . $this->image_large;
         } else {
             $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
@@ -175,7 +175,7 @@ class TourImage extends DTActiveRecord {
         if (!empty($this->image_small)) {
 
             $this->image_url['image_small'] = Yii::app()->baseUrl . "/uploads/tour/" . $this->tour->primaryKey;
-            $this->image_url['image_small'].= "/product_images/" . $this->id . "/" . $this->image_small;
+            $this->image_url['image_small'].= "/tour_images/" . $this->id . "/" . $this->image_small;
         } else {
             $this->image_url['image_small'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
@@ -183,7 +183,7 @@ class TourImage extends DTActiveRecord {
         if (!empty($this->image_detail)) {
 
             $this->image_url['image_detail'] = Yii::app()->baseUrl . "/uploads/tour/" . $this->tour->primaryKey;
-            $this->image_url['image_detail'].= "/product_images/" . $this->id . "/" . $this->image_detail;
+            $this->image_url['image_detail'].= "/tour_images/" . $this->id . "/" . $this->image_detail;
         } else {
             $this->image_url['image_detail'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
