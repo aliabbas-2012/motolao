@@ -44,6 +44,8 @@ class TourController extends Controller {
         $this->manageRelations($model, $related, $related_id);
         $this->render('view', array(
             'model' => $model,
+            'related' => $related,
+            'related_id' => $related_id,
         ));
     }
 

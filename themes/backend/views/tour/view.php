@@ -66,9 +66,9 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
     <div class="col-lg-12">
         <div class="panel-body">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="#languages" data-toggle="tab">Tour Languages</a>
+                <li class="<?php echo empty($related) || $related == "tour_langs" ? "active" : "" ?>"><a href="#languages" data-toggle="tab">Tour Languages</a>
                 </li>
-                <li><a href="#images" data-toggle="tab">Tour Images</a>
+                <li class="<?php echo $related == "tour_images" ? "active" : "" ?>"><a href="#images" data-toggle="tab">Tour Images</a>
                 </li>
 
             </ul>
