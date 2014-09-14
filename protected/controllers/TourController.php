@@ -152,12 +152,12 @@ class TourController extends Controller {
     //manage relationships here
 
     public function manageRelations($model, $related = "", $related_id = "") {
+
         switch ($related) {
             case "tour_langs":
+                $this->setDefaultRelations($model);
                 if (!empty($related_id)) {
                     $model->$related = TourLang::model()->findByPk($related_id);
-                } else {
-                    $model->$related = new TourLang;
                 }
                 $model->$related->parent_id = $model->id;
                 $model->$related->tour_type = $model->tour_type;
@@ -169,10 +169,9 @@ class TourController extends Controller {
                 }
                 break;
             case "tour_images":
+                $this->setDefaultRelations($model);
                 if (!empty($related_id)) {
                     $model->$related = TourImage::model()->findByPk($related_id);
-                } else {
-                    $model->$related = new TourImage;
                 }
                 $model->$related->tour_id = $model->id;
                 if (isset($_POST['TourImage'])) {
@@ -183,14 +182,21 @@ class TourController extends Controller {
                 }
                 break;
             default:
-                $model->tour_langs = new TourLang;
-                $model->tour_langs->parent_id = $model->id;
-                $model->tour_langs->tour_type = $model->tour_type;
-                //handle other relations
-                $model->tour_images = new TourImage();
-                $model->tour_images->tour_id = $model->id;
+                $this->setDefaultRelations($model);
                 break;
         }
+    }
+
+    /**
+     * set all default relations
+     */
+    public function setDefaultRelations($model) {
+        $model->tour_langs = new TourLang;
+        $model->tour_langs->parent_id = $model->id;
+        $model->tour_langs->tour_type = $model->tour_type;
+        //handle other relations
+        $model->tour_images = new TourImage();
+        $model->tour_images->tour_id = $model->id;
     }
 
     /**

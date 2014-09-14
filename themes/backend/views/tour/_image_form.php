@@ -20,6 +20,9 @@
                             'id' => 'tour-images-form',
                             'enableAjaxValidation' => false,
                             'action' => $this->createUrl("/tour/view", $option),
+                            'htmlOptions' => array(
+                                'enctype' => 'multipart/form-data'
+                            )
                         ));
                         $form->hiddenField($model, "tour_id")
                         ?>

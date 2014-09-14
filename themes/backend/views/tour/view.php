@@ -74,7 +74,7 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
             </ul>
 
             <div class="tab-content">
-                <div class="tab-pane fade in active" id="languages">
+                <div class="tab-pane fade in <?php echo empty($related) || $related == "tour_langs" ? "active" : "" ?>" id="languages">
                     <?php
                     $criteria = new CDbCriteria();
                     $criteria->addCondition("parent_id =" . $model->id);
@@ -88,7 +88,7 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
                     ?>
                     <?php $this->renderPartial("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id)); ?>
                 </div>
-                <div class="tab-pane fade" id="images">
+                <div class="tab-pane <?php echo $related == "tour_images" ? "active" : "fade" ?>" id="images">
                     <?php
                     $criteria = new CDbCriteria();
                     $criteria->addCondition("tour_id =" . $model->id);
