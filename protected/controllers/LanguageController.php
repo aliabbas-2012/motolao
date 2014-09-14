@@ -93,8 +93,13 @@ class LanguageController extends Controller {
 
         if (isset($_POST['Language'])) {
             $model->attributes = $_POST['Language'];
-            if ($model->save())
+            if ($model->save()) {
+                $upload_path = DTUploadedFile::creeatRecurSiveDirectories(array("language", $model->id));
+                if (!empty($img_file)) {
+                    $img_file->saveAs($upload_path . str_replace(" ", "_", $model->flag_img));
+                }
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('update', array(
