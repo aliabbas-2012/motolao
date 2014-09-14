@@ -3,9 +3,9 @@
         <!-- Form Elements -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Create or Edit Tour Languages
+                Create or Edit Tour Images
                 <?php
-                $option = array("id" => $id, "related" => "tour_langs");
+                $option = array("id" => $id, "related" => "tour_images");
                 echo CHtml::link("(Add New)", $this->createUrl("/tour/view", $option))
                 ?>
             </div>
@@ -17,11 +17,11 @@
                             $option['related_id'] = $model->id;
                         }
                         $form = $this->beginWidget('CActiveForm', array(
-                            'id' => 'tour-lang-form',
+                            'id' => 'tour-images-form',
                             'enableAjaxValidation' => false,
                             'action' => $this->createUrl("/tour/view", $option),
                         ));
-                        $form->hiddenField($model, "parent_id")
+                        $form->hiddenField($model, "tour_id")
                         ?>
 
                         <p class="form-group alert alert-info">Fields with <span class="required">*</span> are required.</p>
@@ -43,30 +43,10 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <?php echo $form->labelEx($model, 'name', array('class' => 'control-label col-lg-3')); ?>
+                                <?php echo $form->labelEx($model, 'image_large', array('class' => 'control-label col-lg-3')); ?>
                                 <div class="col-lg-8">
-                                    <?php echo $form->textField($model, 'name', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                    <?php echo $form->error($model, 'name'); ?>
-
-                                </div>
-
-                            </div><!-- group -->
-
-                            <div class="form-group">
-                                <?php echo $form->labelEx($model, 'url', array('class' => 'control-label col-lg-3')); ?>
-                                <div class="col-lg-8">
-                                    <?php echo $form->textField($model, 'url', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                    <?php echo $form->error($model, 'url'); ?>
-
-                                </div>
-
-                            </div><!-- group -->
-
-                            <div class="form-group">
-                                <?php echo $form->labelEx($model, 'meta_description', array('class' => 'control-label col-lg-3')); ?>
-                                <div class="col-lg-8">
-                                    <?php echo $form->textArea($model, 'meta_description', array('class' => 'form-control')); ?>
-                                    <?php echo $form->error($model, 'meta_description'); ?>
+                                    <?php echo $form->fileField($model, 'image_large', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                    <?php echo $form->error($model, 'image_large'); ?>
 
                                 </div>
 
@@ -76,30 +56,20 @@
                         </div>
                         <div class="col-lg-6">
                             <div class="form-group">
-                                <?php echo $form->labelEx($model, 'short_title', array('class' => 'control-label col-lg-3')); ?>
+                                <?php echo $form->labelEx($model, 'is_default', array('class' => 'control-label col-lg-4')); ?>
                                 <div class="col-lg-8">
-                                    <?php echo $form->textField($model, 'short_title', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                    <?php echo $form->error($model, 'short_title'); ?>
+                                    <?php echo $form->checkBox($model, 'is_default', array('class' => '', 'maxlength' => 150)); ?>
+                                    <?php echo $form->error($model, 'is_default'); ?>
 
                                 </div>
 
                             </div><!-- group -->
 
                             <div class="form-group">
-                                <?php echo $form->labelEx($model, 'meta_title', array('class' => 'control-label col-lg-3')); ?>
+                                <?php echo $form->labelEx($model, 'tag', array('class' => 'control-label col-lg-4')); ?>
                                 <div class="col-lg-8">
-                                    <?php echo $form->textField($model, 'meta_title', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                    <?php echo $form->error($model, 'meta_title'); ?>
-
-                                </div>
-
-                            </div><!-- group -->
-
-                            <div class="form-group">
-                                <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-3')); ?>
-                                <div class="col-lg-8">
-                                    <?php echo $form->textArea($model, 'description', array('class' => 'form-control')); ?>
-                                    <?php echo $form->error($model, 'description'); ?>
+                                    <?php echo $form->textField($model, 'tag', array('class' => 'form-control')); ?>
+                                    <?php echo $form->error($model, 'tag'); ?>
 
                                 </div>
 

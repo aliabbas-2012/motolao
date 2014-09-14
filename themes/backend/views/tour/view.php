@@ -100,6 +100,7 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
                         $this->renderPartial("//tour/_imagas", array("images" => $images));
                     }
                     ?>
+                    <?php $this->renderPartial("//tour/_image_form", array("model" => $model->tour_images, "id" => $model->id)); ?>
                 </div>
 
             </div>

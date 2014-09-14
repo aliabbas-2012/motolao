@@ -166,10 +166,27 @@ class TourController extends Controller {
                     }
                 }
                 break;
+            case "tour_images":
+                if (!empty($related_id)) {
+                    $model->$related = TourImage::model()->findByPk($related_id);
+                } else {
+                    $model->$related = new TourImage;
+                }
+                $model->$related->tour_id = $model->id;
+                if (isset($_POST['TourImage'])) {
+                    $model->$related->attributes = $_POST['TourImage'];
+                    if ($model->$related->save()) {
+                        $this->redirect(array('view', 'id' => $model->id, "related" => $related, "related_id" => $related_id));
+                    }
+                }
+                break;
             default:
                 $model->tour_langs = new TourLang;
                 $model->tour_langs->parent_id = $model->id;
                 $model->tour_langs->tour_type = $model->tour_type;
+                //handle other relations
+                $model->tour_images = new TourImage();
+                $model->tour_images->tour_id = $model->id;
                 break;
         }
     }
@@ -185,6 +202,9 @@ class TourController extends Controller {
         switch ($related) {
             case "tour_langs":
                 TourLang::model()->deleteByPk($related_id);
+                break;
+            case "tour_images":
+                TourImage::model()->deleteByPk($related_id);
                 break;
             default:
                 break;
