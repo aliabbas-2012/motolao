@@ -51,10 +51,10 @@ class Category extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'categoryLangs'=>array(self::HAS_MANY, 'CategoryLang', 'parent_id'),
-            'exist_categoryLangs'=>array(self::HAS_MANY, 'CategoryLang', 'parent_id'),
-            'tours'=>array(self::HAS_MANY, 'Tour', 'category_id'),
-            'parent_cat'=>array(self::BELONGS_TO, 'Category', 'parent'),
+            'categoryLangs' => array(self::HAS_MANY, 'CategoryLang', 'parent_id'),
+            'exist_categoryLangs' => array(self::HAS_MANY, 'CategoryLang', 'parent_id'),
+            'tours' => array(self::HAS_MANY, 'Tour', 'category_id'),
+            'parent_cat' => array(self::BELONGS_TO, 'Category', 'parent'),
         );
     }
 
@@ -121,6 +121,26 @@ class Category extends DTActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+    /**
+     * 
+     * @return type
+     */
+    public function beforeSave() {
+        $this->setSlug();
+        return parent::beforeSave();
+    }
+
+    /**
+     * setting slug
+     * for url
+     * before save 
+     */
+    public function setSlug() {
+
+        $this->url = strtolower(trim($this->url));
+        $this->url = str_replace(" ", "_", $this->url);
+        $this->url = MyHelper::convert_no_sign($this->url);
     }
 
 }

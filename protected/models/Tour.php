@@ -138,4 +138,25 @@ class Tour extends DTActiveRecord {
         return parent::model($className);
     }
 
+    /**
+     * 
+     * @return type
+     */
+    public function beforeSave() {
+        $this->setSlug();
+        return parent::beforeSave();
+    }
+
+    /**
+     * setting slug
+     * for url
+     * before save 
+     */
+    public function setSlug() {
+
+        $this->url = strtolower(trim($this->url));
+        $this->url = str_replace(" ", "_", $this->url);
+        $this->url = MyHelper::convert_no_sign($this->url);
+    }
+
 }
