@@ -261,7 +261,7 @@ class TourImage extends DTActiveRecord {
 
             DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 170, str_replace(" ", "_", "small_" . $this->image_large));
             DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
-            //$this->deleteldImage();
+            $this->deleteldImage();
         }
     }
 

@@ -3764,3 +3764,886 @@ in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
 in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
 in /var/www/html/motolao/protected/models/Users.php (166)
 in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:03:34 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:29 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:33 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/15 00:04:44 [error] [php] Trying to get property of non-object (/var/www/html/motolao/themes/backend/views/layouts/column2.php:14)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(784): SiteController->renderFile()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CViewAction.php(140): SiteController->render()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CAction.php(76): CViewAction->run()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CViewAction->runWithParams()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): SiteController->runAction()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): SiteController->run()
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/site/page?view=tables
+in /var/www/html/motolao/themes/backend/views/layouts/column2.php (14)
+in /var/www/html/motolao/index.php (14)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:04:48 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:02 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/controllers/TourController.php (179)
+in /var/www/html/motolao/protected/controllers/TourController.php (44)
+in /var/www/html/motolao/index.php (14)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/models/TourImage.php (205)
+in /var/www/html/motolao/protected/controllers/TourController.php (180)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/models/TourImage.php (205)
+in /var/www/html/motolao/protected/controllers/TourController.php (180)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:05:08 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:05:09 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/controllers/TourController.php (179)
+in /var/www/html/motolao/protected/controllers/TourController.php (44)
+in /var/www/html/motolao/index.php (14)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/models/TourImage.php (205)
+in /var/www/html/motolao/protected/controllers/TourController.php (180)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/models/TourImage.php (205)
+in /var/www/html/motolao/protected/controllers/TourController.php (180)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (136)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/protected/controllers/TourController.php (175)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (169)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (192)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (140)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/15 00:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)

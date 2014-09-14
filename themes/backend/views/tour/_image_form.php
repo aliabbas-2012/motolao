@@ -48,6 +48,11 @@
                                 <?php echo $form->labelEx($model, 'image_large', array('class' => 'control-label col-lg-3')); ?>
                                 <div class="col-lg-8">
                                     <?php echo $form->fileField($model, 'image_large', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                    <?php
+                                    if (!empty($model->id) && !empty($model->image_large)) {
+                                        echo CHtml::link("View Image", $model->image_url["image_large"], array("rel" => "lightbox[_default]","target"=>"blank"));
+                                    }
+                                    ?>
                                     <?php echo $form->error($model, 'image_large'); ?>
 
                                 </div>
