@@ -42,8 +42,8 @@ $this->menu = array(
                             'tour_type',
                             array(
                                 'name' => 'category_id',
-                                'value' => isset($model->category)?$model->category->name:"",
-                                'type'=>"raw",
+                                'value' => isset($model->category) ? $model->category->name : "",
+                                'type' => "raw",
                             ),
                             'url',
                             'meta_title',
@@ -58,19 +58,43 @@ $this->menu = array(
         </div>
     </div>
 </div>    
-<div class="clear"></div>
 <?php
 Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/scripts/jquery.ba-bbq1.js', CClientScript::POS_END);
 ?>
-<?php
-$criteria = new CDbCriteria();
-$criteria->addCondition("parent_id =".$model->id);
-$lang = new CActiveDataProvider('TourLang', array(
-    'criteria' => $criteria,
-));
+<div class="clear"></div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel-body">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#home" data-toggle="tab">Tour Languages</a>
+                </li>
+                <li><a href="#profile" data-toggle="tab">Profile</a>
+                </li>
 
-if (count($lang->getTotalItemCount()) > 0) {
-    $this->renderPartial("//tour/_languages", array("languages" => $lang));
-}
-?>
-<?php $this->renderPartial("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id)); ?>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane fade in active" id="home">
+                    <?php
+                    $criteria = new CDbCriteria();
+                    $criteria->addCondition("parent_id =" . $model->id);
+                    $lang = new CActiveDataProvider('TourLang', array(
+                        'criteria' => $criteria,
+                    ));
+
+                    if (count($lang->getTotalItemCount()) > 0) {
+                        $this->renderPartial("//tour/_languages", array("languages" => $lang));
+                    }
+                    ?>
+                    <?php $this->renderPartial("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id)); ?>
+                </div>
+                <div class="tab-pane fade" id="profile">
+                    <h4>Profile Tab</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
