@@ -445,9 +445,9 @@
 
 <?php
 //Page-Level Plugin Scripts
-Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/plugins/dataTables/jquery.dataTables.js', CClientScript::POS_END);
-Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/plugins/dataTables/dataTables.bootstrap.js', CClientScript::POS_END);
-Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/plugins/flot/jquery.flot.resize.js', CClientScript::POS_END);
+Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/plugins/dataTables/jquery.dataTables.js', CClientScript::POS_END);
+Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/plugins/dataTables/dataTables.bootstrap.js', CClientScript::POS_END);
+Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/plugins/flot/jquery.flot.resize.js', CClientScript::POS_END);
 ?>
 
 <script>

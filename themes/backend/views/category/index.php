@@ -84,3 +84,6 @@ $('.search-form form').submit(function(){
 
 
 
+<?php
+Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/scripts/jquery.ba-bbq1.js', CClientScript::POS_END);
+?>
