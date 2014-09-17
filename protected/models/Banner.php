@@ -19,6 +19,30 @@
  */
 class Banner extends DTActiveRecord {
 
+    public $uploaded_img = "";
+    public $no_image;
+
+    /**
+     * upload instance and index for multiple uploader
+     * index is no and instance is object
+     * @var type 
+     */
+    public $upload_insance;
+
+    /**
+     * copy path in case of only import
+     * @var type 
+     */
+    public $_copy_path;
+
+    /**
+     *
+     * @var type 
+     * for purpose of deleting old image
+     */
+    public $oldLargeImg = "";
+    public $image_url = array();
+
     /**
      * @return string the associated database table name
      */
@@ -51,7 +75,7 @@ class Banner extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-             'lang' => array(self::BELONGS_TO, 'Language', 'lang_id'),
+            'lang' => array(self::BELONGS_TO, 'Language', 'lang_id'),
         );
     }
 
@@ -118,6 +142,103 @@ class Banner extends DTActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public function afterFind() {
+        $this->oldLargeImg = $this->image_large;
+
+        /**
+         *  setting path  for front end images
+         */
+        if (!empty($this->image_large)) {
+            $this->image_url['image_large']= Yii::app()->baseUrl . "/uploads/banner/" . $this->id . "/" . $this->image_large;
+        } else {
+            $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
+        }
+
+        parent::afterFind();
+    }
+
+    /**
+     * set for validation to occure
+     * need image instance for validation rules
+     * @return type
+     */
+    public function beforeValidate() {
+        $this->upload_insance = DTUploadedFile::getInstance($this, 'image_large');
+        if (!empty($this->upload_insance)) {
+            $this->image_large = $this->upload_insance;
+        }
+        return parent::beforeValidate();
+    }
+
+    /**
+     * for setting object to save
+     * image name rather its emtpy
+     * @return type 
+     */
+    public function beforeSave() {
+        $this->setUploadVars();
+        return parent::beforeSave();
+    }
+
+    public function afterSave() {
+        parent::afterSave();
+        $this->uploadImages();
+
+        return true;
+    }
+
+    /**
+     * set image variable before save
+     */
+    public function setUploadVars() {
+
+
+
+        $its_t = new DTFunctions();
+        if (!empty($this->upload_insance)) {
+
+            $this->image_large = $its_t->getRanddomeNo(10) . "." . $this->upload_insance->extensionName;
+        } else {
+
+            $this->image_large = $this->oldLargeImg;
+        }
+    }
+
+    /**
+     * upload images
+     */
+    public function uploadImages() {
+
+        if (!empty($this->upload_insance)) {
+
+
+            $folder_array = array("banner", $this->getPrimaryKey());
+
+            $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
+            $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
+
+            $this->deleteldImage();
+        }
+    }
+
+    /**
+     * to delete old image in case of not empty
+     * not equal new image
+     */
+    public function deleteldImage() {
+
+        if (!empty($this->oldLargeImg) && $this->oldLargeImg != $this->image_large) {
+            $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "banner" . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR . $this->oldLargeImg;
+            DTUploadedFile::deleteExistingFile($large_path);
+        }
+    }
+
+    public function beforeDelete() {
+        $this->deleteldImage();
+        parent::beforeDelete();
     }
 
 }
