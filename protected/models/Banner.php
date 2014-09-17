@@ -131,6 +131,9 @@ class Banner extends DTActiveRecord {
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
+            'pagination' => array(
+                'pageSize' => 20,
+            ),
         ));
     }
 
@@ -151,7 +154,7 @@ class Banner extends DTActiveRecord {
          *  setting path  for front end images
          */
         if (!empty($this->image_large)) {
-            $this->image_url['image_large']= Yii::app()->baseUrl . "/uploads/banner/" . $this->id . "/" . $this->image_large;
+            $this->image_url['image_large'] = Yii::app()->baseUrl . "/uploads/banner/" . $this->id . "/" . $this->image_large;
         } else {
             $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
