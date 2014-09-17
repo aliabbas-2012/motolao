@@ -21,6 +21,24 @@
  */
 class TeamImage extends DTActiveRecord {
 
+    public $no_image;
+
+    /**
+     * upload instance and index for multiple uploader
+     * index is no and instance is object
+     * @var type 
+     */
+    public $upload_insance;
+
+    /**
+     *
+     * @var type 
+     * for purpose of deleting old image
+     */
+    public $oldLargeImg = "";
+    public $oldDetailImg = "";
+    public $image_url = array();
+
     /**
      * @return string the associated database table name
      */
@@ -54,6 +72,7 @@ class TeamImage extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
+            'lang' => array(self::BELONGS_TO, 'Language', 'lang_id'),
         );
     }
 
@@ -113,6 +132,12 @@ class TeamImage extends DTActiveRecord {
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
+            'pagination' => array(
+                'pageSize' => 20,
+            ),
+            'sort' => array(
+                'defaultOrder' => 'id DESC , lang_id DESC',
+            )
         ));
     }
 
@@ -124,6 +149,133 @@ class TeamImage extends DTActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public function afterFind() {
+        $this->oldLargeImg = $this->image_large;
+        $this->oldDetailImg = $this->image_detail;
+
+        /**
+         *  setting path  for front end images
+         */
+        if (!empty($this->image_large)) {
+
+
+            $this->image_url['image_large'] = Yii::app()->baseUrl . "/uploads/team-image/" . $this->id;
+            $this->image_url['image_large'].= "/" . $this->image_large;
+        } else {
+            $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
+        }
+
+        if (!empty($this->image_detail)) {
+
+            $this->image_url['image_detail'] = Yii::app()->baseUrl . "/uploads/team-image/" . $this->id;
+            $this->image_url['image_detail'].= "/" . $this->image_large;
+        } else {
+            $this->image_url['image_detail'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
+        }
+
+
+        parent::afterFind();
+    }
+
+    /**
+     * set for validation to occure
+     * need image instance for validation rules
+     * @return type
+     */
+    public function beforeValidate() {
+        $this->upload_insance = DTUploadedFile::getInstance($this, 'image_large');
+        if (!empty($this->upload_insance)) {
+            $this->image_large = $this->upload_insance;
+        }
+        return parent::beforeValidate();
+    }
+
+    /**
+     * for setting object to save
+     * image name rather its emtpy
+     * @return type 
+     */
+    public function beforeSave() {
+
+
+        $this->setUploadVars();
+        return parent::beforeSave();
+    }
+
+    public function afterSave() {
+        parent::afterSave();
+        $this->uploadImages();
+
+        return true;
+    }
+
+    /**
+     * set image variable before save
+     */
+    public function setUploadVars() {
+
+
+
+        $its_t = new DTFunctions();
+        if (!empty($this->upload_insance)) {
+
+            $this->image_large = $its_t->getRanddomeNo(10) . "." . $this->upload_insance->extensionName;
+            $this->image_detail = str_replace(" ", "_", "detail_" . $this->image_large);
+        } else {
+
+            $this->image_large = $this->oldLargeImg;
+            $this->image_detail = $this->oldDetailImg;
+        }
+    }
+
+    /**
+     * upload images
+     */
+    public function uploadImages() {
+
+        if (!empty($this->upload_insance)) {
+
+
+            $folder_array = array("team-image", $this->id,);
+
+            $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
+            $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
+
+
+            DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
+            $this->deleteldImage();
+        }
+    }
+
+    /**
+     * to delete old image in case of not empty
+     * not equal new image
+     */
+    public function deleteldImage() {
+
+        if (!empty($this->oldLargeImg) && $this->oldLargeImg != $this->image_large) {
+            $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "team-image" . DIRECTORY_SEPARATOR . $this->primaryKey . DIRECTORY_SEPARATOR;
+            $large_path = $path . DIRECTORY_SEPARATOR . $this->oldLargeImg;
+
+            DTUploadedFile::deleteExistingFile($large_path);
+        }
+
+        if (!empty($this->oldDetailImg) && $this->oldDetailImg != $this->image_detail) {
+            $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "team-image" . DIRECTORY_SEPARATOR . $this->primaryKey;
+
+            $detail_path = $path . DIRECTORY_SEPARATOR . $this->oldDetailImg;
+
+            DTUploadedFile::deleteExistingFile($detail_path);
+        }
+    }
+
+    public function beforeDelete() {
+        $this->deleteldImage();
+        parent::beforeDelete();
     }
 
 }

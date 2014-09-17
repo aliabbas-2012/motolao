@@ -2,28 +2,15 @@
 /* @var $this TeamImageController */
 /* @var $model TeamImage */
 
-$this->breadcrumbs=array(
-	'Team Images'=>array('index'),
-	'Manage',
+$this->breadcrumbs = array(
+    'Team Images' => array('index'),
+    'Manage',
 );
 
-$this->menu=array(
-array('label'=>'List TeamImage', 'url'=>array('index')),
-array('label'=>'Create TeamImage', 'url'=>array('create')),
+$this->menu = array(
+    array('label' => 'List TeamImage', 'url' => array('index')),
+    array('label' => 'Create TeamImage', 'url' => array('create')),
 );
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-$('.search-form').toggle();
-return false;
-});
-$('.search-form form').submit(function(){
-$('#team-image-grid').yiiGridView('update', {
-data: $(this).serialize()
-});
-return false;
-});
-");
 ?>
 
 <!-- Page-Level CSS -->
@@ -36,50 +23,55 @@ return false;
     </div>
     <!-- end  page header -->
 </div>
-
-<div class="search-form" style="display:none">
-    <?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
+<?php
+$this->renderPartial("_form", array("model" => $model_form));
+?>
 <div class="row">
     <div class="col-lg-12">
         <!-- Advanced Tables -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                <a class="search-button" href="#">Advanced Search</a>            </div>
+                All Images
+            </div>
             <div class="panel-body">
                 <div class="table-responsive">
-                    <?php $this->widget('zii.widgets.grid.CGridView', array(
-                    'id'=>'team-image-grid',
-                    'dataProvider'=>$model->search(),
-                    'htmlOptions' => array(
-                    'class' => 'table-responsive'
-                    ),
-                    'itemsCssClass' => 'table table-striped table-bordered table-hover',
-                    'filter'=>$model,
-                    'columns'=>array(
-                    		'id',
-		'lang_id',
-		'name',
-		'role',
-		'description',
-		/*
-		'alt',
-		'title',
-		'image_large',
-		'image_detail',
-		'create_time',
-		'create_user_id',
-		'update_time',
-		'update_user_id',
-		'activity_log',
-		*/
-                    array(
-                    'class'=>'CButtonColumn',
-                    ),
-                    ),
-                    )); ?>
+                    <div class="row">
+                        <?php
+                        if ($model->search()->itemCount > 0):
+                            foreach ($model->search()->getData() as $data):
+                                ?>
+                                <!--Default Pannel, Primary Panel And Success Panel   -->
+                                <div class="col-lg-4">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <?php echo $data->name; ?>
+                                            <?php
+                                            echo CHtml::link(" (Edit) ", $this->createUrl("index", array("id" => $data->id)));
+                                            ?>
+                                        </div>
+
+                                        <div class="panel-footer">
+                                            <?php echo $data->role; ?>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <?php echo $data->description; ?>
+                                        </div>
+                                        <div class="panel-footer">
+                                            <?php echo "Language :".$data->lang->name; ?>
+                                        </div>
+                                        <div class="panel-body">
+                                            <?php
+                                            echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12")), $data->image_url['image_large'], array("target" => "_blank"));
+                                            ?>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <?php
+                            endforeach;
+                        endif;
+                        ?>
+                    </div>
 
                 </div>
             </div>
