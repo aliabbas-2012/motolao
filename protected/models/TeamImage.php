@@ -39,6 +39,8 @@ class TeamImage extends DTActiveRecord {
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('name, role, alt, title, image_large, image_detail', 'length', 'max' => 150),
             array('description, activity_log', 'safe'),
+            array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
+                'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, name, role, description, alt, title, image_large, image_detail, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),

@@ -8,6 +8,7 @@
  * @property string $lang_id
  * @property string $title
  * @property string $url
+ * @property string $image
  * @property string $meta_tag
  * @property string $meta_description
  * @property string $create_time
@@ -35,7 +36,9 @@ class SocialMediaLink extends DTActiveRecord {
             array('lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('title, url', 'length', 'max' => 150),
-            array('meta_tag, meta_description, activity_log', 'safe'),
+            array('image,meta_tag, meta_description, activity_log,', 'safe'),
+            array('image', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
+                'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, title, url, meta_tag, meta_description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),

@@ -60,6 +60,8 @@ class Banner extends DTActiveRecord {
             array('lang_id, key, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('key', 'length', 'max' => 20),
+             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
+                'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             array('alt, title, image_large', 'length', 'max' => 150),
             array('video_tag_embedded_code, activity_log', 'safe'),
             // The following rule is used by search().
