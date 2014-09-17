@@ -57,7 +57,7 @@ class Faq extends DTActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'question' => 'Question',
             'answer' => 'Answer',
             'create_time' => 'Create Time',

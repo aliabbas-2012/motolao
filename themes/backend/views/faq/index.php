@@ -2,14 +2,14 @@
 /* @var $this FaqController */
 /* @var $model Faq */
 
-$this->breadcrumbs=array(
-	'Faqs'=>array('index'),
-	'Manage',
+$this->breadcrumbs = array(
+    'Faqs' => array('index'),
+    'Manage',
 );
 
-$this->menu=array(
-array('label'=>'List Faq', 'url'=>array('index')),
-array('label'=>'Create Faq', 'url'=>array('create')),
+$this->menu = array(
+    array('label' => 'List Faq', 'url' => array('index')),
+    array('label' => 'Create Faq', 'url' => array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -38,9 +38,11 @@ return false;
 </div>
 
 <div class="search-form" style="display:none">
-    <?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
+    <?php
+    $this->renderPartial('_search', array(
+        'model' => $model,
+    ));
+    ?>
 </div><!-- search-form -->
 <div class="row">
     <div class="col-lg-12">
@@ -50,31 +52,28 @@ return false;
                 <a class="search-button" href="#">Advanced Search</a>            </div>
             <div class="panel-body">
                 <div class="table-responsive">
-                    <?php $this->widget('zii.widgets.grid.CGridView', array(
-                    'id'=>'faq-grid',
-                    'dataProvider'=>$model->search(),
-                    'htmlOptions' => array(
-                    'class' => 'table-responsive'
-                    ),
-                    'itemsCssClass' => 'table table-striped table-bordered table-hover',
-                    'filter'=>$model,
-                    'columns'=>array(
-                    		'id',
-		'lang_id',
-		'question',
-		'answer',
-		'create_time',
-		/*
-		'create_user_id',
-		'update_time',
-		'update_user_id',
-		'activity_log',
-		*/
-                    array(
-                    'class'=>'CButtonColumn',
-                    ),
-                    ),
-                    )); ?>
+                    <?php
+                    $this->widget('zii.widgets.grid.CGridView', array(
+                        'id' => 'faq-grid',
+                        'dataProvider' => $model->search(),
+                        'htmlOptions' => array(
+                            'class' => 'table-responsive'
+                        ),
+                        'itemsCssClass' => 'table table-striped table-bordered table-hover',
+                        'filter' => $model,
+                        'columns' => array(
+                            array(
+                                'name' => 'lang_id',
+                                'value' => 'isset($data->lang)?$data->lang->name:""'
+                            ),
+                            'question',
+                            'answer',
+                            array(
+                                'class' => 'CButtonColumn',
+                            ),
+                        ),
+                    ));
+                    ?>
 
                 </div>
             </div>

@@ -20,7 +20,8 @@ $rules = array_merge($rules_admin, $rules_web);
 $url_manager = array(
     'urlFormat' => 'path',
     'showScriptName' => true,
-    'rules' => $rules
+    'rules' => $rules,
+    'class' => 'DTUrlManager',
 );
 
 //$url_manager = array();

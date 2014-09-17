@@ -38,10 +38,10 @@
                 <a href="<?php echo $this->createUrl("/category/index"); ?>"><i class="fa fa-edit fa-fw"></i> Category<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="<?php echo $this->createUrl("/category/index/", array("view" => "flot")); ?>">List</a>
+                        <a href="<?php echo $this->createUrl("/category/index/"); ?>">List</a>
                     </li>
                     <li>
-                        <a href="<?php echo $this->createUrl("/category/create/", array("view" => "morris")); ?>">Create</a>
+                        <a href="<?php echo $this->createUrl("/category/create/"); ?>">Create</a>
                     </li>
                 </ul>
                 <!-- second-level-items -->
@@ -50,10 +50,10 @@
                 <a href="<?php echo $this->createUrl("/tour/index"); ?>"><i class="fa fa-edit fa-fw"></i> Tour<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="<?php echo $this->createUrl("/tour/index/", array("view" => "flot")); ?>">List</a>
+                        <a href="<?php echo $this->createUrl("/tour/index/"); ?>">List</a>
                     </li>
                     <li>
-                        <a href="<?php echo $this->createUrl("/tour/create/", array("view" => "morris")); ?>">Create</a>
+                        <a href="<?php echo $this->createUrl("/tour/create/"); ?>">Create</a>
                     </li>
                 </ul>
                 <!-- second-level-items -->
@@ -62,10 +62,62 @@
                 <a href="<?php echo $this->createUrl("/language/index"); ?>"><i class="fa fa-edit fa-fw"></i> Language<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="<?php echo $this->createUrl("/language/index/", array("view" => "flot")); ?>">List</a>
+                        <a href="<?php echo $this->createUrl("/language/index/"); ?>">List</a>
                     </li>
                     <li>
-                        <a href="<?php echo $this->createUrl("/language/create/", array("view" => "morris")); ?>">Create</a>
+                        <a href="<?php echo $this->createUrl("/language/create/"); ?>">Create</a>
+                    </li>
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "banner" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/banner/index"); ?>"><i class="fa fa-edit fa-fw"></i> Banners<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/banner/index/"); ?>">List</a>
+                    </li>
+
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "motoDairy" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/motoDairy/index"); ?>"><i class="fa fa-edit fa-fw"></i> Moto Dairy<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/motoDairy/index/"); ?>">List</a>
+                    </li>
+
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "motoGallery" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/motoGallery/index"); ?>"><i class="fa fa-edit fa-fw"></i> Moto Gallery<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/motoGallery/index/"); ?>">List</a>
+                    </li>
+
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "teamImage" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/teamImage/index"); ?>"><i class="fa fa-edit fa-fw"></i> Team<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/teamImage/index/"); ?>">List</a>
+                    </li>
+
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "faq" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/faq/index"); ?>"><i class="fa fa-edit fa-fw"></i> Faq<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/faq/index/"); ?>">List</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/faq/create/"); ?>">Create</a>
                     </li>
                 </ul>
                 <!-- second-level-items -->
