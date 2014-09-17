@@ -124,6 +124,9 @@ class MotoGallery extends DTActiveRecord {
             'pagination' => array(
                 'pageSize' => 20,
             ),
+            'sort' => array(
+                'defaultOrder' => 'id DESC , lang_id DESC',
+            )
         ));
     }
 
@@ -136,7 +139,6 @@ class MotoGallery extends DTActiveRecord {
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
-
 
     public function afterFind() {
         $this->oldLargeImg = $this->image_large;

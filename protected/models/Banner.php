@@ -134,6 +134,9 @@ class Banner extends DTActiveRecord {
             'pagination' => array(
                 'pageSize' => 20,
             ),
+            'sort' => array(
+                'defaultOrder' => 'id DESC , lang_id DESC',
+            )
         ));
     }
 
