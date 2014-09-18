@@ -12,7 +12,9 @@
  * @property string $update_user_id
  * @property string $activity_log
  */
-class ConfTourTypeLang extends DTActiveRecord {
+class ConfTourType extends DTActiveRecord {
+
+    public $confViewName = '//confTourType/index';
 
     /**
      * @return string the associated database table name
@@ -45,7 +47,7 @@ class ConfTourTypeLang extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-            'conf_tour_langs'=>array(self::HAS_MANY, 'ConfTourTypeLang', 'parent_id'),
+            'conf_tour_langs' => array(self::HAS_MANY, 'ConfTourTypeLang', 'parent_id'),
         );
     }
 
@@ -95,7 +97,7 @@ class ConfTourTypeLang extends DTActiveRecord {
 
         $criteria->compare('activity_log', $this->activity_log, true);
 
-        return new CActiveDataProvider('conf_tour_types', array(
+        return new CActiveDataProvider('ConfTourType', array(
             'criteria' => $criteria,
         ));
     }
