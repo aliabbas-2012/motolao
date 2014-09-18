@@ -88,24 +88,15 @@ class ConfTourTypeLang extends DTActiveRecord {
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id, true);
-
         $criteria->compare('name', $this->name, true);
-
         $criteria->compare('lang_id', $this->lang_id);
-
         $criteria->compare('parent_id', $this->parent_id);
-
         $criteria->compare('create_time', $this->create_time, true);
-
         $criteria->compare('create_user_id', $this->create_user_id, true);
-
         $criteria->compare('update_time', $this->update_time, true);
-
         $criteria->compare('update_user_id', $this->update_user_id, true);
-
         $criteria->compare('activity_log', $this->activity_log, true);
-
-        return new CActiveDataProvider('conf_tour_types_langs', array(
+        return new CActiveDataProvider('ConfTourTypeLang', array(
             'criteria' => $criteria,
         ));
     }
