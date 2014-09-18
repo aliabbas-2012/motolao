@@ -15,6 +15,7 @@
 class ConfTourType extends DTActiveRecord {
 
     public $confViewName = '//confTourType/index';
+    public $childModel = 'ConfTourTypeLang';
 
     /**
      * @return string the associated database table name

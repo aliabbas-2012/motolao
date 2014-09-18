@@ -38,7 +38,7 @@ class ConfigurationsController extends Controller {
      * @param <string> $m (Model name without Conf)
      * @param <int> $id
      */
-    public function actionLoad($m, $id = 0, $module = '', $type = "") {
+    public function actionLoad($m, $id = 0, $child_id = '', $type = "") {
 
         /* Complete Model name */
         $model_name = 'Conf' . $m;
@@ -47,26 +47,39 @@ class ConfigurationsController extends Controller {
         /* For add new or update */
         $model = new $model_name;
 
+
         if ($id != 0) {
             $model = $model->findByPk($id);
         }
-//        echo $model->confViewName;
-//        exit;
-        /* Perform ajax validation */
-//        $this->performAjaxValidation($model);
+        $childModel = '';
+        if ($child_id != '' && isset($model->childModel)) {
+            $childModel = new $model->childModel;
+            $childModel = $childModel->findByPk($child_id);
+            if (isset($_POST[$model->childModel])) {
+                /* Assign attributes */
 
-        /* if form is posted */
-        if (isset($_POST[$model_name])) {
-            /* Assign attributes */
-            CVarDumper::dump($_POST[$model_name]);
-            $model->attributes = $_POST[$model_name];
-            /* Save record */
-            if ($model->save())
-                $this->redirect(array('load', 'm' => $m));
-            CVarDumper::dump($model->errors, 10, true);
+                $childModel->attributes = $_POST[$model->childModel];
+                /* Save record */
+                if ($childModel->save()) {
+                   $this->redirect(array('load', 'm' => $m,"id"=>$model->id));
+                }
+            }
+        } else {
+            if (isset($_POST[$model_name])) {
+                /* Assign attributes */
+
+                $model->attributes = $_POST[$model_name];
+                /* Save record */
+                if ($model->save()) {
+                    $this->redirect(array('load', 'm' => $m,"id"=>$model->id));
+                }
+            }
         }
 
-        $this->render($model->confViewName, array('model' => $model, 'm' => $m, 'module' => $module));
+        /* if form is posted */
+
+
+        $this->render($model->confViewName, array('model' => $model, 'm' => $m, 'child_id' => $child_id, "childModel" => $childModel));
     }
 
     /**

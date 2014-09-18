@@ -3,26 +3,22 @@
         <!-- Form Elements -->
         <div class="panel panel-default">
             <div class="panel-heading">
-
+                Language of Conf Tour Types
             </div>
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-9">
                         <?php
-                        $option = array("m" => "TourType");
-                        if (!empty($_GET['id'])) {
-                            $option['id'] = $_GET['id'];
-                        }
+                       
                         $form = $this->beginWidget('CActiveForm', array(
                             'id' => 'faq-form',
                             'enableAjaxValidation' => false,
                             'htmlOptions' => array(
                                 'class' => 'form-horizontal'
                             ),
-                            'action' => $this->createUrl("load", $option),
+                  
                         ));
                         ?>
-
                         <p class="form-group alert alert-info">
                             <?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
                         </p>
@@ -39,6 +35,21 @@
                             </div>
 
                         </div><!-- group -->
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'lang_id'); ?> 
+                            </div>
+                            <div class="col-lg-6">
+                                <?php
+                                $criteria = new CDbCriteria();
+                                $criteria->addCondition("Lower(name)<>'english'");
+                                $languages = array("" => "Select") + CHtml::listData(Language::model()->findAll($criteria), "id", "name");
+                                echo $form->dropDownList($model, 'lang_id', $languages, array('class' => 'form-control'));
+                                ?>
+                                <?php echo $form->error($model, 'lang_id'); ?>
+                            </div>
+                        </div>
+
 
                         <div class="form-group">
                             <div class="col-lg-2"></div>

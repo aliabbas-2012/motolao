@@ -81,12 +81,14 @@ class ConfTourTypeLang extends DTActiveRecord {
      *
      * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
      */
-    public function search() {
+    public function search($parent_id = '') {
         // Warning: Please modify the following code to remove attributes that
         // should not be searched.
 
         $criteria = new CDbCriteria;
-
+        if($parent_id!=""){
+            $this->parent_id = $parent_id;
+        }
         $criteria->compare('id', $this->id, true);
         $criteria->compare('name', $this->name, true);
         $criteria->compare('lang_id', $this->lang_id);
