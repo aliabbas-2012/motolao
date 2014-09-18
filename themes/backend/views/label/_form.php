@@ -23,7 +23,7 @@
                             <?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
                         </p>
 
-                        <?php echo $form->errorSummary($model,'', array('class' => 'alert alert-block alert-danger')); ?>
+                        <?php echo $form->errorSummary($model,'','', array('class' => 'alert alert-block alert-danger')); ?>
 
                                                                                                           
 

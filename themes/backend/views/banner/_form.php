@@ -25,7 +25,7 @@
                             <?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
                         </p>
 
-                        <?php echo $form->errorSummary($model, '', array('class' => 'alert alert-block alert-danger')); ?>
+                        <?php echo $form->errorSummary($model, '','', array('class' => 'alert alert-block alert-danger')); ?>
 
 
 
@@ -33,8 +33,7 @@
                             <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
                                 <?php
-                                $criteria = new CDbCriteria();
-                                $languages = array("" => "Select") + CHtml::listData(Language::model()->findAll($criteria), "id", "name");
+
                                 echo $form->dropDownList($model, 'lang_id', $languages, array('class' => 'form-control'));
                                 ?>
                                 <?php echo $form->error($model, 'lang_id'); ?>
