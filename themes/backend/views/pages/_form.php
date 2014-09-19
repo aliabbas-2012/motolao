@@ -84,13 +84,11 @@
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6 input-group-btn">
                                 <?php echo CHtml::submitButton('Save', array('class' => 'btn btn-primary')); ?>
-
-                                <?php
-                                $this->endWidget();
-                                ?>
                             </div>
                         </div>
-
+                        <?php
+                        $this->endWidget();
+                        ?>
                     </div>
                 </div>
             </div>
