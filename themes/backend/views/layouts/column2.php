@@ -122,6 +122,18 @@
                 </ul>
                 <!-- second-level-items -->
             </li>
+            <li class="<?php echo $this->id == "pages" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/pages/index"); ?>"><i class="fa fa-edit fa-fw"></i> Pages<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/pages/index/"); ?>">List</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/pages/create/"); ?>">Create</a>
+                    </li>
+                </ul>
+                <!-- second-level-items -->
+            </li>
             <?php
             if (strstr(Yii::app()->request->hostInfo, "localhost")) {
                 $this->renderPartial("//layouts/_menus_local_host");
