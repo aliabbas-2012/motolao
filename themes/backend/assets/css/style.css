@@ -344,3 +344,6 @@ table.table-striped th a {
 .panel-heading a {
     color:inherit;
 }
+.alert-margin {
+    margin-top: 40px;
+}
