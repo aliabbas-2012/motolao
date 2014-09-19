@@ -47,8 +47,10 @@ class MotoDairyController extends Controller {
 
         if (isset($_POST['MotoDairy'])) {
             $model->attributes = $_POST['MotoDairy'];
-            if ($model->save())
+            if ($model->save()){
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
+            }
         }
         return $model;
     }
@@ -66,8 +68,10 @@ class MotoDairyController extends Controller {
 
         if (isset($_POST['MotoDairy'])) {
             $model->attributes = $_POST['MotoDairy'];
-            if ($model->save())
+            if ($model->save()){
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
+            }
         }
         return $model;
     }

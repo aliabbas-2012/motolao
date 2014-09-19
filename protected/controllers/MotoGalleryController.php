@@ -47,8 +47,10 @@ class MotoGalleryController extends Controller {
 
         if (isset($_POST['MotoGallery'])) {
             $model->attributes = $_POST['MotoGallery'];
-            if ($model->save())
+            if ($model->save()){
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
+            }
         }
         return $model;
     }
@@ -66,8 +68,10 @@ class MotoGalleryController extends Controller {
 
         if (isset($_POST['MotoGallery'])) {
             $model->attributes = $_POST['MotoGallery'];
-            if ($model->save())
+            if ($model->save()){
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
+            }
         }
         return $model;
     }

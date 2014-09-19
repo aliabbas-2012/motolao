@@ -48,6 +48,7 @@ class BannerController extends Controller {
         if (isset($_POST['Banner'])) {
             $model->attributes = $_POST['Banner'];
             if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
             }
         }
@@ -68,6 +69,7 @@ class BannerController extends Controller {
         if (isset($_POST['Banner'])) {
             $model->attributes = $_POST['Banner'];
             if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
             }
         }

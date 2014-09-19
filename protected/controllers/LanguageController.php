@@ -64,6 +64,7 @@ class LanguageController extends Controller {
                 if (!empty($img_file)) {
                     $img_file->saveAs($upload_path . str_replace(" ", "_", $model->flag_img));
                 }
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
             }
         }
@@ -98,6 +99,7 @@ class LanguageController extends Controller {
                 if (!empty($img_file)) {
                     $img_file->saveAs($upload_path . str_replace(" ", "_", $model->flag_img));
                 }
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
             }
         }

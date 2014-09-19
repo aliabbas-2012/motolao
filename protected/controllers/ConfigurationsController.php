@@ -65,6 +65,7 @@ class ConfigurationsController extends Controller {
                 $childModel->parent_id = $model->id;
                 /* Save record */
                 if ($childModel->save()) {
+                    Yii::app()->user->setFlash("success", "Data has been saved successfully");
                     $this->redirect(array('load', 'm' => $m, "id" => $model->id,"child_id"=>"new"));
                 }
             }
@@ -75,6 +76,7 @@ class ConfigurationsController extends Controller {
                 $model->attributes = $_POST[$model_name];
                 /* Save record */
                 if ($model->save()) {
+                    Yii::app()->user->setFlash("success", "Data has been saved successfully");
                     $this->redirect(array('load', 'm' => $m, "id" => $model->id,"child_id"=>"new"));
                 }
             }

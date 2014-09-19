@@ -47,8 +47,10 @@ class TeamImageController extends Controller {
 
         if (isset($_POST['TeamImage'])) {
             $model->attributes = $_POST['TeamImage'];
-            if ($model->save())
+            if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
+            }
         }
         return $model;
     }
@@ -66,8 +68,10 @@ class TeamImageController extends Controller {
 
         if (isset($_POST['TeamImage'])) {
             $model->attributes = $_POST['TeamImage'];
-            if ($model->save())
+            if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('index', 'id' => $model->id));
+            }
         }
         return $model;
     }

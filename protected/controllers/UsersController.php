@@ -67,7 +67,7 @@ class UsersController extends Controller {
             $itst = new DTFunctions();
             $model->activation_key = $itst->getRanddomeNo(25);
             if ($model->save()) {
-
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->generateEmail($model);
                 $this->redirect(array('view', 'id' => $model->id));
             }
@@ -112,8 +112,10 @@ class UsersController extends Controller {
 
         if (isset($_POST['Users'])) {
             $model->attributes = $_POST['Users'];
-            if ($model->save())
+            if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('update', array(

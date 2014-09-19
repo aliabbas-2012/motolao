@@ -17,9 +17,9 @@ class CategoryController extends Controller {
             'postOnly + delete', // we only allow deletion via POST request
         );
     }
-    
+
     public function beforeAction($action) {
-       
+
         return parent::beforeAction($action);
     }
 
@@ -64,8 +64,10 @@ class CategoryController extends Controller {
 
         if (isset($_POST['Category'])) {
             $model->attributes = $_POST['Category'];
-            if ($model->save())
+            if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('create', array(
@@ -87,6 +89,7 @@ class CategoryController extends Controller {
         if (isset($_POST['Category'])) {
             $model->attributes = $_POST['Category'];
             if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
             }
         }
@@ -103,13 +106,12 @@ class CategoryController extends Controller {
      */
     public function actionDelete($id, $related = "", $related_id = "") {
 
-        if(!empty($related)){
+        if (!empty($related)) {
             $this->deleteRelations($related, $related_id);
-        }
-        else {
+        } else {
             $this->loadModel($id)->delete();
         }
-       
+
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
@@ -179,6 +181,7 @@ class CategoryController extends Controller {
                 break;
         }
     }
+
     /**
      * 
      * @param type $model
@@ -186,7 +189,7 @@ class CategoryController extends Controller {
      * @param type $related_id
      */
     public function deleteRelations($related = "", $related_id = "") {
-       
+
         switch ($related) {
             case "categoryLangs":
                 CategoryLang::model()->deleteByPk($related_id);

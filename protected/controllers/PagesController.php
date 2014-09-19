@@ -57,8 +57,10 @@ class PagesController extends Controller {
 
         if (isset($_POST['Pages'])) {
             $model->attributes = $_POST['Pages'];
-            if ($model->save())
+            if ($model->save()){
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('create', array(
@@ -79,8 +81,10 @@ class PagesController extends Controller {
 
         if (isset($_POST['Pages'])) {
             $model->attributes = $_POST['Pages'];
-            if ($model->save())
+            if ($model->save()){
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('update', array(

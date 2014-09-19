@@ -42,7 +42,7 @@ class TourController extends Controller {
     public function actionView($id, $related = "", $related_id = "") {
         $model = $this->loadModel($id);
         $this->manageRelations($model, $related, $related_id);
-      
+
         $this->render('view', array(
             'model' => $model,
             'related' => $related,
@@ -62,8 +62,10 @@ class TourController extends Controller {
 
         if (isset($_POST['Tour'])) {
             $model->attributes = $_POST['Tour'];
-            if ($model->save())
+            if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('create', array(
@@ -84,8 +86,10 @@ class TourController extends Controller {
 
         if (isset($_POST['Tour'])) {
             $model->attributes = $_POST['Tour'];
-            if ($model->save())
+            if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
+            }
         }
 
         $this->render('update', array(
