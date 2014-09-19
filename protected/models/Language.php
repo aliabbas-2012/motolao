@@ -51,6 +51,7 @@ class Language extends DTActiveRecord {
             array('id, name, meta_title, meta_description, description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
         );
     }
+   
 
     /**
      * @return array relational rules.

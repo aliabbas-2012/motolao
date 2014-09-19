@@ -45,6 +45,20 @@ class Pages extends DTActiveRecord {
     }
 
     /**
+     * uniqueness
+     */
+    public function validateUniquness() {
+        $criteria = new CDbCriteria();
+        if (!$this->isNewRecord) {
+            $criteria->addCondition("id<>" . $this->id);
+        }
+        $criteria->addCondition("key ='" . $this->key . "' AND lang_id " . $this->lang_id);
+        if ($this->count($criteria) > 0) {
+            $this->addError("key", "This key already exist in this language");
+        }
+    }
+
+    /**
      * @return array relational rules.
      */
     public function relations() {
