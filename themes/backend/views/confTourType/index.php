@@ -55,7 +55,7 @@
                                 'template' => '{update}',
                                 'buttons' => array(
                                     'update' => array(
-                                        'url' => 'Yii::app()->controller->createUrl("load",array("id"=>$data->id,"m"=>"TourType"))'
+                                        'url' => 'Yii::app()->controller->createUrl("load",array("id"=>$data->id,"m"=>"TourType","child_id"=>"new"))'
                                     ),
                                     
                                 )

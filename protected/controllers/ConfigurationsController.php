@@ -54,14 +54,18 @@ class ConfigurationsController extends Controller {
         $childModel = '';
         if ($child_id != '' && isset($model->childModel)) {
             $childModel = new $model->childModel;
-            $childModel = $childModel->findByPk($child_id);
+            if ($child_id!="new") {
+               $childModel = $childModel->findByPk($child_id);
+            }
+      
             if (isset($_POST[$model->childModel])) {
                 /* Assign attributes */
 
                 $childModel->attributes = $_POST[$model->childModel];
+                $childModel->parent_id = $model->id;
                 /* Save record */
                 if ($childModel->save()) {
-                   $this->redirect(array('load', 'm' => $m,"id"=>$model->id));
+                    $this->redirect(array('load', 'm' => $m, "id" => $model->id,"child_id"=>"new"));
                 }
             }
         } else {
@@ -71,7 +75,7 @@ class ConfigurationsController extends Controller {
                 $model->attributes = $_POST[$model_name];
                 /* Save record */
                 if ($model->save()) {
-                    $this->redirect(array('load', 'm' => $m,"id"=>$model->id));
+                    $this->redirect(array('load', 'm' => $m, "id" => $model->id,"child_id"=>"new"));
                 }
             }
         }

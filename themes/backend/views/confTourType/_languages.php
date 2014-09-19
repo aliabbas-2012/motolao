@@ -2,7 +2,13 @@
     <div class="col-lg-12" >
         <?php
         if (!empty($_GET['child_id'])) {
-            $childModel = ConfTourTypeLang::model()->findByPk(($_GET['child_id']));
+            if($_GET['child_id']=='new'){
+                $childModel = new ConfTourTypeLang;
+            }
+            else {
+                $childModel = ConfTourTypeLang::model()->findByPk(($_GET['child_id']));
+            }
+            
             $this->renderPartial('//confTourType/_lang_form', array(
                 'model' => $childModel,
             ));
