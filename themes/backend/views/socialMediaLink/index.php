@@ -2,14 +2,14 @@
 /* @var $this SocialMediaLinkController */
 /* @var $model SocialMediaLink */
 
-$this->breadcrumbs=array(
-	'Social Media Links'=>array('index'),
-	'Manage',
+$this->breadcrumbs = array(
+    'Social Media Links' => array('index'),
+    'Manage',
 );
 
-$this->menu=array(
-array('label'=>'List SocialMediaLink', 'url'=>array('index')),
-array('label'=>'Create SocialMediaLink', 'url'=>array('create')),
+$this->menu = array(
+    array('label' => 'List SocialMediaLink', 'url' => array('index')),
+    array('label' => 'Create SocialMediaLink', 'url' => array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -38,9 +38,11 @@ return false;
 </div>
 
 <div class="search-form" style="display:none">
-    <?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
+    <?php
+    $this->renderPartial('_search', array(
+        'model' => $model,
+    ));
+    ?>
 </div><!-- search-form -->
 <div class="row">
     <div class="col-lg-12">
@@ -50,36 +52,35 @@ return false;
                 <a class="search-button" href="#">Advanced Search</a>            </div>
             <div class="panel-body">
                 <div class="table-responsive">
-                    <?php $this->widget('zii.widgets.grid.CGridView', array(
-                    'id'=>'social-media-link-grid',
-                    'dataProvider'=>$model->search(),
-                    'htmlOptions' => array(
-                    'class' => 'table-responsive'
-                    ),
-                    'itemsCssClass' => 'table table-striped table-bordered table-hover',
-                    'filter'=>$model,
-                    'columns'=>array(
-                    		'id',
-		'lang_id',
-		'title',
-		'url',
-		'meta_tag',
-		/*
-		'meta_description',
-		'create_time',
-		'create_user_id',
-		'update_time',
-		'update_user_id',
-		'activity_log',
-		*/
-                    array(
-                    'class'=>'CButtonColumn',
-                    ),
-                    ),
-                    )); ?>
+                    <?php
+                    $this->widget('zii.widgets.grid.CGridView', array(
+                        'id' => 'social-media-link-grid',
+                        'dataProvider' => $model->search(),
+                        'htmlOptions' => array(
+                            'class' => 'table-responsive'
+                        ),
+                        'itemsCssClass' => 'table table-striped table-bordered table-hover',
+                        'filter' => $model,
+                        'columns' => array(
+                            array(
+                                'name' => 'lang',
+                                'value' => 'isset($data->lang)?$data->lang->name:""'
+                            ),
+                            'title',
+                            'url',
+                            'meta_tag',
+                            array(
+                                'class' => 'CButtonColumn',
+                            ),
+                        ),
+                    ));
+                    ?>
 
                 </div>
             </div>
         </div>
     </div>
 </div>    
+<?php
+Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/scripts/jquery.ba-bbq1.js', CClientScript::POS_END);
+?>

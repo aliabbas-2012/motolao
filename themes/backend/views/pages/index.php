@@ -81,3 +81,6 @@ $('#pages-grid').yiiGridView('update', {
         </div>
     </div>
 </div>    
+<?php
+Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/scripts/jquery.ba-bbq1.js', CClientScript::POS_END);
+?>

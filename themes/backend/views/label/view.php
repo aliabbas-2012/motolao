@@ -2,15 +2,14 @@
 /* @var $this LabelController */
 /* @var $model Label */
 
-$this->breadcrumbs=array(
-	'Labels'=>array('index'),
-	$model->id,
+$this->breadcrumbs = array(
+    'Labels' => array('index'),
+    $model->id,
 );
 
-$this->menu=array(
-array('label'=>'List Label', 'url'=>array('index')),
-array('label'=>'Create Label', 'url'=>array('create')),
-
+$this->menu = array(
+    array('label' => 'List Label', 'url' => array('index')),
+    array('label' => 'Create Label', 'url' => array('create')),
 );
 ?>
 <div class="row">
@@ -30,20 +29,19 @@ array('label'=>'Create Label', 'url'=>array('create')),
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
-                    <?php $this->widget('zii.widgets.CDetailView', array(
-                    'data'=>$model,
-                    'attributes'=>array(
-                    		'id',
-		'lang_id',
-		'key',
-		'value',
-		'create_time',
-		'create_user_id',
-		'update_time',
-		'update_user_id',
-		'activity_log',
-                    ),
-                    )); ?>
+                    <?php
+                    $this->widget('zii.widgets.CDetailView', array(
+                        'data' => $model,
+                        'attributes' => array(
+                            array(
+                                'name' => 'lang',
+                                'value' => isset($model->lang) ? $model->lang->name : ""
+                            ),
+                            'key',
+                            'value',
+                        ),
+                    ));
+                    ?>
 
                 </div>
             </div>
