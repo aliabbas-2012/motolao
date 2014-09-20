@@ -27,7 +27,7 @@ $this->menu = array(
 $criteria = new CDbCriteria();
 $languages_db = CHtml::listData(Language::model()->findAll($criteria), "id", "name");
 $languages = array("" => "Select") + $languages_db;
-$this->renderPartial("_form", array("model" => $model_form,'languages'=>$languages));
+$this->renderPartial("//innerSlider/_form", array("model" => $model_form,'languages'=>$languages));
 ?>
 <div class="row">
     <div class="col-lg-12">

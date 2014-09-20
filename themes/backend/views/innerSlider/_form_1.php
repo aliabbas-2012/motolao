@@ -51,10 +51,10 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'heading_box', array('class' => 'control-label col-lg-2')); ?>
+                            <?php echo $form->labelEx($model, 'heading', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-8">
-                                <?php echo $form->textField($model, 'heading_box', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                <?php echo $form->error($model, 'heading_box'); ?>
+                                <?php echo $form->textField($model, 'heading', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'heading'); ?>
 
                             </div>
 
@@ -89,15 +89,7 @@
                             </div>
 
                         </div><!-- group -->
-                        <div class="form-group">
-                            <?php echo $form->labelEx($model, 'same_box', array('class' => 'control-label col-lg-4')); ?>
-                            <div class="col-lg-8">
-                                <?php echo $form->checkBox($model, 'same_box'); ?>
-                                <?php echo $form->error($model, 'same_box'); ?>
 
-                            </div>
-
-                        </div><!-- group -->
 
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'image_large', array('class' => 'control-label col-lg-3')); ?>
@@ -114,7 +106,15 @@
                         </div><!-- group -->
 
 
+                        <div class="form-group">
+                            <?php echo $form->labelEx($model, 'same_box', array('class' => 'control-label col-lg-4')); ?>
+                            <div class="col-lg-8">
+                                <?php echo $form->checkBox($model, 'same_box'); ?>
+                                <?php echo $form->error($model, 'same_box'); ?>
 
+                            </div>
+
+                        </div><!-- group -->
 
 
                         <div class="form-group">

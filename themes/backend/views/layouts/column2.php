@@ -1,12 +1,12 @@
 <?php $this->beginContent('//layouts/main'); ?>
 <?php
-    $pluggins_array = array(
-        "motoDairy",
-        "banner",
-        "motoGallery",
-        "teamImage",
-        
-    )
+$pluggins_array = array(
+    "motoDairy",
+    "banner",
+    "motoGallery",
+    "teamImage",
+    "innerSlider",
+        )
 ?>
 <nav class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
@@ -78,7 +78,7 @@
                 </ul>
                 <!-- second-level-items -->
             </li>
-            <li class="<?php echo in_array($this->id,$pluggins_array) ? "selected" : "" ?>">
+            <li class="<?php echo in_array($this->id, $pluggins_array) ? "selected" : "" ?>">
                 <a href="<?php echo $this->createUrl("/banner/index"); ?>"><i class="fa fa-edit fa-fw"></i> Pluggins & Pages<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
@@ -92,6 +92,9 @@
                     </li>
                     <li>
                         <a href="<?php echo $this->createUrl("/teamImage/index/"); ?>">Team Image</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/innerSlider/index/"); ?>">Inner Slider</a>
                     </li>
                 </ul>
                 <!-- second-level-items -->

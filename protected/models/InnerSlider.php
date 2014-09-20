@@ -10,7 +10,7 @@
  * @property string $alt
  * @property string $title
  * @property string $image_large
- * @property string $heading
+ * @property string $heading_box
  * @property string $detail
  * @property string $same_box
  * @property string $create_time
@@ -59,14 +59,14 @@ class InnerSlider extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('heading,detail,lang_id, key, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('heading_box,detail,lang_id, key, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('key', 'length', 'max' => 20),
             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             array('alt, title, image_large', 'length', 'max' => 150),
             array('same_box, activity_log', 'safe'),
-            array('validateUniquness','heading'),
+            array('heading_box','validateUniquness'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, alt, title, image_large, same_box, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -81,9 +81,9 @@ class InnerSlider extends DTActiveRecord {
         if (!$this->isNewRecord) {
             $criteria->addCondition("id<>" . $this->id);
         }
-        $criteria->addCondition("heading ='" . $this->key . "' AND lang_id =" . $this->lang_id);
+        $criteria->addCondition("heading_box ='" . $this->heading_box . "' AND lang_id =" . $this->lang_id);
         if ($this->count($criteria) > 0) {
-            $this->addError("heading", "This heading already exist in this language");
+            $this->addError("heading_box", "This heading_box already exist in this language");
         }
     }
 
@@ -106,7 +106,7 @@ class InnerSlider extends DTActiveRecord {
             'id' => 'ID',
             'lang_id' => 'Lang',
             'detail' => 'Detail',
-            'heading' => 'heading',
+            'heading_box' => 'heading_box',
             'key' => 'Key',
             'alt' => 'Alt',
             'title' => 'Title',
@@ -145,7 +145,7 @@ class InnerSlider extends DTActiveRecord {
         $criteria->compare('image_large', $this->image_large, true);
         $criteria->compare('same_box', $this->same_box, true);
         $criteria->compare('detail', $this->detail, true);
-        $criteria->compare('heading', $this->heading, true);
+        $criteria->compare('heading_box', $this->heading_box, true);
         $criteria->compare('create_time', $this->create_time, true);
         $criteria->compare('create_user_id', $this->create_user_id, true);
         $criteria->compare('update_time', $this->update_time, true);

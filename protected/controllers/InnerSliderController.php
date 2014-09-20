@@ -103,7 +103,7 @@ class InnerSliderController extends Controller {
         } else {
             $model_form = $this->create();
         }
-
+ 
         $this->render('index', array(
             'model' => $model,
             'model_form' => $model_form,

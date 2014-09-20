@@ -11,7 +11,7 @@ class m140920_144039_addInnerSlider extends DTDbMigration {
             'alt' => 'varchar(150) DEFAULT NULL',
             'title' => 'varchar(150) DEFAULT NULL',
             'image_large' => 'varchar(150) DEFAULT NULL',
-            'heading' => 'varchar(150) DEFAULT NULL',
+            'heading_box' => 'varchar(150) DEFAULT NULL',
             'detail' => 'text DEFAULT NULL',
             'same_box' => 'boolean DEFAULT 0',
             'create_time' => 'datetime NOT NULL',
