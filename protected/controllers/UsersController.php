@@ -27,7 +27,7 @@ class UsersController extends Controller {
                 'users' => array('developer'),
             ),
             array('allow',
-                'actions' => array('changePass', 'profile'),
+                'actions' => array('changePass', 'profile','updateProfile'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -50,6 +50,25 @@ class UsersController extends Controller {
 
         $model = Users::model()->findByPk(Yii::app()->user->id);
         $this->render('profile', array('model' => $model));
+    }
+    
+    public function actionUpdateProfile() {
+        $model = Users::model()->findByPk(Yii::app()->user->id);
+
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if (isset($_POST['Users'])) {
+            $model->attributes = $_POST['Users'];
+            if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
+                $this->redirect(array('profile'));
+            }
+        }
+
+        $this->render('update', array(
+            'model' => $model,
+        ));
     }
 
     /**
