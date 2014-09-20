@@ -4,21 +4,21 @@
 
 $this->breadcrumbs=array(
 	'Faqs'=>array('index'),
-	'Create',
+	$model->id=>array('view','id'=>$model->id),
+	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'List Faq', 'url'=>array('index')),
-	array('label'=>'Manage Faq', 'url'=>array('admin')),
+array('label'=>'List Faq', 'url'=>array('index')),
+array('label'=>'Create Faq', 'url'=>array('create')),
+
 );
 ?>
 <div class="row">
     <!-- page header -->
     <div class="col-lg-12">
-        <h1 class="page-header">Create Faq</h1>
+        <h1 class="page-header">Update Faq AND Terms <?php echo $model->id; ?></h1>
     </div>
     <!--end page header -->
 </div>
-
-
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

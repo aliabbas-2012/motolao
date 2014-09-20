@@ -8,6 +8,7 @@
  * @property string $lang_id
  * @property string $question
  * @property string $answer
+ * @property string $type
  * @property string $create_time
  * @property string $create_user_id
  * @property string $update_time
@@ -30,14 +31,29 @@ class Faq extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('question,answer,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('question', 'length', 'max' => 250),
-            array('answer, activity_log', 'safe'),
+            array('type,answer, activity_log', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, question, answer, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
         );
+    }
+
+    /**
+     * uniqueness
+     */
+    public function validateUniquness() {
+        $criteria = new CDbCriteria();
+        if (!$this->isNewRecord) {
+            $criteria->addCondition("id<>" . $this->id);
+        }
+        $criteria->addCondition("t.question ='" . $this->question . "' AND lang_id =" . $this->lang_id);
+
+        if ($this->count($criteria) > 0) {
+            $this->addError("key", "This question already exist in this language");
+        }
     }
 
     /**
@@ -58,8 +74,9 @@ class Faq extends DTActiveRecord {
         return array(
             'id' => 'ID',
             'lang_id' => 'Language',
-            'question' => 'Question',
-            'answer' => 'Answer',
+            'type' => 'Type',
+            'question' => 'Heading or Question',
+            'answer' => 'Detail or Answer',
             'create_time' => 'Create Time',
             'create_user_id' => 'Create User',
             'update_time' => 'Update Time',
@@ -87,6 +104,7 @@ class Faq extends DTActiveRecord {
 
         $criteria->compare('id', $this->id, true);
         $criteria->compare('lang_id', $this->lang_id, true);
+        $criteria->compare('type', $this->type, true);
         $criteria->compare('question', $this->question, true);
         $criteria->compare('answer', $this->answer, true);
         $criteria->compare('create_time', $this->create_time, true);

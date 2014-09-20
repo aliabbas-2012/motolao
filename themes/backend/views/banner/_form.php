@@ -45,7 +45,7 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'key', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
-                                <?php echo $form->textField($model, 'key', array('class' => 'form-control', 'maxlength' => 20)); ?>
+                                <?php echo $form->dropDownList($model, 'key',Yii::app()->params['keys'], array('class' => 'form-control', 'maxlength' => 20)); ?>
                                 <?php echo $form->error($model, 'key'); ?>
 
                             </div>

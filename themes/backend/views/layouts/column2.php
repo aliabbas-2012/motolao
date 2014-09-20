@@ -97,14 +97,14 @@
                 <!-- second-level-items -->
             </li>
 
-            <li class="<?php echo $this->id == "faq" ? "selected" : "" ?>">
-                <a href="<?php echo $this->createUrl("/faq/index"); ?>"><i class="fa fa-edit fa-fw"></i> Faq<span class="fa arrow"></span></a>
+            <li class="<?php echo $this->id == "faqAndTerms" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/faq/index"); ?>"><i class="fa fa-edit fa-fw"></i> Faq And Terms<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="<?php echo $this->createUrl("/faq/index/"); ?>">List</a>
+                        <a href="<?php echo $this->createUrl("/faqAndTerms/index/"); ?>">List</a>
                     </li>
                     <li>
-                        <a href="<?php echo $this->createUrl("/faq/create/"); ?>">Create</a>
+                        <a href="<?php echo $this->createUrl("/faqAndTerms/create/"); ?>">Create</a>
                     </li>
                 </ul>
                 <!-- second-level-items -->

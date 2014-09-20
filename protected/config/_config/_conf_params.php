@@ -66,6 +66,17 @@ $params = array(
         'uk', // ukrainian.
         'zh' // chinese.
     ),
-    'notallowdCharactorsUrl' => array('[', ']', '@', '!', '$', '&', '(', ')', '*', '+', ';', "'", ",", "?", ":","ü"),
+    'notallowdCharactorsUrl' => array('[', ']', '@', '!', '$', '&', '(', ')', '*', '+', ';', "'", ",", "?", ":", "ü"),
+    'keys' => array(
+        'home'=>'home',
+        'tours-bikes'=>'tours-bikes',
+        'gallery'=>'gallery',
+        'fleet'=>'fleet',
+        'daries'=>'daries',
+        'faq'=>'faq',
+        'contacts'=>'contacts',
+        'about'=>'about',
+        'terms'=>'terms',
+    )
 );
 ?>

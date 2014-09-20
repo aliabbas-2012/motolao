@@ -32,7 +32,7 @@ return false;
 <div class="row">
     <!--  page header -->
     <div class="col-lg-12">
-        <h1 class="page-header">Manage Faqs</h1>
+        <h1 class="page-header">Manage Faq AND Terms</h1>
     </div>
     <!-- end  page header -->
 </div>
@@ -66,6 +66,10 @@ return false;
                                 'name' => 'lang_id',
                                 'value' => 'isset($data->lang)?$data->lang->name:""'
                             ),
+                            array(
+                                'name' => 'type',
+                                'value' => 'isset($data->type)?$data->type:""'
+                            ),
                             'question',
                             'answer',
                             array(
@@ -80,3 +84,8 @@ return false;
         </div>
     </div>
 </div>    
+
+
+<?php
+Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '/assets/scripts/jquery.ba-bbq1.js', CClientScript::POS_END);
+?>

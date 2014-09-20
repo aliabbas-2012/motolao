@@ -27,7 +27,7 @@
                         <?php echo $form->errorSummary($model, '', '', array('class' => 'alert alert-block alert-danger')); ?>
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-2')); ?>
+                            <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
                                 <?php
                                 $criteria = new CDbCriteria();
@@ -42,7 +42,16 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'question', array('class' => 'control-label col-lg-2')); ?>
+                            <?php echo $form->labelEx($model, 'type', array('class' => 'control-label col-lg-4')); ?>
+                            <div class="col-lg-4">
+                                <?php echo $form->dropDownList($model, 'type', array("faq" => "faq", "term" => 'term'), array('class' => 'form-control', 'maxlength' => 250)); ?>
+                                <?php echo $form->error($model, 'type'); ?>
+
+                            </div>
+
+                        </div><!-- group -->
+                        <div class="form-group">
+                            <?php echo $form->labelEx($model, 'question', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
                                 <?php echo $form->textField($model, 'question', array('class' => 'form-control', 'maxlength' => 250)); ?>
                                 <?php echo $form->error($model, 'question'); ?>
@@ -53,7 +62,7 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'answer', array('class' => 'control-label col-lg-2')); ?>
+                            <?php echo $form->labelEx($model, 'answer', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
                                 <?php echo $form->textArea($model, 'answer', array('class' => 'form-control')); ?>
                                 <?php echo $form->error($model, 'answer'); ?>

@@ -22,6 +22,15 @@
 
 
                         <div class="form-group">
+                            <?php echo $form->labelEx($model, 'type', array('class' => 'control-label col-lg-2')); ?>
+                            <div class="col-lg-4">
+                                <?php echo $form->textField($model, 'type', array('class' => 'form-control', 'maxlength' => 250)); ?>
+                                <?php echo $form->error($model, 'type'); ?>
+
+                            </div>
+
+                        </div><!-- group -->
+                        <div class="form-group">
                             <?php echo $form->labelEx($model, 'question', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
                                 <?php echo $form->textField($model, 'question', array('class' => 'form-control', 'maxlength' => 250)); ?>
