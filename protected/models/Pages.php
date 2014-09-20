@@ -52,7 +52,7 @@ class Pages extends DTActiveRecord {
         if (!$this->isNewRecord) {
             $criteria->addCondition("id<>" . $this->id);
         }
-        $criteria->addCondition("key ='" . $this->key . "' AND lang_id " . $this->lang_id);
+        $criteria->addCondition("key ='" . $this->key . "' AND lang_id =" . $this->lang_id);
         if ($this->count($criteria) > 0) {
             $this->addError("key", "This key already exist in this language");
         }
