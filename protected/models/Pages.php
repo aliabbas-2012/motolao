@@ -134,4 +134,25 @@ class Pages extends DTActiveRecord {
         return parent::model($className);
     }
 
+    /**
+     * 
+     * @return type
+     */
+    public function beforeSave() {
+        $this->setSlug();
+        return parent::beforeSave();
+    }
+
+    /**
+     * setting slug
+     * for url
+     * before save 
+     */
+    public function setSlug() {
+
+        $this->key = strtolower(trim($this->key));
+        $this->key = str_replace(" ", "-", $this->key);
+        $this->key = MyHelper::convert_no_sign($this->key);
+    }
+
 }

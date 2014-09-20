@@ -32,12 +32,28 @@ class Label extends DTActiveRecord {
         return array(
             array('lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
-            array('key, value', 'length', 'max' => 150),
-            array('activity_log', 'safe'),
+            array('key', 'length', 'max' => 150),
+            array('activity_log,value', 'safe'),
+            array('key', 'validateUniquness'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, value, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
         );
+    }
+
+    /**
+     * uniqueness
+     */
+    public function validateUniquness() {
+        $criteria = new CDbCriteria();
+        if (!$this->isNewRecord) {
+            $criteria->addCondition("id<>" . $this->id);
+        }
+        $criteria->addCondition("t.key ='" . $this->key . "' AND lang_id =" . $this->lang_id);
+
+        if ($this->count($criteria) > 0) {
+            $this->addError("key", "This key already exist in this language");
+        }
     }
 
     /**
@@ -47,7 +63,7 @@ class Label extends DTActiveRecord {
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
-             'lang' => array(self::BELONGS_TO, 'Language', 'lang_id'),
+            'lang' => array(self::BELONGS_TO, 'Language', 'lang_id'),
         );
     }
 
@@ -108,6 +124,27 @@ class Label extends DTActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    /**
+     * 
+     * @return type
+     */
+    public function beforeSave() {
+        $this->setSlug();
+        return parent::beforeSave();
+    }
+
+    /**
+     * setting slug
+     * for url
+     * before save 
+     */
+    public function setSlug() {
+
+        $this->key = strtolower(trim($this->key));
+        $this->key = str_replace(" ", "-", $this->key);
+        $this->key = MyHelper::convert_no_sign($this->key);
     }
 
 }

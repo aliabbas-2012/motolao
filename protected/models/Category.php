@@ -139,7 +139,7 @@ class Category extends DTActiveRecord {
     public function setSlug() {
 
         $this->url = strtolower(trim($this->url));
-        $this->url = str_replace(" ", "_", $this->url);
+        $this->url = str_replace(" ", "-", $this->url);
         $this->url = MyHelper::convert_no_sign($this->url);
     }
 

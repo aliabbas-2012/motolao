@@ -13,6 +13,6 @@ $import = array(
     'application.components.classes.db.*',
     'application.components.widgets.*',
     'application.components.dataProviders.*',
-
+    'system.gii.CCodeFile',
 );
 ?>

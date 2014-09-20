@@ -59,6 +59,7 @@ class LabelController extends Controller {
             $model->attributes = $_POST['Label'];
             if ($model->save()) {
                 Yii::app()->user->setFlash("success", "Data has been saved successfully");
+                $this->generate($model);
                 $this->redirect(array('view', 'id' => $model->id));
             }
         }
@@ -81,7 +82,7 @@ class LabelController extends Controller {
 
         if (isset($_POST['Label'])) {
             $model->attributes = $_POST['Label'];
-            if ($model->save()){
+            if ($model->save()) {
                 Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
             }
@@ -141,6 +142,50 @@ class LabelController extends Controller {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'label-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
+        }
+    }
+
+    /**
+     * Language
+     * @param type $model
+     */
+    public function generate($model) {
+     
+        $language = Language::model()->findByPk($model->lang_id);
+        if (isset($language)) {
+            $data = Label::model()->findAll("lang_id ='{$language->id}'");
+            $this->layout = "";
+            $str = "<?php " . PHP_EOL;
+            $str.='$' . $language->code . '_t =  array(' . PHP_EOL;
+            foreach ($data as $d) {
+
+                $str.= '"' . $d->key . '" => "' . $d->value . '",' . PHP_EOL;
+            }
+            $str.=' ); ' . PHP_EOL;
+
+            $str.=' return $' . $language->code . '_t;' . PHP_EOL;
+            $str.= "?>";
+
+            $dir_path = Yii::getPathOfAlias('application.messages.'.$language->code);
+
+            if (!is_dir($dir_path)) {
+                mkdir($dir_path, 0755);
+            }
+
+            $path = Yii::getPathOfAlias('application.messages.'.$language->code.'.' . $language->code) . '.php';
+            if(!is_file($path)){
+                touch($path);
+            }
+          
+
+            $ad = new CCodeFile($path, $str);
+
+
+
+            $ad->save();
+            chmod($path, 0755);
+            Yii::app()->user->setFlash("message", "Languages has been updated successfully");
+            $this->redirect($this->createUrl("/label/index"));
         }
     }
 
