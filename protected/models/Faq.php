@@ -31,10 +31,11 @@ class Faq extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('question,answer,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('type,question,answer,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('question', 'length', 'max' => 250),
             array('type,answer, activity_log', 'safe'),
+            array('question', 'validateUniquness'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, question, answer, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -45,14 +46,16 @@ class Faq extends DTActiveRecord {
      * uniqueness
      */
     public function validateUniquness() {
-        $criteria = new CDbCriteria();
-        if (!$this->isNewRecord) {
-            $criteria->addCondition("id<>" . $this->id);
-        }
-        $criteria->addCondition("t.question ='" . $this->question . "' AND lang_id =" . $this->lang_id);
-
-        if ($this->count($criteria) > 0) {
-            $this->addError("key", "This question already exist in this language");
+        if (!empty($this->lang_id)) {
+            $criteria = new CDbCriteria();
+            if (!$this->isNewRecord) {
+                $criteria->addCondition("id<>" . $this->id);
+            }
+            $criteria->addCondition("t.question ='" . $this->question . "' AND lang_id =" . $this->lang_id);
+            $criteria->addCondition(" type ='" . $this->type . "'");
+            if ($this->count($criteria) > 0) {
+                $this->addError("key", "This " . ucfirst($this->type) . " already exist in this language");
+            }
         }
     }
 
