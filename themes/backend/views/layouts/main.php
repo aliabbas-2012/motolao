@@ -55,7 +55,7 @@
                         </a>
                         <!-- dropdown user-->
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="javascript:void(0)"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                            <li><a href="<?php echo  $this->createUrl("//users/profile"); ?>"><i class="fa fa-user fa-fw"></i>User Profile</a>
                             </li>
                             <li><a href='<?php echo $this->createUrl("/configurations/load", array( "m" => "TourType", "child_id" => "new")); ?>'><i class="fa fa-gear fa-fw"></i>Configuration</a>
                             </li>
