@@ -1,5 +1,13 @@
 <?php $this->beginContent('//layouts/main'); ?>
-
+<?php
+    $pluggins_array = array(
+        "motoDairy",
+        "banner",
+        "motoGallery",
+        "teamImage",
+        
+    )
+?>
 <nav class="navbar-default navbar-static-side" role="navigation">
     <div class="sidebar-collapse">
         <!-- side-menu -->
@@ -70,46 +78,25 @@
                 </ul>
                 <!-- second-level-items -->
             </li>
-            <li class="<?php echo $this->id == "banner" ? "selected" : "" ?>">
-                <a href="<?php echo $this->createUrl("/banner/index"); ?>"><i class="fa fa-edit fa-fw"></i> Banners<span class="fa arrow"></span></a>
+            <li class="<?php echo in_array($this->id,$pluggins_array) ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/banner/index"); ?>"><i class="fa fa-edit fa-fw"></i> Pluggins & Pages<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a href="<?php echo $this->createUrl("/banner/index/"); ?>">List</a>
+                        <a href="<?php echo $this->createUrl("/banner/index/"); ?>">Banners</a>
                     </li>
-
+                    `                   <li>
+                        <a href="<?php echo $this->createUrl("/motoDairy/index/"); ?>">Moto Dairy</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/motoGallery/index/"); ?>">Moto Dairy</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/teamImage/index/"); ?>">Team Image</a>
+                    </li>
                 </ul>
                 <!-- second-level-items -->
             </li>
-            <li class="<?php echo $this->id == "motoDairy" ? "selected" : "" ?>">
-                <a href="<?php echo $this->createUrl("/motoDairy/index"); ?>"><i class="fa fa-edit fa-fw"></i> Moto Dairy<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="<?php echo $this->createUrl("/motoDairy/index/"); ?>">List</a>
-                    </li>
 
-                </ul>
-                <!-- second-level-items -->
-            </li>
-            <li class="<?php echo $this->id == "motoGallery" ? "selected" : "" ?>">
-                <a href="<?php echo $this->createUrl("/motoGallery/index"); ?>"><i class="fa fa-edit fa-fw"></i> Moto Gallery<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="<?php echo $this->createUrl("/motoGallery/index/"); ?>">List</a>
-                    </li>
-
-                </ul>
-                <!-- second-level-items -->
-            </li>
-            <li class="<?php echo $this->id == "teamImage" ? "selected" : "" ?>">
-                <a href="<?php echo $this->createUrl("/teamImage/index"); ?>"><i class="fa fa-edit fa-fw"></i> Team<span class="fa arrow"></span></a>
-                <ul class="nav nav-second-level">
-                    <li>
-                        <a href="<?php echo $this->createUrl("/teamImage/index/"); ?>">List</a>
-                    </li>
-
-                </ul>
-                <!-- second-level-items -->
-            </li>
             <li class="<?php echo $this->id == "faq" ? "selected" : "" ?>">
                 <a href="<?php echo $this->createUrl("/faq/index"); ?>"><i class="fa fa-edit fa-fw"></i> Faq<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
@@ -147,7 +134,6 @@
 <!--  page-wrapper -->
 <div id="page-wrapper">
     <?php
-
     if (Yii::app()->user->hasFlash('success')) {
         echo "<div class='col-lg-12'>";
         echo "<div class='alert-margin alert alert-success'>" . Yii::app()->user->getFlash('success') . "</div>";
