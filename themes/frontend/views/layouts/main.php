@@ -53,10 +53,9 @@
                     <div class="logo span3">
 
                         <a class="brand" href="index.html" title="Motolao I Adventure Tours in Laos">
-                            <img scr="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/logo.png" alt="Motolao Logo" title="Motolao I Adventure Tours in Laos" />
+                            <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/logo.png" alt="Motolao Logo" title="Motolao I Adventure Tours in Laos" />
                         </a>						
                     </div>
-                    <?php die; ?>
                     <!--end: Logo -->
 
                     <!--start: Navigation -->
@@ -122,7 +121,7 @@
 
             <div class="carousel-inner">
                 <div class="item active"> 
-                    <img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/slider-index/slider.jpg" style="width:100%" alt="First slide" />
+                    <img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/slider-index/slider.jpg" style="width:100%" alt="First slide" />
                     <div class="container">
                         <div class="carousel-caption">
                           <!--<p><a class="btn btn-lg btn-primary" href="javascript:void(0)" role="button">Sign up today</a></p>-->
@@ -130,7 +129,7 @@
                     </div>
                 </div>
                 <div class="item">
-                    <img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/slider-index/slider.jpg" style="width:100%" data-src="" alt="Second    slide" />
+                    <img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/slider-index/slider.jpg" style="width:100%" data-src="" alt="Second    slide" />
                     <div class="container">
                         <div class="carousel-caption">
                           <!--<p><a class="btn btn-lg btn-primary" href="javascript:void(0)" role="button">Learn more</a></p></p>-->
@@ -138,7 +137,7 @@
                     </div>
                 </div>
                 <div class="item"> 
-                    <img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/slider-index/slider.jpg" style="width:100%" data-src="" alt="Third slide" />
+                    <img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/slider-index/slider.jpg" style="width:100%" data-src="" alt="Third slide" />
                     <div class="container">
                         <div class="carousel-caption">
                         </div>
@@ -159,7 +158,7 @@
 
                 <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
                 <div id="signwrapper">
-                    <div class="logosign"><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/motolao_icons/motolao.png" alt="Motolao Logo" /></div>
+                    <div class="logosign"><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/motolao_icons/motolao.png" alt="Motolao Logo" /></div>
                 </div>
                 <h2>MOTOLAO</h2>
                 <div class="hero-unit">
@@ -176,7 +175,7 @@
 
             <!-- start SlideOptionOne -->	
             <div class="clients-carousel">
-                <div class="logosign"><a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/motolao_icons/star.png" alt="Motolao Dairies Logo" /></a></div>
+                <div class="logosign"><a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/motolao_icons/star.png" alt="Motolao Dairies Logo" /></a></div>
 
                 <a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><h2>LAO MOTORCYCLE DAIRIES</h2></a>
                 <a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><h3 >We are pleased to present new tour packages</h3></a>
@@ -184,23 +183,23 @@
 
                 <ul class="slides clients">
 
-                    <li><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/1.png" alt="" title=""/>
+                    <li><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/1.png" alt="" title=""/>
                         <h2>NEW BIKES ARRIVED!</h2>
                         <h4>The legendary Bullet 350 need no introduction. Now Bullet 350 is with all new Unit Construction Engine. We are proud to be the first and only tour company in Laos to provide these classic bikes.</h4>
                     </li>
-                    <li><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/2.png" alt="" title=""/>
+                    <li><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/2.png" alt="" title=""/>
                         <h2>NEW BIKES ARRIVED!</h2>
                         <h4>The legendary Bullet 350 need no introduction. Now Bullet 350 is with all new Unit Construction Engine. We are proud to be the first and only tour company in Laos to provide these classic bikes.</h4>
                     </li>	
-                    <li><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/3.png" alt="" title=""/>
+                    <li><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/3.png" alt="" title=""/>
                         <h2>NEW BIKES ARRIVED!</h2>
                         <h4>The legendary Bullet 350 need no introduction. Now Bullet 350 is with all new Unit Construction Engine. We are proud to be the first and only tour company in Laos to provide these classic bikes.</h4>
                     </li>
-                    <li><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/4.png" alt="" title=""/>
+                    <li><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/4.png" alt="" title=""/>
                         <h2>NEW BIKES ARRIVED!</h2>
                         <h4>The legendary Bullet 350 need no introduction. Now Bullet 350 is with all new Unit Construction Engine. We are proud to be the first and only tour company in Laos to provide these classic bikes.</h4>
                     </li>
-                    <li><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/5.png" alt="" title=""/>
+                    <li><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/arrivals/5.png" alt="" title=""/>
                         <h2>NEW BIKES ARRIVED!</h2>
                         <h4>The legendary Bullet 350 need no introduction. Now Bullet 350 is with all new Unit Construction Engine. We are proud to be the first and only tour company in Laos to provide these classic bikes.</h4>
                     </li>		
@@ -218,7 +217,7 @@
             <!--start: Container -->
 
             <div class="containerdiarygrid span12">	
-                <div class="logosign"><a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/motolao_icons/star.png" alt="Motolao Dairies Logo" /></a></div>
+                <div class="logosign"><a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/motolao_icons/star.png" alt="Motolao Dairies Logo" /></a></div>
                 <a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><h2>LAO MOTORCYCLE DAIRIES</h2></a>
                 <a class="brand" href="dairies.html" title="Motolao I Adventure Tours in Laos"><h3>We are pleased to present new tour packages</h3></a>
                 <div class="diarybutton"><a class="btn btn-lg btn-primary" href="dairies.html" role="button">Browse our diaries</a><p></p></div>
@@ -226,7 +225,7 @@
                 <!-- start: SlideOptionTwo -->
                 <div class="span6">
                     <div class="avatar view-team">
-                        <img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/diaries/01.jpg" alt="tour" title="">
+                        <img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/diaries/01.jpg" alt="tour" title="">
                         <div class="mask">
                             <h2>4x4 Tours</h2>
                             <p>
@@ -245,7 +244,7 @@
                 <!-- start: About Member -->
                 <div class="span6">
                     <div class="avatar view-team">
-                        <img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/diaries/02.jpg" alt="tour" title="">
+                        <img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/diaries/02.jpg" alt="tour" title="">
                         <div class="mask">
                             <h2>River Challenge</h2>
                             <p>
@@ -313,19 +312,19 @@
 
                     <ul id="footerextra-nav">
 
-                        <li><a href="javascript:void(0)" title=""><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/email.png" alt="tour" title="">EMAIL</a></li>
+                        <li><a href="javascript:void(0)" title=""><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/email.png" alt="tour" title="">EMAIL</a></li>
 
-                        <li><a href="javascript:void(0)" title=""><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/skype.png" alt="tour" title="">SKYPE</a></li>
+                        <li><a href="javascript:void(0)" title=""><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/skype.png" alt="tour" title="">SKYPE</a></li>
 
-                        <li><a href="javascript:void(0)" title=""><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/fb.png" alt="tour" title="">FACEBOOK</a></li>
+                        <li><a href="javascript:void(0)" title=""><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/fb.png" alt="tour" title="">FACEBOOK</a></li>
 
-                        <li><a href="javascript:void(0)" title=""><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/google.png" alt="tour" title="">GOOGLE</a></li>
+                        <li><a href="javascript:void(0)" title=""><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/google.png" alt="tour" title="">GOOGLE</a></li>
 
-                        <li><a href="javascript:void(0)" title=""><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/printrest.png" alt="tour" title="">PINTREST</a></li>
+                        <li><a href="javascript:void(0)" title=""><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/printrest.png" alt="tour" title="">PINTREST</a></li>
 
-                        <li><a href="javascript:void(0)" title=""><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/flickr.png" alt="tour" title="">FLICKR</a></li>
+                        <li><a href="javascript:void(0)" title=""><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/flickr.png" alt="tour" title="">FLICKR</a></li>
 
-                        <li><a href="javascript:void(0)" title=""><img scr="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/youtube.png" alt="tour" title="">YOUTUBE</a></li>
+                        <li><a href="javascript:void(0)" title=""><img src="<?php echo Yii::app()->theme->baseUrl;?>/assets/img/icons/social/youtube.png" alt="tour" title="">YOUTUBE</a></li>
 
                     </ul>
 
