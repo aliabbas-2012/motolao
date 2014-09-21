@@ -38,7 +38,6 @@
 
                         </div><!-- group -->
 
-
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'name', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
@@ -48,7 +47,6 @@
                             </div>
 
                         </div><!-- group -->
-
 
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'role', array('class' => 'control-label col-lg-2')); ?>
@@ -60,18 +58,6 @@
 
                         </div><!-- group -->
 
-
-                        <div class="form-group">
-                            <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-2')); ?>
-                            <div class="col-lg-4">
-                                <?php echo $form->textArea($model, 'description', array('class' => 'form-control')); ?>
-                                <?php echo $form->error($model, 'description'); ?>
-
-                            </div>
-
-                        </div><!-- group -->
-
-
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'alt', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
@@ -81,7 +67,6 @@
                             </div>
 
                         </div><!-- group -->
-
 
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'title', array('class' => 'control-label col-lg-2')); ?>
@@ -103,6 +88,21 @@
                                 }
                                 ?>
                                 <?php echo $form->error($model, 'image_large'); ?>
+                            </div>
+
+                        </div><!-- group --> 
+                        <div class="form-group">
+                            <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-2')); ?>
+                            <div class="col-lg-4">
+                                <?php
+                                $this->widget('application.extensions.tinymce.ETinyMce', array(
+                                    'editorTemplate' => 'full',
+                                    'model' => $model,
+                                    'attribute' => 'description',
+                                    'options' => array('theme' => 'advanced')));
+                                ?>
+                                <?php echo $form->error($model, 'description'); ?>
+
                             </div>
 
                         </div><!-- group -->

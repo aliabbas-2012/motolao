@@ -46,7 +46,11 @@ $this->menu = array(
                             'url',
                             'meta_title',
                             'meta_description',
-                            'description',
+                            array(
+                                'name' => 'description',
+                                'value' => $model->description,
+                                'type' => 'raw'
+                            ),
                         ),
                     ));
                     ?>
@@ -61,10 +65,10 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
 ?>
 <?php
 $criteria = new CDbCriteria();
-$criteria->addCondition("parent_id =".$model->id);
+$criteria->addCondition("parent_id =" . $model->id);
 $lang = new CActiveDataProvider('CategoryLang', array(
     'criteria' => $criteria,
-));
+        ));
 
 if (count($lang->getTotalItemCount()) > 0) {
     $this->renderPartial("//category/_languages", array("languages" => $lang));

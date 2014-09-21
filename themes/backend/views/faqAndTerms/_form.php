@@ -64,7 +64,13 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'answer', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
-                                <?php echo $form->textArea($model, 'answer', array('class' => 'form-control')); ?>
+                                <?php
+                                $this->widget('application.extensions.tinymce.ETinyMce', array(
+                                    'editorTemplate' => 'full',
+                                    'model' => $model,
+                                    'attribute' => 'answer',
+                                    'options' => array('theme' => 'advanced')));
+                                ?>
                                 <?php echo $form->error($model, 'answer'); ?>
 
                             </div>

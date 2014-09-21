@@ -39,7 +39,11 @@ $this->menu = array(
                             ),
                             'type',
                             'question',
-                            'answer',
+                            array(
+                                'name'=>'answer',
+                                'value'=>$model->answer,
+                                "type"=>'raw',
+                             )
                         ),
                     ));
                     ?>

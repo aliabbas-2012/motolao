@@ -101,7 +101,13 @@
                             </div>
                             <div class="col-lg-6">
 
-                                <?php echo $form->textArea($model, 'description', array('class' => 'form-control', 'rows' => 6, 'cols' => 50)); ?>
+                                <?php
+                                $this->widget('application.extensions.tinymce.ETinyMce', array(
+                                    'editorTemplate' => 'full',
+                                    'model' => $model,
+                                    'attribute' => 'description',
+                                    'options' => array('theme' => 'advanced')));
+                                ?>
                                 <?php echo $form->error($model, 'description'); ?>
                             </div>
 
