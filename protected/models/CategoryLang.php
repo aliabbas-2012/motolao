@@ -35,6 +35,7 @@ class CategoryLang extends DTActiveRecord {
         // will receive user inputs.
         return array(
             array('name,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('name', 'unique'),
             array('lang_id, parent_id', 'numerical', 'integerOnly' => true),
             array('name, url, meta_title', 'length', 'max' => 150),
             array('create_user_id, update_user_id', 'length', 'max' => 11),

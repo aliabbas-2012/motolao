@@ -41,6 +41,7 @@ class TourLang extends DTActiveRecord {
             array('name, short_title, tour_type, url, meta_title', 'length', 'max' => 150),
             array('create_user_id, update_user_id', 'length', 'max' => 11),
             array('meta_description, description, activity_log', 'safe'),
+            array('name', 'unique'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, name, short_title, tour_type, lang_id, parent_id, url, meta_title, meta_description, description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
