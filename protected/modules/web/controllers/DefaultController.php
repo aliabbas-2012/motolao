@@ -2,8 +2,20 @@
 
 class DefaultController extends Controller {
 
+    /**
+     * redirect site to for having www  lazmi
+     * @param type $action
+     * @return type
+     */
+    public function beforeAction($action) {
+
+        return parent::beforeAction($action);
+    }
+
+    public $layout = "//layouts/main";
+
     public function actionIndex() {
-        $this->render('index');
+        $this->render('//default/index');
     }
 
     public function actionError() {

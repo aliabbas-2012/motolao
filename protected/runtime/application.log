@@ -2205,3 +2205,1887 @@ in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
 in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
 in /var/www/html/motolao/protected/models/Users.php (166)
 in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/20 20:23:42 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:44:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/21 18:44:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:47:49 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:47:58 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:48:20 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:48:37 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:48:38 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:48:38 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:48:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:48:44 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/21 18:48:44 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:49:02 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:49:13 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:49:45 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:50:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/21 18:50:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:50:50 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:50:57 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:51:11 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:51:22 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:51:24 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:51:25 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:55:41 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 18:59:58 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:00:07 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:01:25 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:01:33 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (132)
+2014/09/21 19:01:33 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (132)
+2014/09/21 19:01:33 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:07 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (132)
+2014/09/21 19:02:07 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (132)
+2014/09/21 19:02:07 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:10 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/index.php (76)
+in /var/www/html/motolao/protected/controllers/TourController.php (129)
+2014/09/21 19:02:10 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/index.php (76)
+in /var/www/html/motolao/protected/controllers/TourController.php (129)
+2014/09/21 19:02:10 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:14 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/index.php (76)
+in /var/www/html/motolao/protected/controllers/TourController.php (129)
+2014/09/21 19:02:14 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/index.php (76)
+in /var/www/html/motolao/protected/controllers/TourController.php (129)
+2014/09/21 19:02:14 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:16 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (140)
+in /var/www/html/motolao/protected/controllers/TourController.php (82)
+2014/09/21 19:02:16 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/update.php (24)
+2014/09/21 19:02:16 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/update.php (24)
+2014/09/21 19:02:16 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:19 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/index.php (76)
+in /var/www/html/motolao/protected/controllers/TourController.php (129)
+2014/09/21 19:02:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/index.php (76)
+in /var/www/html/motolao/protected/controllers/TourController.php (129)
+2014/09/21 19:02:19 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (140)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (172)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (195)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (195)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:20 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/controllers/TourController.php (140)
+in /var/www/html/motolao/protected/controllers/TourController.php (43)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (45)
+in /var/www/html/motolao/protected/controllers/TourController.php (50)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "TourLang".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_languages.php (39)
+in /var/www/html/motolao/themes/backend/views/tour/view.php (86)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_lang_form.php (39)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Tour".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (172)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (195)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "image_large" of "TourImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TourImage.php (195)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_imagas.php (56)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/tour/_image_form.php (41)
+2014/09/21 19:02:55 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/language/index.php (76)
+2014/09/21 19:02:58 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:03:10 [warning] [application] Failed to set unsafe attribute "id" of "Faq".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/index.php (79)
+in /var/www/html/motolao/protected/controllers/FaqAndTermsController.php (119)
+2014/09/21 19:03:10 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/index.php (79)
+2014/09/21 19:03:10 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/index.php (79)
+2014/09/21 19:03:10 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 19:03:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:06:44 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:06:46 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:07:22 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.tinymce.ETinyMce" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php:322
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(CategoryController), 'application.ext...', Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 /var/www/html/motolao/themes/backend/views/category/_form.php(102): CBaseController->widget('application.ext...', Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#7 /var/www/html/motolao/themes/backend/views/category/create.php(24): CController->renderPartial('_form', Array)
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/html/motolao/protected/controllers/CategoryController.php(75): CController->render('create', Array)
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CategoryController->actionCreate()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('category/create')
+#24 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#25 /var/www/html/motolao/index.php(14): CApplication->run()
+#26 {main}
+REQUEST_URI=/motolao/index.php/admin/category/create
+HTTP_REFERER=http://localhost/motolao/index.php/site/index
+---
+2014/09/21 19:07:59 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "commonSystem/tinyUploadlayout".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('commonSystem/ti...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/motolao/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/motolao/index.php/common-system/tiny-uploadlayout?z1411308487070
+HTTP_REFERER=http://localhost/motolao/index.php/admin/category/create
+---
+2014/09/21 19:08:36 [error] [php] require(/var/www/html/motolao/protected/controllers/CommonSystemController.php): failed to open stream: Permission denied (/var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php:354)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/common-system/tiny-uploadlayout?z1411308516445
+in /var/www/html/motolao/index.php (14)
+2014/09/21 19:08:56 [error] [php] include(UploadForm.php): failed to open stream: No such file or directory (/var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/html/motolao/protected/controllers/CommonSystemController.php(40): spl_autoload_call()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CommonSystemController->actionTinyUploadlayout()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CommonSystemController->runAction()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CommonSystemController->runActionWithFilters()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CommonSystemController->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/common-system/tiny-uploadlayout?z1411308536311
+in /var/www/html/motolao/protected/controllers/CommonSystemController.php (40)
+in /var/www/html/motolao/index.php (14)
+2014/09/21 19:09:20 [error] [php] include(UploadForm.php): failed to open stream: No such file or directory (/var/www/html/frameworks/yii-1.1.15.022a51/framework/YiiBase.php:427)
+Stack trace:
+#0 /var/www/html/motolao/protected/controllers/CommonSystemController.php(40): spl_autoload_call()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CommonSystemController->actionTinyUploadlayout()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CommonSystemController->runAction()
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CommonSystemController->runActionWithFilters()
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CommonSystemController->run()
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/common-system/tiny-uploadlayout?z1411308560202
+in /var/www/html/motolao/protected/controllers/CommonSystemController.php (40)
+in /var/www/html/motolao/index.php (14)
+2014/09/21 19:09:36 [error] [exception.CException] exception 'CException' with message 'CommonSystemController cannot find the requested view "//common/tinyuploadlayout".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/motolao/protected/controllers/CommonSystemController.php(57): CController->renderPartial('//common/tinyup...', Array)
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CommonSystemController->actionTinyUploadlayout()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('tinyUploadlayou...')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('commonSystem/ti...')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/motolao/index.php/common-system/tiny-uploadlayout?z1411308576274
+HTTP_REFERER=http://localhost/motolao/index.php/admin/category/create
+---
+2014/09/21 19:09:58 [error] [exception.CException] exception 'CException' with message 'CommonSystemController cannot find the requested view "//common/tinyuploadlayout".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/motolao/protected/controllers/CommonSystemController.php(57): CController->renderPartial('//common/tinyup...', Array)
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): CommonSystemController->actionTinyUploadlayout()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('tinyUploadlayou...')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('commonSystem/ti...')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/html/motolao/index.php(14): CApplication->run()
+#9 {main}
+REQUEST_URI=/motolao/index.php/common-system/tiny-uploadlayout?z1411308598537
+HTTP_REFERER=http://localhost/motolao/index.php/admin/category/create
+---
+2014/09/21 19:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(270): CController->missingAction('<')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('<')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('commonSystem/<')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/motolao/index.php/common-system/%3C?%20echo%20$this-%3EcreateUrl(
+HTTP_REFERER=http://localhost/motolao/index.php/common-system/tiny-uploadlayout?z1411308639281
+---
+2014/09/21 19:11:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(270): CController->missingAction('<')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('<')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('commonSystem/<')
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/motolao/index.php/common-system/%3C?%20echo%20$this-%3EcreateUrl(
+HTTP_REFERER=http://localhost/motolao/index.php/common-system/tiny-uploadlayout?z1411308639281
+---
+2014/09/21 19:13:17 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:14:30 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:17:59 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:24:10 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/21 19:24:11 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:26:02 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:26:39 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:28:35 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:32:43 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/create.php (24)
+2014/09/21 19:32:43 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/create.php (24)
+2014/09/21 19:32:43 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:33:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/create.php (24)
+2014/09/21 19:33:19 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/create.php (24)
+2014/09/21 19:33:19 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 19:33:25 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 19:33:29 [warning] [application] Failed to set unsafe attribute "id" of "Faq".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/index.php (79)
+in /var/www/html/motolao/protected/controllers/FaqAndTermsController.php (119)
+2014/09/21 19:33:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/index.php (79)
+2014/09/21 19:33:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/index.php (79)
+2014/09/21 19:33:29 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (63)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "image_large" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (63)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (64)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "image_large" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (64)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (81)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (81)
+2014/09/21 20:02:46 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:02:53 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/create.php (24)
+2014/09/21 20:02:53 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/tour/_form.php (84)
+in /var/www/html/motolao/themes/backend/views/tour/create.php (24)
+2014/09/21 20:02:53 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:03:02 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (28)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (63)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "image_large" of "Banner".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Banner.php (167)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (64)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/banner/index.php (85)
+2014/09/21 20:04:41 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (28)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/_form.php (35)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (63)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "image_large" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (63)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (64)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "image_large" of "MotoDairy".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/MotoDairy.php (170)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (64)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (81)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/motoDairy/index.php (81)
+2014/09/21 20:04:45 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (62)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "image_large" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (62)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (63)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "image_large" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (63)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (82)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (82)
+2014/09/21 20:04:49 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (28)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/_form.php (33)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (62)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "image_large" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (62)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (63)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "image_large" of "TeamImage".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/TeamImage.php (179)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (63)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (82)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/teamImage/index.php (82)
+2014/09/21 20:06:13 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:06:16 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/21 20:06:22 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:06:24 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:30 [error] [exception.CException] exception 'CException' with message 'Property "Faq.description" is not defined.' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/ar/CActiveRecord.php(145): CComponent->__get('description')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/helpers/CHtml.php(2529): CActiveRecord->__get('description')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/helpers/CHtml.php(1654): CHtml::resolveValue(Object(Faq), 'description')
+#3 /var/www/html/motolao/protected/extensions/tinymce/ETinyMce.php(829): CHtml::activeTextArea(Object(Faq), 'description', Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(173): ETinyMce->run()
+#5 /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php(72): CBaseController->widget('application.ext...', Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#9 /var/www/html/motolao/themes/backend/views/faqAndTerms/create.php(24): CController->renderPartial('_form', Array)
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', Array, true)
+#12 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', Array, true)
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/html/motolao/protected/controllers/FaqAndTermsController.php(68): CController->render('create', Array)
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): FaqAndTermsController->actionCreate()
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('faqAndTerms/cre...')
+#26 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#27 /var/www/html/motolao/index.php(14): CApplication->run()
+#28 {main}
+REQUEST_URI=/motolao/index.php/faq-and-terms/create
+HTTP_REFERER=http://localhost/motolao/index.php/inner-slider/index
+---
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/faqAndTerms/_form.php (34)
+2014/09/21 20:07:40 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/pages/_form.php (33)
+2014/09/21 20:08:07 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "socialMediaLinks".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('socialMediaLink...')
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/motolao/index.php(14): CApplication->run()
+#3 {main}
+REQUEST_URI=/motolao/index.php/social-media-links
+---
+2014/09/21 20:12:44 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:19:09 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:19:11 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:19:20 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:19:40 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:31:35 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:31:37 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/socialMediaLink/_form.php (36)
+2014/09/21 20:33:43 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/21 23:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php:29
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionError()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('error')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/err...')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/html/motolao/index.php(14): CApplication->run()
+#8 {main}
+REQUEST_URI=/motolao/index.php/web/default/error
+---
+2014/09/21 23:21:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php:29
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionError()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('error')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/err...')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/html/motolao/index.php(14): CApplication->run()
+#8 {main}
+REQUEST_URI=/motolao/index.php/web/default/error
+---
+2014/09/21 23:23:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Page not found.' in /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php:29
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionError()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('error')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/err...')
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#7 /var/www/html/motolao/index.php(14): CApplication->run()
+#8 {main}
+REQUEST_URI=/motolao/index.php/web/default/error
+---
+2014/09/21 23:32:54 [error] [php] Object of class CTheme could not be converted to string (/var/www/html/motolao/protected/components/Controller.php:76)
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): DefaultController->runActionWithFilters()
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): DefaultController->run()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/motolao/index.php(14): CWebApplication->run()
+REQUEST_URI=/motolao/index.php/web/default/index
+in /var/www/html/motolao/protected/components/Controller.php (76)
+in /var/www/html/motolao/index.php (14)
+2014/09/21 23:34:09 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(6): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:34:24 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(6): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:34:34 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(6): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:35:04 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(6): CController->render('index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:35:06 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(6): CController->render('index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:35:17 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(6): CController->render('index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:36:00 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:36:34 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(7): CController->render('index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:36:48 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(7): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:37:00 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(7): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:37:07 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(7): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:37:51 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(7): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:38:08 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(18): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:38:47 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(18): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
+2014/09/21 23:38:48 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "//default/index".' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#1 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(18): CController->render('//default/index')
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#3 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#7 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/html/motolao/index.php(14): CApplication->run()
+#10 {main}
+REQUEST_URI=/motolao/index.php/web/default/index
+---
