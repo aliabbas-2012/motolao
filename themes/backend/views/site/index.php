@@ -20,7 +20,10 @@
 </div>
 
 <?php
-  $this->renderPartial("//site/_dashboard");
+    /*
+      will be implement soon
+      $this->renderPartial("//site/_dashboard");
+     */
 //Page-Level Plugin Scripts
 Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/plugins/morris/raphael-2.1.0.min.js', CClientScript::POS_END);
 Yii::app()->getClientScript()->registerCssFile(Yii::app()->theme->baseUrl . '/assets/plugins/morris/morris.js', CClientScript::POS_END);
