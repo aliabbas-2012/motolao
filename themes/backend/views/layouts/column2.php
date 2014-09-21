@@ -124,6 +124,18 @@ $pluggins_array = array(
                 </ul>
                 <!-- second-level-items -->
             </li>
+            <li class="<?php echo $this->id == "socialMediaLink" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/socialMediaLink/index"); ?>"><i class="fa fa-edit fa-fw"></i> Social Media Link<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/socialMediaLink/index/"); ?>">List</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/socialMediaLink/create/"); ?>">Create</a>
+                    </li>
+                </ul>
+                <!-- second-level-items -->
+            </li>
             <?php
             if (strstr(Yii::app()->request->hostInfo, "localhost")) {
                 $this->renderPartial("//layouts/_menus_local_host");
