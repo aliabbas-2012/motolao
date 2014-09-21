@@ -28,11 +28,12 @@ body {
     font-family: 'cabinmedium';
 	font-size: 12px;
 	color: #666;
-	background-color: #f5f6f4;
+	background-image: url(../img/Background.png);
+	
 }
 
 h1, h2, h3, h4, h5, h6 {
-	color: #5a5a5a;
+	color: #635757;
 	margin: 0;
 	padding: 0;
 	font-family: 'cabinmedium';
@@ -50,7 +51,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #wrapper {
-	background: #f5f6f4;
+	background-image: url(../img/Background.png);
+	min-height: 900px;
 }
 
 
@@ -78,9 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 
 div.panel-body {
 	font: 15px 'cabinmedium';
-	margin-top: 10px;
-	margin-bottom: 20px;
 	padding: 10px;
+	margin-bottom: 10px;
+	text-align: left;
 }
 
 h4.panel-title  {
@@ -90,7 +92,13 @@ h4.panel-title  {
 	color: #303030;
 	background-color: #ffffff;
 	padding: 10px;
-	margin-top: 20px;
+}
+
+
+
+#contact-form form fieldset div.actions {
+	width: 100%;
+	text-align: center;
 }
 
 h4.panel-title a {
@@ -110,7 +118,7 @@ h4.panel-title a:hover {
 
 header {
 	background: #f5f6f5;
-	border-bottom: 1px dotted #be251c;
+	border-bottom: 2px solid #be251c;
 }
 
 .logo img {
@@ -126,15 +134,17 @@ header {
 }
 
 .contact_faq {
-	float: right;
 	margin-top: 50px;
 	margin-left: 0;
+	float: right;
 }
 
 #wrapper div.container div.contact_faq.span3 div.span4 {
 	margin-left: 0;
-	
+	background-image: url(../img/Background.png);
+	margin-top: 50px;
 }
+
 
 
 #social-links {
@@ -152,7 +162,8 @@ header {
      -moz-box-shadow: none;
           box-shadow: none;
 	padding: 0px;
-	margin: 0;	
+	margin: 0;
+	height: 63px;
 }
 
 .navbar-inner {
@@ -164,7 +175,6 @@ header {
 }
 
 .navbar .nav > li > a {
-	color: #333;
 	border-top:4px solid #fff;
 	text-shadow: none;
 	font: 13px 'cabinmedium';
@@ -195,6 +205,8 @@ header {
 
 #wrapper div.container div.span6 div.avatar.view-team {
 	background-color: #000000;
+	border: 3px solid #bf261c;
+	border-radius: 3px;
 }
 
 
@@ -217,14 +229,16 @@ header {
           	box-shadow: none;
 	text-transform: uppercase;
 	font-family: 'cabinmedium';
-	font-weight: bold;
+	font-weight: normal;
+	font-style: normal;
 }
 
 .dropdown-menu li > a:hover,
 .dropdown-menu li > a:focus,
 .dropdown-submenu:hover > a {
   color: #ffffff;
-  background: #bf261c !important;	
+  background: #bf261c !important;
+  border: nnne;
 }
 
 .dropdown-menu .active > a,
@@ -319,7 +333,8 @@ header {
 .flexslider a:focus  {outline: none;}
 .slides,
 .flex-control-nav,
-.flex-direction-nav {margin: 0; padding: 0; list-style: none;}
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;
+}
  
 
 
@@ -488,7 +503,6 @@ html[xmlns] .slides {display: block;}
 	padding: 13px 13px 13px 15px;
 	font-style: italic;
 	margin-right: auto;
-	margin-bottom: 50px;
 	margin-left: auto;
 	-webkit-border-radius: 0px;
      -moz-border-radius: 0px;
@@ -496,22 +510,175 @@ html[xmlns] .slides {display: block;}
 	font: 14px 'cabinmedium' !important;
 	background: none;
 	text-align: center;
+	margin-bottom: 0;
+}
+
+#wrapper div.container div.span5 p a {
+	color: #fbf4bc;
+	background-color: #000000;
+	padding: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
 }
 
 #wrapper div.container p {
-	font: 15px 'cabinmedium';
-	color: #5a5a5a;
+	font: 16px 'cabinmedium';
+	color: #635757;
 	background: none;
 	background-image: none;
+	text-decoration: none;
 }
 
-#wrapper div.container div.hero-unit p {
-	color: #3e2c00;
+
+#wrapper div.container div.row div.span12 p {
+	font: normal normal 18px 'cabinmedium';
+	color: #635757;
+	background: none;
+	background-image: none;
+	text-decoration: none;
+	padding: 8px;
+	text-align: center;
 }
+
+#wrapper div.container div.row div.span3 {
+	margin: 0 0 25px 13px;
+	border-radius: 3px;
+}
+
+#wrapper div.container div.row div.span12 h1.page-header {
+	text-align: center;
+	color: #c6271d;
+	margin-top: 25px;
+	font-family: cabinmedium;
+	text-transform: uppercase;
+}
+
+
+
+#wrapper div.container div.hero-unit p {
+	color: #635757;
+	font-size: 16px;
+}
+
+
+
+a.viewtours {
+	font: 25px 'cabinmedium';
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	margin-top: 25px;
+	float: left;
+	width: 100%;
+	color: #8d8d8d;
+	margin-bottom: 10px;
+	height: 30px;
+}
+
+
+
+div.menu.span12 {
+	width: 100%;
+	margin-top: 0;
+	margin-right: 0;
+	margin-left: 0;
+	text-align: center;
+}
+
+#wrapper div.more.span12 {
+	width: 100%;
+	text-align: center;
+	margin: 50px 0;
+}
+
+#wrapper div.more.span12 p a {
+	background-color: #bf251b;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 25px;
+	padding-right: 27px;
+	padding-left: 27px;
+	text-transform: uppercase;
+}
+#wrapper div.more.span12 h4 {
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+#wrapper div.more.span12 h4 a {
+	color: #ffffff;
+	background-color: #000000;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 20px;
+}
+
+#wrapper div.more.span12 p {
+	width: 100%;
+}
+
+a.dropdown-toggle-tour {
+	font-size: 25px;
+	color: #8d8d8d;
+	text-decoration: none;
+	width: 100%;
+	float: left;
+}
+
+.dropdown-toggle-tour a:hover {
+	border: 2px solid #e92d2d;
+}
+
+#wrapper div.container div.menu.span12 li.dropdown a.dropdown-toggle-tour b.caret {
+	opacity: 0.5;
+}
+
+#wrapper div.container div.menu.span12 li.dropdown.open {
+	width: 100%;
+	list-style: none;
+}
+
+
+
+#wrapper div.container div.menu.span12 li.dropdown {
+	list-style: none;
+	float: left;
+	width: 100%;
+}
+#wrapper div.container div.menu.span12 li.dropdown.open ul.dropdown-menu li a {
+	border-bottom: 1px dotted #d9d9d9;
+}
+
+#wrapper div.container div.menu.span12 li.dropdown.open ul.dropdown-menu {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+}
+
+ul.tourslist {
+	width: 100%;
+	text-align: center;
+	float: left;
+}
+
+
+
+
+.viewtours a:hover{
+	color: #ef1414;
+}
+
+
+
 
 #wrapper div.container div.row div.col-lg-4.col-sm-6.text-center h3 {
 	font-size: 15px;
 	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 #wrapper div.container div.row div.col-lg-4.col-sm-6.text-center h3 small {
@@ -533,18 +700,30 @@ html[xmlns] .slides {display: block;}
 #wrapper div.container div.row div.col-lg-4.col-sm-6.text-center {
 	width: 23%;
 	float: left;
-	padding: 10px;
+}
+
+#wrapper div.container div.row div.col-lg-12 div.span12 img.span4 {
+	margin: 0;
+	width: 33%;
+}
+
+#wrapper div.container div.row div.col-lg-12 div.span12 {
+	margin: 0 0 75px;
 }
 
 div.backwhite {
-	background-color: #f5f6f3;
+	background-image: url(../img/Background.png);
 	width: 100%;
 	z-index: 0;
 	margin: 0;
 	padding: 20px 0 0;
 	height: 100%;
 	border-top: 1px dashed #bf261c;
+	border-bottom: npne;
+	
 }
+
+
 
 #wrapper div.container div.row div.col-lg-12 h1.page-header {
 	text-align: center;
@@ -558,6 +737,8 @@ div.backwhite {
 	text-align: center;
 }
 
+
+
 #wrapper div.container div.tourdetailtext h4 {
 	color: #c6271d;
 	margin-bottom: 50px;
@@ -568,7 +749,7 @@ div.backwhite {
 	margin-bottom: 0;
 }
 
-#wrapper div.container div.logosign img {
+#wrapper div.containerdiarygrid div.logosign img {
 	margin-right: auto;
 	margin-left: auto;
 	width: 100px;
@@ -581,20 +762,39 @@ div.backwhite {
 	width: 100px;
 }
 
+
+#wrapper div.container div.logosign img {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100px;
+	margin-top: 25px;
+}
+
+
+
+
+#wrapper div.containerdiarygrid h3 {
+	text-align: center;
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
 div.logosign {
 	text-align: center;
 }
 
 #myCarousel a.left.carousel-control {
-	background: url(../img/arrows.png) no-repeat;
-	width: 20px;
-	height: 20px;
+	background: url(../img/arrows.png) -20px no-repeat;
+	border: none;
+	height: 150px;
+	margin-top: -90px;
 }
 
 #myCarousel a.right.carousel-control {
-	background: url(../img/arrows.png) -20px no-repeat;
-	width: 20px;
-	height: 20px;
+	background: url(../img/arrows.png) -140px no-repeat;
+	height: 150px;
+	border: none;
+	margin-top: -90px;
 }
 
 #wrapper div.container div.tigertrail img {
@@ -608,6 +808,17 @@ div.logosign {
 
 #wrapper div.container div.row {
 	width: 100%;
+	padding: 0;
+	margin: 0 0 100px;
+	height: auto;
+}
+
+div.boxtours {
+	width: 100%;
+	height: auto;
+	margin-bottom: 75px;
+	margin-top: 50px;
+	float: left;
 }
 
 div.contactwrap {
@@ -624,18 +835,44 @@ div.contactwrap {
 	width: 100%;
 	background-color: #0f0f0f;
 	margin-bottom: 0;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 15px;
 	color: #faf4bc;
+	font: 18px "Helvetica Neue";
+	text-transform: uppercase;
+	font-weight: normal;
+	font-style: normal;
+}
+
+#address p {
+	line-height: 25px;
+	margin-top: 5px;
 }
 
 #contact-form {
-	margin: 25px auto 75px;
+	margin-top: 25px;
+	margin-right: auto;
+	margin-left: auto;
 	background-color: #ffffff;
-	width: 300px;
+	width: 260px;
 	padding: 20px;
 	border-radius: 3px;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	font-variant: normal;
+	text-transform: capitalize;
+}
+
+textarea#message.input-xlarge, 
+input#email.input-xlarge, input#name {
+	width: 94%;
+	background-color: #f5f5f3;
+}
+
+input#phone.input-xlarge {
+	width: 94%;
 }
 
 #wrapper div.container div.row div.contactwrap div.span4 div.title h3 {
@@ -645,7 +882,7 @@ div.contactwrap {
 #wrapper div.container div.row div.col-lg-12 p{
 	text-align: center;
 	margin-bottom: 25px;
-	color: #5a5a5a;
+	color: #635757;
 }
 
 #wrapper div.container div.toursign img {
@@ -666,7 +903,21 @@ div.contactwrap {
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 5px;
+}
+
+#final-tg ul.thumbnails li.span4 a.thumbnail h2 {
+	margin: 0;
+	background-color: rgba(230, 24, 42, 0.67);
+	color: #ffffff;
+	z-index: 9999999;
+	width: 100%;
+	position: relative;
+	bottom: 60px;
+	font-size: 16px;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	letter-spacing: 0;
 }
 
 /* Icon Boxes
@@ -840,21 +1091,51 @@ div.contactwrap {
 /* About
 =================================================================== */
 .team-name {
-	padding: 15px 12px 15px 0;
-	font-family: 'cabinmedium';
-	font-size: 18px;
+	padding-top: 15px;
+	font: 50px/23px 'cabinmedium';
 	text-align: center;
-	position: relative;
-	bottom: 52px;
-	background-color: #000000;
 	color: #ffffff;
-	width: 98%;
+	width: 100%;
+	position: relative;
+	background-color: rgba(191, 38, 28, 0.78);
+	margin-top: -100px;
+	height: 85px;
+	float: left;
 }
 
+
+
 .team-name span {
-	font-size: 12px;
+	font-size: 20px;
 	font-weight: normal;
-	color: #c8c8c8;
+	color: #ffffff;
+}
+
+.team-nametours {
+	font: 20px 'cabinmedium';
+	text-align: center;
+	color: #ffffff;
+	width: 101%;
+	background-color: rgba(191, 38, 28, 0.63);
+	position: relative;
+	margin-top: -100px;
+	height: 90px;
+	padding-top: 10px;
+	float: left;
+}
+
+#wrapper div.container div.row div.col-lg-12 div.tigertrail div.boxtours div.span6 div.avatar.view-team div.mask {
+	width: 100%;
+}
+
+.team-nametours span {
+	font-size: 15px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+div.diarybutton {
+	text-align: center;
 }
 
 .team-about p {
@@ -901,15 +1182,7 @@ div.contactwrap {
 	width: 250px;
 }
 
-div.abouttour {
-	width: 250px;
-	height: 250px;
-	margin-bottom: 25px;
-	border: 1px solid rgb(196, 37, 29);
-	border-radius: 3px;
-	background-color: #ffffff;
-	left: 0;
-}
+
 
 div.imagedetail {
 	width: 30%;
@@ -922,15 +1195,109 @@ div.imagedetailwrap {
 }
 
 div.tourdetailtext {
+	float: left;
 	width: 50px;
-	float: right;
 }
 
 
 #wrapper div.container div.span4 {
-	width: 35%;
-	float: left;
 	text-align: left;
+	border: none;
+	border-style: none;
+	
+}
+
+
+#wrapper div.container div.span4 div.abouttour img {
+	border: 1px solid rgb(196, 37, 29);
+	border-radius: 3px;
+	margin-top: 30px;
+}
+
+#wrapper div.container div.span7 p {
+	text-align: left;
+	padding-bottom: 1px;
+	margin-top: -1px;
+	margin-bottom: 12px;
+}
+
+
+
+#wrapper div.container div.span7 h2 {
+	text-align: left;
+	margin-top: 25px;
+}
+
+#wrapper div.container div.span7 h4 a {
+	color: #ffffff;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	background-color: #bf261c;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-size: 17px;
+	text-align: center;
+	float: left;
+	letter-spacing: 2px;
+	width: 500px;
+}
+
+#wrapper div.container div.span7 p a {
+	color: #fbf4bc;
+	background-color: #000000;
+	text-transform: uppercase;
+	font-size: 17px;
+	float: left;
+	font-weight: bold;
+	letter-spacing: 2px;
+	width: 500px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#wrapper div.container div.container div.span2 {
+	float: right;
+	margin: 0;
+	position: relative;
+}
+
+
+#wrapper div.container h5 {
+	font-weight: normal;
+	font-style: normal;
+	text-align: right;
+}
+
+#wrapper div.container div.container div.span3 h5 a {
+	color: #635757;
+	font-size: 17px;
+}
+
+#wrapper div.container div.container div.span2 h5 a {
+	
+}
+
+#wrapper div.container div.span5 h4 a {
+	color: #ffffff;
+	margin-top: 50px;
+	float: left;
+	background-color: #bf261c;
+	padding: 5px;
+	width: 94%;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-size: 17px;
+	text-align: center;
+}
+
+#wrapper div.container div.row div.span3 p {
+	background-color: #ffffff;
+	padding: 10px;
+	border: 1px solid #aeaeae;
+	font-size: 13px;
+	line-height: 15px;
 }
 
 #wrapper div.container div.row div.col-lg-12 h2.page-header {
@@ -1127,7 +1494,6 @@ div.tourdetailtext {
 	overflow: hidden;
 	background: none;
 	width: 100%;
-	margin-top: 75px;
 }
 
 
@@ -1138,16 +1504,38 @@ div.tourdetailtext {
 	font-family: 'cabinmedium';
 }
 
-
+#wrapper div.container div.row div.span3 h3 {
+	background-color: #bf261c;
+	color: #ffffff;
+}
 
 #wrapper div.clients-carousel h3, #wrapper div.container h3 {
 	text-align: center;
-	font-size: 18px;
-	margin-bottom: 25px;
+	font-size: 16px;
+	color: #767676;
+}
+
+#wrapper div.container div.row div.contact_faq.span4 div.span4 div.title h3 {
+	text-align: right;
+	width: 100%;
+	padding-right: 35px;
+}
+
+#wrapper div.container div.row div.contact_faq.span4 div.span4 div.title {
+	border-bottom: 1px solid #4a4a4a;
+	width: 100%;
+	padding-bottom: 3px;
+}
+
+#wrapper div.container div.row div.span3 h3 small {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
 }
 
 .clients-carousel h4 {
-	color: #202020;
+	color: #635757;
 	font-weight: normal;
 	font-size: 18px;
 	margin-bottom: 50px;
@@ -1158,7 +1546,7 @@ div.tourdetailtext {
 .slides.clients h4{
 	text-align: center;
 	width: 55%;
-	color: #202020;
+	color: #635757;
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
@@ -1171,7 +1559,14 @@ div.tourdetailtext {
 	border: none;
 	text-align: center;
 	background-color: #ffffff;
-	
+	margin-top: 65px;
+	margin-bottom: 25px;
+}
+
+div.containerdiarygrid.span12 {
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .clients-carousel ul.clients {
@@ -1179,11 +1574,11 @@ div.tourdetailtext {
 	border: none;
 }
 
+
+
 .clients-carousel li img {
 	margin: 0 auto !important;
 	border: none;
-	height: 100%;
-	width: 35%;
 	position: relative;
 }
 
@@ -1218,18 +1613,23 @@ div.tourdetailtext {
 		#final-tg  { width: 100%;
 			margin-right: auto;
 			margin-left: auto;
-			display: block; }
+			display: block;
+			margin-top: 25px;
+		}
 		
 		#final-tg ul { margin: 0; padding: 0; height: 50px; }
 		        #final-tg li { list-style-type: none; }
 				
 				#final-tg ul.thumbnails li.span4 {
-					width: 235px;
-					height: 235px;
 					overflow: hidden;
 					padding: 0;
 					float: left;
-					margin: 0;
+					margin: 0 0 -5px;
+					height: 300px;
+				}
+				
+				#final-tg ul.thumbnails li.span4 a.thumbnail img {
+					height: 300px;
 				}
 				
 				#final-tg ul.thumbnails li.span4 a.thumbnail {
@@ -1299,8 +1699,7 @@ div.tourdetailtext {
 				}
 				
 				.load {
-			        width: 350px;
-			        display: block;
+					display: block;
 					margin-right: auto;
 					margin-left: auto;
 					color: #bf261c;
@@ -1311,7 +1710,8 @@ div.tourdetailtext {
 					letter-spacing: 5px;
 					position: relative;
 					bottom: 19px;
-					background-color: #f5f6f3;
+					background-image: url(../img/Background.png);
+					width: 250px;
 				}
 				
 				.lineseperation {
@@ -1321,11 +1721,22 @@ div.tourdetailtext {
 				
 				.line {
 				border-bottom: 1px dashed #bf261c;
+					margin-top: 40px;
+					margin-bottom: 40px;
+				}
+				
+				#wrapper div.containerdiarygrid.span12 div.span6 {
+					width: 50%;
+					margin-top: 30px;
+					margin-right: 0;
+					margin-left: 0;
+					padding: 0;
+					height: 100%;
 				}
 				
 				pre {
 					border-style: none;
-					background-color: #f5f6f3;
+					background-image: url(../img/Background.png);
 				}
 				
 				
@@ -1486,13 +1897,9 @@ a.buy:hover {
 #googlemaps-container-bottom {
 	position: relative;
 	z-index: 2;
-	-webkit-box-shadow: inset 0px -3px 3px rgba(0,0,0,.25);
-	-moz-box-shadow: inset 0px -3px 3px rgba(0,0,0,.25);
-	box-shadow: inset 0px -3px 3px rgba(0,0,0,.25);
 	height: 20px;
-	margin-top: -40px;
-	border-bottom: 5px solid #f6f6f6;
 	margin-bottom: 20px;
+	margin-top: -60px;
 }
 
 #googlemaps{
@@ -1544,16 +1951,23 @@ a.buy:hover {
 ====================================================================== */
 #footer-menu {
 	height: 150px;
-	border-top: 4px solid #f6f6f6;
-	border-bottom: 4px solid #f6f6f6;
-	margin-top: 75px;
 	background-color: #000000;
 	width: 100%;
-	bottom: 00px;
+	float: left;
 }
 
+div#contactwrap {
+	border: 1px solid #b7b7b7;
+	border-top-style: none;
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px;
+}
 
 #wrapper div.container h4 {
+	color: #bf261c;
+	margin-bottom: 10px;
 }
 
 #footer-extramenu {
@@ -1581,7 +1995,7 @@ a.buy:hover {
 	margin: 6px auto;
 }
 #footer-extramenu-links {
-	max-height: 52px;
+	max-height: 20px;
 	margin: 6px auto;
 	width: 100%;
 }
@@ -1599,9 +2013,33 @@ a.buy:hover {
 	list-style: disc;
 	color:#999999;
 	padding:0;
-	text-align: center;
-	float: right;
+	margin-right: auto;
+	margin-left: auto;
 }
+
+#footer-menu div.container div.row div.span9 {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+	width: 70%;
+}
+
+#footer-extramenu-links li {
+	float: left;
+	margin-left: 22px;
+}
+
+ul#footerextra-nav {
+	width: 100%;
+	text-align: center;
+}
+
+ul#footerextra-nav-social {
+	width: 100%;
+	text-align: center;
+}
+
 
 #footer-menu-links li:first-child {
 	list-style: none;
@@ -1609,7 +2047,6 @@ a.buy:hover {
 
 
 #footer-menu-links ul li{
-	float:left;
 	position:relative;
 	z-index: 100;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -1618,6 +2055,7 @@ a.buy:hover {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	list-style: none;
+	float: left;
 }
 
 
@@ -1631,8 +2069,6 @@ a.buy:hover {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	list-style: none;
-	float: left;
-	position: relative;
 }
 
 #footer-menu-links ul li a { 
@@ -1654,21 +2090,52 @@ a.buy:hover {
 #footer-extramenu-links ul li a { 
 	display: inline-block;
 	color: #fbf4bc;
-	font: 12px/50px 'cabinmedium';
+	font: 15px/50px 'cabinmedium';
 	text-transform: uppercase;
 	padding: 10px 15px 10px 0px;
-	margin: 0px 10px 0 0px;
+	margin: -18px 8px 0 0px;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
-	width: 100px;
 	text-align: left;
+	height: 50px;
 }
 
+#footer-extramenu-links div.copyrights {
+	width: 96%;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	color: #faf5c1;
+	margin-top: -13px;
+}
 
+#footerextra-nav li a img, #address p img {
+	width: 25px;
+	margin-right: 5px;
+	margin-top: -5px;
+}
 
+#footer-extramenu-social  {
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#footer-extramenu-social li a img {
+	float: left;
+	width: 25px;
+	position: relative;
+	display: inline-block;
+	margin-right: 7px;
+	margin-left: 7px;
+}
 
 #footer-menu-links ul li a:hover {
 	color: #fff;
@@ -1849,23 +2316,30 @@ form#newsletter input[type=submit] {
 
 .btn {
   border-color: #c5c5c5;
-  border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+background-color: #bf261c;
+	font-size: 13px;
+	margin-top: 30px;
+	border-radius: 0px;
+	color: #ffffff;
 }
 
 .btn-primary {
-  background-color: #006dcc;
+  background-color: #bf261c;
   color: #ffffff;
-  background-image: -moz-linear-gradient(top, #89c236, #89c236);
-  background-image: -ms-linear-gradient(top, #89c236, #89c236);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#89c236), to(#89c236));
-  background-image: -webkit-linear-gradient(top, #89c236, #89c236);
-  background-image: -o-linear-gradient(top, #89c236, #89c236);
-  background-image: linear-gradient(top, #89c236, #89c236);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'89c236, endColorstr='#'89c236, GradientType=0);
-  border-color: #0044cc #0044cc #002a80;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	border: none;
+  
+}
+
+
+a.dropdown-toggle.language  {
+	color: #9e9e9e;
+	text-transform: uppercase;
+	width: 35px;
+}
+
+ul.dropdown-menu.language {
+min-width: 2%;
 }
 
 .btn-primary:hover,
@@ -1878,7 +2352,8 @@ form#newsletter input[type=submit] {
 
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #003399 \9;
+  background-color: #bf261c \9;
+  border: none;
 }
 
 .btn-warning {
@@ -2052,7 +2527,7 @@ form#newsletter input[type=submit] {
 		width: 50%;
 		
 	}
-	
+
 	
 }
 
@@ -2065,10 +2540,23 @@ form#newsletter input[type=submit] {
 	}
 	#wrapper div.container div.span6 {
 		width: 100%;
-		height: 100%;
+		margin-bottom: 250px;
 	}
-	
-	
+	#wrapper div.container p {
+		font: normal normal 20px 'cabinmedium';
+		color: #635757;
+		background: none;
+		background-image: none;
+		text-decoration: none;
+		text-align: center;
+	}
+	.avatar p {
+		position: relative;
+		padding: 10px 20px 20px;
+	   text-align: center;
+		font-size: 15cm;
+	}
+
 }
 
 /* All Mobile Sizes (devices and browser)
@@ -2082,6 +2570,20 @@ form#newsletter input[type=submit] {
 	#wrapper div.container div.span6 {
 			width: 100%;
 		height: 100%;
+	}
+	
+	#myCarousel a.left.carousel-control {
+		background: url(../img/arrows.png) -20px no-repeat;
+		border: none;
+		height: 50px;
+		margin-top: -20px;
+	}
+	
+	#myCarousel a.right.carousel-control {
+		background: url(../img/arrows.png) -140px no-repeat;
+		height: 50px;
+		border: none;
+		margin-top: -20px;
 	}
 		
 }
@@ -2097,7 +2599,28 @@ form#newsletter input[type=submit] {
 		width: 100%;
 		
 	}
-	
+	#wrapper div.containerdiarygrid.span12 div.span6 {
+		width: 100%;
+		margin-top: 30px;
+		margin-right: 0;
+		margin-left: 0;
+		padding: 0;
+		height: 100%;
+	}
+	.avatar p {
+		position: relative;
+		text-align: center;
+		font-size: 13px;
+		height: 65px;
+	}
+
+#wrapper div.containerdiarygrid.span12 div.span6 div.avatar.view-team div.mask h2 {
+	font-size: 20px;
+	padding: 0;
+	margin: 10px 0 0;
+}
+
+
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
@@ -2109,7 +2632,26 @@ form#newsletter input[type=submit] {
 	}
 #wrapper div.container div.span6 {
 	width: 100%;
-	
+}
+#wrapper div.containerdiarygrid.span12 div.span6 {
+	width: 100%;
+	margin-top: 30px;
+	margin-right: 0;
+	margin-left: 0;
+	padding: 0;
+	height: 100%;
+}
+.avatar p {
+		position: relative;
+		text-align: center;
+		font-size: 13px;
+		height: 65px;
+	}
+
+#wrapper div.containerdiarygrid.span12 div.span6 div.avatar.view-team div.mask h2 {
+	font-size: 20px;
+	padding: 0;
+	margin: 10px 0 0;
 }
 
 }

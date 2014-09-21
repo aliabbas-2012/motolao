@@ -1,3 +1,4 @@
+
 /* Portfolio Page */
 
 .view {
@@ -23,7 +24,7 @@
    position: relative;
 }
 .view h2 {
-	font-family: "Boogaloo" !important;
+	font-family: 'cabinmedium' !important;
    text-transform: uppercase;
    color: #fff;
    text-align: center;
@@ -37,7 +38,7 @@
 	padding: 10px;
 }
 .view p {
-	font-family: 'Droid Sans';
+	font-family: 'cabinmedium';
    font-size: 12px;
    position: relative;
    color: #fff;
@@ -45,7 +46,7 @@
 	text-align: center;
 }
 .view a.info {
-	font-family: "Boogaloo" !important;	
+	font-family: 'cabinmedium' !important;	
    display: inline-block;
    text-decoration: none;
 	padding: 7px 14px;
@@ -194,13 +195,13 @@
    color: #fff;
    text-align: center;
    position: relative;
-   font-size: 17px;
+   font-size: 40px;
    padding: 10px;
    background: rgba(0, 0, 0, 0.13);
    margin: 10px 0 0 0;
 }
 .avatar p {
-   font-family: Georgia, serif;
+   font-family: 'cabinmedium';
    font-style: italic;
    font-size: 12px;
    position: relative;
@@ -211,13 +212,13 @@
    display: inline-block;
    text-decoration: none;
 	padding: 7px 14px;
-	background: #000;
+	background: #bf261c;
    color: #fff;
    text-transform: uppercase;
    -webkit-box-shadow: 0 0 1px #000;
    -moz-box-shadow: 0 0 1px #000;
    box-shadow: 0 0 1px #000;
-	font: 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font: 15px 'cabinmedium';
 }
 .avatar a.info: hover {
    -webkit-box-shadow: 0 0 5px #000;
@@ -257,8 +258,21 @@
 	margin-top: 25px;
 }
 
-#wrapper div.container {
-	margin-top: 50px;
+#wrapper div.container div.container div.span3 {
+	margin: 0;
+}
+
+#wrapper div.container div.span5 p b {
+	font-weight: normal;
+	font-style: normal;
+	color: #3f3838;
+	text-transform: uppercase;
+}
+
+
+
+#wrapper div.container div.span5 h2 {
+	text-align: left;
 }
 
 .view-team h2 {
@@ -312,10 +326,10 @@
 	margin-bottom: 20px;
 }
 .view-team:hover img {
-   -webkit-filter: blur(5px);
-   -moz-filter: blur(5px);
-   -o-filter: blur(5px);
-   -ms-filter: blur(5px);
+   -webkit-filter: blur(3px);
+   -moz-filter: blur(3px);
+   -o-filter: blur(3px);
+   -ms-filter: blur(3px);
    filter: blur(5px);
 }
 .view-team:hover .mask {
@@ -323,7 +337,7 @@
    filter: alpha(opacity=40);
    opacity: 1;
 }
-.view-team:hover h2,.view-team:hover p,.view-team:hover a.info {
+.view-team:hover h2,.view-team:hover a.info {
    -webkit-transform: scale(1);
    -moz-transform: scale(1);
    -o-transform: scale(1);
@@ -334,3 +348,16 @@
    opacity: 1;
 	color: #ffffff;
 }				
+
+.view-team:hover p {
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
+   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   filter: alpha(opacity=0);
+   opacity: 1;
+	color: #ffffff;
+	font-size: 1.35em;
+}		
