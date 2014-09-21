@@ -11,6 +11,7 @@
  * @property string $url
  * @property string $meta_tag
  * @property string $meta_description
+ * @property string $description
  * @property string $create_time
  * @property string $create_user_id
  * @property string $update_time
@@ -37,7 +38,7 @@ class Pages extends DTActiveRecord {
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('key', 'length', 'max' => 20),
             array('title, url', 'length', 'max' => 150),
-            array('meta_tag, meta_description, activity_log', 'safe'),
+            array('description,meta_tag, meta_description, activity_log', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, title, url, meta_tag, meta_description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),

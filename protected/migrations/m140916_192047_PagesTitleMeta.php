@@ -14,6 +14,7 @@ class m140916_192047_PagesTitleMeta extends DTDbMigration {
             'url' => 'varchar(150) DEFAULT NULL',
             'meta_tag' => 'text DEFAULT NULL',
             'meta_description' => 'text DEFAULT NULL',
+            'description' => 'text DEFAULT NULL',
             'create_time' => 'datetime NOT NULL',
             'create_user_id' => 'int(11) unsigned NOT NULL',
             'update_time' => 'datetime NOT NULL',
