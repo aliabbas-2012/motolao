@@ -62,7 +62,7 @@ class SocialMediaLink extends DTActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'title' => 'Title',
             'url' => 'Url',
             'meta_tag' => 'Meta Tag',

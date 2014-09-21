@@ -104,7 +104,7 @@ class InnerSlider extends DTActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'detail' => 'Detail',
             'heading_box' => 'heading_box',
             'key' => 'Key',

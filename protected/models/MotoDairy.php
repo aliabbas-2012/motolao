@@ -79,7 +79,7 @@ class MotoDairy extends DTActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'alt' => 'Alt',
             'title' => 'Title',
             'image_large' => 'Image Large',

@@ -60,7 +60,7 @@ class ConfTourTypeLang extends DTActiveRecord {
         return array(
             'id' => 'Id',
             'name' => 'Name',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'parent_id' => 'Parent',
             'create_time' => 'Create Time',
             'create_user_id' => 'Create User',

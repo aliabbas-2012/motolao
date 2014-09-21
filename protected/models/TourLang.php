@@ -69,7 +69,7 @@ class TourLang extends DTActiveRecord {
             'name' => 'Name',
             'short_title' => 'Short Title',
             'tour_type' => 'Tour Type',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'parent_id' => 'Parent',
             'url' => 'Url',
             'meta_title' => 'Meta Title',

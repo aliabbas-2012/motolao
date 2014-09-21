@@ -82,7 +82,7 @@ class TeamImage extends DTActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'name' => 'Name',
             'role' => 'Role',
             'description' => 'Description',

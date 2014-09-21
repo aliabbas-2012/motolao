@@ -75,7 +75,7 @@ class Pages extends DTActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'key' => 'Key',
             'title' => 'Title',
             'url' => 'Url',
