@@ -88,16 +88,6 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'activity_log', array('class' => 'control-label col-lg-2')); ?>
-                            <div class="col-lg-4">
-                                <?php echo $form->textArea($model, 'activity_log', array('class' => 'form-control')); ?>
-                                <?php echo $form->error($model, 'activity_log'); ?>
-
-                            </div>
-
-                        </div><!-- group -->
-
-                        <div class="form-group">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6 input-group-btn">
 
