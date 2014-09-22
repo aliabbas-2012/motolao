@@ -62,45 +62,7 @@
                     <div class="span9">
 
                         <div class="navbar navbar-inverse">
-                            <div class="navbar-inner">
-                                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </a>
-                                <div class="nav-collapse collapse">
-                                    <ul class="nav">
-                                        <li class="active"><a href="index.html" title="">Home</a></li>
-
-                                        <li class="dropdown">
-                                            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Tours <b class="caret"></b></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="tourbike.html" title="">Bikes</a></li>
-                                                <li><a href="tour4x4.html" title="">4x4</a></li>
-                                            </ul>
-                                        </li>
-
-
-                                        <li><a href="gallery.html" title="">Gallery</a></li>
-                                        <li><a href="team.html" title="">Team</a></li>
-                                        <li><a href="fleet.html" title="">Fleet</a></li>
-                                        <li><a href="dairies.html" title="">Dairies</a></li>
-                                        <li><a href="faq.html" title="">Faq</a></li>
-                                        <li><a href="contact.html" title="">Contact</a></li>
-
-
-                                        <li class="dropdown">
-                                            <a href="javascript:void(0)" class="dropdown-toggle language" data-toggle="dropdown">EN <b class="caret"></b></a>
-                                            <ul class="dropdown-menu language">
-                                                <li><a href="javascript:void(0)" title="">DE</a></li>
-                                                <li><a href="javascript:void(0)" title="">FR</a></li>
-                                            </ul>
-                                        </li>
-
-
-                                    </ul>
-                                </div>
-                            </div>
+                            <?php $this->renderPartial("//layouts/_menu"); ?>
                         </div>
 
                     </div>	

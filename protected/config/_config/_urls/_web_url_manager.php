@@ -10,6 +10,14 @@ $rules_web = array(
     '<controller:\w+>/<id:\d+>' => '<controller>/view',
     '<controller:\w+>/<action:\w+>/<id:\d+>' => '<controller>/<action>',
     '<controller:\w+>/<action:\w+>' => '<controller>/<action>',
-
-  );
+    '' => '/web/default/index',
+    'gallery' => '/web/default/gallery',
+    'team' => '/web/default/team',
+    'fleet' => '/web/default/fleet',
+    'dairies' => '/web/default/dairies',
+    'faq' => '/web/default/faq',
+    'contact-us' => '/web/default/contactUs',
+    //
+    '/category/<slug:\w+>' => '/web/category/index',
+);
 ?>

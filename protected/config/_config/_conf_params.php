@@ -77,6 +77,9 @@ $params = array(
         'contacts'=>'contacts',
         'about'=>'about',
         'terms'=>'terms',
+    ),
+    'category'=>array(
+        'links'
     )
 );
 ?>

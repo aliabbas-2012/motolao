@@ -247,7 +247,7 @@ class MyHelper {
         $str = self::slugify($str);
         $str = str_replace('---', '-', $str);
         $str = str_replace('--', '-', $str);
-        return $str;
+        return strtolower($str);
     }
 
     static public function rename_file_upload($file) {
