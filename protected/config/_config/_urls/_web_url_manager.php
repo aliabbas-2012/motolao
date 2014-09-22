@@ -16,7 +16,7 @@ $rules_web = array(
     'fleet' => '/web/default/fleet',
     'dairies' => '/web/default/dairies',
     'faq' => '/web/default/faq',
-    'contact-us' => '/web/default/contactUs',
+    'contact' => '/web/default/contact',
     //
     '/category/<slug:\w+>' => '/web/category/index',
 );

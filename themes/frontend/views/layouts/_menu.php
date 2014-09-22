@@ -36,17 +36,17 @@
             <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
                 <a href="<?php echo $this->createUrl("/web/default/team"); ?>" title=""><?php echo Yii::t("links", "Team"); ?></a>
             </li>
-            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
+            <li <?php echo $this->id == "default" && $this->action->id == "fleet" ? "active" : ""; ?>>
                 <a href="<?php echo $this->createUrl("/web/default/fleet"); ?>" title=""><?php echo Yii::t("links", "Fleet"); ?></a>
             </li>
-            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
+            <li <?php echo $this->id == "default" && $this->action->id == "dairies" ? "active" : ""; ?>>
                 <a href="<?php echo $this->createUrl("/web/default/dairies"); ?>" title=""><?php echo Yii::t("links", "Dairies"); ?></a>
             </li>
-            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>> 
+            <li <?php echo $this->id == "default" && $this->action->id == "faq" ? "active" : ""; ?>> 
                 <a href="<?php echo $this->createUrl("/web/default/faq"); ?>" title=""><?php echo Yii::t("links", "Faq"); ?></a>
             </li>
-            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
-                <a href="<?php echo $this->createUrl("/web/default/contactUs"); ?>" title=""><?php echo Yii::t("links", "Contact"); ?></a>
+            <li <?php echo $this->id == "default" && $this->action->id == "contactUs" ? "active" : ""; ?>>
+                <a href="<?php echo $this->createUrl("/web/default/contact"); ?>" title=""><?php echo Yii::t("links", "Contact"); ?></a>
             </li>
 
             <li class="dropdown">
