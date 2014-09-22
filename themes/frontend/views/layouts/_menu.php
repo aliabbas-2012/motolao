@@ -30,19 +30,30 @@
             </li>
 
 
-            <li><a href="<?php echo $this->createUrl("/web/default/gallery"); ?>" title="">Gallery</a></li>
-            <li><a href="<?php echo $this->createUrl("/web/default/team"); ?>" title="">Team</a></li>
-            <li><a href="<?php echo $this->createUrl("/web/default/fleet"); ?>" title="">Fleet</a></li>
-            <li><a href="<?php echo $this->createUrl("/web/default/dairies"); ?>" title="">Dairies</a></li>
-            <li><a href="<?php echo $this->createUrl("/web/default/faq"); ?>" title="">Faq</a></li>
-            <li><a href="<?php echo $this->createUrl("/web/default/contactUs"); ?>" title="">Contact</a></li>
-
+            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
+                <a href="<?php echo $this->createUrl("/web/default/gallery"); ?>" title=""><?php echo Yii::t("links", "Gallery"); ?></a>
+            </li>
+            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
+                <a href="<?php echo $this->createUrl("/web/default/team"); ?>" title=""><?php echo Yii::t("links", "Team"); ?></a>
+            </li>
+            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
+                <a href="<?php echo $this->createUrl("/web/default/fleet"); ?>" title=""><?php echo Yii::t("links", "Fleet"); ?></a>
+            </li>
+            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
+                <a href="<?php echo $this->createUrl("/web/default/dairies"); ?>" title=""><?php echo Yii::t("links", "Dairies"); ?></a>
+            </li>
+            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>> 
+                <a href="<?php echo $this->createUrl("/web/default/faq"); ?>" title=""><?php echo Yii::t("links", "Faq"); ?></a>
+            </li>
+            <li <?php echo $this->id == "default" && $this->action->id == "gallery" ? "active" : ""; ?>>
+                <a href="<?php echo $this->createUrl("/web/default/contactUs"); ?>" title=""><?php echo Yii::t("links", "Contact"); ?></a>
+            </li>
 
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle language" data-toggle="dropdown">EN <b class="caret"></b></a>
+                <a href="javascript:void(0)" class="dropdown-toggle language" data-toggle="dropdown"><?php echo Yii::t("links", "EN"); ?><b class="caret"></b></a>
                 <ul class="dropdown-menu language">
-                    <li><a href="javascript:void(0)" title="">DE</a></li>
-                    <li><a href="javascript:void(0)" title="">FR</a></li>
+                    <li><a href="javascript:void(0)" title=""><?php echo Yii::t("links", "DE"); ?></a></li>
+                    <li><a href="javascript:void(0)" title=""><?php echo Yii::t("links", "FR"); ?></a></li>
                 </ul>
             </li>
 
