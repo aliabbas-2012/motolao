@@ -33,8 +33,7 @@ class Label extends DTActiveRecord {
         return array(
             array('category,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
-            array('key', 'length', 'max' => 150),
-            array('activity_log,value', 'safe'),
+            array('activity_log,value,key', 'safe'),
             array('key', 'validateUniquness'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.

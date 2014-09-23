@@ -68,33 +68,17 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'meta_tag', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
-                                <?php echo $form->textArea($model, 'meta_tag', array('class' => 'form-control')); ?>
+                                <?php echo $form->textField($model, 'meta_tag', array('class' => 'form-control')); ?>
                                 <?php echo $form->error($model, 'meta_tag'); ?>
 
                             </div>
 
                         </div><!-- group -->
 
-
-                        <div class="form-group">
-                            <?php echo $form->labelEx($model, 'meta_description', array('class' => 'control-label col-lg-2')); ?>
-                            <div class="col-lg-4">
-                                <?php echo $form->textArea($model, 'meta_description', array('class' => 'form-control')); ?>
-                                <?php echo $form->error($model, 'meta_description'); ?>
-
-                            </div>
-
-                        </div><!-- group -->
-
-
                         <div class="form-group">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6 input-group-btn">
-
-
-
                                 <?php echo CHtml::submitButton('Save', array('class' => 'btn btn-primary')); ?>
-
                                 <?php
                                 $this->endWidget();
                                 ?>

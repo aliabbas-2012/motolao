@@ -40,7 +40,6 @@ $this->menu = array(
                             'title',
                             'url',
                             'meta_tag',
-                            'meta_description',
                         ),
                     ));
                     ?>

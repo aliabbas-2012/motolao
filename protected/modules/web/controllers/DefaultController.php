@@ -8,14 +8,13 @@ class DefaultController extends Controller {
      * @return type
      */
     public function beforeAction($action) {
-
         return parent::beforeAction($action);
     }
 
     public $layout = "//layouts/main";
 
     public function actionIndex() {
-
+        $this->page_key = "home";
         $this->render('//default/index');
     }
 

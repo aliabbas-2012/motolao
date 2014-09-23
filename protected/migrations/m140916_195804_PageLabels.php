@@ -7,7 +7,7 @@ class m140916_195804_PageLabels extends CDbMigration {
         $columns = array(
             'id' => 'int(11) unsigned NOT NULL AUTO_INCREMENT',
             'lang_id' => 'int(11) unsigned NOT NULL',
-            'key' => 'varchar(150) DEFAULT NULL',
+            'key' => 'longtext DEFAULT NULL',
             'value' => 'longtext DEFAULT NULL',
             'create_time' => 'datetime NOT NULL',
             'create_user_id' => 'int(11) unsigned NOT NULL',

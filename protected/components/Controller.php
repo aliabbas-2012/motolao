@@ -11,6 +11,7 @@ class Controller extends CController {
      * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
      */
     public $layout = '//layouts/column2';
+    public $page_key = '';
 
     /**
      * Register script/css files
@@ -68,7 +69,7 @@ class Controller extends CController {
         }
 
 
-        
+
         if (get_class($this->getModule()) == "WebModule") {
 
             Yii::app()->theme = "frontend";
@@ -86,7 +87,7 @@ class Controller extends CController {
          */
         Yii::app()->clientScript->scriptMap = array(
             (YII_DEBUG ? 'jquery.js' : 'jquery.min.js') => false,
-                 'jquery.ba-bbq.js'=>false
+            'jquery.ba-bbq.js' => false
                 //'jquery-ui.min.js' => false,
                 //'jquery-ui.css' => false
         );
@@ -212,8 +213,7 @@ class Controller extends CController {
                 $operation = ($level == 0) ? $menu->min_permission : $menu->min_permission;
 
 
-                $childCount = Menu::model()->count("pid = $menu->id");
-                {
+                $childCount = Menu::model()->count("pid = $menu->id"); {
                     $foundAny = true;
 
                     $this->menuHtml .='<li ' . ($pid == 0 ? "class='top'" : "") . '>';

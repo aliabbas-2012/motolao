@@ -79,7 +79,7 @@ $params = array(
         'terms' => 'terms',
     ),
     'category' => array(
-        'links',
+        'links'=>"links",
         'home' => 'home',
         'tours-bikes' => 'tours-bikes',
         'gallery' => 'gallery',
@@ -89,6 +89,7 @@ $params = array(
         'contacts' => 'contacts',
         'about' => 'about',
         'terms' => 'terms',
+        'layout' => 'layout',
     )
 );
 ?>

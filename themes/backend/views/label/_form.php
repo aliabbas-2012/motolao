@@ -54,8 +54,8 @@
                         </div><!-- group -->
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'key', array('class' => 'control-label col-lg-2')); ?>
-                            <div class="col-lg-4">
-                                <?php echo $form->textField($model, 'key', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                            <div class="col-lg-8">
+                                <?php echo $form->textArea($model, 'key', array('class' => 'form-control', 'maxlength' => 150)); ?>
                                 <?php echo $form->error($model, 'key'); ?>
 
                             </div>
