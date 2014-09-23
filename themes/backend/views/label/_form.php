@@ -44,6 +44,15 @@
 
 
                         <div class="form-group">
+                            <?php echo $form->labelEx($model, 'category', array('class' => 'control-label col-lg-2')); ?>
+                            <div class="col-lg-4">
+                                <?php echo $form->dropDownList($model, 'category', Yii::app()->params['category'], array('class' => 'form-control', 'maxlength' => 20)); ?>
+                                <?php echo $form->error($model, 'category'); ?>
+
+                            </div>
+
+                        </div><!-- group -->
+                        <div class="form-group">
                             <?php echo $form->labelEx($model, 'key', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-4">
                                 <?php echo $form->textField($model, 'key', array('class' => 'form-control', 'maxlength' => 150)); ?>

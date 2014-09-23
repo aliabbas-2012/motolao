@@ -37,6 +37,7 @@ $this->menu = array(
                                 'name' => 'lang',
                                 'value' => isset($model->lang) ? $model->lang->name : ""
                             ),
+                            'category',
                             'key',
                             'value',
                         ),

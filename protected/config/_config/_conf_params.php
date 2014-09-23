@@ -68,18 +68,27 @@ $params = array(
     ),
     'notallowdCharactorsUrl' => array('[', ']', '@', '!', '$', '&', '(', ')', '*', '+', ';', "'", ",", "?", ":", "ü"),
     'keys' => array(
-        'home'=>'home',
-        'tours-bikes'=>'tours-bikes',
-        'gallery'=>'gallery',
-        'fleet'=>'fleet',
-        'daries'=>'daries',
-        'faq'=>'faq',
-        'contacts'=>'contacts',
-        'about'=>'about',
-        'terms'=>'terms',
+        'home' => 'home',
+        'tours-bikes' => 'tours-bikes',
+        'gallery' => 'gallery',
+        'fleet' => 'fleet',
+        'daries' => 'daries',
+        'faq' => 'faq',
+        'contacts' => 'contacts',
+        'about' => 'about',
+        'terms' => 'terms',
     ),
-    'category'=>array(
-        'links'
+    'category' => array(
+        'links',
+        'home' => 'home',
+        'tours-bikes' => 'tours-bikes',
+        'gallery' => 'gallery',
+        'fleet' => 'fleet',
+        'daries' => 'daries',
+        'faq' => 'faq',
+        'contacts' => 'contacts',
+        'about' => 'about',
+        'terms' => 'terms',
     )
 );
 ?>

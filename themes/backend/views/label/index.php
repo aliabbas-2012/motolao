@@ -66,6 +66,7 @@ return false;
                                 'name' => 'lang',
                                 'value' => 'isset($data->lang)?$data->lang->name:""'
                             ),
+                            'category',
                             'key',
                             'value',
                             array(

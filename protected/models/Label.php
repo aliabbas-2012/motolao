@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'labels':
  * @property string $id
  * @property string $lang_id
+ * @property string $category
  * @property string $key
  * @property string $value
  * @property string $create_time
@@ -30,7 +31,7 @@ class Label extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('category,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('key', 'length', 'max' => 150),
             array('activity_log,value', 'safe'),
