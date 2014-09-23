@@ -88,7 +88,7 @@ $pluggins_array = array(
                         <a href="<?php echo $this->createUrl("/motoDairy/index/"); ?>">Moto Dairy</a>
                     </li>
                     <li>
-                        <a href="<?php echo $this->createUrl("/motoGallery/index/"); ?>">Moto Dairy</a>
+                        <a href="<?php echo $this->createUrl("/motoGallery/index/"); ?>">Moto Gallery</a>
                     </li>
                     <li>
                         <a href="<?php echo $this->createUrl("/teamImage/index/"); ?>">Team Image</a>
@@ -120,6 +120,18 @@ $pluggins_array = array(
                     </li>
                     <li>
                         <a href="<?php echo $this->createUrl("/pages/create/"); ?>">Create</a>
+                    </li>
+                </ul>
+                <!-- second-level-items -->
+            </li>
+            <li class="<?php echo $this->id == "label" ? "selected" : "" ?>">
+                <a href="<?php echo $this->createUrl("/label/index"); ?>"><i class="fa fa-edit fa-fw"></i> Labels<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="<?php echo $this->createUrl("/label/index/"); ?>">List</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/label/create/"); ?>">Create</a>
                     </li>
                 </ul>
                 <!-- second-level-items -->

@@ -9,6 +9,7 @@
  * @property string $key
  * @property string $title
  * @property string $url
+ * @property string $description
  * @property string $meta_tag
  * @property string $meta_description
  * @property string $description
