@@ -27,7 +27,7 @@ $this->menu = array(
 $criteria = new CDbCriteria();
 $languages_db = CHtml::listData(Language::model()->findAll($criteria), "id", "name");
 $languages = array("" => "Select") + $languages_db;
-$this->renderPartial("//innerSlider/_form", array("model" => $model_form,'languages'=>$languages));
+$this->renderPartial("//innerSlider/_form", array("model" => $model_form, 'languages' => $languages));
 ?>
 <div class="row">
     <div class="col-lg-12">
@@ -43,12 +43,12 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form,'langua
                         <div class="row">
                             <ul class="nav nav-tabs">
                                 <?php
-                                  foreach($languages_db as $id=>$name){
-                                      $css_class = $id ==$model->lang_id?'active':'';
-                                      echo "<li class='".$css_class."'>";
-                                        echo CHtml::link($name,$this->createUrl("index",array('Banner[lang_id]'=>$id)));
-                                      echo "</li>";
-                                  }
+                                foreach ($languages_db as $id => $name) {
+                                    $css_class = $id == $model->lang_id ? 'active' : '';
+                                    echo "<li class='" . $css_class . "'>";
+                                    echo CHtml::link($name, $this->createUrl("index", array('InnerSlider[lang_id]' => $id)));
+                                    echo "</li>";
+                                }
                                 ?>
                             </ul>
                         </div>
@@ -70,7 +70,7 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form,'langua
                                             <div class="panel-heading">
                                                 <?php echo $data->heading_box; ?>
                                                 <?php
-                                                echo CHtml::link(" (Edit) ", $this->createUrl("/banner/index", array("id" => $data->id)));
+                                                echo CHtml::link(" (Edit) ", $this->createUrl("index", array("id" => $data->id)));
                                                 ?>
                                             </div>
                                             <div class="panel-body">
@@ -81,6 +81,12 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form,'langua
                                                     echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12")), $data->image_url['image_large'], array("target" => "_blank"));
                                                 }
                                                 ?>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <?php echo  $data->detail; ?>
+                                            </div>
+                                            <div class="panel-footer">
+                                                Same Box :<?php echo  $data->same_box==1?"Yes":"No"; ?>
                                             </div>
                                             <div class="panel-footer">
                                                 <?php echo $data->lang->name; ?>
