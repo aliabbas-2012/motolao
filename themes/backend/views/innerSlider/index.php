@@ -68,7 +68,7 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form,'langua
                                     <div class="col-lg-12">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
-                                                <?php echo $data->title; ?>
+                                                <?php echo $data->heading_box; ?>
                                                 <?php
                                                 echo CHtml::link(" (Edit) ", $this->createUrl("/banner/index", array("id" => $data->id)));
                                                 ?>

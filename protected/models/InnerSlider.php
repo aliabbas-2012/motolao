@@ -59,14 +59,14 @@ class InnerSlider extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('heading_box,detail,lang_id, key, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('key,lang_id,heading_box,detail,lang_id, key, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('key', 'length', 'max' => 20),
             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             array('alt, title, image_large', 'length', 'max' => 150),
             array('same_box, activity_log', 'safe'),
-            array('heading_box','validateUniquness'),
+            array('heading_box', 'validateUniquness'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, alt, title, image_large, same_box, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -77,13 +77,15 @@ class InnerSlider extends DTActiveRecord {
      * uniqueness
      */
     public function validateUniquness() {
-        $criteria = new CDbCriteria();
-        if (!$this->isNewRecord) {
-            $criteria->addCondition("id<>" . $this->id);
-        }
-        $criteria->addCondition("heading_box ='" . $this->heading_box . "' AND lang_id =" . $this->lang_id);
-        if ($this->count($criteria) > 0) {
-            $this->addError("heading_box", "This heading_box already exist in this language");
+        if (!empty($this->lang_id) && !empty($this->key)) {
+            $criteria = new CDbCriteria();
+            if (!$this->isNewRecord) {
+                $criteria->addCondition("id<>" . $this->id);
+            }
+            $criteria->addCondition("t.key ='" . $this->key . "' AND heading_box ='" . $this->heading_box . "' AND lang_id =" . $this->lang_id);
+            if ($this->count($criteria) > 0) {
+                $this->addError("heading_box", "This heading_box already exist in this language");
+            }
         }
     }
 
