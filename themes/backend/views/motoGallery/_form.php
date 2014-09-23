@@ -25,7 +25,7 @@
                             <?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
                         </p>
 
-                        <?php echo $form->errorSummary($model, '','',array('class' => 'alert alert-block alert-danger')); ?>
+                        <?php echo $form->errorSummary($model, '', '', array('class' => 'alert alert-block alert-danger')); ?>
 
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-2')); ?>
@@ -73,6 +73,16 @@
                                 }
                                 ?>
                                 <?php echo $form->error($model, 'image_large'); ?>
+                            </div>
+
+                        </div><!-- group -->
+
+                        <div class="form-group">
+                            <?php echo $form->labelEx($model, 'video_tag_embedded_code', array('class' => 'control-label col-lg-4')); ?>
+                            <div class="col-lg-8">
+                                <?php echo $form->textArea($model, 'video_tag_embedded_code', array('class' => 'form-control', 'rows' => '10', 'cols' => '70')); ?>
+                                <?php echo $form->error($model, 'video_tag_embedded_code'); ?>
+
                             </div>
 
                         </div><!-- group -->

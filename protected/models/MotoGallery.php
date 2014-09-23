@@ -10,6 +10,7 @@
  * @property string $title
  * @property string $image_large
  * @property string $image_detail
+ * @property string $video_tag_embedded_code
  * @property string $create_time
  * @property string $create_user_id
  * @property string $update_time
@@ -53,7 +54,7 @@ class MotoGallery extends DTActiveRecord {
             array('lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('alt, title, image_large, image_detail', 'length', 'max' => 150),
-            array('activity_log', 'safe'),
+            array('video_tag_embedded_code,activity_log', 'safe'),
             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             // The following rule is used by search().
@@ -115,6 +116,7 @@ class MotoGallery extends DTActiveRecord {
         $criteria->compare('title', $this->title, true);
         $criteria->compare('image_large', $this->image_large, true);
         $criteria->compare('image_detail', $this->image_detail, true);
+        $criteria->compare('video_tag_embedded_code', $this->video_tag_embedded_code, true);
         $criteria->compare('create_time', $this->create_time, true);
         $criteria->compare('create_user_id', $this->create_user_id, true);
         $criteria->compare('update_time', $this->update_time, true);
