@@ -57,6 +57,8 @@ class Controller extends CController {
      * @var type 
      */
     public $webPcmWidget;
+    
+    public $lang_id ;
 
     public function beforeAction($action) {
 
@@ -74,6 +76,11 @@ class Controller extends CController {
 
             Yii::app()->theme = "frontend";
             $this->layout = "//layouts/column2";
+            Yii::app()->language = "en";
+            
+            $this->lang_id = Language::model()->getLanuageId(Yii::app()->language)->id;
+            
+            
         } else {
             /**
              * install configurations

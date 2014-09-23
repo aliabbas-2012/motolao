@@ -153,5 +153,12 @@ class Language extends DTActiveRecord {
 
         return parent::beforeDelete();
     }
+    
+    public function getLanuageId($code){
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("code=:code");
+        $criteria->params = array(":code"=>$code);
+        return $this->find($criteria);
+    }
 
 }
