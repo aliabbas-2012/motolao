@@ -83,10 +83,13 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form, 'langu
                                                 ?>
                                             </div>
                                             <div class="panel-footer">
-                                                <?php echo  $data->detail; ?>
+                                                <?php echo $data->detail; ?>
                                             </div>
                                             <div class="panel-footer">
-                                                Same Box :<?php echo  $data->same_box==1?"Yes":"No"; ?>
+                                                Same Box :<?php echo $data->same_box == 1 ? "Yes" : "No"; ?>
+                                            </div>
+                                            <div class="panel-footer">
+                                                key : <?php echo $data->key; ?>
                                             </div>
                                             <div class="panel-footer">
                                                 <?php echo $data->lang->name; ?>

@@ -19,7 +19,7 @@
 <div class="line"></div>
 
 <!-- start SlideOptionOne -->	
-    <?php $this->renderPartial("//pluggins/inner_carousal");?>
+<?php $this->renderPartial("//pluggins/inner_slider"); ?>
 <!-- end SlideOptionOne -->
 
 
