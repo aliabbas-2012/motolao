@@ -27,7 +27,7 @@ $this->menu = array(
 $criteria = new CDbCriteria();
 $languages_db = CHtml::listData(Language::model()->findAll($criteria), "id", "name");
 $languages = array("" => "Select") + $languages_db;
-$this->renderPartial("_form", array("model" => $model_form,'languages'=>$languages));
+$this->renderPartial("_form", array("model" => $model_form, 'languages' => $languages));
 ?>
 <div class="row">
     <div class="col-lg-12">
@@ -35,6 +35,9 @@ $this->renderPartial("_form", array("model" => $model_form,'languages'=>$languag
         <div class="panel panel-default">
             <div class="panel-heading">
                 All Images & Videos
+
+                <?php echo CHtml::link("[Add New]", $this->createUrl("index")); ?>
+
             </div>
             <div class="col-lg-2">
                 <div class="panel-body">
@@ -42,12 +45,12 @@ $this->renderPartial("_form", array("model" => $model_form,'languages'=>$languag
                         <div class="row">
                             <ul class="nav nav-tabs">
                                 <?php
-                                  foreach($languages_db as $id=>$name){
-                                      $css_class = $id ==$model->lang_id?'active':'';
-                                      echo "<li class='".$css_class."'>";
-                                        echo CHtml::link($name,$this->createUrl("index",array('Banner[lang_id]'=>$id)));
-                                      echo "</li>";
-                                  }
+                                foreach ($languages_db as $id => $name) {
+                                    $css_class = $id == $model->lang_id ? 'active' : '';
+                                    echo "<li class='" . $css_class . "'>";
+                                    echo CHtml::link($name, $this->createUrl("index", array('Banner[lang_id]' => $id)));
+                                    echo "</li>";
+                                }
                                 ?>
                             </ul>
                         </div>

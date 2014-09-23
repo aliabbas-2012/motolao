@@ -35,6 +35,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
         <div class="panel panel-default">
             <div class="panel-heading">
                 All Images
+                <?php echo CHtml::link("[Add New]", $this->createUrl("index")); ?>
             </div>
             <div class="col-lg-2">
                 <div class="panel-body">

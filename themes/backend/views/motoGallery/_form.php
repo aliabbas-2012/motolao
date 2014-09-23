@@ -3,7 +3,7 @@
         <!-- Form Elements -->
         <div class="panel panel-default">
             <div class="panel-heading">
-
+                <?php echo CHtml::link("[Add New]", $this->createUrl("index")); ?>
             </div>
             <div class="panel-body">
                 <div class="row">

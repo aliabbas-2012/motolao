@@ -4,6 +4,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 Add or Update
+                <?php echo CHtml::link("[Add New]", $this->createUrl("index")); ?>
             </div>
             <div class="panel-body">
                 <div class="row">
