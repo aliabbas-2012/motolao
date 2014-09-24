@@ -150,7 +150,7 @@ $pluggins_array = array(
             </li>
             <?php
             if (strstr(Yii::app()->request->hostInfo, "localhost")) {
-                $this->renderPartial("//layouts/_menus_local_host");
+                //$this->renderPartial("//layouts/_menus_local_host");
             }
             ?>
         </ul>

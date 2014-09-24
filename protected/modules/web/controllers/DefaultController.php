@@ -17,6 +17,13 @@ class DefaultController extends Controller {
         $this->page_key = "home";
         $this->render('//default/index');
     }
+    /**
+     * 
+     */
+    public function actionGallery(){
+        $this->page_key = "gallery";
+        $this->render('//default/gallery');
+    }
 
     public function actionError() {
         $error = Yii::app()->errorHandler->error;

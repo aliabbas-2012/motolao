@@ -238,8 +238,8 @@ class Banner extends DTActiveRecord {
     public function deleteldImage() {
 
         if (!empty($this->oldLargeImg) && $this->oldLargeImg != $this->image_large) {
-            $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
-            $path.= "uploads" . DIRECTORY_SEPARATOR . "banner" . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR . $this->oldLargeImg;
+            $large_path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
+            $large_path.= "uploads" . DIRECTORY_SEPARATOR . "banner" . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR . $this->oldLargeImg;
             DTUploadedFile::deleteExistingFile($large_path);
         }
     }

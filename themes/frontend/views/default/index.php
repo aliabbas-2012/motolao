@@ -60,7 +60,8 @@ if ($this->page_key != "") {
     <!-- start: SlideOptionTwo -->
     <div class="span6">
         <div class="avatar view-team">
-            <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/diaries/01.jpg" alt="tour" title="">
+            <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/diaries/01.jpg" 
+                 alt="<?php echo Yii::t("home", "tourhome"); ?>" title="<?php echo Yii::t("home", "tourhome"); ?>">
             <div class="mask">
                 <h2>4x4 Tours</h2>
                 <p>
