@@ -15,7 +15,7 @@
             ?>
             <li><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/arrivals/1.png" alt="" title=""/>
                 <h2><?php echo $slider->heading_box; ?></h2>
-                <h4><?php echo Yii::t("home", "The legendary Bullet 350 need no introduction. Now Bullet 350 is with all new Unit Construction Engine. We are proud to be the first and only tour company in Laos to provide these classic bikes."); ?></h4>
+                <h4><?php echo $slider->detail; ?></h4>
             </li>
 
             <?php
