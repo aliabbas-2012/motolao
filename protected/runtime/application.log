@@ -2247,3 +2247,1381 @@ in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
 in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
 in /var/www/html/motolao/protected/models/Users.php (166)
 in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:03:12 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:16 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:08:27 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:09:25 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:31 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 02:19:35 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 02:19:39 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 02:19:39 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 02:19:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key='home' AND lang_id = '1'' at line 1. The SQL statement executed was: SELECT * FROM `inner_slider` `t` WHERE key=:key AND lang_id = :lang_id.
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+in /var/www/html/motolao/themes/frontend/views/default/index.php (41)
+in /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php (18)
+2014/09/24 02:19:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key='home' AND lang_id = '1'' at line 1. The SQL statement executed was: SELECT * FROM `inner_slider` `t` WHERE key=:key AND lang_id = :lang_id' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php(9): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', NULL, true)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', NULL, true)
+#7 /var/www/html/motolao/themes/frontend/views/default/index.php(41): CController->renderPartial('//pluggins/inne...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', NULL, true)
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', NULL, true)
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#12 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(18): CController->render('//default/index')
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/html/motolao/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/motolao/index.php/
+HTTP_REFERER=http://localhost/motolao/
+---
+2014/09/24 02:19:45 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 02:19:45 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 02:19:45 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key='home' AND lang_id = '1'' at line 1. The SQL statement executed was: SELECT * FROM `inner_slider` `t` WHERE key=:key AND lang_id = :lang_id.
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+in /var/www/html/motolao/themes/frontend/views/default/index.php (41)
+in /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php (18)
+2014/09/24 02:19:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'key='home' AND lang_id = '1'' at line 1. The SQL statement executed was: SELECT * FROM `inner_slider` `t` WHERE key=:key AND lang_id = :lang_id' in /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/ar/CActiveRecord.php(1351): CDbCommand->queryAll()
+#2 /var/www/html/frameworks/yii-1.1.15.022a51/framework/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php(9): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#5 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', NULL, true)
+#6 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', NULL, true)
+#7 /var/www/html/motolao/themes/frontend/views/default/index.php(41): CController->renderPartial('//pluggins/inne...')
+#8 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(126): require('/var/www/html/m...')
+#9 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/m...', NULL, true)
+#10 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/m...', NULL, true)
+#11 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(782): CController->renderPartial('//default/index', NULL, true)
+#12 /var/www/html/motolao/protected/modules/web/controllers/DefaultController.php(18): CController->render('//default/index')
+#13 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/actions/CInlineAction.php(49): DefaultController->actionIndex()
+#14 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(282): CController->run('index')
+#18 /var/www/html/frameworks/yii-1.1.15.022a51/framework/web/CWebApplication.php(141): CWebApplication->runController('web/default/ind...')
+#19 /var/www/html/frameworks/yii-1.1.15.022a51/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#20 /var/www/html/motolao/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/motolao/index.php/
+HTTP_REFERER=http://localhost/motolao/
+---
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 02:19:57 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:01 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:16:47 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:14 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/UserIdentity.php (17)
+2014/09/24 23:17:15 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (132)
+2014/09/24 23:17:15 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/backend/views/category/index.php (76)
+in /var/www/html/motolao/protected/controllers/CategoryController.php (132)
+2014/09/24 23:17:15 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:22 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:29 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (70)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (102)
+in /var/www/html/motolao/index.php (14)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/models/InnerSlider.php (203)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (71)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (70)
+in /var/www/html/motolao/protected/models/InnerSlider.php (203)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (71)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/protected/controllers/InnerSliderController.php (121)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (28)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (64)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (65)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/themes/backend/views/innerSlider/index.php (95)
+2014/09/24 23:17:36 [warning] [application] Failed to set unsafe attribute "id" of "Users".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Users.php (166)
+in /var/www/html/motolao/protected/components/DTWebUser.php (19)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "flag_img" of "Language".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/Language.php (141)
+in /var/www/html/motolao/protected/models/Language.php (161)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image_large" of "InnerSlider".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/protected/models/InnerSlider.php (190)
+in /var/www/html/motolao/themes/frontend/views/pluggins/inner_slider.php (9)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "Category".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/_menu.php (22)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (67)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "id" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
+2014/09/24 23:17:41 [warning] [application] Failed to set unsafe attribute "image" of "SocialMediaLink".
+in /var/www/html/motolao/protected/components/dataProviders/DTActiveRecord.php (42)
+in /var/www/html/motolao/themes/frontend/views/layouts/main.php (139)
+in /var/www/html/motolao/themes/frontend/views/layouts/column2.php (5)
