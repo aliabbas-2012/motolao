@@ -63,11 +63,12 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
 
                         <div class="row">
                             <?php
-                            if ($model->search()->itemCount > 0):
+                            $dataProiver  = $model->search();
+                            if ($dataProiver->itemCount > 0):
                                 foreach ($model->search()->getData() as $data):
                                     ?>
                                     <!--Default Pannel, Primary Panel And Success Panel   -->
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-4">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
                                                 <?php echo $data->title; ?>
@@ -102,3 +103,12 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
         </div>
     </div>    
 </div>
+<?php
+
+$this->widget('ext.BootstrapLinkPager', array(
+    'pages' => $dataProiver->getPagination(),
+    'header'=>'',
+    'htmlOptions'=>array('class'=>'pagination')
+        )
+);
+

@@ -61,11 +61,12 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form, 'langu
 
                         <div class="row">
                             <?php
-                            if ($model->search()->itemCount > 0):
-                                foreach ($model->search()->getData() as $data):
+                            $dataProiver = $model->search();
+                            if ($dataProiver->itemCount > 0):
+                                foreach ($dataProiver->getData() as $data):
                                     ?>
                                     <!--Default Pannel, Primary Panel And Success Panel   -->
-                                    <div class="col-lg-12">
+                                    <div class="col-lg-4">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
                                                 <?php echo $data->heading_box; ?>
@@ -109,3 +110,10 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form, 'langu
         </div>
     </div>    
 </div>
+<?php
+$this->widget('ext.BootstrapLinkPager', array(
+    'pages' => $dataProiver->getPagination(),
+    'header'=>'',
+    'htmlOptions'=>array('class'=>'pagination')
+        )
+);

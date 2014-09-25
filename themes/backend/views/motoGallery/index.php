@@ -27,7 +27,7 @@ $this->menu = array(
 $criteria = new CDbCriteria();
 $languages_db = CHtml::listData(Language::model()->findAll($criteria), "id", "name");
 $languages = array("" => "Select") + $languages_db;
-$this->renderPartial("_form", array("model" => $model_form,'languages'=>$languages));
+$this->renderPartial("_form", array("model" => $model_form, 'languages' => $languages));
 ?>
 
 <div class="row">
@@ -61,8 +61,9 @@ $this->renderPartial("_form", array("model" => $model_form,'languages'=>$languag
                     <div class="table-responsive">
                         <div class="row">
                             <?php
-                            if ($model->search()->itemCount > 0):
-                                foreach ($model->search()->getData() as $data):
+                            $dataProiver = $model->search();
+                            if ($dataProiver->itemCount > 0):
+                                foreach ($dataProiver->getData() as $data):
                                     ?>
                                     <!--Default Pannel, Primary Panel And Success Panel   -->
                                     <div class="col-lg-4">
@@ -96,3 +97,10 @@ $this->renderPartial("_form", array("model" => $model_form,'languages'=>$languag
         </div>
     </div>
 </div>    
+<?php
+$this->widget('ext.BootstrapLinkPager', array(
+    'pages' => $dataProiver->getPagination(),
+    'header'=>'',
+    'htmlOptions'=>array('class'=>'pagination')
+        )
+);
