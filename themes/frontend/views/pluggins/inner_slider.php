@@ -7,20 +7,24 @@
         ":lang_id" => $this->lang_id,
     );
     $sliders = InnerSlider::model()->findAll($criteria);
-   
     ?>
     <ul class="slides clients">
         <?php
         foreach ($sliders as $slider):
             ?>
-            <li><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/arrivals/1.png" alt="" title=""/>
+            <li>
+                <?php
+                echo CHtml::image($slider->image_url['image_large'], $slider->alt, array(
+                    "title" => $slider->title,
+                ));
+                ?>
                 <h2><?php echo $slider->heading_box; ?></h2>
                 <h4><?php echo $slider->detail; ?></h4>
             </li>
 
-            <?php
-        endforeach;
-        ?>
+    <?php
+endforeach;
+?>
 
 
     </ul>

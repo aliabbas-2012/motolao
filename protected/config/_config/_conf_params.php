@@ -83,6 +83,7 @@ $params = array(
         'home' => 'home',
         'tours-bikes' => 'tours-bikes',
         'gallery' => 'gallery',
+        'team' => 'team',
         'fleet' => 'fleet',
         'daries' => 'daries',
         'faq' => 'faq',
