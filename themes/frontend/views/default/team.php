@@ -7,7 +7,7 @@
             <?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/motolao_icons/star.png", Yii::t("team", "Team Logo"), array("title" => Yii::t("team", "Team Logo"))); ?>
         </div>
     </div>
-    <h2>About Us</h2>
+    <h2><?php echo Yii::t("team", "About Us"); ?></h2>
     <div class="hero-unit">
 
         <p>
@@ -39,11 +39,9 @@
                 ));
                 ?>
 
-                <h3>DAVE VAN ROOYEN
-                    <small>MANAGER & MOTOLAO GUIDE</small>
+                <h3> <?php echo $team->name; ?><small><?php echo $team->role ?></small>
                 </h3>
-                <p>Dave hails from South Africa and has a passion for motorcycle riding. He has been riding motorcycles both on and off road for most of his life. Dave’s professional background is in Customer Service and therefore he is committed to meeting and exceeding the customers’ needs.
-                    Dave is married and has 2 grown up children.</p>
+                <?php echo $team->description; ?>
             </div>
             <?php
         endforeach;

@@ -17,14 +17,23 @@
                 echo CHtml::image($slider->image_url['image_large'], $slider->alt, array(
                     "title" => $slider->title,
                 ));
+                if (!$slider->same_box) {
+                    echo CHtml::openTag("div", array("class" => "backwhite"));
+                }
                 ?>
                 <h2><?php echo $slider->heading_box; ?></h2>
-                <h4><?php echo $slider->detail; ?></h4>
+
+                <?php echo $slider->detail; ?>
+                <?php
+                if (!$slider->same_box) {
+                    echo CHtml::closeTag("div");
+                }
+                ?>
             </li>
 
-    <?php
-endforeach;
-?>
+            <?php
+        endforeach;
+        ?>
 
 
     </ul>

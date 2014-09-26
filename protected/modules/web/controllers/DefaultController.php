@@ -17,16 +17,24 @@ class DefaultController extends Controller {
         $this->page_key = "home";
         $this->render('//default/index');
     }
-    
-    public function actionTeam(){
+
+    public function actionTeam() {
         $this->page_key = "team";
         $this->render('//default/team');
     }
 
     /**
+     * Te
+     */
+    public function actionFleet() {
+        $this->page_key = "fleet";
+        $this->render('//default/fleet');
+    }
+
+    /**
      * 
      */
-    public function actionGallery(){
+    public function actionGallery() {
         $this->page_key = "gallery";
         $this->render('//default/gallery');
     }
