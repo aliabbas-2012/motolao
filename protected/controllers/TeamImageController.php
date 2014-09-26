@@ -39,8 +39,13 @@ class TeamImageController extends Controller {
      * Creates a new model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
-    public function create() {
+    public function create($copyId = '') {
+       
         $model = new TeamImage;
+
+        if ($copyId != '') {
+            $model->attributes = $this->loadModel($copyId)->attributes;
+        }
 
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
@@ -92,7 +97,7 @@ class TeamImageController extends Controller {
     /**
      * Manages all models.
      */
-    public function actionIndex($id = '') {
+    public function actionIndex($id = '', $copyId = '') {
         $model = new TeamImage('search');
         $model->unsetAttributes();  // clear any default values
         if (isset($_GET['TeamImage']))
@@ -101,7 +106,7 @@ class TeamImageController extends Controller {
         if ($id != '') {
             $model_form = $this->update($id);
         } else {
-            $model_form = $this->create();
+            $model_form = $this->create($copyId);
         }
 
         $this->render('index', array(
