@@ -9,6 +9,7 @@
  * @property string $question
  * @property string $answer
  * @property string $type
+ * @property string $css_class
  * @property string $create_time
  * @property string $create_user_id
  * @property string $update_time
@@ -34,7 +35,7 @@ class Faq extends DTActiveRecord {
             array('type,question,answer,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('question', 'length', 'max' => 250),
-            array('type,answer, activity_log', 'safe'),
+            array('css_class,type,answer, activity_log', 'safe'),
             array('question', 'validateUniquness'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
@@ -108,6 +109,7 @@ class Faq extends DTActiveRecord {
         $criteria->compare('id', $this->id, true);
         $criteria->compare('lang_id', $this->lang_id, true);
         $criteria->compare('type', $this->type, true);
+        $criteria->compare('css_class', $this->css_class, true);
         $criteria->compare('question', $this->question, true);
         $criteria->compare('answer', $this->answer, true);
         $criteria->compare('create_time', $this->create_time, true);

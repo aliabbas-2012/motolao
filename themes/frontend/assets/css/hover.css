@@ -172,17 +172,16 @@
 .avatar {
 	width: 100%;
 	overflow: hidden;
-   	position: relative;
-   	text-align: center;
-   	cursor: default;
+   position: relative;
+   text-align: center;
+   cursor: default;
 	float: left;
 }
 .avatar .mask,.avatar .content {
 	overflow: hidden;
-   	top: 0;
-   	left: 0;
+   top: 0;
+   left: 0;
 	position: absolute;
-	
 }
 .avatar img {
    display: block;
@@ -277,7 +276,7 @@
 }
 
 .view-team h2 {
-   border-bottom: 1px dashed #ffffff;
+   border-bottom: 1px dashed #bf261c;
    background: transparent;
    margin: 5px 40px 0px 40px;
    -webkit-transform: scale(0);
@@ -309,9 +308,6 @@
    -o-transition: all 0.5s linear;
    -ms-transition: all 0.5s linear;
    transition: all 0.5s linear;
-	font-weight: normal;
-	font-style: normal;
-	font-size: 16px;
 }
 .view-team a.info {
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -340,7 +336,6 @@
    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
    filter: alpha(opacity=40);
    opacity: 1;
-	overflow: hidden;
 }
 .view-team:hover h2,.view-team:hover a.info {
    -webkit-transform: scale(1);
@@ -364,6 +359,5 @@
    filter: alpha(opacity=0);
    opacity: 1;
 	color: #ffffff;
-	font-weight: normal;
-	font-style: normal;
+	font-size: 1.35em;
 }		

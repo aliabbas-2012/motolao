@@ -70,8 +70,12 @@ return false;
                                 'name' => 'type',
                                 'value' => 'isset($data->type)?$data->type:""'
                             ),
+                            array(
+                                'name' => 'css_class',
+                                'value' => 'isset($data->css_class)?$data->css_class:""'
+                            ),
                             'question',
-                            'answer',
+                            
                             array(
                                 'class' => 'CButtonColumn',
                             ),

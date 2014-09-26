@@ -122,7 +122,10 @@ header {
 }
 
 .logo img {
-	margin-top: -3px;
+	float: left;
+	position: absolute;
+	width: 180px;
+	margin-top: 3px;
 }
 
 .faq {
@@ -153,27 +156,31 @@ header {
 .navbar-inner, 
 .nav {
 	float: right;
-	background: #fff !important;
+	background: #f5f6f5 !important;
 	border: none;
 	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
 	padding: 0px;
-	margin: 0;	
+	margin: 0;
+	height: 63px;
 }
 
 .navbar-inner {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
-
+	position: relative;
+	float: left;
+	margin-top: -1px;
 }
+
 .navbar .nav > li > a {
 	border-top:4px solid #fff;
 	text-shadow: none;
 	font: 13px 'cabinmedium';
 	text-transform: uppercase;
 	padding: 20px 10px;
-	height: 20px;
+	height: 21px;
 }
 
 
@@ -196,7 +203,11 @@ header {
 	max-height: 470px;
 }
 
-
+#wrapper div.container div.span6 div.avatar.view-team {
+	background-color: #000000;
+	border: 3px solid #bf261c;
+	border-radius: 3px;
+}
 
 
 
@@ -238,8 +249,8 @@ header {
 
 .navbar .btn-navbar {
 	position: absolute;
-	top: 15px;
 	right: 50px;
+	top: 15px;
 }
 
 /* Page Title
@@ -613,7 +624,6 @@ a.dropdown-toggle-tour {
 	text-decoration: none;
 	width: 100%;
 	float: left;
-	text-transform: uppercase;
 }
 
 .dropdown-toggle-tour a:hover {
@@ -767,7 +777,6 @@ div.backwhite {
 	text-align: center;
 	font-size: 16px;
 	margin-bottom: 25px;
-	color: #635757;
 }
 
 div.logosign {
@@ -813,6 +822,7 @@ div.boxtours {
 }
 
 div.contactwrap {
+	width: 35%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -888,35 +898,26 @@ input#phone.input-xlarge {
 }
 
 #wrapper div.container h2 {
-	color: #aa2f36;
+	color: #bf261c;
 	font: 30px 'cabinmedium';
 	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-#wrapper div.container div.row div.col-lg-12 div.tigertrail div.boxtours div.span6 div.avatar.view-team div.mask h2 {
-	color: #ffffff;
-}
-
-#wrapper div.container div.boxtours div.span6 div.avatar.view-team div.mask h2 {
-	color: #ffffff;
-}
-
 #final-tg ul.thumbnails li.span4 a.thumbnail h2 {
-	margin: 0 0 5px;
-	background-color: rgba(191, 38, 28, 0.63);
+	margin: 0;
+	background-color: rgba(230, 24, 42, 0.67);
 	color: #ffffff;
 	z-index: 9999999;
 	width: 100%;
 	position: relative;
-	bottom: 59px;
+	bottom: 60px;
 	font-size: 16px;
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	letter-spacing: 0;
-	overflow: hidden;
 }
 
 /* Icon Boxes
@@ -1091,7 +1092,7 @@ input#phone.input-xlarge {
 =================================================================== */
 .team-name {
 	padding-top: 15px;
-	font: normal normal 50px/23px 'cabinmedium';
+	font: 50px/23px 'cabinmedium';
 	text-align: center;
 	color: #ffffff;
 	width: 100%;
@@ -1106,21 +1107,20 @@ input#phone.input-xlarge {
 
 .team-name span {
 	font-size: 20px;
-	color: #ffffff;
 	font-weight: normal;
-	font-style: normal;
+	color: #ffffff;
 }
 
 .team-nametours {
-	font: normal normal 25px/20px 'cabinmedium';
+	font: 20px 'cabinmedium';
 	text-align: center;
 	color: #ffffff;
-	width: 100%;
+	width: 101%;
 	background-color: rgba(191, 38, 28, 0.63);
 	position: relative;
-	margin-top: -115px;
+	margin-top: -100px;
 	height: 90px;
-	padding-top: 25px;
+	padding-top: 10px;
 	float: left;
 }
 
@@ -1201,11 +1201,11 @@ div.tourdetailtext {
 
 
 #wrapper div.container div.span4 {
+	text-align: left;
 	border: none;
 	border-style: none;
-	width: 100%;
+	
 }
-
 
 
 #wrapper div.container div.span4 div.abouttour img {
@@ -1244,11 +1244,17 @@ div.tourdetailtext {
 }
 
 #wrapper div.container div.span7 p a {
-	color: #635757;
-	text-transform: none;
-	font-size: 16px;
+	color: #fbf4bc;
+	background-color: #000000;
+	text-transform: uppercase;
+	font-size: 17px;
 	float: left;
-	width: 100%;
+	font-weight: bold;
+	letter-spacing: 2px;
+	width: 500px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }
 
 #wrapper div.container div.container div.span2 {
@@ -1296,7 +1302,6 @@ div.tourdetailtext {
 
 #wrapper div.container div.row div.col-lg-12 h2.page-header {
 	border-style: none;
-	color: #aa2f36;
 }
 
 /* Carousel */
@@ -1507,7 +1512,7 @@ div.tourdetailtext {
 #wrapper div.clients-carousel h3, #wrapper div.container h3 {
 	text-align: center;
 	font-size: 16px;
-	color: #635757;
+	color: #767676;
 }
 
 #wrapper div.container div.row div.contact_faq.span4 div.span4 div.title h3 {
@@ -1532,7 +1537,7 @@ div.tourdetailtext {
 .clients-carousel h4 {
 	color: #635757;
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 18px;
 	margin-bottom: 50px;
 	font-style: normal;
 	text-align: center;
@@ -1545,7 +1550,6 @@ div.tourdetailtext {
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
-	font-size: 16px;
 }
 
 .clients-carousel li {
@@ -1591,7 +1595,13 @@ div.containerdiarygrid.span12 {
 
 
 .clients-carousel li img:hover {
-
+    filter: none;
+    -webkit-filter: grayscale(0);
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -o-transform: scale(1);
+   -ms-transform: scale(1);
+   transform: scale(1);
    -webkit-transition: all 0.2s ease-in-out;
    -moz-transition: all 0.2s ease-in-out;
    -o-transition: all 0.2s ease-in-out;
@@ -1605,16 +1615,16 @@ div.containerdiarygrid.span12 {
 			margin-left: auto;
 			display: block;
 			margin-top: 25px;
-			float: left;
 		}
 		
 		#final-tg ul { margin: 0; padding: 0; height: 50px; }
 		        #final-tg li { list-style-type: none; }
 				
 				#final-tg ul.thumbnails li.span4 {
+					overflow: hidden;
 					padding: 0;
 					float: left;
-					margin: 0;
+					margin: 0 0 -5px;
 					height: 300px;
 				}
 				
@@ -1635,9 +1645,7 @@ div.containerdiarygrid.span12 {
 					padding: 5px 10px; text-decoration: none;
 					font-family: 'cabinmedium';
 				}
-		        #final-tg li a:hover, #final-tg li a.selected { background: #333; color: #fff;
-					height: 100%;
-				}
+		        #final-tg li a:hover, #final-tg li a.selected { background: #333; color: #fff; }
 		        
 		        #final-tg .tile .caption {
 			        position: absolute;
@@ -1951,7 +1959,7 @@ a.buy:hover {
 div#contactwrap {
 	border: 1px solid #b7b7b7;
 	border-top-style: none;
-	width: 52%;
+	width: 1170px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 100px;
@@ -2520,6 +2528,7 @@ min-width: 2%;
 		
 	}
 
+	
 }
 
 /* Tablet Portrait (devices and browsers)
@@ -2546,14 +2555,6 @@ min-width: 2%;
 		padding: 10px 20px 20px;
 	   text-align: center;
 		font-size: 15cm;
-	}
-
-	#final-tg ul.thumbnails li.span4 {
-		padding: 0;
-		float: left;
-		margin-top: 0;
-		margin-bottom: 0;
-		margin-left: 0;
 	}
 
 }
@@ -2584,9 +2585,7 @@ min-width: 2%;
 		border: none;
 		margin-top: -20px;
 	}
-		#wrapper div.container div.row div.span3 img.img-circle.img-responsive.img-center {
-			width: 100%;
-		}
+		
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers)
@@ -2621,23 +2620,7 @@ min-width: 2%;
 	margin: 10px 0 0;
 }
 
-#final-tg ul.thumbnails li.span4 {
-	width: 100%;
-	padding: 0;
-	height: auto;
-}
 
-#final-tg ul.thumbnails li.span4 a.thumbnail img {
-	width: auto;
-	height: auto;
-}
-
-#final-tg ul.thumbnails {
-	width: 50%;
-	height: 100%;
-	margin-right: auto;
-	margin-left: auto;
-}
 }
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers)
@@ -2670,7 +2653,6 @@ min-width: 2%;
 	padding: 0;
 	margin: 10px 0 0;
 }
-
 
 }
 	

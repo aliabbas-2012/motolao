@@ -130,15 +130,10 @@ input[type="search"]::-webkit-search-cancel-button {
 textarea {
   overflow: auto;
   vertical-align: top;
-  max-width: 240px;
 }
 
 .clearfix {
   *zoom: 1;
-}
-
-#wrapper div.containerdiarygrid.span12 div.span6 div.avatar.view-team div.mask h2 {
-	color: #ffffff;
 }
 
 .clearfix:before,

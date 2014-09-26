@@ -38,7 +38,7 @@
                 $counter = 1;
                 foreach ($faqs as $faq) {
                     ?>
-                    <div class="panel panel-primary">
+                    <div class="panel panel-<?php echo $faq->css_class; ?>">
 
                         <div class="panel-heading">
                             <h4 class="panel-title">

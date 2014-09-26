@@ -38,6 +38,7 @@ $this->menu = array(
                                 'value' => isset($model->lang) ? $model->lang->name : ""
                             ),
                             'type',
+                            'css_class',
                             'question',
                             array(
                                 'name'=>'answer',
