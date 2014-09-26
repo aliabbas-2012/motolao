@@ -30,6 +30,11 @@ class DefaultController extends Controller {
         $this->page_key = "fleet";
         $this->render('//default/fleet');
     }
+    
+    public function actionFaq(){
+        $this->page_key = "faq";
+        $this->render('//default/faq');
+    }
 
     /**
      * 

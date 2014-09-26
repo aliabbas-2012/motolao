@@ -35,7 +35,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery-2.1.1.min.js"></script>
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/bootstrap.min.js"></script>
+        
 
     </head>
     <body>
