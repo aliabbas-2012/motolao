@@ -38,7 +38,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                 All Images
                 <?php echo CHtml::link("[Add New]", $this->createUrl("index")); ?>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-12">
                 <div class="panel-body">
                     <div class="table-responsive">
                         <div class="row">
@@ -56,7 +56,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                     </div>
                 </div>
             </div>
-            <div class="col-lg-10">
+            <div class="col-lg-12">
                 <div class="panel-body">
                     <div class="table-responsive">
                         <div class="row">
@@ -76,7 +76,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                                             </div>
                                             <div class="panel-body">
                                                 <?php
-                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12")), $data->image_url['image_large'], array("target" => "_blank"));
+                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12",'style'=>'width:100%')), $data->image_url['image_large'], array("target" => "_blank"));
                                                 ?>
                                             </div>
                                             <div class="panel-footer">

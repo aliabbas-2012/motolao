@@ -30,8 +30,8 @@ class DefaultController extends Controller {
         $this->page_key = "fleet";
         $this->render('//default/fleet');
     }
-    
-    public function actionFaq(){
+
+    public function actionFaq() {
         $this->page_key = "faq";
         $this->render('//default/faq');
     }
@@ -42,6 +42,14 @@ class DefaultController extends Controller {
     public function actionGallery() {
         $this->page_key = "gallery";
         $this->render('//default/gallery');
+    }
+
+    /**
+     * dairies
+     */
+    public function actionDairies() {
+        $this->page_key = "daries";
+        $this->render('//default/dairies');
     }
 
     public function actionError() {
