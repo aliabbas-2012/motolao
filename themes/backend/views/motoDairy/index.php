@@ -42,11 +42,11 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                 <div class="panel-body">
                     <div class="table-responsive">
                         <div class="row">
-                            <ul class="nav nav-tabs">
+                            <ul class="nav nav-tabs nav-list">
                                 <?php
                                 foreach ($languages_db as $id => $name) {
                                     $css_class = $id == $model->lang_id ? 'active' : '';
-                                    echo "<li class='" . $css_class . "'>";
+                                    echo "<li class='" . $css_class . " '>";
                                     echo CHtml::link($name, $this->createUrl("index", array('MotoDairy[lang_id]' => $id)));
                                     echo "</li>";
                                 }
