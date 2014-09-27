@@ -19,75 +19,34 @@
 
     <section id="final-tg">
         <ul class="thumbnails">
+            <?php
+            $criteria = new CDbCriteria();
+            $criteria->addCondition("lang_id = :lang_id");
+            $criteria->params = array(
+                ":lang_id" => $this->lang_id,
+            );
+            $daries = MotoDairy::model()->findAll($criteria);
+            foreach ($daries as $dairy):
+                ?>
+                <li class="span4">
 
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/1.jpg" width="" height="500" alt="" title="">
-                    <h2>Riding Ducks July 14</h2>
-                </a>
-            </li>
+                    <a href="<?php echo $dairy->image_url['image_large'] ?>" 
+                       class="thumbnail" target="_blank">
+                           <?php
+                           echo CHtml::image($dairy->image_url['image_large'], $dairy->alt, array(
+                               "title" => $dairy->title,
+                           ));
+                           ?>
+                        <h2><?php echo $dairy->title; ?></h2>
+                    </a>
 
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/2.jpg" width="" height="500" alt="" title="">
-                    <h2>Lao Food Diaries</h2>
-                </a>
-            </li>
+                    <?php
+                    ?>
 
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/3.jpg" width="" height="" alt="" title="">
-                    <h2>Mekong Experience</h2>
-                </a>
-            </li>
-
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/4.jpg" width="" height="" alt="" title="">
-                    <h2>Riding with Elephants</h2>
-                </a>
-            </li>
-
-
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/5.jpg" width="" height="" alt="" title="">
-                    <h2>How to cross a River</h2>
-                </a>
-            </li>
-
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/6.jpg" width="" height="" alt="" title="">
-                    <h2>New bikes arrived</h2>
-                </a>
-            </li>
-
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/7.jpg" width="" height="" alt="" title="">
-                    <h2>High performance</h2>
-                </a>
-            </li>
-
-            <li class="span4">
-                <a href="#" class="thumbnail">
-                    <img src="img/gallery_photos/8.jpg" width="" height="" alt="" title="">
-                    <h2>My New house</h2>
-                </a>
-            </li>
-
-            <li class="span4">
-                <a href="#" class="thumbnail">
-
-                    <img src="img/gallery_photos/9.jpg" width="" height="" alt="" title="">
-                    <h2>Hunger Games</h2>
-                </a>
-            </li>
-
-
-
-
+                </li>
+                <?php
+            endforeach;
+            ?>
         </ul>
     </section>
 
