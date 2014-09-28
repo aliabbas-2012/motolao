@@ -107,11 +107,11 @@
 
                             <ul id="footer-nav">
 
-                                <li><a href="about.html" title=""><?php echo Yii::t("links", "ABOUT US"); ?> </a></li>
+                                <li><a href="<?php echo $this->createUrl("/web/default/about"); ?>" title=""><?php echo Yii::t("links", "ABOUT US"); ?> </a></li>
 
-                                <li><a href="terms.html" title=""><?php echo Yii::t("links", "TERMS AND CONDITIONS"); ?></a></li>
+                                <li><a href="<?php echo $this->createUrl("/web/default/terms"); ?>" title=""><?php echo Yii::t("links", "TERMS AND CONDITIONS"); ?></a></li>
 
-                                <li><a href="sitemap.html" title=""><?php echo Yii::t("links", "SITEMAP"); ?></a></li>
+                                <li><a href="<?php echo $this->createUrl("/web/default/sitemap"); ?>" title=""><?php echo Yii::t("links", "SITEMAP"); ?></a></li>
 
                             </ul>
 

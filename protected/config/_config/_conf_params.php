@@ -90,6 +90,7 @@ $params = array(
         'contacts' => 'contacts',
         'about' => 'about',
         'terms' => 'terms',
+        'sitemap' => 'sitemap',
         'layout' => 'layout',
     )
 );

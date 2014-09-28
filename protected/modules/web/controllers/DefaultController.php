@@ -50,7 +50,7 @@ class DefaultController extends Controller {
     public function actionContact() {
         $this->page_key = "contacts";
         $model = new ContactForm;
-       
+
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
         }
@@ -63,6 +63,30 @@ class DefaultController extends Controller {
     public function actionDairies() {
         $this->page_key = "daries";
         $this->render('//default/dairies');
+    }
+
+    /**
+     * 
+     */
+    public function actionTerms() {
+        $this->page_key = "terms";
+        $this->render('//default/terms');
+    }
+
+    /**
+     * 
+     */
+    public function actionAbout() {
+        $this->page_key = "about";
+        $this->render('//default/about');
+    }
+
+    /**
+     * 
+     */
+    public function actionSitemap() {
+        $this->page_key = "sitemap";
+        $this->render('//default/sitemap');
     }
 
     public function actionError() {

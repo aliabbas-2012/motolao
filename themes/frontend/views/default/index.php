@@ -49,15 +49,15 @@ if ($this->page_key != "") {
 
 <div class="containerdiarygrid span12">	
     <div class="logosign">
-        <a class="brand" href="dairies.html" 
+        <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" 
            title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>"><img 
                 src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/icons/motolao_icons/star.png" 
                 alt="<?php echo Yii::t("home", "Motolao Dairies Logo"); ?>" /></a>
     </div>
-    <a class="brand" href="dairies.html" 
+    <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" 
         title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>"><h2>LAO MOTORCYCLE DAIRIES</h2></a>
-    <a class="brand" href="dairies.html" title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>"><h3><?php echo Yii::t("home", "We are pleased to present new tour packages"); ?></h3></a>
-    <div class="diarybutton"><a class="btn btn-lg btn-primary" href="dairies.html" role="button"><?php echo Yii::t("home", "Browse our diaries"); ?></a><p></p></div>
+    <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>"><h3><?php echo Yii::t("home", "We are pleased to present new tour packages"); ?></h3></a>
+    <div class="diarybutton"><a class="btn btn-lg btn-primary" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" role="button"><?php echo Yii::t("home", "Browse our diaries"); ?></a><p></p></div>
 
     <!-- start: SlideOptionTwo -->
     <div class="span6">

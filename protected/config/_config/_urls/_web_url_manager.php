@@ -17,6 +17,9 @@ $rules_web = array(
     'dairies' => '/web/default/dairies',
     'faq' => '/web/default/faq',
     'contact' => '/web/default/contact',
+    'about' => '/web/default/about',
+    'terms' => '/web/default/terms',
+    'sitemap' => '/web/default/sitemap',
     //
     '/category/<slug:\w+>' => '/web/category/index',
 );
