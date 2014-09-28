@@ -7,7 +7,7 @@
             <?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/motolao_icons/star.png", Yii::t("team", "Team Logo"), array("title" => Yii::t("team", "Team Logo"))); ?>
         </div>
     </div>
-    <h2><?php echo Yii::t("team", "About Us"); ?></h2>
+    <h2><?php echo Yii::t("team", "Team About Us"); ?></h2>
     <div class="hero-unit">
 
         <p>
