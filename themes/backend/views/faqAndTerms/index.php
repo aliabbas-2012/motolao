@@ -44,6 +44,31 @@ return false;
     ));
     ?>
 </div><!-- search-form -->
+
+<div class="col-lg-12">
+    <div class="panel-body">
+        <div class="table-responsive">
+            <div class="row">
+                <ul class="nav nav-tabs">
+                    <?php
+                    $total_types = array(
+                        "faq" => "faq", "term" => 'term'
+                    );
+                    foreach ($total_types as $type) {
+                        $css_class = $type == $model->type ? 'active' : '';
+                        echo "<li class='" . $css_class . "'>";
+                        echo CHtml::link(ucfirst($type), $this->createUrl("index", array('Faq[type]' => $type)));
+                        echo "</li>";
+                    }
+                    echo "<li>";
+                    echo CHtml::link("All", $this->createUrl("index"));
+                    echo "</li>";
+                    ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="row">
     <div class="col-lg-12">
         <!-- Advanced Tables -->
@@ -75,7 +100,6 @@ return false;
                                 'value' => 'isset($data->css_class)?$data->css_class:""'
                             ),
                             'question',
-                            
                             array(
                                 'class' => 'CButtonColumn',
                             ),
