@@ -70,7 +70,12 @@ class DefaultController extends Controller {
      */
     public function actionTerms() {
         $this->page_key = "terms";
-        $this->render('//default/terms');
+        $model = new ContactForm;
+
+        if (isset($_POST['ContactForm'])) {
+            $model->attributes = $_POST['ContactForm'];
+        }
+        $this->render('//default/terms', array("model" => $model));
     }
 
     /**
