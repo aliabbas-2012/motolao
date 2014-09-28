@@ -9,7 +9,7 @@ class ContactForm extends CFormModel {
 
     public $name;
     public $email;
-    public $subject;
+    public $phone;
     public $body;
     public $verifyCode;
 
@@ -19,7 +19,7 @@ class ContactForm extends CFormModel {
     public function rules() {
         return array(
             // name, email, subject and body are required
-            array('name, email, subject, body', 'required'),
+            array('name, email, phone, body', 'required'),
             // email has to be a valid email address
             array('email', 'email'),
             // verifyCode needs to be entered correctly
@@ -34,7 +34,11 @@ class ContactForm extends CFormModel {
      */
     public function attributeLabels() {
         return array(
-            'verifyCode' => 'Verification Code',
+            'verifyCode' => Yii::t("contact",'Verification Code'),
+            'name' => Yii::t("contact",'Your name'),
+            'email' => Yii::t("contact",'Email'),
+            'phone' => Yii::t("contact",'Phone number'),
+            'body' => Yii::t("contact",'Message'),
         );
     }
 

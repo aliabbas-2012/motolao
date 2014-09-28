@@ -874,6 +874,15 @@ input#email.input-xlarge, input#name {
 input#phone.input-xlarge {
 	width: 94%;
 }
+textarea#ContactForm_body.input-xlarge,
+input#ContactForm_email.input-xlarge, input#ContactForm_name {
+	width: 94%;
+	background-color: #f5f5f3;
+}
+
+input#ContactForm_phone.input-xlarge {
+	width: 94%;
+}
 
 #wrapper div.container div.row div.contactwrap div.span4 div.title h3 {
 	width: 100%;

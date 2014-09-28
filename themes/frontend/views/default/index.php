@@ -3,7 +3,9 @@
 
     <!-- start: Hero Unit - Main hero unit for a primary marketing message or call to action -->
     <div id="signwrapper">
-        <div class="logosign"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/icons/motolao_icons/motolao.png" alt="Motolao Logo" /></div>
+        <div class="logosign">
+            <?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/motolao_icons/motolao.png", Yii::t("home", "Motolo Logo"), array("title" => Yii::t("home", "Motolao Logo"))); ?>
+        </div>
     </div>
     <h2><?php echo Yii::t("home", "MOTOLAO"); ?></h2>
     <div class="hero-unit">

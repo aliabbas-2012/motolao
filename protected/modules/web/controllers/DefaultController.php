@@ -24,7 +24,7 @@ class DefaultController extends Controller {
     }
 
     /**
-     * Te
+     * flleet
      */
     public function actionFleet() {
         $this->page_key = "fleet";
@@ -42,6 +42,19 @@ class DefaultController extends Controller {
     public function actionGallery() {
         $this->page_key = "gallery";
         $this->render('//default/gallery');
+    }
+
+    /**
+     * 
+     */
+    public function actionContact() {
+        $this->page_key = "contacts";
+        $model = new ContactForm;
+       
+        if (isset($_POST['ContactForm'])) {
+            $model->attributes = $_POST['ContactForm'];
+        }
+        $this->render('//default/contact', array("model" => $model));
     }
 
     /**
