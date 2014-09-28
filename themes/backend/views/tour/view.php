@@ -83,10 +83,10 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
                     ));
 
                     if (count($lang->getTotalItemCount()) > 0) {
-                        $this->renderPartial("//tour/_languages", array("languages" => $lang));
+                        $this->renderPartial("//tour/_languages", array("languages" => $lang,"id"=>$model->id));
                     }
                     ?>
-                    <?php $this->renderPartial("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id)); ?>
+                    <?php //$this->renderPartial("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id)); ?>
                 </div>
                 <div class="tab-pane <?php echo $related == "tour_images" ? "active" : "fade" ?>" id="images">
                     <?php

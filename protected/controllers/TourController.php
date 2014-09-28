@@ -26,7 +26,7 @@ class TourController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'index', 'view', 'delete'),
+                'actions' => array('create', 'update', 'index', 'view', 'delete', 'createNewLanguage'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -48,6 +48,17 @@ class TourController extends Controller {
             'related' => $related,
             'related_id' => $related_id,
         ));
+    }
+
+    /**
+     * create languages
+     */
+    public function actionCreateNewLanguage($id, $related = "", $related_id = "") {
+
+        $model = $this->loadModel($id);
+        $this->manageRelations($model, $related, $related_id);
+
+        $this->render("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id));
     }
 
     /**

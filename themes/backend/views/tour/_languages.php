@@ -4,6 +4,10 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 Tour in Different Languages
+                <?php
+                $option = array("id" => $id, "related" => "tour_langs");
+                echo CHtml::link("(Add New)", $this->createUrl("/tour/createNewLanguage", $option))
+                ?>
             </div>
             <div class="panel-body">
                 <div class="table-responsive">
@@ -28,7 +32,7 @@
                                 'template' => '{update}{delete}',
                                 'buttons' => array(
                                     'update' => array(
-                                        'url' => 'Yii::app()->controller->createUrl("/tour/view/",array("id"=>$data->tour->id,"related"=>"tour_langs","related_id"=>$data->id))'
+                                        'url' => 'Yii::app()->controller->createUrl("/tour/createNewLanguage/",array("id"=>$data->tour->id,"related"=>"tour_langs","related_id"=>$data->id))'
                                     ),
                                     'delete' => array(
                                         'url' => 'Yii::app()->controller->createUrl("/tour/delete/",array("id"=>$data->tour->id,"related"=>"tour_langs","related_id"=>$data->id))'

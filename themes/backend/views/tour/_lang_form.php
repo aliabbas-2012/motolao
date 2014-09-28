@@ -19,7 +19,7 @@
                         $form = $this->beginWidget('CActiveForm', array(
                             'id' => 'tour-lang-form',
                             'enableAjaxValidation' => false,
-                            'action' => $this->createUrl("/tour/view", $option),
+                            'action' => $this->createUrl("/tour/createNewLanguage", $option),
                         ));
                         $form->hiddenField($model, "parent_id")
                         ?>
@@ -95,9 +95,11 @@
 
                             </div><!-- group -->
 
+                        </div>
+                        <div class="col-lg-12">
                             <div class="form-group">
-                                <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-3')); ?>
-                                <div class="col-lg-8">
+                                <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-2')); ?>
+                                <div class="col-lg-10">
                                     <?php
                                     $this->widget('application.extensions.tinymce.ETinyMce', array(
                                         'editorTemplate' => 'full',
@@ -110,8 +112,6 @@
                                 </div>
 
                             </div><!-- group -->
-
-
                         </div>
 
 
