@@ -25,14 +25,12 @@
                 <?php
                 $criteria = new CDbCriteria();
                 $criteria->limit = '12';
-                //$tours = Tour::model()->findAll();
-               // foreach ($tours as $tour) {
+                $tours = Tour::model()->findAll();
+                foreach ($tours as $tour) {
                     ?>
-                    <li><a href="<?php //echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" title=""><?php //echo $tour->name ?> I <?php //echo $tour->category->name; ?></a></li>
-
-
+                    <li><a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" title=""><?php echo $tour->name ?> I <?php echo $tour->category->name; ?></a></li>
                     <?php
-              //  }
+                }
                 ?>
             </ul>
         </li>
