@@ -21,6 +21,8 @@
  */
 class Tour extends DTActiveRecord {
 
+    public $_image;
+
     /**
      * @return string the associated database table name
      */
@@ -57,6 +59,8 @@ class Tour extends DTActiveRecord {
             'category' => array(self::BELONGS_TO, 'Category', 'category_id'),
             'tour_langs' => array(self::HAS_MANY, 'TourLang', 'parent_id'),
             'tour_images' => array(self::HAS_MANY, 'TourImage', 'tour_id'),
+            'tour_images_display_def' => array(self::HAS_ONE, 'TourImage', 'tour_id', 'condition' => 'is_default=1 '),
+            'tour_images_display' => array(self::HAS_ONE, 'TourImage', 'tour_id', 'order' => 'id DESC '),
         );
     }
 
@@ -98,33 +102,19 @@ class Tour extends DTActiveRecord {
         // should not be searched.
 
         $criteria = new CDbCriteria;
-
         $criteria->compare('id', $this->id, true);
-
         $criteria->compare('name', $this->name, true);
-
         $criteria->compare('short_title', $this->short_title, true);
-
         $criteria->compare('tour_type', $this->tour_type, true);
-
         $criteria->compare('category_id', $this->category_id);
-
         $criteria->compare('url', $this->url, true);
-
         $criteria->compare('meta_title', $this->meta_title, true);
-
         $criteria->compare('meta_description', $this->meta_description, true);
-
         $criteria->compare('description', $this->description, true);
-
         $criteria->compare('create_time', $this->create_time, true);
-
         $criteria->compare('create_user_id', $this->create_user_id, true);
-
         $criteria->compare('update_time', $this->update_time, true);
-
         $criteria->compare('update_user_id', $this->update_user_id, true);
-
         $criteria->compare('activity_log', $this->activity_log, true);
 
         return new CActiveDataProvider('Tour', array(
@@ -138,6 +128,20 @@ class Tour extends DTActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+    
+    /**
+     * set image
+     * @return type
+     */
+    public function afterFind() {
+        if(!empty($this->tour_images_display_def)){
+            $this->_image = $this->tour_images_display_def->image_url['image_large'];
+        }
+        else if(!empty($this->tour_images_display)) {
+            $this->_image = $this->tour_images_display->image_url['image_large'];
+        }
+        return parent::afterFind();
     }
 
     /**
