@@ -34,6 +34,15 @@
                                 <?php echo $form->error($model, 'name'); ?>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="col-lg-2">
+                                <?php echo $form->labelEx($model, 'heading'); ?>
+                            </div>
+                            <div class="col-lg-8">
+                                <?php echo $form->textField($model, 'heading', array('class' => 'form-control', 'size' => 60, 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'heading'); ?>
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <div class="col-lg-2">

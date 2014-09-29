@@ -20,7 +20,9 @@ $rules_web = array(
     'about' => '/web/default/about',
     'terms' => '/web/default/terms',
     'sitemap' => '/web/default/sitemap',
-    //
-    '/category/<slug:\w+>' => '/web/category/index',
+    '<category:\w+>/<slug:\w+>' => '/web/category/detail',
+    '<slug:\w+>' => '/web/category/index',
+    
+        //
 );
 ?>

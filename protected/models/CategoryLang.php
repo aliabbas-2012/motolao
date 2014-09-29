@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'category_langs':
  * @property string $id
  * @property string $name
+ * @property string $heading
  * @property integer $lang_id
  * @property integer $parent_id
  * @property string $url
@@ -34,7 +35,7 @@ class CategoryLang extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('name,heading,lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('name', 'unique'),
             array('lang_id, parent_id', 'numerical', 'integerOnly' => true),
             array('name, url, meta_title', 'length', 'max' => 150),
@@ -65,6 +66,7 @@ class CategoryLang extends DTActiveRecord {
         return array(
             'id' => 'Id',
             'name' => 'Name',
+            'heading' => 'Heading',
             'lang_id' => 'Language',
             'parent_id' => 'Parent',
             'url' => 'Url',
@@ -98,6 +100,7 @@ class CategoryLang extends DTActiveRecord {
 
         $criteria->compare('id', $this->id, true);
         $criteria->compare('name', $this->name, true);
+        $criteria->compare('heading', $this->heading, true);
         $criteria->compare('lang_id', $this->lang_id);
         $criteria->compare('parent_id', $this->parent_id);
         $criteria->compare('url', $this->url, true);

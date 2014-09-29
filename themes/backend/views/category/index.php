@@ -63,12 +63,12 @@ $('.search-form form').submit(function(){
                         'filter' => $model,
                         'columns' => array(
                             'name',
+                            'heading',
                             array(
                                 'name' => 'parent',
                                 'value' => 'isset($data->parent_cat)?$data->parent_cat->name:""'
                             ),
                             'url',
-                            'meta_title',
                             array(
                                 'class' => 'CButtonColumn',
                             ),

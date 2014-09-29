@@ -6,6 +6,7 @@
  * The followings are the available columns in table 'category':
  * @property string $id
  * @property string $name
+ * @property string $heading
  * @property integer $parent
  * @property string $url
  * @property string $meta_title
@@ -33,12 +34,12 @@ class Category extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('name,heading, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('parent', 'numerical', 'integerOnly' => true),
             array('name, url, meta_title', 'length', 'max' => 150),
             array('create_user_id, update_user_id', 'length', 'max' => 11),
             array('meta_description, description, activity_log', 'safe'),
-            array('name','unique'),
+            array('name', 'unique'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, name, parent, url, meta_title, meta_description, description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -66,6 +67,7 @@ class Category extends DTActiveRecord {
         return array(
             'id' => 'ID',
             'name' => 'Name',
+            'heading' => 'Heading',
             'parent' => 'Parent',
             'url' => 'Url',
             'meta_title' => 'Meta Title',
@@ -99,6 +101,7 @@ class Category extends DTActiveRecord {
         $criteria->compare('id', $this->id, true);
         $criteria->compare('name', $this->name, true);
         $criteria->compare('parent', $this->parent);
+        $criteria->compare('heading', $this->heading);
         $criteria->compare('url', $this->url, true);
         $criteria->compare('meta_title', $this->meta_title, true);
         $criteria->compare('meta_description', $this->meta_description, true);
@@ -123,6 +126,7 @@ class Category extends DTActiveRecord {
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
+
     /**
      * 
      * @return type

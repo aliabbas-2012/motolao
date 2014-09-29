@@ -112,7 +112,7 @@ class DefaultController extends Controller {
             Yii::log(str_replace("<br/>", "\n", $body), "info");
 
 
-            $this->render('error', array('error' => $body));
+            $this->render('//default/error', array('error' => $body));
         } else
             throw new CHttpException(404, 'Page not found.');
     }

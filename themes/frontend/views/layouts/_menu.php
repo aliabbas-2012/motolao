@@ -14,15 +14,15 @@
             </li>
 
             <li class="dropdown <?php echo $this->id == "category" && $this->action->id == "index" ? "active" : ""; ?>">
-                <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
-                    <?php echo Yii::t("links", "Tours"); ?><b class="caret"></b>
+                <a href="javascript:void(0)" class="dropdown-toggle" 
+                   data-toggle="dropdown"><?php echo Yii::t("links", "Tours"); ?><b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
                     <?php
                     $categories = Category::model()->findAll();
                     foreach ($categories as $category):
                         ?>
-                        <li><a href="<?php echo $this->createUrl("/web/category/index",array("slug"=>$category->url)); ?>" title=""><?php echo $category->name ?></a></li>
+                        <li><a href="<?php echo $this->createUrl("/web/category/index",array("slug"=>$category->url)); ?>"><?php echo $category->name ?></a></li>
                         <?php
                     endforeach;
                     ?>

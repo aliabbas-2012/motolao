@@ -155,9 +155,12 @@ class Tour extends DTActiveRecord {
      * before save 
      */
     public function setSlug() {
-
+        if (empty($this->url)) {
+            $this->url = $this->name;
+        }
         $this->url = strtolower(trim($this->url));
-        $this->url = str_replace(" ", "_", $this->url);
+        $this->url = str_replace(" ", "-", $this->url);
+        $this->url = str_replace("_", "-", $this->url);
         $this->url = MyHelper::convert_no_sign($this->url);
     }
 
