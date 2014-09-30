@@ -25,6 +25,28 @@
                         <div class="col-lg-12">
                             <div class="form-group">
 
+                                <?php echo $form->labelEx($model, 'object_type', array('class' => 'control-label col-lg-3')); ?> 
+
+                                <div class="col-lg-6">
+                                    <?php
+                                    echo $form->hiddenField($model, "object_type");
+                                    if ($model->object_type == "tour") {
+                                        echo Tour::model()->find($model->id)->name;
+                                        echo " --- ";
+                                    } else if ($model->object_type == "diary") {
+                                        echo MotoDairy::model()->find($model->id)->title;
+                                        echo " --- ";
+                                    }
+                                    echo $model->object_type;
+                                    ?>
+                                    <?php echo $form->error($model, 'object_type'); ?>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+
                                 <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-3')); ?> 
 
                                 <div class="col-lg-6">

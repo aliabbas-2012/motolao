@@ -252,6 +252,18 @@ class TourController extends Controller {
             $model = new HomePageItems;
         }
         $model->lang_id = $lang_id;
+        $model->id = $id;
+        $model->object_type = $object_type;
+        if (isset($_POST['HomePageItems'])) {
+            $model->attributes = $_POST['HomePageItems'];
+            if ($model->save()) {
+                if ($model->object_type == "tour") {
+                    $this->redirect($this->creareUrl("/tour/view", array("id" => $id)));
+                } else if ($model->object_type == "diary") {
+                    $this->redirect($this->creareUrl("/motoDairy/view", array("id" => $id)));
+                }
+            }
+        }
         $this->render("//tour/home_page", array("model" => $model));
     }
 
