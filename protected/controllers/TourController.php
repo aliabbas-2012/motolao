@@ -26,7 +26,8 @@ class TourController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'index', 'view', 'delete', 'createNewLanguage'),
+                'actions' => array('create', 'update', 'index', 'view', 'delete',
+                    'createNewLanguage', 'home'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -233,6 +234,25 @@ class TourController extends Controller {
             default:
                 break;
         }
+    }
+
+    public function actionHome($id, $object_type, $lang_id) {
+        $criteria = new CDbCriteria();
+    
+        $criteria->addCondition("id =:id AND object_type = :object_type AND lang_id = :lang_id");
+        $params = array(
+            'id' => $id,
+            'lang_id' => $lang_id,
+            'object_type' => $object_type,
+        );
+        $criteria->params = $params;
+        if($model = HomePageItems::model()->find($criteria)){
+            
+        }
+        else {
+            $model  = new HomePageItems;
+        }
+        
     }
 
 }

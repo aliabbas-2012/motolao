@@ -31,6 +31,7 @@ $rules_admin = array(
     'admin/tour/<id:[\w-\.]+>/delete-<related:[\w-\.]+>' => '/tour/delete',
     'admin/tour/<id:[\w-\.]+>/delete' => '/tour/delete',
     'admin/tour/create' => '/tour/create',
+    'admin/home-page/setting/<id:[\w-\.]+>/<lang_id:[\w-\.]+>/<object_type:[\w-\.]+>' => '/tour/home',
 );
 /* * ----------- advertinsg -----------* */
 ?>
