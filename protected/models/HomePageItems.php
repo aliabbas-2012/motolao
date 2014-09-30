@@ -64,7 +64,7 @@ class HomePageItems extends DTActiveRecord {
         return array(
             'id' => 'ID',
             'object_type' => 'Object Type',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'name' => 'Name',
             'short_description' => 'Short Description',
             'description' => 'Description',

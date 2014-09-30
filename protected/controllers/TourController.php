@@ -238,7 +238,7 @@ class TourController extends Controller {
 
     public function actionHome($id, $object_type, $lang_id) {
         $criteria = new CDbCriteria();
-    
+
         $criteria->addCondition("id =:id AND object_type = :object_type AND lang_id = :lang_id");
         $params = array(
             'id' => $id,
@@ -246,13 +246,13 @@ class TourController extends Controller {
             'object_type' => $object_type,
         );
         $criteria->params = $params;
-        if($model = HomePageItems::model()->find($criteria)){
+        if ($model = HomePageItems::model()->find($criteria)) {
             
+        } else {
+            $model = new HomePageItems;
         }
-        else {
-            $model  = new HomePageItems;
-        }
-        
+        $model->lang_id = $lang_id;
+        $this->render("//tour/home_page", array("model" => $model));
     }
 
 }
