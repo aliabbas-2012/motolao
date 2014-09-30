@@ -43,6 +43,7 @@
         $criteria->addCondition("category_id = :category_id");
         $criteria->params = array(":category_id" => $model->id);
         $tours = Tour::model()->findAll($criteria);
+        CVarDumper::dump($criteria,10,true);
         CVarDumper::dump($tours,10,true);
         die;
         foreach ($tours as $tour):

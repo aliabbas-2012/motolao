@@ -59,8 +59,8 @@ class Tour extends DTActiveRecord {
             'category' => array(self::BELONGS_TO, 'Category', 'category_id'),
             'tour_langs' => array(self::HAS_MANY, 'TourLang', 'parent_id'),
             'tour_images' => array(self::HAS_MANY, 'TourImage', 'tour_id'),
-            'tour_images_display_def' => array(self::HAS_ONE, 'TourImage', 'tour_id', 'condition' => 'is_default=1 '),
-            'tour_images_display' => array(self::HAS_ONE, 'TourImage', 'tour_id', 'order' => 'id DESC '),
+            'tour_images_display_def' => array(self::HAS_MANY, 'TourImage', 'tour_id', 'condition' => 'is_default=1 '),
+            'tour_images_display' => array(self::HAS_MANY, 'TourImage', 'tour_id', 'order' => 'id DESC '),
         );
     }
 
@@ -135,12 +135,10 @@ class Tour extends DTActiveRecord {
      * @return type
      */
     public function afterFind() {
-        if(!empty($this->tour_images_display_def)){
-            $this->_image = $this->tour_images_display_def->image_url['image_large'];
+        if(!empty($this->tour_images)){
+            //$this->_image = $this->tour_images[0]->image_url['image_large'];
         }
-        else if(!empty($this->tour_images_display)) {
-            $this->_image = $this->tour_images_display->image_url['image_large'];
-        }
+        
         return parent::afterFind();
     }
 
