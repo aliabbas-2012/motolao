@@ -21,6 +21,23 @@
  */
 class HomePageItems extends DTActiveRecord {
 
+    public $no_image;
+
+    /**
+     * upload instance and index for multiple uploader
+     * index is no and instance is object
+     * @var type 
+     */
+    public $upload_insance;
+
+    /**
+     *
+     * @var type 
+     * for purpose of deleting old image
+     */
+    public $oldLargeImg = "";
+    public $image_url = array();
+
     /**
      * @return string the associated database table name
      */
@@ -41,6 +58,8 @@ class HomePageItems extends DTActiveRecord {
             array('name, short_description, alt, title, image_large', 'length', 'max' => 150),
             array('description', 'length', 'max' => 250),
             array('activity_log', 'safe'),
+            array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
+                'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, object_type, lang_id, name, short_description, description, alt, title, image_large, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -124,6 +143,109 @@ class HomePageItems extends DTActiveRecord {
      */
     public static function model($className = __CLASS__) {
         return parent::model($className);
+    }
+
+    public function afterFind() {
+        $this->oldLargeImg = $this->image_large;
+        /**
+         *  setting path  for front end images
+         */
+        if (!empty($this->image_large)) {
+
+
+            $this->image_url['image_large'] = Yii::app()->baseUrl . "/uploads/home-page/" . $this->id;
+            $this->image_url['image_large'].= "/" . $this->image_large;
+        } else {
+            $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
+        }
+
+        parent::afterFind();
+    }
+
+    /**
+     * set for validation to occure
+     * need image instance for validation rules
+     * @return type
+     */
+    public function beforeValidate() {
+        $this->upload_insance = DTUploadedFile::getInstance($this, 'image_large');
+        if (!empty($this->upload_insance)) {
+            $this->image_large = $this->upload_insance;
+        }
+        return parent::beforeValidate();
+    }
+
+    /**
+     * for setting object to save
+     * image name rather its emtpy
+     * @return type 
+     */
+    public function beforeSave() {
+
+
+        $this->setUploadVars();
+        return parent::beforeSave();
+    }
+
+    public function afterSave() {
+        parent::afterSave();
+        $this->uploadImages();
+
+        return true;
+    }
+
+    /**
+     * set image variable before save
+     */
+    public function setUploadVars() {
+
+
+
+        $its_t = new DTFunctions();
+        if (!empty($this->upload_insance)) {
+            $this->image_large = $its_t->getRanddomeNo(10) . "." . $this->upload_insance->extensionName;
+        } 
+    }
+
+    /**
+     * upload images
+     */
+    public function uploadImages() {
+
+        if (!empty($this->upload_insance)) {
+
+
+            $folder_array = array("home-page", $this->id,);
+
+            $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
+            $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
+
+
+            DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
+            $this->deleteldImage();
+        }
+    }
+
+    /**
+     * to delete old image in case of not empty
+     * not equal new image
+     */
+    public function deleteldImage() {
+
+        if (!empty($this->oldLargeImg) && $this->oldLargeImg != $this->image_large) {
+            $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "home-page" . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR;
+            $large_path = $path . DIRECTORY_SEPARATOR . $this->oldLargeImg;
+
+            DTUploadedFile::deleteExistingFile($large_path);
+        }
+
+
+    }
+
+    public function beforeDelete() {
+        $this->deleteldImage();
+        parent::beforeDelete();
     }
 
 }

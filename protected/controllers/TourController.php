@@ -235,9 +235,11 @@ class TourController extends Controller {
                 break;
         }
     }
+
     /*
      * 
      */
+
     public function actionHome($id, $object_type, $lang_id) {
         $criteria = new CDbCriteria();
 
@@ -259,10 +261,11 @@ class TourController extends Controller {
         if (isset($_POST['HomePageItems'])) {
             $model->attributes = $_POST['HomePageItems'];
             if ($model->save()) {
+                Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 if ($model->object_type == "tour") {
-                    $this->redirect($this->creareUrl("/tour/view", array("id" => $id)));
+                    $this->redirect($this->createUrl("/tour/view", array("id" => $id)));
                 } else if ($model->object_type == "diary") {
-                    $this->redirect($this->creareUrl("/motoDairy/view", array("id" => $id)));
+                    $this->redirect($this->createUrl("/motoDairy/view", array("id" => $id)));
                 }
             }
         }
