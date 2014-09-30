@@ -43,25 +43,32 @@
         $criteria->addCondition("category_id = :category_id");
         $criteria->params = array(":category_id" => $model->id);
         $tours = Tour::model()->findAll($criteria);
-        CVarDumper::dump($criteria,10,true);
-        CVarDumper::dump($tours,10,true);
-        die;
+      
         foreach ($tours as $tour):
+            if($tour->tour_images_display_def_count>0){
+               $image = $tour->tour_images_display_def;
+            }
+            else {
+                $image = $tour->tour_images_display;
+            }
+            
             ?>
             <div class="span6">
                 <div class="avatar view-team">
-                    <img src="img/tours/01.jpg" alt="tour" title="">
+                    <?php
+                        echo CHtml::image($image->image_url['image_large'],$image->tag,array("title"=>$image->tag));
+                    ?>
                     <div class="mask">
-                        <h2>1 DAY TOUR</h2>
-                        <p>
-                            Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders. 
-                        </p>
-                        <a href="tourdetail4x4.html" class="info">CONTINUE READING</a><br />
-                        <a href="#" title="" class="info">CONTACT US</a>
+                        <h2><?php echo $tour->name; ?></h2>
+                         <?php
+                            echo $tour->description;
+                         ?> 
+                        <a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" class="info"> <?php echo Yii::t("category", "CONTINUE READING"); ?></a><br />
+                        <a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" title="" class="info"><?php echo Yii::t("category", "CONTACT US"); ?></a>
                     </div>
                 </div>
                 <div class="clear"></div>
-                <div class="team-nametours">1 DAY TOUR<span> <br>FOLLOW YOUR DREAMS.</span></div>
+                <div class="team-nametours"><?php echo $tour->tour_type; ?><span> <br><?php echo $tour->short_title; ?></span></div>
 
             </div>
             <?php
