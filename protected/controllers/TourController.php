@@ -235,7 +235,9 @@ class TourController extends Controller {
                 break;
         }
     }
-
+    /*
+     * 
+     */
     public function actionHome($id, $object_type, $lang_id) {
         $criteria = new CDbCriteria();
 

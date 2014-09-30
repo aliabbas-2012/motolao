@@ -33,6 +33,7 @@ $this->menu = array(
             <div class="panel-body">
                 <div class="table-responsive">
                     <?php
+                    $en_lang = Language::model()->getLanuageId("en", "id");
                     $this->widget('zii.widgets.CDetailView', array(
                         'data' => $model,
                         'htmlOptions' => array("class" => "table table-striped table-bordered table-hover"),
@@ -43,6 +44,11 @@ $this->menu = array(
                             array(
                                 'name' => 'category_id',
                                 'value' => isset($model->category) ? $model->category->name : "",
+                                'type' => "raw",
+                            ),
+                            array(
+                                'name' => 'home Page',
+                                'value' => $model->getHomePageLink($en_lang->id),
                                 'type' => "raw",
                             ),
                             'url',
@@ -83,7 +89,7 @@ Yii::app()->getClientScript()->registerScriptFile(Yii::app()->theme->baseUrl . '
                     ));
 
                     if (count($lang->getTotalItemCount()) > 0) {
-                        $this->renderPartial("//tour/_languages", array("languages" => $lang,"id"=>$model->id));
+                        $this->renderPartial("//tour/_languages", array("languages" => $lang, "id" => $model->id));
                     }
                     ?>
                     <?php //$this->renderPartial("//tour/_lang_form", array("model" => $model->tour_langs, "id" => $model->id)); ?>
