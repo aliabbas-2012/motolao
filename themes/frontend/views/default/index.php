@@ -55,7 +55,7 @@ if ($this->page_key != "") {
                 alt="<?php echo Yii::t("home", "Motolao Dairies Logo"); ?>" /></a>
     </div>
     <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" 
-        title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>"><h2>LAO MOTORCYCLE DAIRIES</h2></a>
+       title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>"><h2>LAO MOTORCYCLE DAIRIES</h2></a>
     <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>"><h3><?php echo Yii::t("home", "We are pleased to present new tour packages"); ?></h3></a>
     <div class="diarybutton"><a class="btn btn-lg btn-primary" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" role="button"><?php echo Yii::t("home", "Browse our diaries"); ?></a><p></p></div>
 

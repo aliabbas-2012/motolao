@@ -8,6 +8,7 @@
 $rules_admin = array(
     /** admin url ** */
     'admin' => '/site/login',
+    'gii' => 'gii',
     'login' => '/site/login',
     'admin/config/<m:[\w-\.]+>' => '/configurations/load',
     //category create 

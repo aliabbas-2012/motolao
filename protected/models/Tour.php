@@ -131,7 +131,7 @@ class Tour extends DTActiveRecord {
     public static function model($className = __CLASS__) {
         return parent::model($className);
     }
-    
+
     /**
      * set image
      * @return type
@@ -140,7 +140,7 @@ class Tour extends DTActiveRecord {
 //        if(!empty($this->tour_images)){
 //            //$this->_image = $this->tour_images[0]->image_url['image_large'];
 //        }
-        
+
         return parent::afterFind();
     }
 
@@ -166,6 +166,29 @@ class Tour extends DTActiveRecord {
         $this->url = str_replace(" ", "-", $this->url);
         $this->url = str_replace("_", "-", $this->url);
         $this->url = MyHelper::convert_no_sign($this->url);
+    }
+
+    /**
+     * 
+     */
+    public function getHomePageLink($lang_id) {
+        $criteria = new CDbCriteria();
+        $criteria->select = 'id,lang_id,name,object_type';
+        $criteria->addCondition("id =:id AND object_type = :object_type AND lang_id = :lang_id");
+        $criteria->params = array(
+            'id'=>$this->id,
+            'lang_id'=>$lang_id,
+            'object_type'=>'tour',
+        );
+    
+        if($item = HomePageItems::model()->find($criteria)){
+            return $item->name;
+        }
+        else {
+            return CHtml::link("Set On Home Page",Yii::app()->controller->createUrl("/a/b"));
+        }
+        
+        
     }
 
 }

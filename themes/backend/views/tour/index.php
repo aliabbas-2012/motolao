@@ -42,6 +42,7 @@ return false;
     $this->renderPartial('_search', array(
         'model' => $model,
     ));
+    $en_lang = Language::model()->getLanuageId("en", "id");
     ?>
 </div><!-- search-form -->
 <div class="row">
@@ -68,6 +69,11 @@ return false;
                             array(
                                 'name' => 'category_id',
                                 'value' => 'isset($data->category)?$data->category->name:""'
+                            ),
+                            array(
+                                'header' => 'home Page ',
+                                'value' => '$data->getHomePageLink("' . $en_lang->id . '")',
+                                "type" => 'raw'
                             ),
                             array(
                                 'class' => 'CButtonColumn',

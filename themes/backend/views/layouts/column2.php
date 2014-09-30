@@ -84,7 +84,7 @@ $pluggins_array = array(
                     <li>
                         <a href="<?php echo $this->createUrl("/banner/index/"); ?>">Banners</a>
                     </li>
-                    `                   <li>
+                    <li>
                         <a href="<?php echo $this->createUrl("/motoDairy/index/"); ?>">Moto Dairy</a>
                     </li>
                     <li>

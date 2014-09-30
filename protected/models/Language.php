@@ -51,7 +51,6 @@ class Language extends DTActiveRecord {
             array('id, name, meta_title, meta_description, description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
         );
     }
-   
 
     /**
      * @return array relational rules.
@@ -153,11 +152,14 @@ class Language extends DTActiveRecord {
 
         return parent::beforeDelete();
     }
-    
-    public function getLanuageId($code){
+
+    public function getLanuageId($code, $select = '') {
         $criteria = new CDbCriteria();
         $criteria->addCondition("code=:code");
-        $criteria->params = array(":code"=>$code);
+        if(!empty($select)){
+            $criteria->select = $select;
+        }
+        $criteria->params = array(":code" => $code);
         return $this->find($criteria);
     }
 
