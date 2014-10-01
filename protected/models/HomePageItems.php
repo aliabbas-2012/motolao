@@ -56,7 +56,7 @@ class HomePageItems extends DTActiveRecord {
             array('id, lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('object_type', 'length', 'max' => 5),
             array('name, short_description, alt, title, image_large', 'length', 'max' => 150),
-            array('description', 'length', 'max' => 250),
+            array('description', 'safe'),
             array('activity_log', 'safe'),
             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),

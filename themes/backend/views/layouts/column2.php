@@ -63,6 +63,9 @@ $pluggins_array = array(
                     <li>
                         <a href="<?php echo $this->createUrl("/tour/create/"); ?>">Create</a>
                     </li>
+                    <li>
+                        <a href="<?php echo $this->createUrl("/tour/getHomePageSetting/"); ?>">Home Page Settings</a>
+                    </li>
                 </ul>
                 <!-- second-level-items -->
             </li>

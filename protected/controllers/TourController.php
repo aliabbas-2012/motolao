@@ -27,7 +27,7 @@ class TourController extends Controller {
         return array(
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'update', 'index', 'view', 'delete',
-                    'createNewLanguage', 'home'),
+                    'createNewLanguage', 'home', 'getHomePageSetting'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -237,7 +237,7 @@ class TourController extends Controller {
     }
 
     /*
-     * 
+     * home page settings
      */
 
     public function actionHome($id, $object_type, $lang_id) {
@@ -270,6 +270,13 @@ class TourController extends Controller {
             }
         }
         $this->render("//tour/home_page", array("model" => $model));
+    }
+
+    /**
+     * get home page settings
+     */
+    public function actionGetHomePageSetting() {
+        $this->render("//tour/home_page_settings");
     }
 
 }
