@@ -265,7 +265,7 @@ class TourController extends Controller {
                 if ($model->object_type == "tour") {
                     $this->redirect($this->createUrl("/tour/view", array("id" => $id)));
                 } else if ($model->object_type == "diary") {
-                    $this->redirect($this->createUrl("/motoDairy/view", array("id" => $id)));
+                    $this->redirect($this->createUrl("/motoDairy/index", array("id" => $id)));
                 }
             }
         }

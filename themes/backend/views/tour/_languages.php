@@ -28,6 +28,11 @@
                                 'value' => 'isset($data->lang)?$data->lang->name:""'
                             ),
                             array(
+                                'header' => 'home Page ',
+                                'value' => '$data->getHomePageLink($data->lang_id)',
+                                "type" => 'raw'
+                            ),
+                            array(
                                 'class' => 'CButtonColumn',
                                 'template' => '{update}{delete}',
                                 'buttons' => array(

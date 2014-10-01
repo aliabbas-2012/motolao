@@ -168,26 +168,5 @@ class Tour extends DTActiveRecord {
         $this->url = MyHelper::convert_no_sign($this->url);
     }
 
-    /**
-     * 
-     */
-    public function getHomePageLink($lang_id) {
-        $criteria = new CDbCriteria();
-        $criteria->select = 'id,lang_id,name,object_type';
-        $criteria->addCondition("id =:id AND object_type = :object_type AND lang_id = :lang_id");
-        $params = array(
-            'id' => $this->id,
-            'lang_id' => $lang_id,
-            'object_type' => 'tour',
-        );
-        $criteria->params = $params;
-        $url = Yii::app()->controller->createUrl("/tour/home", $params);
-        if ($item = HomePageItems::model()->find($criteria)) {
-            return CHtml::link($item->name, $url);
-        } else {
-
-            return CHtml::link("Set On Home Page", $url);
-        }
-    }
-
+  
 }

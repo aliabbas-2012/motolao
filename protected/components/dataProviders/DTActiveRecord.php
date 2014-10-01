@@ -27,7 +27,7 @@ class DTActiveRecord extends CActiveRecord {
 
     public function __construct($scenario = 'insert') {
 
-        $this->_action = isset(Yii::app()->controller->action)?Yii::app()->controller->action->id:"";
+        $this->_action = isset(Yii::app()->controller->action) ? Yii::app()->controller->action->id : "";
         $this->_controller = Yii::app()->controller->id;
         $this->_current_module = get_class(Yii::app()->controller->getModule());
 
@@ -168,6 +168,28 @@ class DTActiveRecord extends CActiveRecord {
 
         parent::updateByPk($pk, $attributes, $condition, $params);
         return true;
+    }
+
+    /**
+     * Home page setting
+     */
+    public function getHomePageLink($lang_id, $object_type = 'tour') {
+        $criteria = new CDbCriteria();
+        $criteria->select = 'id,lang_id,name,object_type';
+        $criteria->addCondition("id =:id AND object_type = :object_type AND lang_id = :lang_id");
+        $params = array(
+            'id' => $this->id,
+            'lang_id' => $lang_id,
+            'object_type' => $object_type,
+        );
+        $criteria->params = $params;
+        $url = Yii::app()->controller->createUrl("/tour/home", $params);
+        if ($item = HomePageItems::model()->find($criteria)) {
+            return CHtml::link($item->name, $url);
+        } else {
+
+            return CHtml::link("Set On Home Page", $url);
+        }
     }
 
 }
