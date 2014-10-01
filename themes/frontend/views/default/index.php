@@ -60,42 +60,47 @@ if ($this->page_key != "") {
     <div class="diarybutton"><a class="btn btn-lg btn-primary" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" role="button"><?php echo Yii::t("home", "Browse our diaries"); ?></a><p></p></div>
 
     <!-- start: SlideOptionTwo -->
-    <div class="span6">
-        <div class="avatar view-team">
-            <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/diaries/01.jpg" 
-                 alt="<?php echo Yii::t("home", "tourhome"); ?>" title="<?php echo Yii::t("home", "tourhome"); ?>">
-            <div class="mask">
-                <h2>4x4 Tours</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-                </p>
-                <a href="toursmore.html" title="" class="info">CONTINUE READING</a><br>
+    <?php
+    $criteria = new CDbCriteria();
+    $criteria->addCondition("lang_id = :lang_id");
+    $params = array(
+        'lang_id' => $this->lang_id,
+    );
+    $criteria->limit = 2;
+    $criteria->params = $params;
+    $items = HomePageItems::model()->findAll($criteria);
+    foreach ($items as $item) {
+        ?>
+        <div class="span6">
+            <div class="avatar view-team">
+                <?php
+                echo CHtml::image($item->image_url['image_large'], $item->alt, array(
+                    "title" => $item->title,
+                ));
+                ?>
+                <div class="mask">
+                    <h2><?php echo $item->name; ?></h2>
+                    <p>
+                        <?php echo $item->description; ?>
+                    </p>
+                    <?php
+                    if ($item->object_type == "tour") {
+                        $tour = Tour::model()->find($item->id);
+                        echo CHtml::link(Yii::t("home", "CONTINUE READING"), $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)), array("class" => "info"));
+                    }
+                    ?>
+                    <br>
 
+                </div>
             </div>
+            <div class="clear"></div>
+            <div class="team-name"><?php echo $item->name; ?><br><span><?php echo $item->short_description; ?></span></div>
+
         </div>
-        <div class="clear"></div>
-        <div class="team-name">4x4 Tours<br><span>Discover Laos on 4 wheels</span></div>
+        <!-- end: About Member -->
+        <?php
+    }
+    ?>
 
-    </div>
-    <!-- end: About Member -->
-
-    <!-- start: About Member -->
-    <div class="span6">
-        <div class="avatar view-team">
-            <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/diaries/02.jpg" alt="tour" title="">
-            <div class="mask">
-                <h2>River Challenge</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. 
-                </p>
-                <a href="toursmore.html" title="" class="info">CONTINUE READING</a><br>
-
-            </div>
-        </div>
-        <div class="clear"></div>
-        <div class="team-name">River Challenge<br><span>Be part of our river challenge</span></div>
-
-    </div>
-    <!-- end: SlideOptionTwo -->
 </div>
 

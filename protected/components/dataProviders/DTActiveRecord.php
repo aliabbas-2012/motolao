@@ -173,7 +173,7 @@ class DTActiveRecord extends CActiveRecord {
     /**
      * Home page setting
      */
-    public function getHomePageLink($lang_id, $object_type = 'tour') {
+    public function getHomePageLink($lang_id, $object_type = 'tour', $link = true) {
         $criteria = new CDbCriteria();
         $criteria->select = 'id,lang_id,name,object_type';
         $criteria->addCondition("id =:id AND object_type = :object_type AND lang_id = :lang_id");
