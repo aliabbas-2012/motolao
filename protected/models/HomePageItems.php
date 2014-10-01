@@ -153,7 +153,7 @@ class HomePageItems extends DTActiveRecord {
         if (!empty($this->image_large)) {
 
 
-            $this->image_url['image_large'] = Yii::app()->baseUrl . "/uploads/home-page/" . $this->id;
+            $this->image_url['image_large'] = Yii::app()->baseUrl . "/uploads/home-page/" . $this->getCompositeKey();
             $this->image_url['image_large'].= "/" . $this->image_large;
         } else {
             $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
@@ -215,7 +215,7 @@ class HomePageItems extends DTActiveRecord {
         if (!empty($this->upload_insance)) {
 
 
-            $folder_array = array("home-page", $this->id,);
+            $folder_array = array("home-page", $this->getCompositeKey(),);
 
             $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
             $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
@@ -234,7 +234,7 @@ class HomePageItems extends DTActiveRecord {
 
         if (!empty($this->oldLargeImg) && $this->oldLargeImg != $this->image_large) {
             $path = Yii::app()->basePath . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR;
-            $path.= "uploads" . DIRECTORY_SEPARATOR . "home-page" . DIRECTORY_SEPARATOR . $this->id . DIRECTORY_SEPARATOR;
+            $path.= "uploads" . DIRECTORY_SEPARATOR . "home-page" . DIRECTORY_SEPARATOR . $this->getCompositeKey() . DIRECTORY_SEPARATOR;
             $large_path = $path . DIRECTORY_SEPARATOR . $this->oldLargeImg;
 
             DTUploadedFile::deleteExistingFile($large_path);
@@ -246,6 +246,13 @@ class HomePageItems extends DTActiveRecord {
     public function beforeDelete() {
         $this->deleteldImage();
         parent::beforeDelete();
+    }
+    /**
+     * 
+     */
+    public function getCompositeKey(){
+        return implode("-",array($this->id,$this->lang_id,$this->object_type));;
+        
     }
 
 }
