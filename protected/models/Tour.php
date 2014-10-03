@@ -140,7 +140,7 @@ class Tour extends DTActiveRecord {
 //        if(!empty($this->tour_images)){
 //            //$this->_image = $this->tour_images[0]->image_url['image_large'];
 //        }
-
+        $this->url = $this->id."-".$this->url;
         return parent::afterFind();
     }
 

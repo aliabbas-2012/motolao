@@ -22,7 +22,7 @@
                     $categories = Category::model()->findAll();
                     foreach ($categories as $category):
                         ?>
-                        <li><a href="<?php echo $this->createUrl("/web/category/index",array("slug"=>$category->url)); ?>"><?php echo $category->name ?></a></li>
+                        <li><a href="<?php echo $this->createUrl("/web/category/index",array("category"=>$category->url)); ?>"><?php echo $category->name ?></a></li>
                         <?php
                     endforeach;
                     ?>
