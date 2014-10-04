@@ -36,22 +36,23 @@ class DTMultiLangBehaviour extends CActiveRecordBehavior {
     }
 
     public function afterFind($event) {
-        $owner = $this->getOwner();
-        /*
-         * empty variable then replace 
-         */
-        if(empty($this->current_lang)){
-            $this->current_lang = Yii::app()->controller->currentLang;
-        }
-    
-        if (isset($this->current_lang) && $this->current_lang != $this->defaultLanguage) {
-            $relation = $owner->getRelated($this->relation);
-           
-            foreach ($this->localizedAttributes as $attr) {
-                $owner->$attr = isset($relation[0]->$attr) ? $relation[0]->$attr : "";
+        if (get_class(Yii::app()->controller->getModule()) == "WebModule") {
+            $owner = $this->getOwner();
+            /*
+             * empty variable then replace 
+             */
+            if (empty($this->current_lang)) {
+                $this->current_lang = Yii::app()->language;
+            }
+
+            if (isset($this->current_lang) && $this->current_lang != $this->defaultLanguage) {
+                $relation = $owner->getRelated($this->relation);
+
+                foreach ($this->localizedAttributes as $attr) {
+                    $owner->$attr = isset($relation[0]->$attr) ? $relation[0]->$attr : "";
+                }
             }
         }
-
 
         return parent::afterFind($event);
     }
@@ -63,27 +64,26 @@ class DTMultiLangBehaviour extends CActiveRecordBehavior {
      * to save in other languages
      * @param type $event
      */
-    public function afterSave($event) {
-
-        $owner = $this->getOwner();
-        if ($owner->isNewRecord) {
-            $languages = Yii::app()->params['otherLanguages'];
-            foreach ($languages as $lang) {
-                $chilModel = new $this->langClassName;
-                $chilModel->lang_id = $lang;
-                foreach ($this->localizedAttributes as $attr) {
-                    $chilModel->$attr = "";
-                }
-                $foreign_key = $this->langForeignKey;
-                $chilModel->$foreign_key = $owner->primaryKey;
-
-                $chilModel->save();
-            }
-        }
-
-        return parent::afterSave($event);
-    }
-
+//    public function afterSave($event) {
+//
+//        $owner = $this->getOwner();
+//        if ($owner->isNewRecord) {
+//            $languages = Yii::app()->params['otherLanguages'];
+//            foreach ($languages as $lang) {
+//                $chilModel = new $this->langClassName;
+//                $chilModel->lang_id = $lang;
+//                foreach ($this->localizedAttributes as $attr) {
+//                    $chilModel->$attr = "";
+//                }
+//                $foreign_key = $this->langForeignKey;
+//                $chilModel->$foreign_key = $owner->primaryKey;
+//
+//                $chilModel->save();
+//            }
+//        }
+//
+//        return parent::afterSave($event);
+//    }
 }
 
 ?>

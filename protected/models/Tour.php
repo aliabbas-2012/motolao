@@ -50,6 +50,34 @@ class Tour extends DTActiveRecord {
     }
 
     /**
+     * Behaviour
+     *
+     */
+    public function behaviors() {
+        return array(
+       
+            'DTMultiLangBehaviour' => array(
+                'class' => 'DTMultiLangBehaviour',
+                'langClassName' => 'TourLang',
+                'relation' => 'tour_langs',
+                'langTableName' => 'tour_langs',
+                'langForeignKey' => 'parent_id',
+                'localizedAttributes' => array(
+                    'name', 
+                    'short_title', 
+                    'tour_type',
+                    'meta_title',
+                    'meta_description',
+                    'description',
+                ), //attributes of the model to be translated
+                'localizedPrefix' => '',
+               
+                'defaultLanguage' => 'en', //your main language. Example : 'fr'
+            ),
+        );
+    }
+
+    /**
      * @return array relational rules.
      */
     public function relations() {
@@ -140,7 +168,7 @@ class Tour extends DTActiveRecord {
 //        if(!empty($this->tour_images)){
 //            //$this->_image = $this->tour_images[0]->image_url['image_large'];
 //        }
-        $this->url = $this->id."-".$this->url;
+        $this->url = $this->id . "-" . $this->url;
         return parent::afterFind();
     }
 
@@ -168,5 +196,4 @@ class Tour extends DTActiveRecord {
         $this->url = MyHelper::convert_no_sign($this->url);
     }
 
-  
 }
