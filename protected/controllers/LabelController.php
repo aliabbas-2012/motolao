@@ -84,6 +84,7 @@ class LabelController extends Controller {
         if (isset($_POST['Label'])) {
             $model->attributes = $_POST['Label'];
             if ($model->save()) {
+                 $this->generate($model);
                 Yii::app()->user->setFlash("success", "Data has been saved successfully");
                 $this->redirect(array('view', 'id' => $model->id));
             }

@@ -64,10 +64,15 @@ return false;
                         <div class="row">
                             <ul class="nav nav-tabs">
                                 <?php
+                                $lang_params = array();
+                                if (!empty($model->category)) {
+                                    $lang_params['Label[category]'] = $model->category;
+                                }
                                 foreach ($languages_db as $id => $name) {
                                     $css_class = $id == $model->lang_id ? 'active' : '';
+                                    $lang_params['Label[lang_id]'] = $id;
                                     echo "<li class='" . $css_class . " '>";
-                                    echo CHtml::link($name, $this->createUrl("index", array('Label[lang_id]' => $id)));
+                                    echo CHtml::link($name, $this->createUrl("index", $lang_params));
                                     echo "</li>";
                                 }
                                 ?>
@@ -76,10 +81,15 @@ return false;
                         <div class="row">
                             <ul class="nav nav-tabs">
                                 <?php
+                                $cat_params = array();
+                                if (!empty($model->category)) {
+                                    $cat_params['Label[lang_id]'] = $model->lang_id;
+                                }
                                 foreach ($groups as $group) {
                                     $css_class = $model->category == $group->category ? 'active' : '';
+                                    $cat_params['Label[category]'] = $group->category;
                                     echo "<li class='" . $css_class . " '>";
-                                    echo CHtml::link($group->category, $this->createUrl("index", array('Label[category]' => $group->category)));
+                                    echo CHtml::link($group->category, $this->createUrl("index", $cat_params));
                                     echo "</li>";
                                 }
                                 ?>
@@ -110,6 +120,7 @@ return false;
                             'value',
                             array(
                                 'class' => 'CButtonColumn',
+                                'template'=>'{update}{view}'
                             ),
                         ),
                     ));

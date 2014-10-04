@@ -103,6 +103,7 @@ class Label extends DTActiveRecord {
 
         $criteria->compare('id', $this->id, true);
         $criteria->compare('lang_id', $this->lang_id, true);
+        $criteria->compare('category', $this->category, true);
         $criteria->compare('key', $this->key, true);
         $criteria->compare('value', $this->value, true);
         $criteria->compare('create_time', $this->create_time, true);
@@ -113,6 +114,12 @@ class Label extends DTActiveRecord {
 
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
+             'pagination' => array(
+                'pageSize' => 50,
+            ),
+            'sort' => array(
+                'defaultOrder' => 'id DESC , lang_id DESC',
+            )
         ));
     }
 
@@ -142,9 +149,9 @@ class Label extends DTActiveRecord {
      */
     public function setSlug() {
 
-        $this->key = strtolower(trim($this->key));
-        $this->key = str_replace(" ", "-", $this->key);
-        $this->key = MyHelper::convert_no_sign($this->key);
+//        $this->key = strtolower(trim($this->key));
+//        $this->key = str_replace(" ", "-", $this->key);
+//        $this->key = MyHelper::convert_no_sign($this->key);
     }
 
     public function insertLabels($category, $message) {

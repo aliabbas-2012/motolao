@@ -55,7 +55,13 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'key', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-8">
-                                <?php echo $form->textArea($model, 'key', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                <?php
+                                    $key_htmlOpt = array('class' => 'form-control', 'maxlength' => 150,);
+                                    if(!$model->isNewRecord){
+                                        $key_htmlOpt['readonly'] = 'readonly';
+                                    }
+                                    echo $form->textArea($model, 'key', $key_htmlOpt);
+                                ?>
                                 <?php echo $form->error($model, 'key'); ?>
 
                             </div>
@@ -66,7 +72,7 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'value', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-8">
-                                <?php echo $form->textArea($model, 'value', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                <?php echo $form->textArea($model, 'value', array('class' => 'form-control', 'maxlength' => 150,)); ?>
                                 <?php echo $form->error($model, 'value'); ?>
 
                             </div>
