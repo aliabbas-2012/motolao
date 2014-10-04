@@ -89,7 +89,7 @@
                                     'attribute' => 'description',
                                     'options' => array('theme' => 'advanced')));
                                 ?>
-                                <?php echo $form->error($model, 'meta_description'); ?>
+                                <?php echo $form->error($model, 'description'); ?>
                             </div>
                         </div><!-- group -->
 

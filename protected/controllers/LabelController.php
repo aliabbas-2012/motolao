@@ -26,7 +26,8 @@ class LabelController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update', 'index', 'view', 'delete'),
+                'actions' => array('create', 'update', 'index', 'view',
+                    'delete', 'test'),
                 'users' => array('@'),
             ),
             array('deny', // deny all users
@@ -112,6 +113,7 @@ class LabelController extends Controller {
     public function actionIndex() {
         $model = new Label('search');
         $model->unsetAttributes();  // clear any default values
+       
         if (isset($_GET['Label']))
             $model->attributes = $_GET['Label'];
 
@@ -145,45 +147,65 @@ class LabelController extends Controller {
         }
     }
 
+    public function actionTest() {
+        $languages = Language::model()->findAll();
+        foreach ($languages as $model) {
+            $this->generate($model, $model->id);
+         
+        }
+    }
+
     /**
      * Language
      * @param type $model
      */
-    public function generate($model) {
-     
-        $language = Language::model()->findByPk($model->lang_id);
+    public function generate($model, $lang_id = '') {
+
+        if ($lang_id != '') {
+            $language = Language::model()->findByPk($lang_id);
+        } else {
+            $language = Language::model()->findByPk($model->lang_id);
+        }
+
+
         if (isset($language)) {
-            $data = Label::model()->findAll("lang_id ='{$language->id}'");
-            $this->layout = "";
-            $str = "<?php " . PHP_EOL;
-            $str.='$' . $language->code . '_t =  array(' . PHP_EOL;
-            foreach ($data as $d) {
+            $criteria = new CDbCriteria();
+            $criteria->group = 'category';
+            $groups = Label::model()->findAll($criteria);
+           
+            foreach ($groups as $group) {
+                $cond = "lang_id ='{$language->id}' AND category = '{$group->category}'";
+                
+                $data = Label::model()->findAll($cond);
+                
+               
+                $this->layout = "";
+                $str = "<?php " . PHP_EOL;
+                $str.='$' . $language->code . '_t =  array(' . PHP_EOL;
+                foreach ($data as $d) {
 
-                $str.= '"' . $d->key . '" => "' . $d->value . '",' . PHP_EOL;
+                    $str.= '"' . $d->key . '" => "' . $d->value . '",' . PHP_EOL;
+                }
+                $str.=' ); ' . PHP_EOL;
+
+                $str.=' return $' . $language->code . '_t;' . PHP_EOL;
+                $str.= "?>";
+
+                $dir_path = Yii::getPathOfAlias('application.messages.' . $language->code);
+
+                if (!is_dir($dir_path)) {
+                    mkdir($dir_path, 0755);
+                }
+
+                $path = Yii::getPathOfAlias('application.messages.' . $language->code . '.' . $group->category) . '.php';
+                if (!is_file($path)) {
+                    touch($path);
+                }
+                $ad = new CCodeFile($path, $str);
+                $ad->save();
+                chmod($path, 0755);
             }
-            $str.=' ); ' . PHP_EOL;
 
-            $str.=' return $' . $language->code . '_t;' . PHP_EOL;
-            $str.= "?>";
-
-            $dir_path = Yii::getPathOfAlias('application.messages.'.$language->code);
-
-            if (!is_dir($dir_path)) {
-                mkdir($dir_path, 0755);
-            }
-
-            $path = Yii::getPathOfAlias('application.messages.'.$language->code.'.' . $language->code) . '.php';
-            if(!is_file($path)){
-                touch($path);
-            }
-          
-
-            $ad = new CCodeFile($path, $str);
-
-
-
-            $ad->save();
-            chmod($path, 0755);
             Yii::app()->user->setFlash("message", "Languages has been updated successfully");
             $this->redirect($this->createUrl("/label/index"));
         }

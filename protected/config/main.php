@@ -34,6 +34,7 @@ return array(
             'errorAction' => 'web/default/error', //error controoler/error actions
         ),
         'log' => $logs,
+        
     //'email' => $conf_email_user,
 //        'messages' => array(
 //            'class' => 'CPhpMessageSource',

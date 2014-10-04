@@ -49,7 +49,7 @@ class Label extends DTActiveRecord {
         if (!$this->isNewRecord) {
             $criteria->addCondition("id<>" . $this->id);
         }
-        $criteria->addCondition("t.key ='" . $this->key . "' AND lang_id =" . $this->lang_id);
+        $criteria->addCondition("category = '" . $this->category . "' AND t.key ='" . $this->key . "' AND lang_id =" . $this->lang_id);
 
         if ($this->count($criteria) > 0) {
             $this->addError("key", "This key already exist in this language");
@@ -73,7 +73,7 @@ class Label extends DTActiveRecord {
     public function attributeLabels() {
         return array(
             'id' => 'ID',
-            'lang_id' => 'Lang',
+            'lang_id' => 'Language',
             'key' => 'Key',
             'value' => 'Value',
             'create_time' => 'Create Time',
@@ -145,6 +145,29 @@ class Label extends DTActiveRecord {
         $this->key = strtolower(trim($this->key));
         $this->key = str_replace(" ", "-", $this->key);
         $this->key = MyHelper::convert_no_sign($this->key);
+    }
+
+    public function insertLabels($category, $message) {
+
+        Yii::import("application.models.Language");
+        $all_languages = Language::model()->findAll();
+        foreach ($all_languages as $lng) {
+            $criteria = new CDbCriteria();
+            $criteria->addCondition("lang_id=:lang_id AND category = :category");
+
+            $criteria->params = array("lang_id" => $lng->id,
+                "category" => $category);
+
+            //Label::model()->deleteAll($criteria);
+
+            $model = new Label;
+            $model->lang_id = $lng->id;
+            $model->category = $category;
+            $model->key = $message;
+            $model->value = $message;
+            $model->save();
+        }
+        Yii::log("==" . $category . "---" . $message . "==", 'info');
     }
 
 }

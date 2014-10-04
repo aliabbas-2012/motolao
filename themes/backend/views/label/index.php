@@ -42,6 +42,13 @@ return false;
     $this->renderPartial('_search', array(
         'model' => $model,
     ));
+    $criteria = new CDbCriteria();
+    $languages_db = CHtml::listData(Language::model()->findAll($criteria), "id", "name");
+
+    $criteria = new CDbCriteria();
+    $criteria->group = 'category';
+    $criteria->select = 'category';
+    $groups = Label::model()->findAll($criteria);
     ?>
 </div><!-- search-form -->
 <div class="row">
@@ -49,7 +56,38 @@ return false;
         <!-- Advanced Tables -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                <a class="search-button" href="#">Advanced Search</a>            </div>
+                <a class="search-button" href="#">Advanced Search</a>           
+            </div>
+            <div class="col-lg-8">
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <div class="row">
+                            <ul class="nav nav-tabs">
+                                <?php
+                                foreach ($languages_db as $id => $name) {
+                                    $css_class = $id == $model->lang_id ? 'active' : '';
+                                    echo "<li class='" . $css_class . " '>";
+                                    echo CHtml::link($name, $this->createUrl("index", array('Label[lang_id]' => $id)));
+                                    echo "</li>";
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <ul class="nav nav-tabs">
+                                <?php
+                                foreach ($groups as $group) {
+                                    $css_class = $model->category == $group->category ? 'active' : '';
+                                    echo "<li class='" . $css_class . " '>";
+                                    echo CHtml::link($group->category, $this->createUrl("index", array('Label[category]' => $group->category)));
+                                    echo "</li>";
+                                }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="panel-body">
                 <div class="table-responsive">
                     <?php
@@ -63,8 +101,9 @@ return false;
                         'filter' => $model,
                         'columns' => array(
                             array(
-                                'name' => 'lang',
-                                'value' => 'isset($data->lang)?$data->lang->name:""'
+                                'name' => 'lang_id',
+                                'value' => 'isset($data->lang)?$data->lang->name:""',
+                                "type" => 'raw'
                             ),
                             'category',
                             'key',
