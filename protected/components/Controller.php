@@ -57,8 +57,7 @@ class Controller extends CController {
      * @var type 
      */
     public $webPcmWidget;
-    
-    public $lang_id ;
+    public $lang_id;
 
     public function beforeAction($action) {
 
@@ -77,10 +76,8 @@ class Controller extends CController {
             Yii::app()->theme = "frontend";
             $this->layout = "//layouts/column2";
             Yii::app()->language = "en";
-            
+
             $this->lang_id = Language::model()->getLanuageId(Yii::app()->language)->id;
-            
-            
         } else {
             /**
              * install configurations
@@ -220,7 +217,8 @@ class Controller extends CController {
                 $operation = ($level == 0) ? $menu->min_permission : $menu->min_permission;
 
 
-                $childCount = Menu::model()->count("pid = $menu->id"); {
+                $childCount = Menu::model()->count("pid = $menu->id");
+                {
                     $foundAny = true;
 
                     $this->menuHtml .='<li ' . ($pid == 0 ? "class='top'" : "") . '>';
@@ -396,6 +394,13 @@ class Controller extends CController {
                 Yii::app()->params[$data->param] = $data->value;
             }
         }
+    }
+
+    public function createUrl($route, $params = array(), $ampersand = '&') {
+        if (get_class($this->getModule()) == "WebModule") {
+            $params['lang'] = Yii::app()->language;
+        }
+        return parent::createUrl($route, $params, $ampersand);
     }
 
     /**
