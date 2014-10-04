@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 04, 2014 at 11:21 PM
+-- Generation Time: Oct 05, 2014 at 12:11 AM
 -- Server version: 5.5.38-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.3
 
@@ -1810,7 +1810,8 @@ INSERT INTO `tbl_migration` (`version`, `apply_time`) VALUES
 ('m140923_194154_addVidoInGallery', 1411501420),
 ('m140926_205057_addCSSClassINfaq', 1411764817),
 ('m140929_185908_addColumnINCategory', 1412017401),
-('m140930_182224_createHomePageFeaturedItems', 1412101635);
+('m140930_182224_createHomePageFeaturedItems', 1412101635),
+('m141004_185953_addShort_descriptonInPRoductboth', 1412449598);
 
 -- --------------------------------------------------------
 
@@ -1868,6 +1869,7 @@ CREATE TABLE IF NOT EXISTS `tours` (
   `url` varchar(150) DEFAULT NULL,
   `meta_title` varchar(150) DEFAULT NULL,
   `meta_description` text,
+  `short_description` text,
   `description` text,
   `create_time` datetime NOT NULL,
   `create_user_id` int(11) unsigned NOT NULL,
@@ -1881,11 +1883,11 @@ CREATE TABLE IF NOT EXISTS `tours` (
 -- Dumping data for table `tours`
 --
 
-INSERT INTO `tours` (`id`, `name`, `short_title`, `tour_type`, `category_id`, `url`, `meta_title`, `meta_description`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`, `activity_log`) VALUES
-(2, '1 DAY TOUR ', 'FOLLOW YOUR DREAMS.', '1 day', 1, '2-1-day-tour', '', '', '<p><strong>Stunning landscapes</strong></p>\r\n<p><strong>Cool break at beautiful waterfall</strong></p>\r\n<p><strong>Dirt road</strong></p>\r\n<p><strong>Mekong River</strong></p>\r\n<p><strong>Rural villages</strong></p>\r\n<p><strong>Local food</strong></p>\r\n<p><strong>River crossings</strong></p>\r\n<p><strong>Level: beginners to intermediate</strong></p>\r\n<p>&nbsp;</p>\r\n<p>The tours both start off with a leisurely ride on a winding paved road out of Luang Prabang towards Muang Nan. You will ride through truly stunning landscapes and stop for a cool break at the beautiful Kamcham waterfall along the way.</p>\r\n<p>Once at Muang Nan you will experience a traditional Lao lunch at one of the many Lao roadside restaurants and be able to interact with the local people. You will leave Muang Nan for Luang Prabang by riding about 60km along the mighty Mekong River on one of two dirt roads, depending on your riding skills. The &ldquo;lower&rdquo; road is a pleasant windy dirt road that follows close to the Mekong River and has a few small river crossings. This ride is suitable for both beginners and intermediate riders.</p>\r\n<p>If you are a bit more experienced we will take the &ldquo;upper&rdquo; road, which is slightly inland from the Mekong River and requires a bit more riding skill. This road incorporates more track riding and has a few tricky sections with more hill climbs and descents, which call for more technical riding skills. With both rides you will pass through different rural villages and get to see how the rural Lao people live. The landscapes are very beautiful with the road passing through teak tree plantations and farm- lands.</p>\r\n<p>Before returning to Luang Prabang you will get to visit the stunningly beautiful Kuang Si Waterfalls and even take a dip in the refreshing turquoise water. You will also have the opportunity to see and learn about the endangered Asian Bears at the Free the Bear sanctuary.</p>\r\n<p>On either version of the Mighty Mekong One Day Ride, you will experience rural life, waterfalls, the Lao countryside and many other hidden treasures along the way. Every tour can be customized to your requirements.<br /><br /> <a title="" href="#">Please contact us for more details</a> <a title="flickr images" href="#">See previous tour experiences on flickr</a></p>', '2014-09-14 11:53:21', 1, '2014-10-04 01:01:22', 1, NULL),
-(3, '2 DAYS TOUR', 'GET OUT THERE.', '2 day', 1, '2_days_tour', '2 DAYS TOUR', '2 DAYS TOUR', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '2014-09-30 00:27:09', 1, '2014-09-30 00:27:09', 1, NULL),
-(4, '3 DAYS TOUR', 'RIVER CHALLENGE', '3 day', 1, '3_days_tour', '', '', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '2014-09-30 00:28:28', 1, '2014-09-30 00:31:09', 1, NULL),
-(5, 'Special Tours UPPON REQUEST', 'SPECIAL TOURS PER REQUEST', '10 day', 1, '', '', '', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '2014-09-30 00:29:38', 1, '2014-09-30 00:31:44', 1, NULL);
+INSERT INTO `tours` (`id`, `name`, `short_title`, `tour_type`, `category_id`, `url`, `meta_title`, `meta_description`, `short_description`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`, `activity_log`) VALUES
+(2, '1 DAY TOUR ', 'FOLLOW YOUR DREAMS.', '1 day', 1, '2-2-1-day-tour', '', '', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '<p><strong>Stunning landscapes</strong></p>\r\n<p><strong>Cool break at beautiful waterfall</strong></p>\r\n<p><strong>Dirt road</strong></p>\r\n<p><strong>Mekong River</strong></p>\r\n<p><strong>Rural villages</strong></p>\r\n<p><strong>Local food</strong></p>\r\n<p><strong>River crossings</strong></p>\r\n<p><strong>Level: beginners to intermediate</strong></p>\r\n<p>&nbsp;</p>\r\n<p>The tours both start off with a leisurely ride on a winding paved road out of Luang Prabang towards Muang Nan. You will ride through truly stunning landscapes and stop for a cool break at the beautiful Kamcham waterfall along the way.</p>\r\n<p>Once at Muang Nan you will experience a traditional Lao lunch at one of the many Lao roadside restaurants and be able to interact with the local people. You will leave Muang Nan for Luang Prabang by riding about 60km along the mighty Mekong River on one of two dirt roads, depending on your riding skills. The &ldquo;lower&rdquo; road is a pleasant windy dirt road that follows close to the Mekong River and has a few small river crossings. This ride is suitable for both beginners and intermediate riders.</p>\r\n<p>If you are a bit more experienced we will take the &ldquo;upper&rdquo; road, which is slightly inland from the Mekong River and requires a bit more riding skill. This road incorporates more track riding and has a few tricky sections with more hill climbs and descents, which call for more technical riding skills. With both rides you will pass through different rural villages and get to see how the rural Lao people live. The landscapes are very beautiful with the road passing through teak tree plantations and farm- lands.</p>\r\n<p>Before returning to Luang Prabang you will get to visit the stunningly beautiful Kuang Si Waterfalls and even take a dip in the refreshing turquoise water. You will also have the opportunity to see and learn about the endangered Asian Bears at the Free the Bear sanctuary.</p>\r\n<p>On either version of the Mighty Mekong One Day Ride, you will experience rural life, waterfalls, the Lao countryside and many other hidden treasures along the way. Every tour can be customized to your requirements.<br /><br /> <a title="" href="#">Please contact us for more details</a> <a title="flickr images" href="#">See previous tour experiences on flickr</a></p>', '2014-09-14 11:53:21', 1, '2014-10-05 00:07:25', 1, NULL),
+(3, '2 DAYS TOUR', 'GET OUT THERE.', '2 day', 1, '3-2-days-tour', '2 DAYS TOUR', '2 DAYS TOUR', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '2014-09-30 00:27:09', 1, '2014-10-05 00:07:48', 1, NULL),
+(4, '3 DAYS TOUR', 'RIVER CHALLENGE', '3 day', 1, '4-3-days-tour', '', '', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '2014-09-30 00:28:28', 1, '2014-10-05 00:07:51', 1, NULL),
+(5, 'Special Tours UPPON REQUEST', 'SPECIAL TOURS PER REQUEST', '10 day', 1, '5', '', '', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders.</span></p>', '2014-09-30 00:29:38', 1, '2014-10-05 00:07:54', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -1937,6 +1939,7 @@ CREATE TABLE IF NOT EXISTS `tour_langs` (
   `url` varchar(150) DEFAULT NULL,
   `meta_title` varchar(150) DEFAULT NULL,
   `meta_description` text,
+  `short_description` text,
   `description` text,
   `create_time` datetime NOT NULL,
   `create_user_id` int(11) unsigned NOT NULL,
@@ -1944,15 +1947,16 @@ CREATE TABLE IF NOT EXISTS `tour_langs` (
   `update_user_id` int(11) unsigned NOT NULL,
   `activity_log` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `tour_langs`
 --
 
-INSERT INTO `tour_langs` (`id`, `name`, `short_title`, `tour_type`, `lang_id`, `parent_id`, `url`, `meta_title`, `meta_description`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`, `activity_log`) VALUES
-(1, 'test a', 'test', '1 day', 2, 2, 'test', 'test', 'test', 'test', '2014-09-14 17:49:32', 1, '2014-09-14 17:51:55', 1, NULL),
-(2, 'test', 'test', '1 day', 3, 2, 'test', 'test', 'test', '<p>test</p>', '2014-09-28 23:47:05', 1, '2014-09-28 23:47:05', 1, NULL);
+INSERT INTO `tour_langs` (`id`, `name`, `short_title`, `tour_type`, `lang_id`, `parent_id`, `url`, `meta_title`, `meta_description`, `short_description`, `description`, `create_time`, `create_user_id`, `update_time`, `update_user_id`, `activity_log`) VALUES
+(1, 'test a', 'test', '1 day', 2, 2, 'test', 'test', 'test', '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders. de</span></p>', '<p><strong>Stunning landscapes</strong></p>\r\n<p><strong>Cool break at beautiful waterfall</strong></p>\r\n<p><strong>Dirt road</strong></p>\r\n<p><strong>Mekong River</strong></p>\r\n<p><strong>Rural villages</strong></p>\r\n<p><strong>Local food</strong></p>\r\n<p><strong>River crossings</strong></p>\r\n<p><strong>Level: beginners to intermediate</strong></p>\r\n<p>&nbsp;</p>\r\n<p>The tours both start off with a leisurely ride on a winding paved road out of Luang Prabang towards Muang Nan. You will ride through truly stunning landscapes and stop for a cool break at the beautiful Kamcham waterfall along the way.</p>\r\n<p>Once at Muang Nan you will experience a traditional Lao lunch at one of the many Lao roadside restaurants and be able to interact with the local people. You will leave Muang Nan for Luang Prabang by riding about 60km along the mighty Mekong River on one of two dirt roads, depending on your riding skills. The &ldquo;lower&rdquo; road is a pleasant windy dirt road that follows close to the Mekong River and has a few small river crossings. This ride is suitable for both beginners and intermediate riders.</p>\r\n<p>If you are a bit more experienced we will take the &ldquo;upper&rdquo; road, which is slightly inland from the Mekong River and requires a bit more riding skill. This road incorporates more track riding and has a few tricky sections with more hill climbs and descents, which call for more technical riding skills. With both rides you will pass through different rural villages and get to see how the rural Lao people live. The landscapes are very beautiful with the road passing through teak tree plantations and farm- lands.</p>\r\n<p>Before returning to Luang Prabang you will get to visit the stunningly beautiful Kuang Si Waterfalls and even take a dip in the refreshing turquoise water. You will also have the opportunity to see and learn about the endangered Asian Bears at the Free the Bear sanctuary.</p>\r\n<p>On either version of the Mighty Mekong One Day Ride, you will experience rural life, waterfalls, the Lao countryside and many other hidden treasures along the way. Every tour can be customized to your requirements.<br /><br /><a title="" href="http://localhost/motolao/index.php/tour/2">Please contact us for more details</a>&nbsp;<a title="flickr images" href="http://localhost/motolao/index.php/tour/2">See previous tour experiences on flickr</a></p>', '2014-09-14 17:49:32', 1, '2014-10-05 00:09:01', 1, NULL),
+(2, 'test', 'test', '1 day', 3, 2, 'test', 'test', 'test', NULL, '<p>test</p>', '2014-09-28 23:47:05', 1, '2014-09-28 23:47:05', 1, NULL),
+(3, '2 DAYS TOUR de', 'GET OUT THERE. de ', '2 day', 2, 3, '2 DAYS TOUR de ', '2 day de', '2 DAYS TOUR de ', NULL, '<p><span>Stunning landscapes - cool break at beautiful waterfall - dirt road - Mekong River - rural villages - local food - river crossings - for beginners and interme- diate riders. de&nbsp;</span></p>', '2014-10-04 23:57:22', 1, '2014-10-04 23:57:45', 1, NULL);
 
 -- --------------------------------------------------------
 
