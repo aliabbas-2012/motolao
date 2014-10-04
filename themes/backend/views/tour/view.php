@@ -55,6 +55,11 @@ $this->menu = array(
                             'meta_title',
                             'meta_description',
                             array(
+                                'name' => 'short_description',
+                                'value' => $model->short_description,
+                                'type' => "raw",
+                            ),
+                            array(
                                 'name' => 'description',
                                 'value' => $model->description,
                                 'type' => "raw",

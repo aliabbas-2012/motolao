@@ -61,7 +61,7 @@
                     <div class="mask">
                         <h2><?php echo $tour->name; ?></h2>
                          <?php
-                            echo $tour->description;
+                            echo $tour->short_description;
                          ?> 
                         <a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" class="info"> <?php echo Yii::t("category", "CONTINUE READING"); ?></a><br />
                         <a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" title="" class="info"><?php echo Yii::t("category", "CONTACT US"); ?></a>

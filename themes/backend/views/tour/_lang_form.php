@@ -98,6 +98,23 @@
                         </div>
                         <div class="col-lg-12">
                             <div class="form-group">
+                                <?php echo $form->labelEx($model, 'short_description', array('class' => 'control-label col-lg-2')); ?>
+                                <div class="col-lg-10">
+                                    <?php
+                                    $this->widget('application.extensions.tinymce.ETinyMce', array(
+                                        'editorTemplate' => 'full',
+                                        'model' => $model,
+                                        'attribute' => 'short_description',
+                                        'options' => array('theme' => 'advanced')));
+                                    ?>
+                                    <?php echo $form->error($model, 'short_description'); ?>
+
+                                </div>
+
+                            </div><!-- group -->
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
                                 <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-2')); ?>
                                 <div class="col-lg-10">
                                     <?php
