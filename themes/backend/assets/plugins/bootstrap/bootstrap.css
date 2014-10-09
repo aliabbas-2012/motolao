@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap v3.1.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -55,6 +56,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
+	color: #000;
 }
 dfn {
   font-style: italic;
@@ -2142,7 +2144,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
+  background-color: #d02b2f;
   border-color: #4cae4c;
 }
 .btn-success:hover,
@@ -2151,7 +2153,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: #fff;
-  background-color: #47a447;
+  background-color: #c62a2e;
   border-color: #398439;
 }
 .btn-success:active,
