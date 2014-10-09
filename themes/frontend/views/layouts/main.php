@@ -26,6 +26,7 @@
         <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/bootstrap.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/bootstrap-responsive.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/style.css" rel="stylesheet" />
+        <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/main-style.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/stylesheet.css" rel="stylesheet" />
 
         <!-- end: CSS -->
