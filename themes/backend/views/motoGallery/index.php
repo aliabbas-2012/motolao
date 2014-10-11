@@ -76,7 +76,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                                             </div>
                                             <div class="panel-body">
                                                 <?php
-                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12",'style'=>'width:100%')), $data->image_url['image_large'], array("target" => "_blank"));
+                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12",'style'=>'width:100%',)), $data->image_url['image_large'], array('data-gallery'=>''));
                                                 ?>
                                             </div>
                                             <div class="panel-footer">

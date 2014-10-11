@@ -79,7 +79,7 @@ $this->renderPartial("//innerSlider/_form", array("model" => $model_form, 'langu
                                                 if (!empty($data->video_tag_embedded_code)) {
                                                     echo $data->video_tag_embedded_code;
                                                 } else {
-                                                    echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12")), $data->image_url['image_large'], array("target" => "_blank"));
+                                                    echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12")), $data->image_url['image_large'], array("target" => "_blank",'data-gallery'=>''));
                                                 }
                                                 ?>
                                             </div>

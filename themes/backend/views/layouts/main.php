@@ -13,17 +13,20 @@
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/pace/pace-theme-big-counter.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/style.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/css/main-style.css" rel="stylesheet" />
-        <!-- Page-Level CSS -->
-        <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
-        <script>
-            // defining js base path
-            var js_basePath = '<?php echo Yii::app()->theme->baseUrl; ?>';
+        <!--gallery-->
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/css/blueimp-gallery.min.css" />
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/css/bootstrap-image-gallery.css" />
+            <!-- Page-Level CSS -->
+            <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
+            <script>
+                // defining js base path
+                var js_basePath = '<?php echo Yii::app()->theme->baseUrl; ?>';
 
-            var yii_base_url = "<?php echo Yii::app()->baseUrl; ?>";
+                var yii_base_url = "<?php echo Yii::app()->baseUrl; ?>";
 
-        </script>
+            </script>
 
-        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+            <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
     </head>
     <body>
@@ -55,9 +58,9 @@
                         </a>
                         <!-- dropdown user-->
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="<?php echo  $this->createUrl("//users/profile"); ?>"><i class="fa fa-user fa-fw"></i>User Profile</a>
+                            <li><a href="<?php echo $this->createUrl("//users/profile"); ?>"><i class="fa fa-user fa-fw"></i>User Profile</a>
                             </li>
-                            <li><a href='<?php echo $this->createUrl("/configurations/load", array( "m" => "TourType", "child_id" => "new")); ?>'><i class="fa fa-gear fa-fw"></i>Configuration</a>
+                            <li><a href='<?php echo $this->createUrl("/configurations/load", array("m" => "TourType", "child_id" => "new")); ?>'><i class="fa fa-gear fa-fw"></i>Configuration</a>
                             </li>
                             <li class="divider"></li>
                             <li><a href="<?php echo $this->createUrl("/site/logout"); ?>"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
@@ -79,6 +82,41 @@
 
 
         </div>
+
+        <!-- gallery -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">â€¹</a>
+            <a class="next">â€º</a>
+            <a class="close">Ã—</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                <?php echo Yii::t("links", "Previous"); ?>
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                <?php echo Yii::t("links", "Next"); ?>
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- end wrapper -->
 
         <!-- Core Scripts - Include with every page -->
@@ -91,5 +129,13 @@
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/metisMenu/jquery.metisMenu.js"></script>
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/plugins/pace/pace.js"></script>
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/scripts/siminta.js"></script>
+        <!--gallery -->
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/bootstrap-image-gallery.js"></script>
+        <script type="text/javascript">
+            jQuery(function() {
+                jQuery('#blueimp-gallery').data('fullScreen', true);
+            })
+        </script> 
     </body>
 </html>

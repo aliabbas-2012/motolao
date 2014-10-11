@@ -27,7 +27,9 @@
         <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/bootstrap-responsive.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/style.css" rel="stylesheet" />
         <link href="<?php echo Yii::app()->theme->baseUrl; ?>/assets/css/stylesheet.css" rel="stylesheet" />
-
+        <!--gallery-->
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/css/blueimp-gallery.min.css" />
+        <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/css/bootstrap-image-gallery.css" />
         <!-- end: CSS -->
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -35,7 +37,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery-2.1.1.min.js"></script>
-        
+
 
     </head>
     <body>
@@ -158,7 +160,40 @@
         </div>
         <!-- end: Footer -->
 
-
+        <!-- gallery -->
+        <div id="blueimp-gallery" class="blueimp-gallery">
+            <!-- The container for the modal slides -->
+            <div class="slides"></div>
+            <!-- Controls for the borderless lightbox -->
+            <h3 class="title"></h3>
+            <a class="prev">â€¹</a>
+            <a class="next">â€º</a>
+            <a class="close">Ã—</a>
+            <a class="play-pause"></a>
+            <ol class="indicator"></ol>
+            <!-- The modal dialog, which will be used to wrap the lightbox content -->
+            <div class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title"></h4>
+                        </div>
+                        <div class="modal-body next"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left prev">
+                                <i class="glyphicon glyphicon-chevron-left"></i>
+                                <?php echo Yii::t("links", "Previous"); ?>
+                            </button>
+                            <button type="button" class="btn btn-primary next">
+                                <?php echo Yii::t("links", "Next"); ?>
+                                <i class="glyphicon glyphicon-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- start: Java Script -->
         <!-- Placed at the end of the document so the pages load faster -->
@@ -168,6 +203,14 @@
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/slider.js"></script>
         <script defer="defer" src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/custom.js"></script>
         <!-- end: Java Script -->
-
+        
+        <!--gallery -->
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/jquery.blueimp-gallery.min.js"></script>
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/bootstrap-image-gallery.js"></script>
+        <script type="text/javascript">
+            jQuery(function() {
+                jQuery('#blueimp-gallery').data('fullScreen', true);
+            })
+        </script> 
     </body>
 </html>

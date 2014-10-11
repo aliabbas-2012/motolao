@@ -34,7 +34,7 @@
                     <?php
                     if ($gallery->video_tag_embedded_code == ""):
                         ?>
-                        <a href="<?php echo $gallery->image_url['image_large'] ?>" 
+                        <a data-gallery="" href="<?php echo $gallery->image_url['image_large'] ?>" 
                            class="thumbnail" target="_blank">
                                <?php
                                echo CHtml::image($gallery->image_url['image_large'], $gallery->alt, array(

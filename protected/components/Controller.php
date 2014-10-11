@@ -402,6 +402,9 @@ class Controller extends CController {
         if (get_class($this->getModule()) == "WebModule" && !isset($params['lang'])) {
             $params['lang'] = Yii::app()->language;
         }
+        else {
+            $params['admin'] = 1;
+        }
         return parent::createUrl($route, $params, $ampersand);
     }
 

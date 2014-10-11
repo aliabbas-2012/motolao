@@ -5,6 +5,7 @@ class DTUrlManager extends CUrlManager {
     public $showScriptName = true;
 
     public function createUrl($route, $params = array(), $ampersand = '&') {
+        
         $route = preg_replace_callback('/(?<![A-Z])[A-Z]/', function($matches) {
             return '-' . lcfirst($matches[0]);
         }, $route);
