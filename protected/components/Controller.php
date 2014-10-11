@@ -58,6 +58,7 @@ class Controller extends CController {
      */
     public $webPcmWidget;
     public $lang_id;
+    public $meta_keywords, $meta_description;
 
     public function beforeAction($action) {
 
@@ -79,7 +80,7 @@ class Controller extends CController {
             if (isset($_GET['lang'])) {
                 Yii::app()->language = $_GET['lang'];
             }
-     
+
             $this->lang_id = Language::model()->getLanuageId(Yii::app()->language)->id;
         } else {
             /**
@@ -220,7 +221,8 @@ class Controller extends CController {
                 $operation = ($level == 0) ? $menu->min_permission : $menu->min_permission;
 
 
-                $childCount = Menu::model()->count("pid = $menu->id"); {
+                $childCount = Menu::model()->count("pid = $menu->id");
+                {
                     $foundAny = true;
 
                     $this->menuHtml .='<li ' . ($pid == 0 ? "class='top'" : "") . '>';
@@ -401,8 +403,7 @@ class Controller extends CController {
     public function createUrl($route, $params = array(), $ampersand = '&') {
         if (get_class($this->getModule()) == "WebModule" && !isset($params['lang'])) {
             $params['lang'] = Yii::app()->language;
-        }
-        else {
+        } else {
             $params['admin'] = 1;
         }
         return parent::createUrl($route, $params, $ampersand);
@@ -437,6 +438,26 @@ class Controller extends CController {
         $lines[] = ($line = trim($line)) ? $line : $word;
 
         return $lines;
+    }
+
+    /**
+     * set Meta information
+     */
+    public function setMetaInformation() {
+        if (!empty($this->page_key)) {
+            $critera = new CDbCriteria();
+            $critera->addCondition("key = :key AND lang_id = :lang_id");
+            $critera->params = array(
+            ":key" => $this->page_key,
+            "lang_id" => $this->lang_id,
+            );
+            if($seo = Seo::model()->find($critera)){
+                $this->pageTitle = $seo->title;
+                $this->meta_keywords = $seo->keywords;
+                $this->meta_description = $seo->description;
+            }
+            
+        }
     }
 
 }

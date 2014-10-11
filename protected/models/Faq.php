@@ -55,7 +55,7 @@ class Faq extends DTActiveRecord {
             $criteria->addCondition("t.question ='" . $this->question . "' AND lang_id =" . $this->lang_id);
             $criteria->addCondition(" type ='" . $this->type . "'");
             if ($this->count($criteria) > 0) {
-                $this->addError("key", "This " . ucfirst($this->type) . " already exist in this language");
+                $this->addError("question", "This " . ucfirst($this->type) . " already exist in this language");
             }
         }
     }

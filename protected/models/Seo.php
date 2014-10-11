@@ -32,8 +32,9 @@ class Seo extends DTActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('lang_id, key, create_time, create_user_id, update_time, update_user_id', 'required'),
+            array('lang_id, key,title,keywords, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
+            array('key', 'validateUniquness'),
             array('key', 'length', 'max' => 20),
             array('title, keywords, description', 'length', 'max' => 150),
             array('activity_log', 'safe'),
@@ -41,6 +42,20 @@ class Seo extends DTActiveRecord {
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, title, keywords, description, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
         );
+    }
+
+    /**
+     * uniqueness key and language
+     */
+    public function validateUniquness() {
+        $criteria = new CDbCriteria();
+        if (!$this->isNewRecord) {
+            $criteria->addCondition("id<>" . $this->id);
+        }
+        $criteria->addCondition("t.key ='" . $this->key . "' AND lang_id =" . $this->lang_id);
+        if ($this->count($criteria) > 0) {
+            $this->addError("key", "This key already exist in this language");
+        }
     }
 
     /**

@@ -116,7 +116,7 @@ $pluggins_array = array(
                 <!-- second-level-items -->
             </li>
             <li class="<?php echo $this->id == "seo" ? "selected" : "" ?>">
-                <a href="<?php echo $this->createUrl("/seo/index"); ?>"><i class="fa fa-edit fa-fw"></i> Seo And Terms<span class="fa arrow"></span></a>
+                <a href="<?php echo $this->createUrl("/seo/index"); ?>"><i class="fa fa-edit fa-fw"></i> Seo Tags<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
                         <a href="<?php echo $this->createUrl("/seo/index/"); ?>">List</a>
