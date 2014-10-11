@@ -38,6 +38,7 @@ class MotoDairy extends DTActiveRecord {
      * @var type 
      */
     public $upload_insance;
+    public $upload_other_instances;
 
     /**
      *
@@ -104,13 +105,12 @@ class MotoDairy extends DTActiveRecord {
             'image_2_title' => 'Title 2',
             'image_3_title' => 'Title 3',
             'image_4_title' => 'Title 4',
-            'image_5_title' => 'Title 5', 
-            'image_1'=> 'Image 1',
-            'image_2'=> 'Image 2',
-            'image_3'=> 'Image 3',
-            'image_4'=> 'Image 4',
-            'image_5'=> 'Image 5',
-            
+            'image_5_title' => 'Title 5',
+            'image_1' => 'Image 1',
+            'image_2' => 'Image 2',
+            'image_3' => 'Image 3',
+            'image_4' => 'Image 4',
+            'image_5' => 'Image 5',
             'create_time' => 'Create Time',
             'create_user_id' => 'Create User',
             'update_time' => 'Update Time',
@@ -190,7 +190,6 @@ class MotoDairy extends DTActiveRecord {
          */
         if (!empty($this->image_large)) {
 
-
             $this->image_url['image_large'] = Yii::app()->baseUrl . "/uploads/moto-dairy/" . $this->id;
             $this->image_url['image_large'].= "/" . $this->image_large;
         } else {
@@ -205,8 +204,19 @@ class MotoDairy extends DTActiveRecord {
             $this->image_url['image_detail'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
 
-
+        $this->findOtherImagesInstances();
         parent::afterFind();
+    }
+
+    /**
+     * to present them on veiw thats y done this 
+     */
+    public function findOtherImagesInstances() {
+        for ($i = 1; $i <= 5; $i++) {
+            $instace = "image_" . $i;
+            $this->image_url[$instace] = Yii::app()->baseUrl . "/uploads/moto-dairy/" . $this->id;
+            $this->image_url[$instace].= "/" . $this->$instace;
+        }
     }
 
     /**
@@ -219,7 +229,34 @@ class MotoDairy extends DTActiveRecord {
         if (!empty($this->upload_insance)) {
             $this->image_large = $this->upload_insance;
         }
+
+        $this->setOtherImageInsances();
         return parent::beforeValidate();
+    }
+
+    /**
+     * set other panel images instance before validate
+     */
+    public function setOtherImageInsances() {
+        for ($i = 1; $i <= 5; $i++) {
+            $instace = "image_" . $i;
+            $this->upload_other_instances[$i] = DTUploadedFile::getInstance($this, $instace);
+            if (!empty($this->upload_other_instances[$i])) {
+                $this->$instace = $this->upload_other_instances[$i];
+            }
+        }
+    }
+
+    /**
+     * set Upload image var
+     */
+    public function setOtherImagesUploadVars() {
+        for ($i = 1; $i <= 5; $i++) {
+            $instace = "image_" . $i;
+            if (!empty($this->upload_other_instances[$i])) {
+                $this->$instace = $i . "_" . str_replace(" ", "_", $this->upload_other_instances[$i]);
+            }
+        }
     }
 
     /**
@@ -228,15 +265,15 @@ class MotoDairy extends DTActiveRecord {
      * @return type 
      */
     public function beforeSave() {
-
-
         $this->setUploadVars();
+        $this->setOtherImagesUploadVars();
         return parent::beforeSave();
     }
 
     public function afterSave() {
         parent::afterSave();
         $this->uploadImages();
+        $this->uploadOtherImages();
 
         return true;
     }
@@ -245,8 +282,6 @@ class MotoDairy extends DTActiveRecord {
      * set image variable before save
      */
     public function setUploadVars() {
-
-
 
         $its_t = new DTFunctions();
         if (!empty($this->upload_insance)) {
@@ -267,15 +302,29 @@ class MotoDairy extends DTActiveRecord {
 
         if (!empty($this->upload_insance)) {
 
-
             $folder_array = array("moto-dairy", $this->id,);
-
             $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
             $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
-
-
             DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
             $this->deleteldImage();
+        }
+    }
+
+    /**
+     * upload images
+     */
+    public function uploadOtherImages() {
+
+        for ($i = 1; $i <= 5; $i++) {
+            $instace = "image_" . $i;
+            if (!empty($this->upload_other_instances[$i])) {
+                CVarDumper::dump($this->upload_other_instances[$i], 10, true);
+
+
+                $folder_array = array("moto-dairy", $this->id,);
+                $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
+                $this->upload_other_instances[$i]->saveAs($upload_path . $this->$instace);
+            }
         }
     }
 

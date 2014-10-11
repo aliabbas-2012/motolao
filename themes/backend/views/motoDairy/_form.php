@@ -77,8 +77,23 @@
 
                         </div><!-- group -->
                         <?php
-                        $this->renderPartial("_images_title", array("model" => $model,"form"=>$form));
+                        $this->renderPartial("_images_title", array("model" => $model, "form" => $form));
                         ?>
+                        <div class="form-group">
+                            <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-2')); ?>
+                            <div class="col-lg-4">
+                                <?php
+                                $this->widget('application.extensions.tinymce.ETinyMce', array(
+                                    'editorTemplate' => 'full',
+                                    'model' => $model,
+                                    'attribute' => 'description',
+                                    'options' => array('theme' => 'advanced')));
+                                ?>
+                                <?php echo $form->error($model, 'description'); ?>
+
+                            </div>
+
+                        </div><!-- group -->
                         <div class="form-group">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6 input-group-btn">
