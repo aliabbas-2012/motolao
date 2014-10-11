@@ -7,7 +7,7 @@
             </div>
             <div class="panel-body">
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-12">
 
 
                         <?php
@@ -25,7 +25,7 @@
                             <?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
                         </p>
 
-                        <?php echo $form->errorSummary($model, '','', array('class' => 'alert alert-block alert-danger')); ?>
+                        <?php echo $form->errorSummary($model, '', '', array('class' => 'alert alert-block alert-danger')); ?>
 
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-2')); ?>
@@ -76,6 +76,9 @@
                             </div>
 
                         </div><!-- group -->
+                        <?php
+                        $this->renderPartial("_images_title", array("model" => $model,"form"=>$form));
+                        ?>
                         <div class="form-group">
                             <div class="col-lg-2"></div>
                             <div class="col-lg-6 input-group-btn">
