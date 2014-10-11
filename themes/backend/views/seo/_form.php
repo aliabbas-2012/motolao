@@ -3,8 +3,7 @@
         <!-- Form Elements -->
         <div class="panel panel-default">
             <div class="panel-heading">
-                Add or Update
-                <?php echo CHtml::link("[Add New]", $this->createUrl("index")); ?>
+                Create Update Seo Meta
             </div>
             <div class="panel-body">
                 <div class="row">
@@ -13,25 +12,27 @@
 
                         <?php
                         $form = $this->beginWidget('CActiveForm', array(
-                            'id' => 'banner-form',
+                            'id' => 'seo-form',
                             'enableAjaxValidation' => false,
                             'htmlOptions' => array(
-                                'class' => 'form-horizontal',
-                                'enctype' => 'multipart/form-data'
+                                'class' => 'form-horizontal'
                             )
                         ));
+                        $criteria = new CDbCriteria();
+                        $languages_db = CHtml::listData(Language::model()->findAll($criteria), "id", "name");
+                        $languages = array("" => "Select") + $languages_db;
                         ?>
 
                         <p class="form-group alert alert-info">
                             <?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
                         </p>
 
-                        <?php echo $form->errorSummary($model, '', '', array('class' => 'alert alert-block alert-danger')); ?>
+                        <?php echo $form->errorSummary($model, '', array('class' => 'alert alert-block alert-danger')); ?>
 
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-2')); ?>
+                            <?php echo $form->labelEx($model, 'lang_id', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
                                 <?php
                                 echo $form->dropDownList($model, 'lang_id', $languages, array('class' => 'form-control'));
@@ -43,7 +44,7 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'key', array('class' => 'control-label col-lg-2')); ?>
+                            <?php echo $form->labelEx($model, 'key', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
                                 <?php echo $form->dropDownList($model, 'key', Yii::app()->params['keys'], array('class' => 'form-control', 'maxlength' => 20)); ?>
                                 <?php echo $form->error($model, 'key'); ?>
@@ -54,21 +55,9 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'alt', array('class' => 'control-label col-lg-2')); ?>
-                            <div class="col-lg-4">
-                                <?php echo $form->textField($model, 'alt', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                <?php echo $form->error($model, 'alt'); ?>
-
-                            </div>
-
-                        </div><!-- group -->
-
-
-                        <div class="form-group">
-                            <?php echo $form->labelEx($model, 'title', array('class' => 'control-label col-lg-2')); ?>
+                            <?php echo $form->labelEx($model, 'title', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
                                 <?php echo $form->textField($model, 'title', array('class' => 'form-control', 'maxlength' => 150)); ?>
-
                                 <?php echo $form->error($model, 'title'); ?>
 
                             </div>
@@ -77,25 +66,10 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'image_large', array('class' => 'control-label col-lg-3')); ?>
+                            <?php echo $form->labelEx($model, 'keywords', array('class' => 'control-label col-lg-4')); ?>
                             <div class="col-lg-4">
-                                <?php echo $form->fileField($model, 'image_large', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                <?php
-                                if (!empty($model->id) && !empty($model->image_large)) {
-                                    echo CHtml::link("View Image", $model->image_url["image_large"], array("rel" => "lightbox[_default]", "target" => "blank"));
-                                }
-                                ?>
-                                <?php echo $form->error($model, 'image_large'); ?>
-                            </div>
-
-                        </div><!-- group -->
-
-
-                        <div class="form-group">
-                            <?php echo $form->labelEx($model, 'video_tag_embedded_code', array('class' => 'control-label col-lg-4')); ?>
-                            <div class="col-lg-8">
-                                <?php echo $form->textArea($model, 'video_tag_embedded_code', array('class' => 'form-control', 'rows' => '10', 'cols' => '70')); ?>
-                                <?php echo $form->error($model, 'video_tag_embedded_code'); ?>
+                                <?php echo $form->textField($model, 'keywords', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'keywords'); ?>
 
                             </div>
 
@@ -103,7 +77,15 @@
 
 
                         <div class="form-group">
-                            <div class="col-lg-2"></div>
+                            <?php echo $form->labelEx($model, 'description', array('class' => 'control-label col-lg-4')); ?>
+                            <div class="col-lg-4">
+                                <?php echo $form->textArea($model, 'description', array('class' => 'form-control', 'maxlength' => 150)); ?>
+                                <?php echo $form->error($model, 'description'); ?>
+                            </div>
+                        </div><!-- group -->
+
+                        <div class="form-group">
+                            <div class="col-lg-4"></div>
                             <div class="col-lg-6 input-group-btn">
 
                                 <?php echo CHtml::submitButton('Save', array('class' => 'btn btn-primary')); ?>
