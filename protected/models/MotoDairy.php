@@ -10,6 +10,18 @@
  * @property string $title
  * @property string $image_large
  * @property string $image_detail
+ * @property string $descripton
+ * @property string $image_detail
+ * @property string $image_1
+ * @property string $image_1_title
+ * @property string $image_2
+ * @property string $image_2_title
+ * @property string $image_3
+ * @property string $image_3_title
+ * @property string $image_4
+ * @property string $image_4_title
+ * @property string $image_5
+ * @property string $image_5_title
  * @property string $create_time
  * @property string $create_user_id
  * @property string $update_time
@@ -53,8 +65,11 @@ class MotoDairy extends DTActiveRecord {
             array('lang_id, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('alt, title, image_large, image_detail', 'length', 'max' => 150),
-            array('activity_log', 'safe'),
+            array('activity_log,description', 'safe'),
+            array('image_1_title,image_2_title,image_3_title,image_4_title,image_5_title', 'safe'),
             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
+                'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
+            array('image_1,image_2,image_3,image_4,image_5', 'file', 'allowEmpty' => true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
@@ -84,6 +99,18 @@ class MotoDairy extends DTActiveRecord {
             'title' => 'Title',
             'image_large' => 'Image Large',
             'image_detail' => 'Image Detail',
+            'description' => 'Description',
+            'image_1_title' => 'Image 1 Title',
+            'image_2_title' => 'Image 2 Title',
+            'image_3_title' => 'Image 3 Title',
+            'image_4_title' => 'Image 4 Title',
+            'image_5_title' => 'Image 5 Title', 
+            'image_1'=> 'Image 1',
+            'image_2'=> 'Image 1',
+            'image_3'=> 'Image 3',
+            'image_4'=> 'Image 4',
+            'image_5'=> 'Image 5',
+            
             'create_time' => 'Create Time',
             'create_user_id' => 'Create User',
             'update_time' => 'Update Time',
@@ -115,6 +142,18 @@ class MotoDairy extends DTActiveRecord {
         $criteria->compare('title', $this->title, true);
         $criteria->compare('image_large', $this->image_large, true);
         $criteria->compare('image_detail', $this->image_detail, true);
+        $criteria->compare('description', $this->description, true);
+        $criteria->compare('image_1', $this->image_1, true);
+        $criteria->compare('image_1', $this->image_1, true);
+        $criteria->compare('image_1', $this->image_1, true);
+        $criteria->compare('image_1', $this->image_1, true);
+        $criteria->compare('image_1', $this->image_1, true);
+        $criteria->compare('image_1', $this->image_1, true);
+        $criteria->compare('image_1_title', $this->image_1_title, true);
+        $criteria->compare('image_2_title', $this->image_2_title, true);
+        $criteria->compare('image_3_title', $this->image_3_title, true);
+        $criteria->compare('image_4_title', $this->image_4_title, true);
+        $criteria->compare('image_5_title', $this->image_5_title, true);
         $criteria->compare('create_time', $this->create_time, true);
         $criteria->compare('create_user_id', $this->create_user_id, true);
         $criteria->compare('update_time', $this->update_time, true);
