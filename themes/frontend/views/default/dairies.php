@@ -25,27 +25,44 @@
             $criteria->params = array(
                 ":lang_id" => $this->lang_id,
             );
-            $daries = MotoDairy::model()->findAll($criteria);
-            foreach ($daries as $dairy):
-                ?>
-                <li class="span4">
 
-                    <a href="<?php echo $dairy->image_url['image_large'] ?>" 
-                       class="thumbnail" target="_blank">
-                           <?php
-                           echo CHtml::image($dairy->image_url['image_large'], $dairy->alt, array(
-                               "title" => $dairy->title,
-                           ));
-                           ?>
-                        <h2><?php echo $dairy->title; ?></h2>
-                    </a>
+            $daries = new CActiveDataProvider('MotoDairy', array(
+                'criteria' => $criteria,
+                'pagination' => array(
+                    'pageSize' => 6,
+                ),
+                'sort' => array(
+                    'defaultOrder' => 'id DESC , lang_id DESC',
+                )
+            ));
+            $daries = $daries->getData();
+            $daries_seg = array_chunk($daries, 3);
 
-                    <?php
+            foreach ($daries_seg as $daries) {
+                $row_elemnts = array();
+                foreach ($daries as $dairy):
                     ?>
+                    <li class="span4">
 
-                </li>
-                <?php
-            endforeach;
+                        <a href="<?php echo $dairy->image_url['image_large'] ?>" 
+                           class="thumbnail" target="_blank">
+                               <?php
+                               echo CHtml::image($dairy->image_url['image_large'], $dairy->alt, array(
+                                   "title" => $dairy->title,
+                               ));
+                               ?>
+                            <h2><?php echo $dairy->title; ?></h2>
+
+                        </a>
+
+                        <?php
+                        ?>
+                    </li>
+                    <?php
+                    $row_elemnts[] = $dairy;
+                endforeach;
+                $this->renderPartial("//default/_dairy_full", array("row_elemnts" => $row_elemnts));
+            }
             ?>
         </ul>
     </section>
