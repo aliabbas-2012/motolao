@@ -97,7 +97,25 @@ function changePreview(obj) {
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('src', src);
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('title', title);
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('alt', title);
-    
+
     $("#" + elem_id + " h4.sub-part-title").html(title);
-   
+
+}
+
+function submitAjaxContact() {
+    $("#contact-form1").submit(function(event) {
+        alert("Handler for .submit() called.");
+        var data = $("#contact-form1").serialize();
+        $.post(
+                $("#contact-form1").attr("action")+"?ajax=1",
+                data,
+                function(response) {
+                    if (!response.success) {
+                        alert('Failure!');
+                    }
+                    alert('Success!');
+                }
+        );
+        event.preventDefault();
+    });
 }

@@ -87,3 +87,8 @@
     $this->renderPartial("//default/_contact_form", array("model" => $contact));
     ?>
 </div>
+<?php
+Yii::app()->clientScript->registerScript('contact_formsubmit', '
+ submitAjaxContact();
+', CClientScript::POS_READY);
+?>
