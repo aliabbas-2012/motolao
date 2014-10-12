@@ -98,6 +98,6 @@ function changePreview(obj) {
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('title', title);
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('alt', title);
     
-    $("#" + elem_id + " h4>sub-part-title").html(title);
+    $("#" + elem_id + " h4.sub-part-title").html(title);
    
 }
