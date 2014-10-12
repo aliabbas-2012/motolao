@@ -4,9 +4,12 @@
 
         <!-- start: Meta -->
         <meta charset="utf-8">
-        <title>Motolao</title> 
-        <meta name="description" content="Motolao"/>
-        <meta name="keywords" content="Motolao" />
+        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="<?php echo Yii::app()->language; ?>" />
+
+        <meta name="description" content="<?php echo $this->meta_description; ?>" />
+        <meta name="keywords" content="<?php echo $this->meta_keywords; ?>" />
         <meta name="author" content="Motolao"/>
         <!-- end: Meta -->
 
@@ -204,7 +207,7 @@
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/slider.js"></script>
         <script defer="defer" src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/custom.js"></script>
         <!-- end: Java Script -->
-        
+
         <!--gallery -->
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/jquery.blueimp-gallery.min.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/bootstrap-image-gallery.js"></script>

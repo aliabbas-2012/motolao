@@ -82,6 +82,7 @@ class Controller extends CController {
             }
 
             $this->lang_id = Language::model()->getLanuageId(Yii::app()->language)->id;
+           
         } else {
             /**
              * install configurations
@@ -102,6 +103,7 @@ class Controller extends CController {
 
         return true;
     }
+
 
     /**
      * register widget
@@ -444,17 +446,20 @@ class Controller extends CController {
      * set Meta information
      */
     public function setMetaInformation() {
+       
         if (!empty($this->page_key)) {
             $critera = new CDbCriteria();
-            $critera->addCondition("key = :key AND lang_id = :lang_id");
+            $critera->addCondition("t.key = :key AND lang_id = :lang_id");
             $critera->params = array(
-            ":key" => $this->page_key,
+            "key" => $this->page_key,
             "lang_id" => $this->lang_id,
             );
             if($seo = Seo::model()->find($critera)){
+                
                 $this->pageTitle = $seo->title;
                 $this->meta_keywords = $seo->keywords;
                 $this->meta_description = $seo->description;
+                
             }
             
         }

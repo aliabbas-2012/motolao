@@ -10,11 +10,14 @@ class DefaultController extends Controller {
     public function beforeAction($action) {
         return parent::beforeAction($action);
     }
+    
+    
 
     public $layout = "//layouts/main";
 
     public function actionIndex() {
         $this->page_key = "home";
+        $this->setMetaInformation();
         $this->render('//default/index');
     }
 
