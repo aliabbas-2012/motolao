@@ -83,11 +83,12 @@ class Controller extends CController {
 
             $this->lang_id = Language::model()->getLanuageId(Yii::app()->language)->id;
         } else {
-            /**
-             * install configurations
-             */
-            $this->installConfig();
+            
         }
+        /**
+         * install configurations
+         */
+        $this->installConfig();
 
         /**
          * Check if script is already loaded then not reload it.
@@ -221,8 +222,7 @@ class Controller extends CController {
                 $operation = ($level == 0) ? $menu->min_permission : $menu->min_permission;
 
 
-                $childCount = Menu::model()->count("pid = $menu->id");
-                {
+                $childCount = Menu::model()->count("pid = $menu->id"); {
                     $foundAny = true;
 
                     $this->menuHtml .='<li ' . ($pid == 0 ? "class='top'" : "") . '>';
