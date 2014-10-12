@@ -66,35 +66,7 @@
                             </div><!-- group -->
                         </div>
                     </div>
-                    <!-- image row -->
 
-                    <div class="col-lg-12">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <?php echo $form->labelEx($model, 'image_2', array('class' => 'control-label col-lg-3')); ?>
-                                <div class="col-lg-9">
-                                    <?php echo $form->fileField($model, 'image_2', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                    <?php
-                                    if (!empty($model->id) && !empty($model->image_2)) {
-                                        echo CHtml::link("View Image", $model->image_url["image_2"], array("rel" => "lightbox[_default]", "target" => "blank"));
-                                    }
-                                    ?>
-                                    <?php echo $form->error($model, 'image_2'); ?>
-                                </div>
-                            </div><!-- group -->
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <?php echo $form->labelEx($model, 'image_2_title', array('class' => 'control-label col-lg-3')); ?>
-                                <div class="col-lg-9">
-                                    <?php echo $form->textField($model, 'image_2_title', array('class' => 'form-control', 'maxlength' => 150)); ?>
-                                    <?php echo $form->error($model, 'image_2_title'); ?>
-
-                                </div>
-
-                            </div><!-- group -->
-                        </div>
-                    </div>
                     <!-- image row -->
 
                     <div class="col-lg-12">

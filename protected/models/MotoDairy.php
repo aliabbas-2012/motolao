@@ -318,9 +318,7 @@ class MotoDairy extends DTActiveRecord {
         for ($i = 1; $i <= 5; $i++) {
             $instace = "image_" . $i;
             if (!empty($this->upload_other_instances[$i])) {
-                CVarDumper::dump($this->upload_other_instances[$i], 10, true);
-
-
+                
                 $folder_array = array("moto-dairy", $this->id,);
                 $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
                 $this->upload_other_instances[$i]->saveAs($upload_path . $this->$instace);

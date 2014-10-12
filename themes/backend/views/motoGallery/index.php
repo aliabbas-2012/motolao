@@ -63,6 +63,8 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                             <?php
                             $dataProiver = $model->search();
                             if ($dataProiver->itemCount > 0):
+                             
+                            
                                 foreach ($dataProiver->getData() as $data):
                                     ?>
                                     <!--Default Pannel, Primary Panel And Success Panel   -->

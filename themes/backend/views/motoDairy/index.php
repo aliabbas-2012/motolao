@@ -63,6 +63,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                             <?php
                             $dataProiver = $model->search();
                             if ($dataProiver->itemCount > 0):
+                                //$chunk_data = array_chunk($dataProiver->getData(), 3);
                                 foreach ($dataProiver->getData() as $data):
                                     ?>
                                     <!--Default Pannel, Primary Panel And Success Panel   -->
@@ -70,18 +71,19 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
                                                 <?php echo $data->title; ?>
+                                                <div class="clear"></div>
                                                 <?php
                                                 echo CHtml::link(" (Edit) ", $this->createUrl("/motoDairy/index", array("id" => $data->id)));
                                                 ?>
                                             </div>
                                             <div class="panel-body">
                                                 <?php
-                                                echo $data->getHomePageLink($data->lang_id,'diary');
+                                                echo $data->getHomePageLink($data->lang_id, 'diary');
                                                 ?>
                                             </div>
                                             <div class="panel-body">
                                                 <?php
-                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12",'style'=>'width:100%')), $data->image_url['image_large'], array("target" => "_blank"));
+                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12", 'style' => 'width:100%')), $data->image_url['image_large'], array("target" => "_blank",'data-gallery'=>''));
                                                 ?>
                                             </div>
                                             <div class="panel-footer">
@@ -105,8 +107,8 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
 <?php
 $this->widget('ext.BootstrapLinkPager', array(
     'pages' => $dataProiver->getPagination(),
-    'header'=>'',
-    'htmlOptions'=>array('class'=>'pagination')
+    'header' => '',
+    'htmlOptions' => array('class' => 'pagination')
         )
 );
 ?>
