@@ -4,7 +4,7 @@ foreach ($row_elemnts as $dairy) {
     <li class="span12 no-margin sub-part" id="<?php echo $dairy->id . "-part"; ?>">
 
         <div class="span3 no-margin">
-            <h4><?php echo $dairy->title; ?></h4>
+            <h4 class="sub-part-title"><?php echo $dairy->title; ?></h4>
             <div>
                 <a href="<?php echo $dairy->image_url['image_large'] ?>" 
                    class="thumbnail" target="_blank" data-gallery="">
@@ -27,7 +27,7 @@ foreach ($row_elemnts as $dairy) {
                     $instace = "image_" . $i;
                     $instace_title = "image_" . $i . "_title";
                     if (!empty($dairy->image_url[$instace])) {
-                        echo "<div class='span1' onclick=''>";
+                        echo "<div class='span1' onclick='changePreview(this)'>";
                         echo CHtml::image($dairy->image_url[$instace], $dairy->$instace_title, array(
                             "title" => $dairy->$instace_title,
                         ));
