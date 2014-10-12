@@ -220,4 +220,18 @@ class Users extends DTActiveRecord {
         return $arr;
     }
 
+    /**
+     * get Admin Users;
+     */
+    public function getAdminUsers() {
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("type = :type AND is_active = :is_active AND deleted = :deleted");
+        $criteria->params = array(
+            "type" => "admin",
+            "is_active" => "1",
+            "deleted" => "0",
+        );
+        return $this->findAll($criteria);
+    }
+
 }

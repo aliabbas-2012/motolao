@@ -14,6 +14,7 @@ class DefaultController extends PublicController {
     public $layout = "//layouts/main";
 
     public function actionIndex() {
+        
         $this->page_key = "home";
         $this->setMetaInformation();
         $this->render('//default/index');

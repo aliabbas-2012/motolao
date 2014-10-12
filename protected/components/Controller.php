@@ -82,7 +82,6 @@ class Controller extends CController {
             }
 
             $this->lang_id = Language::model()->getLanuageId(Yii::app()->language)->id;
-           
         } else {
             /**
              * install configurations
@@ -103,7 +102,6 @@ class Controller extends CController {
 
         return true;
     }
-
 
     /**
      * register widget
@@ -223,8 +221,7 @@ class Controller extends CController {
                 $operation = ($level == 0) ? $menu->min_permission : $menu->min_permission;
 
 
-                $childCount = Menu::model()->count("pid = $menu->id");
-                {
+                $childCount = Menu::model()->count("pid = $menu->id"); {
                     $foundAny = true;
 
                     $this->menuHtml .='<li ' . ($pid == 0 ? "class='top'" : "") . '>';
@@ -280,8 +277,14 @@ class Controller extends CController {
             }
 
             $mailer->IsHTML(true);
+            if (is_array($email['To'])) {
+                foreach ($email['To'] as $to) {
+                    $mailer->AddAddress($to);
+                }
+            } else {
+                $mailer->AddAddress($email['To']);
+            }
 
-            $mailer->AddAddress($email['To']);
             $mailer->From = $email['From'];
             $mailer->Subject = $email['Subject'];
             $mailer->Body = $email['Body'];
@@ -446,22 +449,20 @@ class Controller extends CController {
      * set Meta information
      */
     public function setMetaInformation() {
-       
+
         if (!empty($this->page_key)) {
             $critera = new CDbCriteria();
             $critera->addCondition("t.key = :key AND lang_id = :lang_id");
             $critera->params = array(
-            "key" => $this->page_key,
-            "lang_id" => $this->lang_id,
+                "key" => $this->page_key,
+                "lang_id" => $this->lang_id,
             );
-            if($seo = Seo::model()->find($critera)){
-                
+            if ($seo = Seo::model()->find($critera)) {
+
                 $this->pageTitle = $seo->title;
                 $this->meta_keywords = $seo->keywords;
                 $this->meta_description = $seo->description;
-                
             }
-            
         }
     }
 

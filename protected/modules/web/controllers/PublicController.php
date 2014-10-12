@@ -13,7 +13,18 @@ class PublicController extends Controller {
      */
     public function sentContactEmail($model) {
         if ($model->validate()) {
-            
+
+            $email['To'] = CHtml::listData(Users::model()->getAdminUsers(),'email','email');
+            $email['FromName'] = $model->name;
+            $email['From'] = $model->email;
+            $email['Subject'] = $model->subject . ' From Mr/Mrs: ' . $model->name;
+            $email['Body'] = $model->body;
+            $email['Body'] = $this->renderPartial('//common/_email_template', array('email' => $email));
+            //die($email['Body']);
+            $this->sendEmail2($email);
+
+            Yii::app()->user->setFlash('contact', 'Thank you ! for your feedback ');
+            $this->redirect($this->createUrl("/web/default/contactUs"));
         }
         return $model;
     }
