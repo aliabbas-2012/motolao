@@ -12,7 +12,15 @@ class CategoryController extends Controller {
             ':name' => $category
         );
         $model = Category::model()->find($criteria);
-        $this->render('//category/index', array('model' => $model));
+        //contact us model
+
+        $contact = new ContactForm;
+
+        if (isset($_POST['ContactForm'])) {
+            $contact->attributes = $_POST['ContactForm'];
+        }
+
+        $this->render('//category/index', array('model' => $model, "contact" => $contact));
     }
 
     /**
@@ -26,7 +34,7 @@ class CategoryController extends Controller {
 
         $model = Tour::model()->findByPk($id);
 
-        $this->pageTitle = "[".Yii::app()->name."]".$model->name;
+        $this->pageTitle = "[" . Yii::app()->name . "]" . $model->name;
         $this->meta_keywords = $model->meta_title;
         $this->meta_description = $model->meta_description;
 

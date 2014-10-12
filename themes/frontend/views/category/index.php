@@ -43,28 +43,26 @@
         $criteria->addCondition("category_id = :category_id");
         $criteria->params = array(":category_id" => $model->id);
         $tours = Tour::model()->findAll($criteria);
-      
+
         foreach ($tours as $tour):
-            if($tour->tour_images_display_def_count>0){
-               $image = $tour->tour_images_display_def;
-            }
-            else {
+            if ($tour->tour_images_display_def_count > 0) {
+                $image = $tour->tour_images_display_def;
+            } else {
                 $image = $tour->tour_images_display;
             }
-            
             ?>
             <div class="span6">
                 <div class="avatar view-team">
                     <?php
-                        echo CHtml::image($image->image_url['image_large'],$image->tag,array("title"=>$image->tag));
+                    echo CHtml::image($image->image_url['image_large'], $image->tag, array("title" => $image->tag));
                     ?>
                     <div class="mask">
                         <h2><?php echo $tour->name; ?></h2>
-                         <?php
-                            echo $tour->short_description;
-                         ?> 
+                        <?php
+                        echo $tour->short_description;
+                        ?> 
                         <a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" class="info"> <?php echo Yii::t("category", "CONTINUE READING"); ?></a><br />
-                        <a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" title="" class="info"><?php echo Yii::t("category", "CONTACT US"); ?></a>
+                        <a href="#contact-form" title="" class="info colorbox"><?php echo Yii::t("category", "CONTACT US"); ?></a>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -84,3 +82,8 @@
     </div>
 </div>
 <!--end: Container-->
+<div style='display:none'>
+    <?php
+    $this->renderPartial("//default/_contact_form", array("model" => $contact));
+    ?>
+</div>

@@ -43,13 +43,13 @@
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#accordion<?php echo $counter; ?>">
-                                   <?php echo $faq->question; ?>
+                                    <?php echo $faq->question; ?>
                                 </a>
                             </h4>
                         </div>
                         <div id="accordion<?php echo $counter; ?>" class="panel-collapse collapse">
                             <div class="panel-body">
-                               <?php echo $faq->answer; ?>
+                                <?php echo $faq->answer; ?>
                             </div>
                         </div>
                     </div>
@@ -69,49 +69,9 @@
                 <div class="title"><h3>ASK A QUESTION</h3></div>
 
                 <!-- start: Contact Form -->
-                <div id="contact-form">
-
-                    <form method="post" action="">
-
-                        <fieldset>
-                            <div class="clearfix">
-                                <label for="name"><span>Your name</span></label>
-                                <div class="input">
-                                    <input tabindex="1" size="18" id="name" name="name" type="text" value="">
-                                </div>
-                            </div>
-
-                            <div class="clearfix">
-                                <label for="email"><span>Email</span></label>
-                                <div class="input">
-                                    <input tabindex="2" size="25" id="email" name="email" type="text" value="" class="input-xlarge">
-                                </div>
-                            </div>
-
-                            <div class="clearfix">
-                                <label for="email"><span>Phone number</span></label>
-                                <div class="input">
-                                    <input tabindex="2" size="25" id="phone" name="phone" type="text" value="" class="input-xlarge">
-                                </div>
-                            </div>
-
-                            <div class="clearfix">
-                                <label for="message"><span>Message</span></label>
-                                <div class="input">
-                                    <textarea tabindex="3" class="input-xlarge" id="message" name="body" rows="7"></textarea>
-                                </div>
-                            </div>
-
-
-
-                            <div class="diarybutton">
-                                <button tabindex="3" type="submit" class="btn btn-lg btn-primary">Send message</button>
-                            </div>
-                        </fieldset>
-
-                    </form>
-
-                </div>
+                <?php
+                $this->renderPartial("//default/_contact_form", array("model" => $model));
+                ?>
                 <!-- end: Contact Form -->
             </div>
         </div>

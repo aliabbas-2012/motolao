@@ -22,3 +22,9 @@ div.no-margin {
 .sub-part {
     display: none;
 }
+.contactwrap #contact-form{
+      width: 315px;
+}
+.contact_faq #contact-form{
+      width: 280px;
+}

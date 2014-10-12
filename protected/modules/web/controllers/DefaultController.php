@@ -10,8 +10,6 @@ class DefaultController extends Controller {
     public function beforeAction($action) {
         return parent::beforeAction($action);
     }
-    
-    
 
     public $layout = "//layouts/main";
 
@@ -36,7 +34,12 @@ class DefaultController extends Controller {
 
     public function actionFaq() {
         $this->page_key = "faq";
-        $this->render('//default/faq');
+        $model = new ContactForm;
+
+        if (isset($_POST['ContactForm'])) {
+            $model->attributes = $_POST['ContactForm'];
+        }
+        $this->render('//default/faq', array("model" => $model));
     }
 
     /**
