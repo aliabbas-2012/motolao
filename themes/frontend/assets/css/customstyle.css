@@ -1,6 +1,21 @@
 li.no-margin {
     margin-left: 0;
+    padding-top: 10px;
 }
 div.no-margin {
+    margin-left: 0;  
+}
+.sub-part div h4 {
+    color:#bf261c !important;
+}
+.border-red-bottom-dotted {
+    border-bottom: 1px dotted #bf261c;
+}
+.sub-part div div.span1>img {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+}
+.sub-part div div.span1 {
     margin-left: 0;
 }
