@@ -74,10 +74,17 @@ jQuery(document).ready(function($){
 
 jQuery(document).ready(function($){
 	
-	$('#da-slider').cslider({
-		autoplay	: true,
-		bgincrement	: 500
-		
-	});
+    $('#da-slider').cslider({
+            autoplay	: true,
+            bgincrement	: 500
+
+    });
 
 });
+
+function showDiaryTarget(obj){
+    elem_id = $(obj).attr("data-id-target");
+    $(".sub-part").hide();
+    $("#"+elem_id).show("slow");
+    return false;
+}

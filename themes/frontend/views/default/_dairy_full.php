@@ -16,10 +16,10 @@ foreach ($row_elemnts as $dairy) {
                 </a>
             </div>
             <div class="border-red-bottom-dotted">
-                Share On Facebook
+                <?php echo Yii::t("links",'Share On Facebook'); ?>
             </div>
             <div class="border-red-bottom-dotted">
-                Share Via Email
+                <?php echo Yii::t("links",'Share Via Email'); ?>
             </div>
             <div>
                 <?php
@@ -27,12 +27,10 @@ foreach ($row_elemnts as $dairy) {
                     $instace = "image_" . $i;
                     $instace_title = "image_" . $i . "_title";
                     if (!empty($dairy->image_url[$instace])) {
-                        echo "<div class='span1'>";
-
+                        echo "<div class='span1' onclick=''>";
                         echo CHtml::image($dairy->image_url[$instace], $dairy->$instace_title, array(
                             "title" => $dairy->$instace_title,
                         ));
-
                         echo "</div>";
                     }
                 }

@@ -19,3 +19,6 @@ div.no-margin {
 .sub-part div div.span1 {
     margin-left: 0;
 }
+.sub-part {
+    display: none;
+}

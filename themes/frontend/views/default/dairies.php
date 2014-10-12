@@ -37,14 +37,16 @@
             ));
             $daries = $daries->getData();
             $daries_seg = array_chunk($daries, 3);
-
+            // echo $dairy->image_url['image_large'] 
             foreach ($daries_seg as $daries) {
                 $row_elemnts = array();
                 foreach ($daries as $dairy):
                     ?>
-                    <li class="span4">
+                    <li class="span4 data-collaps" 
+                        onclick="showDiaryTarget(this)"
+                        data-id-target="<?php echo $dairy->id . "-part"; ?>">
 
-                        <a href="<?php echo $dairy->image_url['image_large'] ?>" 
+                        <a href="javascript:void(0)" 
                            class="thumbnail" target="_blank">
                                <?php
                                echo CHtml::image($dairy->image_url['image_large'], $dairy->alt, array(
