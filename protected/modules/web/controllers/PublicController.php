@@ -23,7 +23,7 @@ class PublicController extends Controller {
             //die($email['Body']);
             $this->sendEmail2($email);
 
-            Yii::app()->user->setFlash('contact', 'Thank you ! for your feedback ');
+            Yii::app()->user->setFlash('success', 'Thank you ! for your feedback ');
             $this->redirect(Yii::app()->request->url);
         }
         return $model;

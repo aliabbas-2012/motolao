@@ -16,17 +16,17 @@
         <!--gallery-->
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/css/blueimp-gallery.min.css" />
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/css/bootstrap-image-gallery.css" />
-            <!-- Page-Level CSS -->
-            <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
-            <script>
-                // defining js base path
-                var js_basePath = '<?php echo Yii::app()->theme->baseUrl; ?>';
+        <!-- Page-Level CSS -->
+        <link href="<?php echo Yii::app()->theme->baseUrl ?>/assets/plugins/morris/morris-0.4.3.min.css" rel="stylesheet" />
+        <script>
+            // defining js base path
+            var js_basePath = '<?php echo Yii::app()->theme->baseUrl; ?>';
 
-                var yii_base_url = "<?php echo Yii::app()->baseUrl; ?>";
+            var yii_base_url = "<?php echo Yii::app()->baseUrl; ?>";
 
-            </script>
+        </script>
 
-            <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
     </head>
     <body>
@@ -75,8 +75,13 @@
             </nav>
             <!-- end navbar top -->
 
-
-
+            <?php
+            if (Yii::app()->user->hasFlash('success')) {
+                echo "<div class='col-lg-12'>";
+                echo "<div class='alert-margin alert alert-success'>" . Yii::app()->user->getFlash('success') . "</div>";
+                echo "</div>";
+            }
+            ?>
 
             <?php echo $content; ?>
 
@@ -89,9 +94,9 @@
             <div class="slides"></div>
             <!-- Controls for the borderless lightbox -->
             <h3 class="title"></h3>
-            <a class="prev">â€¹</a>
-            <a class="next">â€º</a>
-            <a class="close">Ã—</a>
+            <a class="prev"><<</a>
+            <a class="next">></a>
+            <a class="close">X</a>
             <a class="play-pause"></a>
             <ol class="indicator"></ol>
             <!-- The modal dialog, which will be used to wrap the lightbox content -->
@@ -133,9 +138,9 @@
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/jquery.blueimp-gallery.min.js"></script>
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/bootstrap-image-gallery.js"></script>
         <script type="text/javascript">
-            jQuery(function() {
-                jQuery('#blueimp-gallery').data('fullScreen', true);
-            })
+                jQuery(function() {
+                    jQuery('#blueimp-gallery').data('fullScreen', true);
+                })
         </script> 
     </body>
 </html>
