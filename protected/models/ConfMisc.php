@@ -16,7 +16,7 @@
  */
 class ConfMisc extends DTActiveRecord {
 
-    public $confViewName = 'confMisc/Misc';
+    public $confViewName = '//confMisc/Misc';
     public $paramsOptions = array(
         "dateformat" => array("m/d/y" => "m/d/y", "Y-m-d", "Y-m-d"),
         "smtp" => array("1" => "Enabled", "0" => "Disabled"),
