@@ -1,6 +1,6 @@
 <?php
 
-class CategoryController extends Controller {
+class CategoryController extends PublicController {
 
     public $layout = "//layouts/main";
 
@@ -18,6 +18,7 @@ class CategoryController extends Controller {
 
         if (isset($_POST['ContactForm'])) {
             $contact->attributes = $_POST['ContactForm'];
+            $this->sentContactEmail($contact);
         }
         if(isset($_POST['ajax'])){
              $this->renderPartial('//default/_contact_form', array('model' => $contact));

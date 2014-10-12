@@ -1,6 +1,6 @@
 <?php
 
-class DefaultController extends Controller {
+class DefaultController extends PublicController {
 
     /**
      * redirect site to for having www  lazmi
@@ -38,6 +38,7 @@ class DefaultController extends Controller {
 
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
+            $this->sentContactEmail($model);
         }
         $this->render('//default/faq', array("model" => $model));
     }
@@ -59,6 +60,7 @@ class DefaultController extends Controller {
 
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
+            $this->sentContactEmail($model);
         }
         $this->render('//default/contact', array("model" => $model));
     }
@@ -80,6 +82,7 @@ class DefaultController extends Controller {
 
         if (isset($_POST['ContactForm'])) {
             $model->attributes = $_POST['ContactForm'];
+            $this->sentContactEmail($model);
         }
         $this->render('//default/terms', array("model" => $model));
     }
