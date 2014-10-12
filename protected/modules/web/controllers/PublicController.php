@@ -19,7 +19,7 @@ class PublicController extends Controller {
             $email['From'] = $model->email;
             $email['Subject'] = 'Contact  From Mr/Mrs: ' . $model->name;
             $email['Body'] = $model->body;
-            $email['Body'] = $this->renderPartial('//common/_email_template', array('email' => $email));
+            $email['Body'] = $this->renderPartial('//common/_email_template', array('email' => $email),true);
             //die($email['Body']);
             $this->sendEmail2($email);
 
