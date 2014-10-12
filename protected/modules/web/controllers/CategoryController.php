@@ -20,7 +20,7 @@ class CategoryController extends PublicController {
             $contact->attributes = $_POST['ContactForm'];
             $this->sentContactEmail($contact);
         }
-        if(isset($_POST['ajax'])){
+        if(isset($_GET['ajax'])){
              $this->renderPartial('//default/_contact_form', array('model' => $contact));
         }
         else {

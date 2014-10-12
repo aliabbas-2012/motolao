@@ -28,3 +28,6 @@ div.no-margin {
 .contact_faq #contact-form{
       width: 280px;
 }
+input.error {
+    border: 1px solid red;
+}

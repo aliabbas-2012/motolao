@@ -112,6 +112,7 @@ function submitAjaxContact() {
                 data,
                 function(response) {
                     $("#cboxLoadingOverlay").hide();
+                    $("#cboxLoadedContent").html(response);
                     if (!response.success) {
                         alert('Failure!');
                     }
