@@ -75,13 +75,6 @@
             </nav>
             <!-- end navbar top -->
 
-            <?php
-            if (Yii::app()->user->hasFlash('success')) {
-                echo "<div class='col-lg-12'>";
-                echo "<div class='alert-margin alert alert-success'>" . Yii::app()->user->getFlash('success') . "</div>";
-                echo "</div>";
-            }
-            ?>
 
             <?php echo $content; ?>
 

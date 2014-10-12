@@ -95,6 +95,13 @@
 
         <!--start: Wrapper-->
         <div id="wrapper">
+            <?php
+            if (Yii::app()->user->hasFlash('success')) {
+                echo "<div class='col-lg-12'>";
+                echo "<div class='alert-margin alert alert-success'>" . Yii::app()->user->getFlash('success') . "</div>";
+                echo "</div>";
+            }
+            ?>
             <?php echo $content; ?>
         </div>
         <!-- end: Wrapper  -->			
@@ -218,7 +225,7 @@
         <script type="text/javascript">
             jQuery(function() {
                 jQuery('#blueimp-gallery').data('fullScreen', true);
-                jQuery(".colorbox").colorbox({inline: true, width: "50%",});
+                jQuery(".colorbox").colorbox({inline: true, width: "50%", });
             })
         </script> 
     </body>

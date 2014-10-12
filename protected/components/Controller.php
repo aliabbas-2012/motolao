@@ -221,7 +221,8 @@ class Controller extends CController {
                 $operation = ($level == 0) ? $menu->min_permission : $menu->min_permission;
 
 
-                $childCount = Menu::model()->count("pid = $menu->id"); {
+                $childCount = Menu::model()->count("pid = $menu->id");
+                {
                     $foundAny = true;
 
                     $this->menuHtml .='<li ' . ($pid == 0 ? "class='top'" : "") . '>';
@@ -305,9 +306,11 @@ class Controller extends CController {
             if (!empty($email['attachment']) && !empty($email['name']) && !empty($email['type'])) {
                 $mailer->AddAttachment($email['attachment'], $email['name'], 'base64', $email['type']);
             }
+
             if (!$mailer->Send()) {
                 
             }
+
             $mailer->ClearAddresses();
             //$mailer->ClearCustomHeaders();
         }
