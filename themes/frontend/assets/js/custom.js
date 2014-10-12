@@ -106,10 +106,12 @@ function submitAjaxContact() {
     $("#contact-form1").submit(function(event) {
         alert("Handler for .submit() called.");
         var data = $("#contact-form1").serialize();
+        $("#cboxLoadingOverlay").show();
         $.post(
                 $("#contact-form1").attr("action")+"?ajax=1",
                 data,
                 function(response) {
+                    $("#cboxLoadingOverlay").hide();
                     if (!response.success) {
                         alert('Failure!');
                     }

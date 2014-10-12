@@ -19,8 +19,13 @@ class CategoryController extends Controller {
         if (isset($_POST['ContactForm'])) {
             $contact->attributes = $_POST['ContactForm'];
         }
-
-        $this->render('//category/index', array('model' => $model, "contact" => $contact));
+        if(isset($_POST['ajax'])){
+             $this->renderPartial('//default/_contact_form', array('model' => $contact));
+        }
+        else {
+            $this->render('//category/index', array('model' => $model, "contact" => $contact));
+        }
+        
     }
 
     /**
