@@ -73,12 +73,13 @@ jQuery(document).ready(function($) {
 /* ------------------- Parallax --------------------- */
 
 jQuery(document).ready(function($) {
+    if ($('#da-slider').length > 0) {
+        $('#da-slider').cslider({
+            autoplay: true,
+            bgincrement: 500
 
-    $('#da-slider').cslider({
-        autoplay: true,
-        bgincrement: 500
-
-    });
+        });
+    }
 
 });
 
@@ -108,7 +109,7 @@ function submitAjaxContact() {
         var data = $("#contact-form1").serialize();
         $("#cboxLoadingOverlay").show();
         $.post(
-                $("#contact-form1").attr("action")+"?ajax=1",
+                $("#contact-form1").attr("action") + "?ajax=1",
                 data,
                 function(response) {
                     $("#cboxLoadingOverlay").hide();
