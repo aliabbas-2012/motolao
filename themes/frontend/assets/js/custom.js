@@ -105,7 +105,7 @@ function changePreview(obj) {
 
 function submitAjaxContact() {
     $("#contact-form1").submit(function(event) {
-        alert("Handler for .submit() called.");
+
         var data = $("#contact-form1").serialize();
         $("#cboxLoadingOverlay").show();
         $.post(
@@ -117,7 +117,11 @@ function submitAjaxContact() {
                     if (!response.success) {
                         alert('Failure!');
                     }
-                    alert('Success!');
+                    else {
+                        alert("Thank you for feed back");
+                    }
+
+                    document.location.reload();
                 }
         );
         event.preventDefault();

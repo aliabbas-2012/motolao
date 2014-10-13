@@ -17,7 +17,14 @@ class PublicController extends Controller {
             $email['To'] = CHtml::listData(Users::model()->getAdminUsers(),'email','email');
             $email['FromName'] = $model->name;
             $email['From'] = $model->email;
-            $email['Subject'] = 'Contact  From Mr/Mrs: ' . $model->name;
+            if(empty($model->subject)){
+                $email['Subject'] = 'Contact  From Mr/Mrs: ' . $model->name;
+            }
+            else {
+                $email['Subject'] = 'Contact [ ' . $model->subject." ]";
+            }
+            
+            $email['date'] = $model->date;
             $email['Body'] = $model->body;
             $email['Body'] = $this->renderPartial('//common/_email_template', array('email' => $email),true);
             //die($email['Body']);

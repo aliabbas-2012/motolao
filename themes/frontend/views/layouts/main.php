@@ -225,7 +225,11 @@
         <script type="text/javascript">
             jQuery(function() {
                 jQuery('#blueimp-gallery').data('fullScreen', true);
-                jQuery(".colorbox").colorbox({inline: true, width: "50%", });
+                jQuery(".colorbox").colorbox({inline: true, width: "50%", title: function() {
+
+                        $("#ContactForm_subject").val($(this).attr("tour-name"));
+                    }
+                });
             })
         </script> 
     </body>

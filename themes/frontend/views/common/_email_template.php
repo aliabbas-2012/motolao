@@ -41,6 +41,7 @@
             echo!empty($email['FromName']) ? '<b> Name :</b>' . $email['FromName'] . '<br>' : '';
             echo!empty($email['From']) ? '<b>Email :</b>' . $email['From'] . '<br>' : '';
             echo!empty($email['Subject']) ? '<b>Subject :</b>' . $email['Subject'] . '<br>' : '';
+            echo!empty($email['date']) ? '<b>Date :</b>' . $email['date'] . '<br>' : '';
 
             echo!empty($email['Body']) ? '<b>Description :</b>' . $email['Body'] . '<br>' : '';
             ?>

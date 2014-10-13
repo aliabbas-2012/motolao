@@ -62,7 +62,7 @@
                         echo $tour->short_description;
                         ?> 
                         <a href="<?php echo $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)); ?>" class="info"> <?php echo Yii::t("category", "CONTINUE READING"); ?></a><br />
-                        <a href="#contact-form" title="" class="info colorbox"><?php echo Yii::t("category", "CONTACT US"); ?></a>
+                        <a tour-name="<?php echo $tour->name; ?>" href="#contact-form" title="" class="info colorbox"><?php echo Yii::t("category", "CONTACT US"); ?></a>
                     </div>
                 </div>
                 <div class="clear"></div>
