@@ -11,6 +11,7 @@ class ContactForm extends CFormModel {
     public $email;
     public $phone;
     public $body;
+    public $subject;
     public $verifyCode;
 
     /**
@@ -22,6 +23,7 @@ class ContactForm extends CFormModel {
             array('name, email, phone, body', 'required'),
             // email has to be a valid email address
             array('email', 'email'),
+            array('subject','safe'),
             // verifyCode needs to be entered correctly
             //array('verifyCode', 'captcha', 'allowEmpty' => !CCaptcha::checkRequirements()),
         );
@@ -39,6 +41,7 @@ class ContactForm extends CFormModel {
             'email' => Yii::t("contact",'Email'),
             'phone' => Yii::t("contact",'Phone number'),
             'body' => Yii::t("contact",'Message'),
+            'subject' => Yii::t("contact",'Subject'),
         );
     }
 

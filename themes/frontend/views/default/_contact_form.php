@@ -38,7 +38,7 @@
                 <?php echo $form->textArea($model, 'body', array('tabindex' => '3', 'rows' => 7, "class" => "input-xlarge")); ?>
             </div>
         </div>
-
+        <?php echo $form->hiddenField($model,'subject'); ?>
 
         <div class="diarybutton">
 
