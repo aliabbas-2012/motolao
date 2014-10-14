@@ -73,6 +73,10 @@ class MotoDairy extends DTActiveRecord {
             array('image_1,image_2,image_3,image_4,image_5', 'file', 'allowEmpty' => true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             array('width,height,detail_width,detail_height', 'safe'),
+            array('image_1_height','image_2_height','image_3_height','image_4_height',
+                'image_5_height',),
+            array('image_1_width','image_2_width','image_3_width','image_4_width',
+                'image_5_width',),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, alt, title, image_large, image_detail, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
