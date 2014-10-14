@@ -24,6 +24,7 @@ class DTActiveRecord extends CActiveRecord {
     public $_controller;
     public $_no_condition = false;
     public $_current_module;
+    public $land_scape,$detail_land_scape,$small_land_scape;
 
     public function __construct($scenario = 'insert') {
 
@@ -191,6 +192,37 @@ class DTActiveRecord extends CActiveRecord {
             return CHtml::link("Set On Home Page", $url);
         }
     }
+
+    //get image type
+    public function get_transcript() {
+        if ($this->width == $this->height) {
+            $this->land_scape = 'equal';
+        } else if ($this->width > $this->height) {
+            $this->land_scape = 'landscape';
+        } else if ($this->width < $this->height) {
+            $this->land_scape = 'potrate';
+        }
+
+        if (isset($this->attributes['detail_width']) && isset($this->attributes['detail_height'])) {
+            if ($this->detail_width == $this->detail_height) {
+                $this->detail_land_scape = 'equal';
+            } else if ($this->detail_width > $this->detail_height) {
+                $this->detail_land_scape = 'landscape';
+            } else if ($this->detail_width < $this->detail_height) {
+                $this->detail_land_scape = 'potrate';
+            }
+        }
+        if (isset($this->attributes['small_width']) && isset($this->attributes['small_height'])) {
+            if ($this->small_width == $this->small_height) {
+                $this->small_land_scape = 'equal';
+            } else if ($this->small_width > $this->small_height) {
+                $this->small_land_scape = 'landscape';
+            } else if ($this->small_width < $this->small_height) {
+                $this->small_land_scape = 'potrate';
+            }
+        }
+    }
+    
 
 }
 
