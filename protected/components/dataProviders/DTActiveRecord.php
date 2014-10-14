@@ -225,11 +225,11 @@ class DTActiveRecord extends CActiveRecord {
         }
 
         for ($i = 1; $i <= 5; $i++) {
-            if (isset($this->attributes['image_'.$i."_width"]) 
-                    && isset($this->attributes['image_'.$i."_height"])) {
-                $width_at = 'image_'.$i."_width";
-                $height_at = 'image_'.$i."_height";
-                $land_s_at="image_".$i."_land_scape";
+            $width_at = 'image_' . $i . "_width";
+            $height_at = 'image_' . $i . "_height";
+            if (isset($this->attributes[$width_at]) && isset($this->attributes[$height_at])) {
+
+                $land_s_at = "image_" . $i . "_land_scape";
                 if ($this->$width_at == $this->$height_at) {
                     $this->$land_s_at = 'equal';
                 } else if ($this->$width_at > $this->$height_at) {
@@ -247,6 +247,18 @@ class DTActiveRecord extends CActiveRecord {
     public function save_image_properties($size, $type = '') {
         if (!empty($size)) {
             $this->updateByPk($this->primaryKey, array($type . "width" => $size[0], $type . "height" => $size[1]));
+        }
+    }
+    /**
+     * 
+     * @param type $size
+     * @param type $i
+     */
+    public function save_image_loop_properties($size, $i = 1) {
+        if (!empty($size)) {
+            $width_at = 'image_' . $i . "_width";
+            $height_at = 'image_' . $i . "_height";
+            $this->updateByPk($this->primaryKey, array($width_at => $size[0], $height_at => $size[1]));
         }
     }
 
