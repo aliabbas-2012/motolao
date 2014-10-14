@@ -60,10 +60,11 @@ class Banner extends DTActiveRecord {
             array('lang_id, key, create_time, create_user_id, update_time, update_user_id', 'required'),
             array('lang_id, create_user_id, update_user_id', 'length', 'max' => 11),
             array('key', 'length', 'max' => 20),
-             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
+            array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             array('alt, title, image_large', 'length', 'max' => 150),
             array('video_tag_embedded_code, activity_log', 'safe'),
+            array('width,height', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, alt, title, image_large, video_tag_embedded_code, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -164,6 +165,7 @@ class Banner extends DTActiveRecord {
             $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
 
+        $this->get_transcript();
         parent::afterFind();
     }
 
@@ -226,6 +228,8 @@ class Banner extends DTActiveRecord {
 
             $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
             $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
+            $size = @getimagesize($upload_path . str_replace(" ", "_", $this->image_large));
+            $this->save_image_properties($size);
 
             $this->deleteldImage();
         }

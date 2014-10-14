@@ -191,7 +191,7 @@ class TourImage extends DTActiveRecord {
             $this->image_url['image_detail'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
 
-
+        $this->get_transcript();
         parent::afterFind();
     }
 
@@ -262,8 +262,15 @@ class TourImage extends DTActiveRecord {
             $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
             $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
 
-            DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 170, str_replace(" ", "_", "small_" . $this->image_large));
-            DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
+            $thumb1 = DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 170, str_replace(" ", "_", "small_" . $this->image_large));
+            $thumb2 = DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
+            //save acutal
+            $size = @getimagesize($upload_path . str_replace(" ", "_", $this->image_large));
+            $this->save_image_properties($size);
+            $size = @getimagesize($thumb1);
+            $this->save_image_properties($size, "small_");
+            $size = @getimagesize($thumb2);
+            $this->save_image_properties($size, "detail_");
             $this->deleteldImage();
         }
     }

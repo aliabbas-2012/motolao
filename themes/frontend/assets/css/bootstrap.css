@@ -5257,12 +5257,23 @@ a.thumbnail:hover {
     -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
     box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
 }
-
+.thumbnail {
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
 .thumbnail > img {
     display: block;
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
+    overflow:hidden;
+
+    height: auto !important;
+    width: auto;
+     max-width: none;
+
 }
 
 .thumbnail .caption {

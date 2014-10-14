@@ -24,7 +24,7 @@ class DTActiveRecord extends CActiveRecord {
     public $_controller;
     public $_no_condition = false;
     public $_current_module;
-    public $land_scape,$detail_land_scape,$small_land_scape;
+    public $land_scape, $detail_land_scape, $small_land_scape;
 
     public function __construct($scenario = 'insert') {
 
@@ -222,7 +222,15 @@ class DTActiveRecord extends CActiveRecord {
             }
         }
     }
-    
+
+    /**
+     * save image properties
+     */
+    public function save_image_properties($size, $type = '') {
+        if (!empty($size)) {
+            $this->updateByPk($this->primaryKey, array($type . "width" => $size[0], $type . "height" => $size[1]));
+        }
+    }
 
 }
 

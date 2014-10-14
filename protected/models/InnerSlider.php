@@ -67,6 +67,7 @@ class InnerSlider extends DTActiveRecord {
             array('alt, title, image_large', 'length', 'max' => 150),
             array('same_box, activity_log', 'safe'),
             array('heading_box', 'validateUniquness'),
+            array('width,height', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, alt, title, image_large, same_box, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -186,7 +187,7 @@ class InnerSlider extends DTActiveRecord {
         } else {
             $this->image_url['image_large'] = Yii::app()->baseUrl . "/images/tour_images/noimages.jpeg";
         }
-
+        $this->get_transcript();
         parent::afterFind();
     }
 
@@ -249,7 +250,8 @@ class InnerSlider extends DTActiveRecord {
 
             $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
             $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
-
+            $size = @getimagesize($upload_path . str_replace(" ", "_", $this->image_large));
+            $this->save_image_properties($size);
             $this->deleteldImage();
         }
     }

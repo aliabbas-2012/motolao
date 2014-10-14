@@ -38,6 +38,7 @@ class DTUploadedFile extends CUploadedFile {
         }
         return $newPath . DIRECTORY_SEPARATOR;
     }
+
     /**
      *  to create recursive folder
      *  here images will be uploaded
@@ -55,7 +56,7 @@ class DTUploadedFile extends CUploadedFile {
             foreach ($array as $folder) {
                 $newPath.=DIRECTORY_SEPARATOR . $folder;
                 if (!is_dir($newPath)) {
-                   
+                    
                 }
             }
         } else {
@@ -125,7 +126,7 @@ class DTUploadedFile extends CUploadedFile {
      */
     public static function deleteExistingFile($file) {
         if (is_file($file)) {
-           
+
             unlink($file);
             return true;
         } else {
@@ -194,7 +195,7 @@ class DTUploadedFile extends CUploadedFile {
         self::createImage($thumb, $pathToThumbs, $name, trim($info['extension']));
         imagedestroy($sourceImage);
 
-        return $thumb;
+        return $pathToThumbs . DIRECTORY_SEPARATOR . $name;
 
 
 

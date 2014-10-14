@@ -72,6 +72,7 @@ class MotoDairy extends DTActiveRecord {
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             array('image_1,image_2,image_3,image_4,image_5', 'file', 'allowEmpty' => true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
+            array('width,height,detail_width,detail_height', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, alt, title, image_large, image_detail, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
@@ -205,6 +206,7 @@ class MotoDairy extends DTActiveRecord {
         }
 
         $this->findOtherImagesInstances();
+        $this->get_transcript();
         parent::afterFind();
     }
 
@@ -305,7 +307,13 @@ class MotoDairy extends DTActiveRecord {
             $folder_array = array("moto-dairy", $this->id,);
             $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
             $this->upload_insance->saveAs($upload_path . str_replace(" ", "_", $this->image_large));
-            DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
+            $thumb = DTUploadedFile::createThumbs($upload_path . $this->image_large, $upload_path, 180, str_replace(" ", "_", "detail_" . $this->image_large));
+            //save acutal
+            $size = @getimagesize($upload_path . str_replace(" ", "_", $this->image_large));
+            $this->save_image_properties($size);
+            $size = @getimagesize($thumb);
+            $this->save_image_properties($size,"detail_");
+            
             $this->deleteldImage();
         }
     }
@@ -318,7 +326,7 @@ class MotoDairy extends DTActiveRecord {
         for ($i = 1; $i <= 5; $i++) {
             $instace = "image_" . $i;
             if (!empty($this->upload_other_instances[$i])) {
-                
+
                 $folder_array = array("moto-dairy", $this->id,);
                 $upload_path = DTUploadedFile::creeatRecurSiveDirectories($folder_array);
                 $this->upload_other_instances[$i]->saveAs($upload_path . $this->$instace);
