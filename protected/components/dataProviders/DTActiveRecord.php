@@ -25,6 +25,8 @@ class DTActiveRecord extends CActiveRecord {
     public $_no_condition = false;
     public $_current_module;
     public $land_scape, $detail_land_scape, $small_land_scape;
+    public $image_1_land_scape, $image_2_land_scape, $image_3_land_scape;
+    public $image_4_land_scape, $image_5_land_scape;
 
     public function __construct($scenario = 'insert') {
 
@@ -219,6 +221,22 @@ class DTActiveRecord extends CActiveRecord {
                 $this->small_land_scape = 'landscape';
             } else if ($this->small_width < $this->small_height) {
                 $this->small_land_scape = 'potrate';
+            }
+        }
+
+        for ($i = 1; $i <= 5; $i++) {
+            if (isset($this->attributes['image_'.$i."_width"]) 
+                    && isset($this->attributes['image_'.$i."_height"])) {
+                $width_at = 'image_'.$i."_width";
+                $height_at = 'image_'.$i."_height";
+                $land_s_at="image_".$i."_land_scape";
+                if ($this->$width_at == $this->$height_at) {
+                    $this->$land_s_at = 'equal';
+                } else if ($this->$width_at > $this->$height_at) {
+                    $this->$land_s_at = 'landscape';
+                } else if ($this->$width_at < $this->$height_at) {
+                    $this->$land_s_at = 'potrate';
+                }
             }
         }
     }
