@@ -47,7 +47,7 @@
                         data-id-target="<?php echo $dairy->id . "-part"; ?>">
 
                         <a href="javascript:void(0)" 
-                           class="thumbnail" target="_blank">
+                           class="thumbnail <?php echo $dairy->land_scape; ?>" target="_blank">
                                <?php
                                echo CHtml::image($dairy->image_url['image_large'], $dairy->alt, array(
                                    "title" => $dairy->title,

@@ -94,7 +94,10 @@ function changePreview(obj) {
     elem_id = $(obj).parent().parent().parent().attr("id");
     src = $(obj).children().eq(0).attr("src");
     title = $(obj).children().eq(0).attr("title");
+    css_class = $(obj).children().eq(0).attr("img-type");
+    
     $("#" + elem_id + " .thumbnail").attr("href", src);
+    $("#" + elem_id + " .thumbnail").addClass(css_class);
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('src', src);
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('title', title);
     $("#" + elem_id + " .thumbnail").children().eq(0).attr('alt', title);

@@ -7,7 +7,7 @@ foreach ($row_elemnts as $dairy) {
             <h4 class="sub-part-title"><?php echo $dairy->title; ?></h4>
             <div>
                 <a href="<?php echo $dairy->image_url['image_large'] ?>" 
-                   class="thumbnail" target="_blank" data-gallery="">
+                   class="thumbnail <?php echo $dairy->land_scape; ?>" target="_blank" data-gallery="">
                        <?php
                        echo CHtml::image($dairy->image_url['image_large'], $dairy->alt, array(
                            "title" => $dairy->title,
@@ -16,10 +16,10 @@ foreach ($row_elemnts as $dairy) {
                 </a>
             </div>
             <div class="border-red-bottom-dotted">
-                <?php echo Yii::t("links",'Share On Facebook'); ?>
+                <?php echo Yii::t("links", 'Share On Facebook'); ?>
             </div>
             <div class="border-red-bottom-dotted">
-                <?php echo Yii::t("links",'Share Via Email'); ?>
+                <?php echo Yii::t("links", 'Share Via Email'); ?>
             </div>
             <div>
                 <?php
@@ -30,6 +30,7 @@ foreach ($row_elemnts as $dairy) {
                         echo "<div class='span1' onclick='changePreview(this)'>";
                         echo CHtml::image($dairy->image_url[$instace], $dairy->$instace_title, array(
                             "title" => $dairy->$instace_title,
+                            "img-type" => $dairy->land_scape,
                         ));
                         echo "</div>";
                     }
