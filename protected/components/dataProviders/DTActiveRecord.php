@@ -30,15 +30,17 @@ class DTActiveRecord extends CActiveRecord {
 
     public function __construct($scenario = 'insert') {
 
-        $this->_action = isset(Yii::app()->controller->action) ? Yii::app()->controller->action->id : "";
-        $this->_controller = Yii::app()->controller->id;
-        $this->_current_module = get_class(Yii::app()->controller->getModule());
+        if (!$this->isCommandLineInterface()) {
+            $this->_action = isset(Yii::app()->controller->action) ? Yii::app()->controller->action->id : "";
+            $this->_controller = Yii::app()->controller->id;
+            $this->_current_module = get_class(Yii::app()->controller->getModule());
+        }
 
         parent::__construct($scenario);
     }
 
     public function afterFind() {
-        if (isset(Yii::app()->controller->action->id)) {
+        if (!$this->isCommandLineInterface() && isset(Yii::app()->controller->action->id)) {
             $this->_action = Yii::app()->controller->action->id;
         }
 
@@ -165,9 +167,10 @@ class DTActiveRecord extends CActiveRecord {
     }
 
     public function updateByPk($pk, $attributes, $condition = '', $params = array()) {
-        $updateAttr = array("update_time" => new CDbExpression('NOW()'), "update_user_id" => Yii::app()->user->id);
-        $attributes = array_merge($attributes, $updateAttr);
-
+        if (!$this->isCommandLineInterface()) {
+            $updateAttr = array("update_time" => new CDbExpression('NOW()'), "update_user_id" => Yii::app()->user->id);
+            $attributes = array_merge($attributes, $updateAttr);
+        }
 
         parent::updateByPk($pk, $attributes, $condition, $params);
         return true;
@@ -249,6 +252,7 @@ class DTActiveRecord extends CActiveRecord {
             $this->updateByPk($this->primaryKey, array($type . "width" => $size[0], $type . "height" => $size[1]));
         }
     }
+
     /**
      * 
      * @param type $size
@@ -260,6 +264,10 @@ class DTActiveRecord extends CActiveRecord {
             $height_at = 'image_' . $i . "_height";
             $this->updateByPk($this->primaryKey, array($width_at => $size[0], $height_at => $size[1]));
         }
+    }
+
+    function isCommandLineInterface() {
+        return (php_sapi_name() === 'cli');
     }
 
 }

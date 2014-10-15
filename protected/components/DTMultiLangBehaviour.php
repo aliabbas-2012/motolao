@@ -36,7 +36,7 @@ class DTMultiLangBehaviour extends CActiveRecordBehavior {
     }
 
     public function afterFind($event) {
-        if (get_class(Yii::app()->controller->getModule()) == "WebModule") {
+        if (!$this->isCommandLineInterface() && get_class(Yii::app()->controller->getModule()) == "WebModule") {
             $owner = $this->getOwner();
             /*
              * empty variable then replace 
@@ -55,6 +55,10 @@ class DTMultiLangBehaviour extends CActiveRecordBehavior {
         }
 
         return parent::afterFind($event);
+    }
+    
+    function isCommandLineInterface() {
+        return (php_sapi_name() === 'cli');
     }
 
     /**
