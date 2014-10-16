@@ -20,10 +20,14 @@ if (!empty($sliders)):
                 <div class="item <?php echo $count == 0 ? "active" : ""; ?>" >
 
                     <?php
-                    echo CHtml::image($slider->image_url['image_large'], $slider->alt, array(
-                        "title" => $slider->title,
-                        "style" => "width:100%",
-                    ));
+                    if ($slider->video_tag_embedded_code == ""):
+                        echo CHtml::image($slider->image_url['image_large'], $slider->alt, array(
+                            "title" => $slider->title,
+                            "style" => "width:100%",
+                        ));
+                    else:
+                        echo $slider->video_tag_embedded_code;
+                    endif;
                     ?>
                     <div class="container">
                         <div class="carousel-caption">
