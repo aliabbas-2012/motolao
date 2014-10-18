@@ -21,6 +21,7 @@ class Banner extends DTActiveRecord {
 
     public $uploaded_img = "";
     public $no_image;
+    public $_content_type;
     public $_supported_formates = array("mp4", 'ogg', 'webm');
 
     /**
@@ -179,6 +180,7 @@ class Banner extends DTActiveRecord {
         }
 
         $this->get_transcript();
+        $this->setVideoType();
         parent::afterFind();
     }
 
@@ -245,6 +247,21 @@ class Banner extends DTActiveRecord {
             $this->save_image_properties($size);
 
             $this->deleteldImage();
+        }
+    }
+
+    /**
+     * get Video Type
+     */
+    public function setVideoType() {
+        if (stristr($this->video_tag_embedded_code, "mp4")) {
+            $this->_content_type = 'video/mp4';
+        } else if (stristr($this->video_tag_embedded_code, "ogg")) {
+            $this->_content_type = 'video/ogg';
+        } else if (stristr($this->video_tag_embedded_code, "webm")) {
+            $this->_content_type = 'video/webm';
+        } else {
+            $this->_content_type = 'text/html';
         }
     }
 

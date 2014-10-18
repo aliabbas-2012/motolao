@@ -66,6 +66,17 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                             $dataProiver = $model->search();
                             if ($dataProiver->itemCount > 0):
                                 foreach ($model->search()->getData() as $data):
+                                    $content_type = pathinfo($data->image_url['image_large']);
+                                    if (!isset($info['extension'])) {
+                                        $content_type['extension'] = "jpg";
+                                    }
+                                    $url = $data->image_url['image_large'];
+                                    if ($data->video_tag_embedded_code == ""):
+                                        $content_type = "image/" . $content_type['extension'];
+                                    else:
+                                        $content_type = $data->_content_type;
+                                        $url = $data->video_tag_embedded_code;
+                                    endif;
                                     ?>
                                     <!--Default Pannel, Primary Panel And Success Panel   -->
                                     <div class="col-lg-4">
@@ -87,7 +98,8 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                                             </div>
                                             <div class="panel-body">
                                                 <?php
-                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12", 'style' => 'width:100%',)), $data->image_url['image_large'], array('data-gallery' => ''));
+                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12", 'style' => 'width:100%',)), $url, 
+                                                        array('data-gallery' => '','type'=>$content_type));
                                                 ?>
                                             </div>
                                             <div class="panel-footer">

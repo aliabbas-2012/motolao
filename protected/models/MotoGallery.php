@@ -297,8 +297,6 @@ class MotoGallery extends DTActiveRecord {
         else {
             $this->_content_type = 'text/html';
         }
-        
-
     }
 
     public function beforeDelete() {
