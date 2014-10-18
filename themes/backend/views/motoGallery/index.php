@@ -63,9 +63,21 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                             <?php
                             $dataProiver = $model->search();
                             if ($dataProiver->itemCount > 0):
-                             
-                            
+
+
                                 foreach ($dataProiver->getData() as $data):
+       
+                                    $content_type = pathinfo($data->image_url['image_large']);
+                                    if (!isset($info['extension'])) {
+                                        $content_type['extension'] = "jpg";
+                                    }
+                                     $url = $data->image_url['image_large'];
+                                    if ($data->video_tag_embedded_code == ""):
+                                        $content_type = "image/" . $content_type['extension'];
+                                    else:
+                                        $content_type = $data->_content_type;
+                                        $url = $data->video_tag_embedded_code;
+                                    endif;
                                     ?>
                                     <!--Default Pannel, Primary Panel And Success Panel   -->
                                     <div class="col-lg-4">
@@ -76,9 +88,19 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                                                 echo CHtml::link(" (Edit) ", $this->createUrl("index", array("id" => $data->id)));
                                                 ?>
                                             </div>
+                                            <div class="panel-heading">
+                                                <?php
+                                                if ($data->video_tag_embedded_code == "") {
+                                                    echo "Image";
+                                                } else {
+                                                    echo "Video";
+                                                }
+                                                ?>
+                                            </div>
                                             <div class="panel-body">
                                                 <?php
-                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12",'style'=>'width:100%',)), $data->image_url['image_large'], array('data-gallery'=>''));
+                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12", 'style' => 'width:100%',)), $url, 
+                                                        array('data-gallery' => '','type'=>$content_type));
                                                 ?>
                                             </div>
                                             <div class="panel-footer">
@@ -102,7 +124,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
 <?php
 $this->widget('ext.BootstrapLinkPager', array(
     'pages' => $dataProiver->getPagination(),
-    'header'=>'',
-    'htmlOptions'=>array('class'=>'pagination')
+    'header' => '',
+    'htmlOptions' => array('class' => 'pagination')
         )
 );

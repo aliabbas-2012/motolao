@@ -63,7 +63,7 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
 
                         <div class="row">
                             <?php
-                            $dataProiver  = $model->search();
+                            $dataProiver = $model->search();
                             if ($dataProiver->itemCount > 0):
                                 foreach ($model->search()->getData() as $data):
                                     ?>
@@ -76,13 +76,18 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
                                                 echo CHtml::link(" (Edit) ", $this->createUrl("/banner/index", array("id" => $data->id)));
                                                 ?>
                                             </div>
+                                            <div class="panel-heading">
+                                                <?php
+                                                if ($data->video_tag_embedded_code == "") {
+                                                    echo "Image";
+                                                } else {
+                                                    echo "Video";
+                                                }
+                                                ?>
+                                            </div>
                                             <div class="panel-body">
                                                 <?php
-                                                if (!empty($data->video_tag_embedded_code)) {
-                                                    echo $data->video_tag_embedded_code;
-                                                } else {
-                                                    echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12")), $data->image_url['image_large'], array("target" => "_blank"));
-                                                }
+                                                echo CHtml::link(CHtml::image($data->image_url['image_large'], $data->alt, array("class" => "col-lg-12", 'style' => 'width:100%',)), $data->image_url['image_large'], array('data-gallery' => ''));
                                                 ?>
                                             </div>
                                             <div class="panel-footer">
@@ -104,11 +109,10 @@ $this->renderPartial("_form", array("model" => $model_form, 'languages' => $lang
     </div>    
 </div>
 <?php
-
 $this->widget('ext.BootstrapLinkPager', array(
     'pages' => $dataProiver->getPagination(),
-    'header'=>'',
-    'htmlOptions'=>array('class'=>'pagination')
+    'header' => '',
+    'htmlOptions' => array('class' => 'pagination')
         )
 );
 
