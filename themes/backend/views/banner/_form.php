@@ -96,7 +96,9 @@
                             <div class="col-lg-8">
                                 <?php echo $form->textField($model, 'video_tag_embedded_code', array('class' => 'form-control',)); ?>
                                 <?php echo $form->error($model, 'video_tag_embedded_code'); ?>
-
+                                <?php
+                                echo "Recommended e.g " . implode(", ", $model->_supported_formates);
+                                ?>
                             </div>
 
                         </div><!-- group -->

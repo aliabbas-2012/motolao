@@ -78,11 +78,13 @@
                         </div><!-- group -->
 
                         <div class="form-group">
-                            <?php echo $form->labelEx($model, 'video_tag_embedded_code', array('class' => 'control-label col-lg-4')); ?>
-                            <div class="col-lg-8">
-                                <?php echo $form->textArea($model, 'video_tag_embedded_code', array('class' => 'form-control', 'rows' => '10', 'cols' => '70')); ?>
+                            <?php echo $form->labelEx($model, 'video_tag_embedded_code', array('class' => 'control-label col-lg-2')); ?>
+                            <div class="col-lg-10">
+                                <?php echo $form->textField($model, 'video_tag_embedded_code', array('class' => 'form-control')); ?>
                                 <?php echo $form->error($model, 'video_tag_embedded_code'); ?>
-
+                                <?php
+                                    echo "Recommended e.g ".implode(", ",$model->_supported_formates);
+                                ?>
                             </div>
 
                         </div><!-- group -->

@@ -20,6 +20,8 @@
 class MotoGallery extends DTActiveRecord {
 
     public $no_image;
+    public $_content_type;
+    public $_supported_formates = array("mp4",'ogg','webm');
 
     /**
      * upload instance and index for multiple uploader
@@ -57,10 +59,21 @@ class MotoGallery extends DTActiveRecord {
             array('video_tag_embedded_code,activity_log', 'safe'),
             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
+            array("video_tag_embedded_code",'validateVideoUrl'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, alt, title, image_large, image_detail, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
         );
+    }
+    /**
+     * supported formate
+     */
+    public function validateVideoUrl(){
+        if(!empty($this->video_tag_embedded_code)){
+            if(!strstr($this->video_tag_embedded_code,"http") || !strstr($this->video_tag_embedded_code,"http")){
+                $this->addError("video_tag_embedded_code", "Video Url not in valid format");
+            } 
+        }
     }
 
     /**
@@ -83,6 +96,7 @@ class MotoGallery extends DTActiveRecord {
             'lang_id' => 'Lang',
             'alt' => 'Alt',
             'title' => 'Title',
+            'video_tag_embedded_code' => 'Video Url',
             'image_large' => 'Image Large',
             'image_detail' => 'Image Detail',
             'create_time' => 'Create Time',
@@ -169,6 +183,7 @@ class MotoGallery extends DTActiveRecord {
         }
 
         $this->get_transcript();
+        $this->setVideoType();
         parent::afterFind();
     }
 
@@ -267,6 +282,23 @@ class MotoGallery extends DTActiveRecord {
 
             DTUploadedFile::deleteExistingFile($detail_path);
         }
+    }
+    /**
+     * get Video Type
+     */
+    public function setVideoType() {
+        if (stristr($this->video_tag_embedded_code, "mp4")) {
+            $this->_content_type = 'video/mp4';
+        } else if (stristr($this->video_tag_embedded_code, "ogg")) {
+           $this->_content_type = 'video/ogg';
+        } else if (stristr($this->video_tag_embedded_code, "webm")) {
+            $this->_content_type = 'video/webm';
+        }
+        else {
+            $this->_content_type = 'text/html';
+        }
+        
+
     }
 
     public function beforeDelete() {

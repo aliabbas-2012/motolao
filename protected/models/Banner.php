@@ -21,6 +21,7 @@ class Banner extends DTActiveRecord {
 
     public $uploaded_img = "";
     public $no_image;
+    public $_supported_formates = array("mp4", 'ogg', 'webm');
 
     /**
      * upload instance and index for multiple uploader
@@ -63,12 +64,24 @@ class Banner extends DTActiveRecord {
             array('image_large', 'file', 'allowEmpty' => $this->isNewRecord ? false : true,
                 'types' => 'jpg,jpeg,gif,png,JPG,JPEG,GIF,PNG'),
             array('alt, title, image_large', 'length', 'max' => 150),
+            array("video_tag_embedded_code", 'validateVideoUrl'),
             array('video_tag_embedded_code, activity_log', 'safe'),
             array('width,height', 'safe'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, lang_id, key, alt, title, image_large, video_tag_embedded_code, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
         );
+    }
+
+    /**
+     * supported formate
+     */
+    public function validateVideoUrl() {
+        if (!empty($this->video_tag_embedded_code)) {
+            if (!strstr($this->video_tag_embedded_code, "http") || !strstr($this->video_tag_embedded_code, "http")) {
+                $this->addError("video_tag_embedded_code", "Video Url not in valid format");
+            }
+        }
     }
 
     /**
