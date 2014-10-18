@@ -31,3 +31,6 @@ div.no-margin {
 input.error {
     border: 1px solid red;
 }
+#myCarousel {
+    background: #000;
+}

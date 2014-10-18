@@ -26,7 +26,12 @@ if (!empty($sliders)):
                             "style" => "width:100%",
                         ));
                     else:
-                        echo $slider->video_tag_embedded_code;
+                        ?>
+                        <video width="100%" height="408px" controls  poster="<?php echo $slider->image_url['image_large']; ?>">
+                            <source src="<?php echo $slider->video_tag_embedded_code; ?>" type="video/mp4" />
+                        </video>
+                        <?php
+                        
                     endif;
                     ?>
                     <div class="container">

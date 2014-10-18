@@ -93,7 +93,7 @@ class Banner extends DTActiveRecord {
             'alt' => 'Alt',
             'title' => 'Title',
             'image_large' => 'Image Large',
-            'video_tag_embedded_code' => 'Video Tag Embedded Code',
+            'video_tag_embedded_code' => 'Video Url',
             'create_time' => 'Create Time',
             'create_user_id' => 'Create User',
             'update_time' => 'Update Time',
