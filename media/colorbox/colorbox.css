@@ -20,34 +20,34 @@
     Change the following styles to modify the appearance of Colorbox.  They are
     ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
-#cboxOverlay{background:#fff;}
+#cboxOverlay{background:#000;}
 #colorbox{outline:0;}
-    #cboxTopLeft{width:25px; height:25px; }
-    #cboxTopCenter{height:25px; }
-    #cboxTopRight{width:25px; height:25px; }
-    #cboxBottomLeft{width:25px; height:25px; }
-    #cboxBottomCenter{height:25px; }
-    #cboxBottomRight{width:25px; height:25px; ;}
-    #cboxMiddleLeft{width:25px; }
-    #cboxMiddleRight{width:25px; }
-    #cboxContent{background:#fff; overflow:hidden;}
-        .cboxIframe{background:#fff;}
-        #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{margin-bottom:20px;}
-        #cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
-        #cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
-        #cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 5px 5px;}
+#cboxTopLeft{width:25px; height:25px; }
+#cboxTopCenter{height:25px; }
+#cboxTopRight{width:25px; height:25px; }
+#cboxBottomLeft{width:25px; height:25px; }
+#cboxBottomCenter{height:25px; }
+#cboxBottomRight{width:25px; height:25px; ;}
+#cboxMiddleLeft{width:25px; }
+#cboxMiddleRight{width:25px; }
+#cboxContent{background:#fff; overflow:hidden;}
+.cboxIframe{background:#fff;}
+#cboxError{padding:50px; border:1px solid #ccc;}
+#cboxLoadedContent{margin-bottom:20px;}
+#cboxTitle{position:absolute; bottom:0px; left:0; text-align:center; width:100%; color:#999;}
+#cboxCurrent{position:absolute; bottom:0px; left:100px; color:#999;}
+#cboxLoadingOverlay{background:#fff url(images/loading.gif) no-repeat 5px 5px;}
 
-        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
-        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
-        
-        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
-        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+/* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+#cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
 
-        #cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
-        #cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
-        #cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
-        #cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
+/* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+#cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+#cboxSlideshow{position:absolute; bottom:0px; right:42px; color:#444;}
+#cboxPrevious{position:absolute; bottom:0px; left:0; color:#444;}
+#cboxNext{position:absolute; bottom:0px; left:63px; color:#444;}
+#cboxClose{position:absolute; bottom:0; right:0; display:block; color:#444;}
 
 /*
   The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
