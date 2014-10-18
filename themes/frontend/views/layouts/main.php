@@ -230,6 +230,18 @@
                         $("#ContactForm_subject").val($(this).attr("tour-name"));
                     }
                 });
+                jQuery(document).on('click', 'video', function() {
+                    console.log(this.paused);
+                    if (this.paused == true) {
+                        $('#myCarousel').carousel('pause');
+
+                    }
+                    else {
+                        $('#myCarousel').carousel('cycle');
+
+                    }
+                });
+
             })
         </script> 
     </body>

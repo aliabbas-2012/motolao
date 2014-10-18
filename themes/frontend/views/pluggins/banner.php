@@ -9,7 +9,7 @@ $criteria->params = array(
 $sliders = Banner::model()->findAll($criteria);
 if (!empty($sliders)):
     ?>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="12000"> 
 
         <div class="carousel-inner">
             <?php
@@ -52,3 +52,5 @@ if (!empty($sliders)):
     <?php
 endif;
 ?>
+
+    
