@@ -17,7 +17,8 @@ class m141020_184507_addCopyOfData extends DTDbMigration {
             if ($model->save(false)) {
                 $folder_array = array("moto-dairy", $model->id,);
                 $dest = DTUploadedFile::getRecurSiveDirectories($folder_array);
-                DTUploadedFile::copyr($source, $dest);
+                //DTUploadedFile::copyr($source, $dest);
+                
             }
         }
         

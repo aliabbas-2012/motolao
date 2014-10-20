@@ -17,7 +17,7 @@ class m141020_191407_MotoGallaryDuplicate extends DTDbMigration {
             if ($model->save(false)) {
                 $folder_array = array("moto-gallery", $model->id,);
                 $dest = DTUploadedFile::getRecurSiveDirectories($folder_array);
-                DTUploadedFile::copyr($source, $dest);
+                //DTUploadedFile::copyr($source, $dest);
             }
         }
     }
