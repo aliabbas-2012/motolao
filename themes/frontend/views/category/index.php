@@ -42,7 +42,16 @@
         $criteria = new CDbCriteria();
         $criteria->addCondition("category_id = :category_id");
         $criteria->params = array(":category_id" => $model->id);
-        $tours = Tour::model()->findAll($criteria);
+        $tours_data = new CActiveDataProvider('Tour', array(
+            'criteria' => $criteria,
+            'pagination' => array(
+                'pageSize' => 4,
+            ),
+            'sort' => array(
+                'defaultOrder' => 'id DESC',
+            )
+        ));
+        $tours = $tours_data->getData();
 
         foreach ($tours as $tour):
             if ($tour->tour_images_display_def_count > 0) {
@@ -73,8 +82,6 @@
         endforeach;
         ?>
         <!-- end: About Member -->
-
-
     </div>
     <!-- end: Tours List -->	
     <!-- start: Row -->
