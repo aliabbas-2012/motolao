@@ -50,27 +50,29 @@ class DTActiveRecord extends CActiveRecord {
 
     protected function beforeValidate() {
 
+        if (!$this->isCommandLineInterface()) {
+            $this->_action = Yii::app()->controller->action->id;
+            if ($this->isNewRecord) {
 
-        $this->_action = Yii::app()->controller->action->id;
-        if ($this->isNewRecord) {
+                // set the create date, last updated date and the user doing the creating
+                $this->create_time = $this->update_time = date("Y-m-d H:i:s"); //new CDbExpression('NOW()');
+                $this->create_user_id = $this->update_user_id = Yii::app()->user->id;
+                // $this->users_id=1;//$this->update_user_id=Yii::app()->user->id;
+            } else {
+                //not a new record, so just set the last updated time and last updated user id
+                $this->update_time = new CDbExpression('NOW()');
+                $this->update_user_id = Yii::app()->user->id;
+                // $this->users_id=1;
+            }
+            /**
+              special conidtion
+             */
+            if (empty(Yii::app()->user->id)) {
+                $this->create_user_id = 1;
+                $this->update_user_id = 1;
+            }
+        }
 
-            // set the create date, last updated date and the user doing the creating
-            $this->create_time = $this->update_time = date("Y-m-d H:i:s"); //new CDbExpression('NOW()');
-            $this->create_user_id = $this->update_user_id = Yii::app()->user->id;
-            // $this->users_id=1;//$this->update_user_id=Yii::app()->user->id;
-        } else {
-            //not a new record, so just set the last updated time and last updated user id
-            $this->update_time = new CDbExpression('NOW()');
-            $this->update_user_id = Yii::app()->user->id;
-            // $this->users_id=1;
-        }
-        /**
-          special conidtion
-         */
-        if (empty(Yii::app()->user->id)) {
-            $this->create_user_id = 1;
-            $this->update_user_id = 1;
-        }
         parent::beforeValidate();
         $this->attributes = $this->decodeArray($this->attributes);
         return true;

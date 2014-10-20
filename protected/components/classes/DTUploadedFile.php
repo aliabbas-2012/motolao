@@ -65,6 +65,37 @@ class DTUploadedFile extends CUploadedFile {
         return $newPath . DIRECTORY_SEPARATOR;
     }
 
+    public static function copyr($source, $dest) {
+        // Simple copy for a file
+        if (is_file($source)) {
+            return copy($source, $dest);
+        }
+
+        // Make destination directory
+        if (!is_dir($dest)) {
+            mkdir($dest);
+
+        }
+
+        // Loop through the folder
+        $dir = dir($source);
+        while (false !== $entry = $dir->read()) {
+            // Skip pointers
+            if ($entry == '.' || $entry == '..') {
+                continue;
+            }
+
+            // Deep copy directories
+            if ($dest !== "$source/$entry") {
+                self::copyr("$source/$entry", "$dest/$entry");
+            }
+        }
+
+        // Clean up
+        $dir->close();
+        return true;
+    }
+
     /**
      * to delete to folder recursivly data
      * @param type $folder 
