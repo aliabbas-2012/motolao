@@ -26,7 +26,7 @@
                 ":lang_id" => $this->lang_id,
             );
 
-            $daries = new CActiveDataProvider('MotoDairy', array(
+            $dariesProvider = new CActiveDataProvider('MotoDairy', array(
                 'criteria' => $criteria,
                 'pagination' => array(
                     'pageSize' => 6,
@@ -35,7 +35,7 @@
                     'defaultOrder' => 'id DESC , lang_id DESC',
                 )
             ));
-            $daries = $daries->getData();
+            $daries = $dariesProvider->getData();
             $daries_seg = array_chunk($daries, 3);
             $this->renderPartial("//default/_diary_partial", array("daries_seg" => $daries_seg));
             ?>
@@ -48,6 +48,16 @@
 
 
 <div class="lineseperation"></div>
-<a href="#" class="load">Load more</a>
-<pre></pre>
+<a href="javascript:void(0)" class="load">Load more</a>
+<div style="display: none">
+    <?php
+    $this->widget('ext.BootstrapLinkPager', array(
+        'pages' => $dariesProvider->getPagination(),
+        'header' => '',
+        'htmlOptions' => array('class' => 'pagination')
+            )
+    );
+    ?> 
+</div>
+
 

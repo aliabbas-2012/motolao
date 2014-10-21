@@ -234,6 +234,11 @@
                         $("#ContactForm_subject").val($(this).attr("tour-name"));
                     }
                 });
+                var homeLoader = $('body').loadingIndicator({
+                    useImage: false,
+                }).data("loadingIndicator");
+
+                homeLoader.hide();
                 jQuery(document).on('click', 'video', function() {
                     console.log(this.paused);
                     if (this.paused == true) {

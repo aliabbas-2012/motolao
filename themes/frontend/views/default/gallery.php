@@ -27,7 +27,16 @@
             $criteria->params = array(
                 ":lang_id" => $this->lang_id,
             );
-            $gallaries = MotoGallery::model()->findAll($criteria);
+            $gallariesProvider = new CActiveDataProvider('MotoGallery', array(
+                'criteria' => $criteria,
+                'pagination' => array(
+                    'pageSize' => 6,
+                ),
+                'sort' => array(
+                    'defaultOrder' => 'id DESC , lang_id DESC',
+                )
+            ));
+            $gallaries = $gallariesProvider->getData();
             $this->renderPartial("//default/_gallery_partial", array("gallaries" => $gallaries))
             ?>
         </ul>
@@ -38,3 +47,13 @@
 
 <div class="lineseperation"></div>
 <a href="javascript:void(0)" class="load"><?php echo Yii::t("gallery", "Load more"); ?></a>
+<div style="display: none">
+    <?php
+    $this->widget('ext.BootstrapLinkPager', array(
+        'pages' => $gallariesProvider->getPagination(),
+        'header' => '',
+        'htmlOptions' => array('class' => 'pagination')
+            )
+    );
+    ?> 
+</div>
