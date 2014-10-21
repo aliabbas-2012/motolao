@@ -37,12 +37,16 @@
         <!-- colorbox -->
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/colorbox/colorbox.css" />
         <!-- end: CSS -->
+        <!-- indicator css -->
+        <link type="text/css" rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/media/indicator/jquery.loading-indicator.css" />
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery-2.1.1.min.js"></script>
+        <!-- indicator js  -->
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/indicator/jquery.loading-indicator.js"></script>
 
 
     </head>
