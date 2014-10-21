@@ -130,3 +130,8 @@ function submitAjaxContact() {
         event.preventDefault();
     });
 }
+
+function loadMore(){
+    $(".loading-indicator-wrapper").css("height",$(document).height()+"px");
+    homeLoader.show();
+}

@@ -48,7 +48,7 @@
 
 
 <div class="lineseperation"></div>
-<a href="javascript:void(0)" class="load">Load more</a>
+<a href="javascript:void(0)" onclick="loadMore()" class="load">Load more</a>
 <div style="display: none">
     <?php
     $this->widget('ext.BootstrapLinkPager', array(

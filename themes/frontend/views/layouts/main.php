@@ -45,8 +45,7 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery-2.1.1.min.js"></script>
-        <!-- indicator js  -->
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/indicator/jquery.loading-indicator.js"></script>
+
 
 
     </head>
@@ -226,7 +225,10 @@
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/bootstrap-gallery/js/bootstrap-image-gallery.js"></script>
         <!--colorbox -->
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/colorbox/jquery.colorbox.js"></script>
+        <!-- indicator js  -->
+        <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/indicator/jquery.loading-indicator.js"></script>
         <script type="text/javascript">
+            var homeLoader = '';
             jQuery(function() {
                 jQuery('#blueimp-gallery').data('fullScreen', true);
                 jQuery(".colorbox").colorbox({inline: true, width: "50%", title: function() {
@@ -234,7 +236,7 @@
                         $("#ContactForm_subject").val($(this).attr("tour-name"));
                     }
                 });
-                var homeLoader = $('body').loadingIndicator({
+                homeLoader = jQuery('#final-tg').loadingIndicator({
                     useImage: false,
                 }).data("loadingIndicator");
 
