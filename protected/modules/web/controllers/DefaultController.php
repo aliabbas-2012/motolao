@@ -14,7 +14,7 @@ class DefaultController extends PublicController {
     public $layout = "//layouts/main";
 
     public function actionIndex() {
-        
+
         $this->page_key = "home";
         $this->setMetaInformation();
         $this->render('//default/index');
@@ -49,7 +49,26 @@ class DefaultController extends PublicController {
      */
     public function actionGallery() {
         $this->page_key = "gallery";
-        $this->render('//default/gallery');
+        if (isset($_POST['ajax'])) {
+            $criteria = new CDbCriteria();
+            $criteria->addCondition("lang_id = :lang_id");
+            $criteria->params = array(
+                ":lang_id" => $this->lang_id,
+            );
+            $gallariesProvider = new CActiveDataProvider('MotoGallery', array(
+                'criteria' => $criteria,
+                'pagination' => array(
+                    'pageSize' => 6,
+                ),
+                'sort' => array(
+                    'defaultOrder' => 'id DESC , lang_id DESC',
+                )
+            ));
+            $gallaries = $gallariesProvider->getData();
+            $this->renderPartial("//default/_gallery_partial", array("gallaries" => $gallaries));
+        } else {
+            $this->render('//default/gallery');
+        }
     }
 
     /**
@@ -71,7 +90,28 @@ class DefaultController extends PublicController {
      */
     public function actionDairies() {
         $this->page_key = "daries";
-        $this->render('//default/dairies');
+        if (isset($_POST['ajax'])) {
+            $criteria = new CDbCriteria();
+            $criteria->addCondition("lang_id = :lang_id");
+            $criteria->params = array(
+                ":lang_id" => $this->lang_id,
+            );
+
+            $dariesProvider = new CActiveDataProvider('MotoDairy', array(
+                'criteria' => $criteria,
+                'pagination' => array(
+                    'pageSize' => 6,
+                ),
+                'sort' => array(
+                    'defaultOrder' => 'id DESC , lang_id DESC',
+                )
+            ));
+            $daries = $dariesProvider->getData();
+            $daries_seg = array_chunk($daries, 3);
+            $this->renderPartial('//default/_diary_partial', array("daries_seg" => $daries_seg));
+        } else {
+            $this->render('//default/dairies');
+        }
     }
 
     /**

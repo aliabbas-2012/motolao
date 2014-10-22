@@ -37,7 +37,7 @@
                 )
             ));
             $gallaries = $gallariesProvider->getData();
-            $this->renderPartial("//default/_gallery_partial", array("gallaries" => $gallaries))
+            $this->renderPartial("//default/_gallery_partial", array("gallaries" => $gallaries));
             ?>
         </ul>
     </section>
@@ -46,7 +46,7 @@
 <!--end: Container-->
 
 <div class="lineseperation"></div>
-<a href="javascript:void(0)" class="load"><?php echo Yii::t("gallery", "Load more"); ?></a>
+<a href="javascript:void(0)" class="load" onclick="loadMore()"><?php echo Yii::t("gallery", "Load more"); ?></a>
 <div style="display: none">
     <?php
     $this->widget('ext.BootstrapLinkPager', array(
