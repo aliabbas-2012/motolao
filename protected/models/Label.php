@@ -104,7 +104,7 @@ class Label extends DTActiveRecord {
         $criteria->compare('id', $this->id, true);
         $criteria->compare('lang_id', $this->lang_id, true);
         $criteria->compare('category', $this->category, true);
-        $criteria->compare('key', $this->key, true);
+        $criteria->compare('t.key', $this->key, true);
         $criteria->compare('value', $this->value, true);
         $criteria->compare('create_time', $this->create_time, true);
         $criteria->compare('create_user_id', $this->create_user_id, true);

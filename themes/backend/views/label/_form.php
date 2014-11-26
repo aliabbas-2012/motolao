@@ -72,7 +72,7 @@
                         <div class="form-group">
                             <?php echo $form->labelEx($model, 'value', array('class' => 'control-label col-lg-2')); ?>
                             <div class="col-lg-8">
-                                <?php echo $form->textArea($model, 'value', array('class' => 'form-control', 'maxlength' => 150,)); ?>
+                                <?php echo $form->textArea($model, 'value', array('class' => 'form-control', )); ?>
                                 <?php echo $form->error($model, 'value'); ?>
 
                             </div>
