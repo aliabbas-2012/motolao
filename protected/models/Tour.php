@@ -56,7 +56,6 @@ class Tour extends DTActiveRecord {
      */
     public function behaviors() {
         return array(
-       
             'DTMultiLangBehaviour' => array(
                 'class' => 'DTMultiLangBehaviour',
                 'langClassName' => 'TourLang',
@@ -64,8 +63,8 @@ class Tour extends DTActiveRecord {
                 'langTableName' => 'tour_langs',
                 'langForeignKey' => 'parent_id',
                 'localizedAttributes' => array(
-                    'name', 
-                    'short_title', 
+                    'name',
+                    'short_title',
                     'tour_type',
                     'meta_title',
                     'meta_description',
@@ -73,7 +72,6 @@ class Tour extends DTActiveRecord {
                     'short_description',
                 ), //attributes of the model to be translated
                 'localizedPrefix' => '',
-               
                 'defaultLanguage' => 'en', //your main language. Example : 'fr'
             ),
         );
@@ -138,7 +136,11 @@ class Tour extends DTActiveRecord {
         $criteria->compare('name', $this->name, true);
         $criteria->compare('short_title', $this->short_title, true);
         $criteria->compare('tour_type', $this->tour_type, true);
-        $criteria->compare('category_id', $this->category_id);
+        //$criteria->compare('category_id', $this->category_id);
+
+        if ($id = $this->getCategoryId($this->name) != '') {
+            $criteria->compare('category_id', $id);
+        }
         $criteria->compare('url', $this->url, true);
         $criteria->compare('meta_title', $this->meta_title, true);
         $criteria->compare('meta_description', $this->meta_description, true);
@@ -153,6 +155,19 @@ class Tour extends DTActiveRecord {
         return new CActiveDataProvider('Tour', array(
             'criteria' => $criteria,
         ));
+    }
+
+    /**
+     * 
+     * @param type $name
+     */
+    public function getCategoryId($name) {
+        $criteria = new CDbCriteria;
+        $criteria->compare('name', $name, true);
+        $criteria->select = 'id';
+        if ($model = Category::model()->find($criteria)) {
+            return $model->id;
+        }
     }
 
     /**

@@ -109,7 +109,10 @@ class Pages extends DTActiveRecord {
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id, true);
-        $criteria->compare('lang_id', $this->lang_id, true);
+//        $criteria->compare('lang_id', $this->lang_id, true);
+        if ($id = $this->getLanguageId($this->lang_id) != '') {
+            $criteria->compare('lang_id', $id);
+        }
         $criteria->compare('key', $this->key, true);
         $criteria->compare('title', $this->title, true);
         $criteria->compare('url', $this->url, true);
@@ -124,6 +127,19 @@ class Pages extends DTActiveRecord {
         return new CActiveDataProvider($this, array(
             'criteria' => $criteria,
         ));
+    }
+
+    /**
+     * 
+     * @param type $name
+     */
+    public function getLanguageId($name) {
+        $criteria = new CDbCriteria;
+        $criteria->compare('name', $name, true);
+        $criteria->select = 'id';
+        if ($model = Language::model()->find($criteria)) {
+            return $model->id;
+        }
     }
 
     /**
