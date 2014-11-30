@@ -46,7 +46,11 @@
         <![endif]-->
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery-2.1.1.min.js"></script>
 
+        <script>
+            var homeLoader = '';
 
+
+        </script>    
 
     </head>
     <body>
@@ -210,6 +214,7 @@
                 </div>
             </div>
         </div>
+        <div id="final-tg"></div>
 
         <!-- start: Java Script -->
         <!-- Placed at the end of the document so the pages load faster -->
