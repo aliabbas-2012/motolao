@@ -125,6 +125,7 @@ function submitAjaxContact() {
                         alert("Thank you for feed back");
                     }
                     
+                    submitAjaxContact();
                     
                     if($("#cboxLoadedContent input.error").length==0){
                         document.location.reload();

@@ -96,4 +96,7 @@
 Yii::app()->clientScript->registerScript('contact_formsubmit', '
  submitAjaxContact();
 ', CClientScript::POS_READY);
+
+
+
 ?>
