@@ -21,19 +21,19 @@
 <div class="line"></div>
 <div class="clients-carousel">
     <div class="logosign">
-        <a class="brand" href="dairies.html" 
+        <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" 
            title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>">
             <img src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/img/icons/motolao_icons/star.png" alt="Motolao Dairies Logo" />
         </a>
     </div>
 
-    <a class="brand" href="dairies.html" 
+    <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" 
        title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>">
         <h2><?php echo Yii::t("home", "LAO MOTORCYCLE DAIRIES"); ?></h2>
     </a>
-    <a class="brand" href="dairies.html" title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>">
+    <a class="brand" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" title="<?php echo Yii::t("home", "Motolao I Adventure Tours in Laos"); ?>">
         <h3><?php echo Yii::t("home", "We are pleased to present new tour packages"); ?></h3></a>
-    <div class="diarybutton"><a class="btn btn-lg btn-primary" href="dairies.html" role="button"><?php echo Yii::t("home", "Browse our diaries"); ?></a><p></p></div>
+    <div class="diarybutton"><a class="btn btn-lg btn-primary" href="<?php echo $this->createUrl("/web/default/dairies"); ?>" role="button"><?php echo Yii::t("home", "Browse our diaries"); ?></a><p></p></div>
 
 </div>    
 
