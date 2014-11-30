@@ -19,6 +19,8 @@
     <div class="menu span12">
 
         <a href="<?php echo $this->createUrl("/web/category/index", array('category' => $model->url)) ?>" title="" class="viewtours"><?php echo Yii::t("category", "VIEW " . $model->name . " TOURS"); ?></a>
+        <a href="<?php echo $this->createUrl("/web/category/index", array("category" => $model->category->url)); ?>" title="" class="viewtours"><?php echo Yii::t("category", "Go Back"); ?></a>
+        
         <?php
         $criteria = new CDbCriteria();
         $criteria->limit = '12';
