@@ -18,7 +18,7 @@ foreach ($gallaries as $gallery):
             $content_type = $gallery->_content_type;
         endif;
         ?>
-        <a type="<?php echo $content_type; ?>" data-gallery="" href="<?php echo $url; ?>" 
+        <a fullscreen="false" type="<?php echo $content_type; ?>" data-gallery="" href="<?php echo $url; ?>" 
            class="thumbnail <?php echo $gallery->land_scape; ?>" target="_blank">
             <?php
             echo CHtml::image($gallery->image_url['image_large'], $gallery->alt, array(

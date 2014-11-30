@@ -233,6 +233,10 @@
         <!-- indicator js  -->
         <script src="<?php echo Yii::app()->request->baseUrl; ?>/media/indicator/jquery.loading-indicator.js"></script>
         <script type="text/javascript">
+            var fullscreenOptions = {
+                // Defines if the gallery should open in fullscreen mode:
+                fullScreen: false
+            };
             var homeLoader = '';
             jQuery(function() {
                 jQuery('#blueimp-gallery').data('fullScreen', true);
@@ -257,6 +261,9 @@
 
                     }
                 });
+                $('#blueimp-gallery').data('fullScreen', false);
+                
+                
 
             })
         </script> 
