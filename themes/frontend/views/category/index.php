@@ -18,7 +18,7 @@
 
         <a href="<?php echo $this->createUrl("/web/category/index", array('category' => $model->url)) ?>" title="" class="viewtours"><?php echo Yii::t("category", "VIEW " . $model->name . " TOURS"); ?></a>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle-tour" data-toggle="dropdown">
+            <a href="javascript:void(0)" class="dropdown-toggle-tour" data-toggle="dropdown">
                 <?php echo Yii::t("category", "Quick Search"); ?>
                 <b class="caret"></b></a>
             <ul class="dropdown-menu">

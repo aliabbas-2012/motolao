@@ -117,18 +117,26 @@ function submitAjaxContact() {
                 function(response) {
                     $("#cboxLoadingOverlay").hide();
                     $("#cboxLoadedContent").html(response);
+                    
                     if (!response.success) {
                         alert('Failure!');
                     }
                     else {
                         alert("Thank you for feed back");
                     }
+                    
+                    
+                    if($("#cboxLoadedContent input.error").length==0){
+                        document.location.reload();
+                    }
 
-                    document.location.reload();
+                   
                 }
         );
         event.preventDefault();
     });
+    
+    return false;
 }
 
 function loadMore() {

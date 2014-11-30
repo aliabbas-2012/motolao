@@ -20,13 +20,11 @@ class CategoryController extends PublicController {
             $contact->attributes = $_POST['ContactForm'];
             $this->sentContactEmail($contact);
         }
-        if(isset($_GET['ajax'])){
-             $this->renderPartial('//default/_contact_form', array('model' => $contact));
-        }
-        else {
+        if (isset($_GET['ajax'])) {
+            $this->renderPartial('//default/_contact_form', array('model' => $contact));
+        } else {
             $this->render('//category/index', array('model' => $model, "contact" => $contact));
         }
-        
     }
 
     /**
@@ -44,7 +42,18 @@ class CategoryController extends PublicController {
         $this->meta_keywords = $model->meta_title;
         $this->meta_description = $model->meta_description;
 
-        $this->render('//category/detail', array('model' => $model));
+        //contact us model
+
+        $contact = new ContactForm;
+        if (isset($_POST['ContactForm'])) {
+            $contact->attributes = $_POST['ContactForm'];
+            $this->sentContactEmail($contact);
+        }
+        if (isset($_GET['ajax'])) {
+            $this->renderPartial('//default/_contact_form', array('model' => $contact));
+        } else {
+            $this->render('//category/detail', array('model' => $model, "contact" => $contact));
+        }
     }
 
 }

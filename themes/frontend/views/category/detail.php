@@ -28,7 +28,7 @@
         if ($tours = Tour::model()->findAll($criteria)) {
             ?>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle-tour" data-toggle="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle-tour" data-toggle="dropdown">
                     <?php echo Yii::t("category", "Quick Search"); ?>
                     <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -82,8 +82,18 @@
 
 </div>
 <!--end: Container-->
-<div class="diarybutton"><a class="btn btn-lg btn-primary" href="<?php echo $this->createUrl("/web/default/contact"); ?>" role="button"><?php echo Yii::t("links", "Contact Us"); ?></a><p></p></div>
+<div class="diarybutton"><a href="#contact-form" class="btn btn-lg btn-primary info colorbox"  role="button"><?php echo Yii::t("links", "Contact Us"); ?></a><p></p></div>
 
 <div class="lineseperation"></div>
 
 
+<div style='display:none'>
+    <?php
+    $this->renderPartial("//default/_contact_form", array("model" => $contact));
+    ?>
+</div>
+<?php
+Yii::app()->clientScript->registerScript('contact_formsubmit', '
+ submitAjaxContact();
+', CClientScript::POS_READY);
+?>
