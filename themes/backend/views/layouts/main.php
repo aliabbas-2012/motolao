@@ -62,6 +62,8 @@
                             </li>
                             <li><a href='<?php echo $this->createUrl("/configurations/load", array("m" => "TourType", "child_id" => "new")); ?>'><i class="fa fa-gear fa-fw"></i>Configuration</a>
                             </li>
+                            <li><a href='<?php echo $this->createUrl("/configurations/load", array("m" => "ContactUsSetting", "id"=>1, "child_id" => "new")); ?>'><i class="fa fa-gear fa-fw"></i>Contact Us</a>
+                            </li>
                             <li class="divider"></li>
                             <li><a href="<?php echo $this->createUrl("/site/logout"); ?>"><i class="fa fa-sign-out fa-fw"></i>Logout</a>
                             </li>

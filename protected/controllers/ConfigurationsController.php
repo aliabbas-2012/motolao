@@ -42,7 +42,7 @@ class ConfigurationsController extends Controller {
 
         /* Complete Model name */
         $model_name = 'Conf' . $m;
-//        echo $model_name;die;   
+        
 
         /* For add new or update */
         $model = new $model_name;
