@@ -59,6 +59,7 @@
             } else {
                 $image = $tour->tour_images_display;
             }
+            
             ?>
             <div class="span6">
                 <div class="avatar view-team">
