@@ -12,14 +12,12 @@ if (!$model->isNewRecord) {
                     <div class="row">
                         <div class="col-lg-9">
                             <?php
-                          
                             $form = $this->beginWidget('CActiveForm', array(
                                 'id' => 'faq-form',
                                 'enableAjaxValidation' => false,
                                 'htmlOptions' => array(
                                     'class' => 'form-horizontal'
                                 ),
-                     
                             ));
                             ?>
 
@@ -59,7 +57,7 @@ if (!$model->isNewRecord) {
                             </div><!-- group -->
                             <div class="form-group">
                                 <?php echo $form->labelEx($model, 'facebook', array('class' => 'control-label col-lg-2')); ?>
-                                <div class="col-lg-4">
+                                <div class="col-lg-10">
                                     <?php echo $form->textField($model, 'facebook', array('class' => 'form-control', 'maxlength' => 250)); ?>
                                     <?php echo $form->error($model, 'facebook'); ?>
 
@@ -68,7 +66,7 @@ if (!$model->isNewRecord) {
                             </div><!-- group -->
                             <div class="form-group">
                                 <?php echo $form->labelEx($model, 'google_plus', array('class' => 'control-label col-lg-2')); ?>
-                                <div class="col-lg-4">
+                                <div class="col-lg-10">
                                     <?php echo $form->textField($model, 'google_plus', array('class' => 'form-control', 'maxlength' => 250)); ?>
                                     <?php echo $form->error($model, 'google_plus'); ?>
 
@@ -77,7 +75,7 @@ if (!$model->isNewRecord) {
                             </div><!-- group -->
                             <div class="form-group">
                                 <?php echo $form->labelEx($model, 'print_rest', array('class' => 'control-label col-lg-2')); ?>
-                                <div class="col-lg-4">
+                                <div class="col-lg-10">
                                     <?php echo $form->textField($model, 'print_rest', array('class' => 'form-control', 'maxlength' => 250)); ?>
                                     <?php echo $form->error($model, 'print_rest'); ?>
 
@@ -86,7 +84,7 @@ if (!$model->isNewRecord) {
                             </div><!-- group -->
                             <div class="form-group">
                                 <?php echo $form->labelEx($model, 'flicker', array('class' => 'control-label col-lg-2')); ?>
-                                <div class="col-lg-4">
+                                <div class="col-lg-10">
                                     <?php echo $form->textField($model, 'flicker', array('class' => 'form-control', 'maxlength' => 250)); ?>
                                     <?php echo $form->error($model, 'flicker'); ?>
 
@@ -95,18 +93,28 @@ if (!$model->isNewRecord) {
                             </div><!-- group -->
                             <div class="form-group">
                                 <?php echo $form->labelEx($model, 'youtube', array('class' => 'control-label col-lg-2')); ?>
-                                <div class="col-lg-4">
+                                <div class="col-lg-10">
                                     <?php echo $form->textField($model, 'youtube', array('class' => 'form-control', 'maxlength' => 250)); ?>
                                     <?php echo $form->error($model, 'youtube'); ?>
 
                                 </div>
 
                             </div><!-- group -->
+
                             <div class="form-group">
                                 <?php echo $form->labelEx($model, 'address', array('class' => 'control-label col-lg-2')); ?>
-                                <div class="col-lg-4">
-                                    <?php echo $form->textField($model, 'address', array('class' => 'form-control', 'maxlength' => 250)); ?>
+                                <div class="col-lg-10">
+                                    <?php echo $form->textArea($model, 'address', array('class' => 'form-control', 'maxlength' => 250)); ?>
                                     <?php echo $form->error($model, 'address'); ?>
+
+                                </div>
+
+                            </div><!-- group -->
+                            <div class="form-group">
+                                <?php echo $form->labelEx($model, 'search_address', array('class' => 'control-label col-lg-2')); ?>
+                                <div class="col-lg-10">
+                                    <?php echo $form->textField($model, 'search_address', array('class' => 'form-control', 'maxlength' => 250)); ?>
+                                    <?php echo $form->error($model, 'search_address'); ?>
 
                                 </div>
 

@@ -25,6 +25,7 @@
 class ConfContactUsSetting extends DTActiveRecord {
 
     public $confViewName = '//confContactUsSetting/index';
+    public $search_address;
 
     /**
      * @return string the associated database table name
@@ -43,7 +44,8 @@ class ConfContactUsSetting extends DTActiveRecord {
             array('create_time, create_user_id, update_time, update_user_id', 'required'),
             array('address, email, phone, skype, facebook, google_plus, print_rest, flicker, youtube, lat, lng', 'length', 'max' => 250),
             array('create_user_id, update_user_id', 'length', 'max' => 11),
-            array('activity_log', 'safe'),
+            array('search_address,activity_log', 'safe'),
+            array("email", 'email'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('id, address, email, phone, skype, facebook, google_plus, print_rest, flicker, youtube, lat, lng, create_time, create_user_id, update_time, update_user_id, activity_log', 'safe', 'on' => 'search'),
