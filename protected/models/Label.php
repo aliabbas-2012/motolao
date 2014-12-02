@@ -102,10 +102,15 @@ class Label extends DTActiveRecord {
         $criteria = new CDbCriteria;
 
         $criteria->compare('id', $this->id, true);
-        //        $criteria->compare('lang_id', $this->lang_id, true);
-        if ($id = $this->getLanguageId($this->lang_id) != '') {
-            $criteria->compare('lang_id', $id);
+          
+        $lang_id = $this->getLanguageId($this->lang_id);
+        if(!empty($lang_id)){
+            $criteria->compare('lang_id', $lang_id);
         }
+        else {
+             $criteria->compare('lang_id', $this->lang_id, true);
+        }
+       
         $criteria->compare('category', $this->category, true);
         $criteria->compare('t.key', $this->key, true);
         $criteria->compare('value', $this->value, true);
