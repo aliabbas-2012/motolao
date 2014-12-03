@@ -47,7 +47,9 @@
 <!--end: Container-->
 <!-- start: Map -->
 <div id="contactwrap">
-
+    <?php
+        $contact_us = ConfContactUsSetting::model()->findByPk(1);
+    ?>
     <!-- starts: Google Maps -->
 
     <div id="address">
@@ -55,38 +57,38 @@
 
         <p>
             <b>
-                <?php echo Yii::t("contact", "MOTOLAO, BAN PHONE PEANG ROAD, 06030 LUANG PRABANG, LAO P.D.R."); ?>
+                <?php echo Yii::t("contact", $contact_us->address); ?>
             </b>
         </p>
         <p>
             <?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/email.png", Yii::t("contact", "Social Email"), array("title" => Yii::t("contact", "Social Email"))); ?>
-            <?php echo Yii::t("contact", "INFO@MOTOLAO.COM"); ?>
+            <?php echo Yii::t("contact", $contact_us->email); ?>
         </p>
         <p>	
-            <?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/phone.png", Yii::t("contact", "Social Phone"), array("title" => Yii::t("contact", "Social Phone"))); ?>+856 20 54 88 4865
+            <?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/phone.png", Yii::t("contact", "Social Phone"), array("title" => Yii::t("contact", "Social Phone"))); ?><?php echo $contact_us->phone; ?>
         </p>
         <p>	
 
             <?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/skype.png", Yii::t("contact", "Social Skype"), array("title" => Yii::t("contact", "Social Skype"))); ?>
-            <?php echo Yii::t("contact", "motolao-skype"); ?>
+            <?php echo Yii::t("contact", $contact_us->skype); ?>
         </p>
 
         <div id="footer-extramenu-social">
 
             <ul id="footerextra-nav-social">
-                <li><a href="javascript:void(0)" 
+                <li><a href="<?php echo $contact_us->facebook; ?>" 
                        title=""><?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/fb.png", Yii::t("contact", "Social FB"), array("title" => Yii::t("contact", "Social FB"))); ?></a>
                 </li>
-                <li><a href="javascript:void(0)" 
+                <li><a href="<?php echo $contact_us->google_plus; ?>" 
                        title=""><?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/google.png", Yii::t("contact", "Social google"), array("title" => Yii::t("contact", "Social google"))); ?></a>
                 </li>
-                <li><a href="javascript:void(0)" 
+                <li><a href="<?php echo $contact_us->print_rest; ?>" 
                        title=""><?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/printrest.png", Yii::t("contact", "Social printrest"), array("title" => Yii::t("contact", "Social printrest"))); ?></a>
                 </li>
-                <li><a href="javascript:void(0)" 
+                <li><a href="<?php echo $contact_us->flicker; ?>" 
                        title=""><?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/flickr.png", Yii::t("contact", "Social flickr"), array("title" => Yii::t("contact", "Social flickr"))); ?></a>
                 </li>
-                <li><a href="javascript:void(0)" 
+                <li><a href="<?php echo $contact_us->youtube; ?>" 
                        title=""><?php echo CHtml::image(Yii::app()->theme->baseUrl . "/assets/img/icons/social/youtube.png", Yii::t("contact", "Social youtube"), array("title" => Yii::t("contact", "Social youtube"))); ?></a>
                 </li>
 
@@ -105,6 +107,7 @@
     <div id="googlemaps-container-bottom"></div>
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <script src="<?php echo Yii::app()->theme->baseUrl . "/assets/" ?>js/jquery.gmap.min.js"></script>
+
     <script type="text/javascript">
         $('#googlemaps').gMap({
             maptype: 'ROADMAP',
@@ -112,9 +115,10 @@
             zoom: 13,
             markers: [
                 {
-                    address: 'Los Angeles, United States', // Your Adress Here
-                    
-                    html: '',
+                    //address: '', // Your Adress Here
+                    latitude: <?php echo $contact_us->lat; ?>,
+                    longitude: <?php echo $contact_us->lng; ?>,
+                    html: '<?php echo $contact_us->address; ?>',
                     popup: false,
                 }
 
