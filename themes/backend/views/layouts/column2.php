@@ -127,7 +127,7 @@ $pluggins_array = array(
                 </ul>
                 <!-- second-level-items -->
             </li>
-            <li class="<?php echo $this->id == "pages" ? "selected" : "" ?>">
+<!--            <li class="<?php echo $this->id == "pages" ? "selected" : "" ?>">
                 <a href="<?php echo $this->createUrl("/pages/index"); ?>"><i class="fa fa-edit fa-fw"></i> Pages<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
                     <li>
@@ -137,8 +137,8 @@ $pluggins_array = array(
                         <a href="<?php echo $this->createUrl("/pages/create/"); ?>">Create</a>
                     </li>
                 </ul>
-                <!-- second-level-items -->
-            </li>
+                 second-level-items 
+            </li>-->
             <li class="<?php echo $this->id == "label" ? "selected" : "" ?>">
                 <a href="<?php echo $this->createUrl("/label/index"); ?>"><i class="fa fa-edit fa-fw"></i> Labels<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
