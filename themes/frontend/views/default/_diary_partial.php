@@ -10,7 +10,7 @@ foreach ($daries_seg as $daries) {
             data-id-target="<?php echo $dairy->id . "-part"; ?>">
 
             <a href="javascript:void(0)" 
-               class="thumbnail <?php echo $dairy->land_scape; ?>" target="_blank">
+               class="thumbnail <?php echo $dairy->land_scape; ?>">
                 <?php
                 echo CHtml::image($dairy->image_url['image_large'], $dairy->alt, array(
                     "title" => $dairy->title,
