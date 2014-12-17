@@ -83,11 +83,9 @@ if ($this->page_key != "") {
                     <p>
                         <?php echo $item->description; ?>
                     </p>
-                    <?php
-                    if ($item->object_type == "tour") {
+                    <?php             
                         $tour = Tour::model()->find($item->id);
                         echo CHtml::link(Yii::t("home", "CONTINUE READING"), $this->createUrl("/web/category/detail", array("category" => $tour->category->url, "slug" => $tour->url)), array("class" => "info"));
-                    }
                     ?>
                     <br>
 
