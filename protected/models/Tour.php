@@ -23,6 +23,7 @@
 class Tour extends DTActiveRecord {
 
     public $_image;
+    public $_tour_type;
 
     /**
      * @return string the associated database table name
@@ -188,6 +189,7 @@ class Tour extends DTActiveRecord {
 //            //$this->_image = $this->tour_images[0]->image_url['image_large'];
 //        }
         $this->url = $this->id . "-" . $this->url;
+        
         return parent::afterFind();
     }
 

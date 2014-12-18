@@ -59,7 +59,7 @@
             } else {
                 $image = $tour->tour_images_display;
             }
-            
+            $tour->tour_type = isset($tour->tour_type_rel)?$tour->tour_type_rel->name:"";
             ?>
             <div class="span6">
                 <div class="avatar view-team">
