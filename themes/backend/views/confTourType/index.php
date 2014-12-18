@@ -6,7 +6,7 @@
 <div class="row">
     <!--  page header -->
     <div class="col-lg-12">
-        <h1 class="page-header">Manage Configurations Tour </h1>
+        <h1 class="page-header">Manage Configurations Tour Types </h1>
     </div>
     <!-- end  page header -->
 </div>

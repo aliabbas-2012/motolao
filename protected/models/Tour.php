@@ -85,6 +85,7 @@ class Tour extends DTActiveRecord {
         // class name for the relations automatically generated below.
         return array(
             'category' => array(self::BELONGS_TO, 'Category', 'category_id'),
+            'tour_type_rel' => array(self::BELONGS_TO, 'ConfTourType', 'tour_type'),
             'tour_langs' => array(self::HAS_MANY, 'TourLang', 'parent_id'),
             'tour_images' => array(self::HAS_MANY, 'TourImage', 'tour_id'),
             'tour_images_display_def' => array(self::HAS_ONE, 'TourImage', 'tour_id', 'condition' => 'is_default=1 '),

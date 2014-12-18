@@ -66,6 +66,7 @@
                                     "9 day" => "9 day",
                                     "10 day" => "10 day",
                                 );
+                                $tour_types = CHtml::listData(ConfTourType::model()->findAll(), 'id', 'name');
                                 ?>
                                 <?php echo $form->dropDownList($model, 'tour_type', $tour_types, array('class' => 'form-control', 'maxlength' => 150)); ?>
                                 <?php echo $form->error($model, 'tour_type'); ?>

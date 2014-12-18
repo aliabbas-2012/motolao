@@ -65,7 +65,11 @@ return false;
                         'columns' => array(
                             'name',
                             'short_title',
-                            'tour_type',
+                            array(
+                                'name' => 'tour_type',
+                                'value' => 'isset($data->tour_type) ? $data->tour_type_rel->name : ""',
+                                'type' => "raw",
+                            ),
                             array(
                                 'name' => 'category_id',
                                 'value' => 'isset($data->category)?$data->category->name:""'

@@ -133,4 +133,17 @@ class TourLang extends DTActiveRecord {
         return parent::model($className);
     }
 
+    /**
+     * 
+     * @return type
+     */
+    public function beforeSave() {
+        $criteria = new CDbCriteria();
+        $criteria->addCondition("lang_id = $this->lang_id AND parent_id = " . $this->tour->tour_type);
+        if ($tour_type = ConfTourTypeLang::model()->find($criteria)) {
+            $this->tour_type = $tour_type->id;
+        }
+        return parent::beforeSave();
+    }
+
 }

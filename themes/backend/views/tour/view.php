@@ -40,7 +40,12 @@ $this->menu = array(
                         'attributes' => array(
                             'name',
                             'short_title',
-                            'tour_type',
+          
+                            array(
+                                'name' => 'tour_type',
+                                'value' => isset($model->tour_type) ? $model->tour_type_rel->name : "",
+                                'type' => "raw",
+                            ),
                             array(
                                 'name' => 'category_id',
                                 'value' => isset($model->category) ? $model->category->name : "",
