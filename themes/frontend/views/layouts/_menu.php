@@ -50,14 +50,16 @@
             </li>
 
             <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle language" data-toggle="dropdown"><?php echo Yii::t("links", "EN"); ?><b class="caret"></b></a>
+                <a href="javascript:void(0)" class="dropdown-toggle language" data-toggle="dropdown"><?php echo Yii::t("links",  Yii::app()->language); ?><b class="caret"></b></a>
                 <ul class="dropdown-menu language">
                     <?php
                     $criteria = new CDbCriteria();
+                    $criteria->order = 'FIELD(code, "' . Yii::app()->language . '") DESC ';
                     $languages_db = CHtml::listData(Language::model()->findAll($criteria), "id", "code");
-                    foreach($languages_db as  $id => $code) {
+
+                    foreach ($languages_db as $id => $code) {
                         ?>
-                        <li><a href="<?php echo $this->createUrl("/web/default/index", array("lang"=>$code)) ?>" title=""><?php echo Yii::t("links", $code); ?></a></li>
+                        <li><a href="<?php echo $this->createUrl("/web/default/index", array("lang" => $code)) ?>" title=""><?php echo Yii::t("links", $code); ?></a></li>
                         <?php
                     }
                     ?>
