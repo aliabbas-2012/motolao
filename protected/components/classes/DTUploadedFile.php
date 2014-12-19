@@ -74,7 +74,6 @@ class DTUploadedFile extends CUploadedFile {
         // Make destination directory
         if (!is_dir($dest)) {
             mkdir($dest);
-
         }
 
         // Loop through the folder
@@ -250,6 +249,42 @@ class DTUploadedFile extends CUploadedFile {
           // save thumbnail into a file
           self::createImage($tmp_img, $pathToThumbs, $name, trim($info['extension']));
          * */
+    }
+    /**
+     *  Form motloa only
+     * @param type $src
+     * @param type $dest
+     * @param type $thumbs_size
+     */
+    public static function make_thumb($src, $dest, $thumbs_size = 300) {
+        /* read the source image */
+        $source_image = imagecreatefromstring($src);
+        $orig_w = imagesx($source_image);
+        $orig_h = imagesy($source_image);
+        $new_w = $thumbs_size;
+        $new_h = $thumbs_size;
+        $w_ratio = ($new_w / $orig_w);
+        $h_ratio = ($new_h / $orig_h);
+        if ($orig_w > $orig_h) {//landscape
+            $crop_w = round($orig_w * $h_ratio);
+            $crop_h = $new_h;
+            $src_x = ceil(( $orig_w - $orig_h ) / 2);
+            $src_y = 0;
+        } elseif ($orig_w < $orig_h) {//portrait
+            $crop_h = round($orig_h * $w_ratio);
+            $crop_w = $new_w;
+            $src_x = 0;
+            $src_y = ceil(( $orig_h - $orig_w ) / 2);
+        } else {//square
+            $crop_w = $new_w;
+            $crop_h = $new_h;
+            $src_x = 0;
+            $src_y = 0;
+        }
+        $dest_img = imagecreatetruecolor($new_w, $new_h);
+        imagecopyresampled($dest_img, $source_image, 0, 0, $src_x, $src_y, $crop_w, $crop_h, $orig_w, $orig_h);
+        /* create the physical thumbnail image into its destination */
+        imagejpeg($dest_img, $dest);
     }
 
     /**

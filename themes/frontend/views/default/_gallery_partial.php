@@ -25,7 +25,7 @@ foreach ($gallaries as $gallery):
            
            class="thumbnail <?php echo $gallery->land_scape; ?>" target="_blank">
             <?php
-            echo CHtml::image($gallery->image_url['image_large'], $gallery->alt, array(
+            echo CHtml::image($gallery->image_url['image_detail'], $gallery->alt, array(
                 "title" => $gallery->title,
             ));
             ?>
